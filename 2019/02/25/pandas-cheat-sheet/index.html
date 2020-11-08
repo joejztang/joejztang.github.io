@@ -1,0 +1,648 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="migrating to raspberry server"><title>pandas cheat sheet | 130L blog</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create','UA-118615339-1','auto');ga('send','pageview');
+</script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"><meta name="generator" content="Hexo 5.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">pandas cheat sheet</h1><a id="logo" href="/.">130L blog</a><p class="description">Cogito, ergo sum</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> Home</i></a><a href="/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/about/"><i class="fa fa-user"> About</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">pandas cheat sheet</h1><div class="post-meta">2019-02-25<span> | </span><span class="category"><a href="/categories/pandas/">pandas</a></span></div><a class="disqus-comment-count" data-disqus-identifier="2019/02/25/pandas-cheat-sheet/" href="/2019/02/25/pandas-cheat-sheet/#disqus_thread"></a><div class="post-content"><h2 id="dimension"><a href="#dimension" class="headerlink" title="dimension"></a>dimension</h2><table>
+<thead>
+<tr>
+<th>Data Structure</th>
+<th>Dimensions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Series</td>
+<td>1</td>
+<td>1d array</td>
+</tr>
+<tr>
+<td>Data Frames</td>
+<td>2</td>
+<td>2d array</td>
+</tr>
+<tr>
+<td>Panel</td>
+<td>3</td>
+<td>3d array</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Series: size immutable, data mutable</li>
+<li>Data Frames: size immutable, data mutable</li>
+<li>Panel: size mutable, data mutable</li>
+</ul>
+<p>To sum, all the data structures are data mutable.</p>
+<h2 id="Data-Structures"><a href="#Data-Structures" class="headerlink" title="Data Structures"></a>Data Structures</h2><h3 id="pandas-Series"><a href="#pandas-Series" class="headerlink" title="pandas.Series"></a>pandas.Series</h3><p><code>pandas.Series(data, index, dtype, copy)</code></p>
+<p>data is array-like</p>
+<p>index value must be unique and hashable, same lenght as data.</p>
+<p>dtype is for <strong>data type</strong>.</p>
+<ul>
+<li>create a Series from dict</li>
+</ul>
+<figure class="highlight py"><figcaption><span>create_from_dict_ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">0</span>, <span class="string">&#x27;b&#x27;</span>:<span class="number">1.</span>, <span class="string">&#x27;c&#x27;</span>:<span class="number">2.</span>&#125;</span><br><span class="line">s = pd.Series(data)</span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><figcaption><span>output_ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">a</span> <span class="number">0.0</span></span><br><span class="line"><span class="keyword">b</span> <span class="number">1.0</span></span><br><span class="line"><span class="keyword">c</span> <span class="number">2.0</span></span><br><span class="line">dtype: float64</span><br></pre></td></tr></table></figure>
+
+<p>obeserve that dictionary keys are used to construct index</p>
+<figure class="highlight py"><figcaption><span>create_from_dict_ex2</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">0</span>, <span class="string">&#x27;b&#x27;</span>:<span class="number">1.</span>, <span class="string">&#x27;c&#x27;</span>:<span class="number">2.</span>&#125;</span><br><span class="line">s = pd.Series(data, index=[<span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>, <span class="string">&#x27;a&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span> s</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight vim"><figcaption><span>output_ex2</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">b</span> <span class="number">1.0</span></span><br><span class="line"><span class="keyword">c</span> <span class="number">2.0</span></span><br><span class="line">d NaN</span><br><span class="line"><span class="keyword">a</span> <span class="number">0.0</span></span><br><span class="line">dtype: float64</span><br></pre></td></tr></table></figure>
+
+<p><strong>observe that index order is persisted and missing element is filled with NaN</strong></p>
+<ul>
+<li><p>accessing data from Series with position</p>
+<ul>
+<li><p>very similiar to array data access</p>
+</li>
+<li><p>if Series is <strong>indexed</strong>, one can access using index label values.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pandas-DataFrame"><a href="#pandas-DataFrame" class="headerlink" title="pandas.DataFrame"></a>pandas.DataFrame</h3><ul>
+<li>size is mutable</li>
+<li>labeled axes</li>
+</ul>
+<p>one can think of it as sql table data representation</p>
+<p><code>pandas.DataFrame(data, index, columns, dtype, copy)</code></p>
+<ul>
+<li>create a DataFrame from dict or arrays/lists</li>
+</ul>
+<figure class="highlight py"><figcaption><span>create_dataframe_ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;Name&#x27;</span>: [<span class="string">&#x27;Tom&#x27;</span>, <span class="string">&#x27;Jack&#x27;</span>, <span class="string">&#x27;Steve&#x27;</span>, <span class="string">&#x27;Ricky&#x27;</span>], <span class="string">&#x27;Age&#x27;</span>: [<span class="number">28</span>, <span class="number">34</span>, <span class="number">29</span>, <span class="number">42</span>]&#125;</span><br><span class="line">df = pd.DataFrame(data, index=[<span class="string">&#x27;rank1&#x27;</span>, <span class="string">&#x27;rank2&#x27;</span>, <span class="string">&#x27;rank3&#x27;</span>, <span class="string">&#x27;rank4&#x27;</span>])</span><br><span class="line"><span class="built_in">print</span> df</span><br></pre></td></tr></table></figure>
+
+<p>the <strong>output</strong> is as follows</p>
+<figure class="highlight vim"><figcaption><span>output_ex1</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">         Age   Name</span><br><span class="line">rank1     <span class="number">28</span>   Tom</span><br><span class="line">rank2     <span class="number">34</span>   Jack</span><br><span class="line">rank3     <span class="number">29</span>   Steve</span><br><span class="line">rank4     <span class="number">42</span>   Ricky</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>column <strong>selection</strong>, <strong>addition</strong> and <strong>deletion</strong></p>
+<p>  first, let’s see a script</p>
+  <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas</span><br><span class="line"></span><br><span class="line">d = &#123;<span class="string">&#x27;one&#x27;</span>:pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>], index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]),</span><br><span class="line">	 <span class="string">&#x27;two&#x27;</span>:pd.Series([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>], index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>])&#125;</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(d)</span><br><span class="line"><span class="built_in">print</span> df</span><br></pre></td></tr></table></figure>
+<p>  and it will print</p>
+  <figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">      one    two</span><br><span class="line"><span class="keyword">a</span>     <span class="number">1.0</span>    <span class="number">1</span></span><br><span class="line"><span class="keyword">b</span>     <span class="number">2.0</span>    <span class="number">2</span></span><br><span class="line"><span class="keyword">c</span>     <span class="number">3.0</span>    <span class="number">3</span></span><br><span class="line">d     NaN    <span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>if do <strong>selection</strong></p>
+  <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(df[<span class="string">&#x27;one&#x27;</span>])</span><br></pre></td></tr></table></figure>
+
+<p>  the output is as follows</p>
+  <figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">a</span>     <span class="number">1.0</span></span><br><span class="line"><span class="keyword">b</span>     <span class="number">2.0</span></span><br><span class="line"><span class="keyword">c</span>     <span class="number">3.0</span></span><br><span class="line">d     NaN</span><br><span class="line">Name: one, dtype: float64</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>- if do __addition__
+
+    <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">df[<span class="string">&#x27;three&#x27;</span>] = pd.Series([<span class="number">10</span>,<span class="number">20.30</span>], index=[<span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>])</span><br><span class="line">print(df)</span><br><span class="line"></span><br><span class="line"><span class="comment"># and even this</span></span><br><span class="line">df[<span class="string">&#x27;four&#x27;</span>] = df[<span class="string">&#x27;one&#x27;</span>]+df[<span class="string">&#x27;three&#x27;</span>]</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+    the output is as follows
+
+    <figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Adding <span class="keyword">a</span> <span class="keyword">new</span> column by passing <span class="keyword">as</span> Serie<span class="variable">s:</span></span><br><span class="line">     one   two   three</span><br><span class="line"><span class="keyword">a</span>    <span class="number">1.0</span>    <span class="number">1</span>    <span class="number">10.0</span></span><br><span class="line"><span class="keyword">b</span>    <span class="number">2.0</span>    <span class="number">2</span>    <span class="number">20.0</span></span><br><span class="line"><span class="keyword">c</span>    <span class="number">3.0</span>    <span class="number">3</span>    <span class="number">30.0</span></span><br><span class="line">d    NaN    <span class="number">4</span>    NaN</span><br><span class="line"></span><br><span class="line">Adding <span class="keyword">a</span> <span class="keyword">new</span> column using the existing columns in DataFrame:</span><br><span class="line">      one   two   three    four</span><br><span class="line"><span class="keyword">a</span>     <span class="number">1.0</span>    <span class="number">1</span>    <span class="number">10.0</span>     <span class="number">11.0</span></span><br><span class="line"><span class="keyword">b</span>     <span class="number">2.0</span>    <span class="number">2</span>    <span class="number">20.0</span>     <span class="number">22.0</span></span><br><span class="line"><span class="keyword">c</span>     <span class="number">3.0</span>    <span class="number">3</span>    <span class="number">30.0</span>     <span class="number">33.0</span></span><br><span class="line">d     NaN    <span class="number">4</span>     NaN     NaN</span><br></pre></td></tr></table></figure>
+
+- if do __deletion__
+
+    <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(df)</span><br><span class="line"></span><br><span class="line"><span class="comment"># using del function</span></span><br><span class="line"><span class="keyword">del</span> df[<span class="string">&#x27;one&#x27;</span>]</span><br><span class="line">print(df)</span><br><span class="line"></span><br><span class="line"><span class="comment"># using pop function</span></span><br><span class="line">df.pop(<span class="string">&#x27;two&#x27;</span>)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+    the output is as follows
+
+    <figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Our dataframe i<span class="variable">s:</span></span><br><span class="line">      one   three  two</span><br><span class="line"><span class="keyword">a</span>     <span class="number">1.0</span>    <span class="number">10.0</span>   <span class="number">1</span></span><br><span class="line"><span class="keyword">b</span>     <span class="number">2.0</span>    <span class="number">20.0</span>   <span class="number">2</span></span><br><span class="line"><span class="keyword">c</span>     <span class="number">3.0</span>    <span class="number">30.0</span>   <span class="number">3</span></span><br><span class="line">d     NaN     NaN   <span class="number">4</span></span><br><span class="line"></span><br><span class="line">Deleting the <span class="keyword">first</span> column using DEL <span class="function"><span class="keyword">function</span>:</span></span><br><span class="line">      three    two</span><br><span class="line"><span class="keyword">a</span>     <span class="number">10.0</span>     <span class="number">1</span></span><br><span class="line"><span class="keyword">b</span>     <span class="number">20.0</span>     <span class="number">2</span></span><br><span class="line"><span class="keyword">c</span>     <span class="number">30.0</span>     <span class="number">3</span></span><br><span class="line">d     NaN      <span class="number">4</span></span><br><span class="line"></span><br><span class="line">Deleting another column using POP <span class="function"><span class="keyword">function</span>:</span></span><br><span class="line">   three</span><br><span class="line"><span class="keyword">a</span>  <span class="number">10.0</span></span><br><span class="line"><span class="keyword">b</span>  <span class="number">20.0</span></span><br><span class="line"><span class="keyword">c</span>  <span class="number">30.0</span></span><br><span class="line">d  NaN</span><br></pre></td></tr></table></figure></code></pre>
+<ul>
+<li><p>row <strong>selection</strong>, <strong>addtion</strong> and <strong>deletion</strong></p>
+<ul>
+<li><p><strong>selection</strong></p>
+<ol>
+<li>selection by label using <code>loc</code> function</li>
+<li>selection by integer location using <code>iloc</code> function</li>
+</ol>
+</li>
+<li><p><strong>addition</strong></p>
+  <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]], columns = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>])</span><br><span class="line">df2 = pd.DataFrame([[<span class="number">5</span>, <span class="number">6</span>], [<span class="number">7</span>, <span class="number">8</span>]], columns = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>])</span><br><span class="line"></span><br><span class="line">df = df.append(df2)</span><br><span class="line">print(df)</span><br><span class="line">``` </span><br><span class="line"></span><br><span class="line">output <span class="keyword">is</span> <span class="keyword">as</span> follows</span><br><span class="line"></span><br><span class="line">```vim</span><br><span class="line">   a  b</span><br><span class="line"><span class="number">0</span>  <span class="number">1</span>  <span class="number">2</span></span><br><span class="line"><span class="number">1</span>  <span class="number">3</span>  <span class="number">4</span></span><br><span class="line"><span class="number">0</span>  <span class="number">5</span>  <span class="number">6</span></span><br><span class="line"><span class="number">1</span>  <span class="number">7</span>  <span class="number">8</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>deletion</strong></p>
+<p>  using <code>drop(&lt;label&gt;)</code></p>
+  <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame([[<span class="number">1</span>, <span class="number">2</span>], [<span class="number">3</span>, <span class="number">4</span>]], columns = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>])</span><br><span class="line">df2 = pd.DataFrame([[<span class="number">5</span>, <span class="number">6</span>], [<span class="number">7</span>, <span class="number">8</span>]], columns = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>])</span><br><span class="line"></span><br><span class="line">df = df.append(df2)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Drop rows with label 0</span></span><br><span class="line">df = df.drop(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+<p>  output is as follows</p>
+  <figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">a</span> <span class="keyword">b</span></span><br><span class="line"><span class="number">1</span> <span class="number">3</span> <span class="number">4</span></span><br><span class="line"><span class="number">1</span> <span class="number">7</span> <span class="number">8</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="pandas-Panel"><a href="#pandas-Panel" class="headerlink" title="pandas.Panel()"></a>pandas.Panel()</h3><p><code>pandas.Panel(data, items, major_axis, dtype, copy)</code></p>
+<ul>
+<li><strong>items</strong> - axis 0, each item in DataFrame</li>
+<li><strong>major_axis</strong> - axis 1, row (index) of each DataFrame</li>
+<li><strong>major_axis</strong> - axis 2, columns of each DataFrame</li>
+</ul>
+<p>data can be accessed by using __major_axis__ method.</p>
+<h2 id="Basic-Functionality"><a href="#Basic-Functionality" class="headerlink" title="Basic Functionality"></a>Basic Functionality</h2><table>
+<thead>
+<tr>
+<th>x</th>
+<th><strong>axes</strong></th>
+<th><strong>dtype</strong></th>
+<th><strong>empty</strong></th>
+<th><strong>ndim</strong></th>
+<th><strong>size</strong></th>
+<th><strong>values</strong></th>
+<th><strong>head()</strong></th>
+<th><strong>tail()</strong></th>
+<th><strong>T</strong></th>
+<th><strong>shape</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Series</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>DataFrame</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+<td>x</td>
+</tr>
+</tbody></table>
+<ul>
+<li>ndim - return the number of dimensions of the underlying data by definition 1</li>
+<li>head() - return the first n rows</li>
+<li>tail() - return the last n rows</li>
+<li>T - transpose rows and columns</li>
+<li>shape - tuple representing the dimenstionality of DataFrame</li>
+</ul>
+<h2 id="statistic-methods"><a href="#statistic-methods" class="headerlink" title="statistic methods"></a>statistic methods</h2><p>most of them are aggregations function take an <strong>axis</strong> argument</p>
+<table>
+<thead>
+<tr>
+<th>Sr.No.</th>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>count()</td>
+<td>Number of non-null observations</td>
+</tr>
+<tr>
+<td>2</td>
+<td>sum()</td>
+<td>Sum of values</td>
+</tr>
+<tr>
+<td>3</td>
+<td>mean()</td>
+<td>Mean of Values</td>
+</tr>
+<tr>
+<td>4</td>
+<td>median()</td>
+<td>Median of Values</td>
+</tr>
+<tr>
+<td>5</td>
+<td>mode()</td>
+<td>Mode of values</td>
+</tr>
+<tr>
+<td>6</td>
+<td>std()</td>
+<td>Standard Deviation of the Values</td>
+</tr>
+<tr>
+<td>7</td>
+<td>min()</td>
+<td>Minimum Value</td>
+</tr>
+<tr>
+<td>8</td>
+<td>max()</td>
+<td>Maximum Value</td>
+</tr>
+<tr>
+<td>9</td>
+<td>abs()</td>
+<td>Absolute Value</td>
+</tr>
+<tr>
+<td>10</td>
+<td>prod()</td>
+<td>Product of Values</td>
+</tr>
+<tr>
+<td>11</td>
+<td>cumsum()</td>
+<td>Cumulative Sum</td>
+</tr>
+<tr>
+<td>12</td>
+<td>cumprod()</td>
+<td>Cumulative Product</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p><strong>discribe()</strong></p>
+<p>  function computes a summary of statistics pertaining to the DataFrame columns</p>
+</li>
+</ul>
+<h2 id="function-application"><a href="#function-application" class="headerlink" title="function application"></a>function application</h2><h3 id="table-wise-function-application-pipe"><a href="#table-wise-function-application-pipe" class="headerlink" title="table wise function application : pipe()"></a>table wise function application : <strong>pipe()</strong></h3><figure class="highlight py"><figcaption><span>pipe()_example</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">df.pipe(&lt;my_function&gt;, ...)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>the above script tells us that apply <em>my_function</em> to the whole DataFrame</p>
+<h3 id="row-or-column-wise-function-application-apply"><a href="#row-or-column-wise-function-application-apply" class="headerlink" title="row or column wise function application : apply()"></a>row or column wise function application : <strong>apply()</strong></h3><figure class="highlight py"><figcaption><span>apply()_ex</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(np.random.randn(<span class="number">5</span>,<span class="number">3</span>),columns=[<span class="string">&#x27;col1&#x27;</span>,<span class="string">&#x27;col2&#x27;</span>,<span class="string">&#x27;col3&#x27;</span>])</span><br><span class="line">df = df.apply(np.mean,axis=<span class="number">1</span>)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+<p>the output is as following</p>
+<figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">0</span>    <span class="number">0.248585</span></span><br><span class="line"><span class="number">1</span>   -<span class="number">0.552151</span></span><br><span class="line"><span class="number">2</span>   -<span class="number">0.579080</span></span><br><span class="line"><span class="number">3</span>   -<span class="number">0.351066</span></span><br><span class="line"><span class="number">4</span>   -<span class="number">0.401736</span></span><br><span class="line">dtype: float64</span><br></pre></td></tr></table></figure>
+
+<p>parameter <strong>axis</strong> can be passed. 0 represent <strong>to row</strong>, whereas 1 represent <strong>to column</strong></p>
+<h3 id="element-wise-function-application-applymap"><a href="#element-wise-function-application-applymap" class="headerlink" title="element wise function application : applymap()"></a>element wise function application : <strong>applymap()</strong></h3><p>the methods <code>applymap()</code> on DataFrame and analogously <code>map()</code> on <strong>Series</strong> accept any Python function taking a single value and returning a single value.</p>
+<figure class="highlight py"><figcaption><span>applymap()</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">df = pd.DataFrame(np.random.randn(<span class="number">5</span>,<span class="number">3</span>),columns=[<span class="string">&#x27;col1&#x27;</span>,<span class="string">&#x27;col2&#x27;</span>,<span class="string">&#x27;col3&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># My custom function</span></span><br><span class="line">print(df)</span><br><span class="line">df = df[<span class="string">&#x27;col1&#x27;</span>].<span class="built_in">map</span>(<span class="keyword">lambda</span> x:x*<span class="number">100</span>)</span><br><span class="line">print(df)</span><br></pre></td></tr></table></figure>
+
+<p>output is following</p>
+<figure class="highlight vim"><figcaption><span>output</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">       col1      col2      col3</span><br><span class="line"><span class="number">0</span> -<span class="number">0.728627</span> -<span class="number">0.101886</span>  <span class="number">1.025377</span></span><br><span class="line"><span class="number">1</span>  <span class="number">0.530011</span> -<span class="number">0.999194</span>  <span class="number">1.060044</span></span><br><span class="line"><span class="number">2</span> -<span class="number">0.284739</span> -<span class="number">0.423325</span> -<span class="number">0.599201</span></span><br><span class="line"><span class="number">3</span> -<span class="number">0.064372</span>  <span class="number">1.523775</span> -<span class="number">0.321916</span></span><br><span class="line"><span class="number">4</span>  <span class="number">1.391365</span>  <span class="number">0.436669</span> -<span class="number">0.342277</span></span><br><span class="line"><span class="number">0</span>    -<span class="number">72.862671</span></span><br><span class="line"><span class="number">1</span>     <span class="number">53.001126</span></span><br><span class="line"><span class="number">2</span>    -<span class="number">28.473895</span></span><br><span class="line"><span class="number">3</span>     -<span class="number">6.437233</span></span><br><span class="line"><span class="number">4</span>    <span class="number">139.136522</span></span><br><span class="line">Name: col1, dtype: float64</span><br></pre></td></tr></table></figure>
+
+<p><em>to tell the truth, I think pipe() and map() are so similar</em></p>
+<h2 id="reindex"><a href="#reindex" class="headerlink" title="reindex"></a>reindex</h2><p><strong>Reindexing</strong> changes the row labels and column labels of a DataFrame.</p>
+<p>usage is like following:</p>
+<figure class="highlight py"><figcaption><span>reindex</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># reindex using index 0, 2, 5</span></span><br><span class="line">...</span><br><span class="line">df.reindex(index=[<span class="number">0</span>, <span class="number">2</span>, <span class="number">5</span>], columns=[<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>])</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment"># reindex align to other</span></span><br><span class="line">...</span><br><span class="line">df1 = df1.reindex_like(df2)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment"># ffill/bfill/nearst</span></span><br><span class="line"><span class="comment"># ffill with pad Nan(s)</span></span><br><span class="line">...</span><br><span class="line">df2.reindex_like(df1, method=<span class="string">&#x27;ffill&#x27;</span>)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment"># limit how many rows to fill</span></span><br><span class="line">...</span><br><span class="line">df2.reindex_like(df1, method=<span class="string">&#x27;ffill&#x27;</span>, limit=<span class="number">1</span>)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line"><span class="comment"># rename column name</span></span><br><span class="line">...</span><br><span class="line">df1.rename(columns=&#123;<span class="string">&#x27;col1&#x27;</span>:<span class="string">&#x27;c1&#x27;</span>, <span class="string">&#x27;col2&#x27;</span>: <span class="string">&#x27;c2&#x27;</span>&#125;)</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<h2 id="iterations"><a href="#iterations" class="headerlink" title="iterations"></a>iterations</h2><p>iterate</p>
+<ul>
+<li>Series - on <strong>values</strong></li>
+<li>DataFrame - on <strong>column labels</strong></li>
+<li>Panel - on <strong>item labels</strong></li>
+</ul>
+<p>three functions can be used</p>
+<ul>
+<li><strong>iteritems()</strong></li>
+<li><strong>iterrows()</strong></li>
+<li><strong>itertuples()</strong></li>
+</ul>
+<h2 id="sort"><a href="#sort" class="headerlink" title="sort"></a>sort</h2><p><code>sort_index(ascending=False, axis=&lt;axis&gt;)</code></p>
+<p><code>sort_value(by=&#39;[&lt;which_cols&gt;]&#39;, kind=&#39;mergesort/quicksort/heapsort&#39;)</code></p>
+<h2 id="working-with-text-data"><a href="#working-with-text-data" class="headerlink" title="working with text data"></a>working with text data</h2><p>these all applies to <code>df.str</code></p>
+<table>
+<thead>
+<tr>
+<th>Sr.No</th>
+<th>Function &amp; Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>lower()Converts strings in the Series/Index to lower case.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>upper()Converts strings in the Series/Index to upper case.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>len()Computes String length().</td>
+</tr>
+<tr>
+<td>4</td>
+<td>strip()Helps strip whitespace(including newline) from each string in the Series/index from both the sides.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>split(‘ ‘)Splits each string with the given pattern.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>cat(sep=’ ‘)Concatenates the series/index elements with given separator.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>get_dummies()Returns the DataFrame with One-Hot Encoded values.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>contains(pattern)Returns a Boolean value True for each element if the substring contains in the element, else False.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>replace(a,b)Replaces the value a with the value b.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>repeat(value)Repeats each element with specified number of times.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>count(pattern)Returns count of appearance of pattern in each element.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>startswith(pattern)Returns true if the element in the Series/Index starts with the pattern.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>endswith(pattern)Returns true if the element in the Series/Index ends with the pattern.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>find(pattern)Returns the first position of the first occurrence of the pattern.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>findall(pattern)Returns a list of all occurrence of the pattern.</td>
+</tr>
+<tr>
+<td>16</td>
+<td>swapcaseSwaps the case lower/upper.</td>
+</tr>
+<tr>
+<td>17</td>
+<td>islower()Checks whether all characters in each string in the Series/Index in lower case or not. Returns Boolean</td>
+</tr>
+<tr>
+<td>18</td>
+<td>isupper()Checks whether all characters in each string in the Series/Index in upper case or not. Returns Boolean.</td>
+</tr>
+<tr>
+<td>19</td>
+<td>isnumeric()Checks whether all characters in each string in the Series/Index are numeric. Returns Boolean.</td>
+</tr>
+</tbody></table>
+<h2 id="indexing-and-selecting-data"><a href="#indexing-and-selecting-data" class="headerlink" title="indexing and selecting data"></a>indexing and selecting data</h2><ul>
+<li><code>.loc()</code> - index based</li>
+<li><code>.iloc()</code> - 0-based integer indexing</li>
+<li><code>.ix()</code> - both label and integer based</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Indexers</th>
+<th>Return Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Series</td>
+<td>s.loc[indexer]</td>
+<td>Scalar value</td>
+</tr>
+<tr>
+<td>DataFrame</td>
+<td>df.loc[row_index,col_index]</td>
+<td>Series object</td>
+</tr>
+<tr>
+<td>Panel</td>
+<td>p.loc[item_index,major_index, minor_index]</td>
+<td>p.loc[item_index,major_index, minor_index]</td>
+</tr>
+</tbody></table>
+<h2 id="window-functions"><a href="#window-functions" class="headerlink" title="window functions"></a>window functions</h2><p>imagine a sliding window that works on top of DataFrame objects</p>
+<ul>
+<li><code>.rolling()</code> - Specify the <strong>window=n</strong> argument and apply the appropriate statistical function on top of it. usage <code>df.rolling(window=x)...</code></li>
+<li><code>.expanding()</code> - This function can be applied on a series of data. Specify the __min_periods=n__ argument and apply the appropriate statistical function on top of it. usage <code>df.expanding(min_periods=x)...</code></li>
+</ul>
+<h2 id="Missing-Data"><a href="#Missing-Data" class="headerlink" title="Missing Data"></a>Missing Data</h2><ul>
+<li>cleaning / filling missing data</li>
+</ul>
+<p><code>df.fillna(0, method=&#39;pad/bfill&#39;)</code> - fill <code>NaN</code> with 0</p>
+<ul>
+<li>drop missing value</li>
+</ul>
+<p><code>df.dropna(0, axis=&lt;axis&gt;)</code></p>
+<ul>
+<li>replace missing or generic values</li>
+</ul>
+<p><code>df.replace(&#123;&lt;generic&gt;:&lt;replaced&gt;, ...&#125;)</code></p>
+<h2 id="Group-by"><a href="#Group-by" class="headerlink" title="Group by"></a>Group by</h2><ul>
+<li><p>using <code>groupby()</code> function, it can group by one col, or multiple cols</p>
+</li>
+<li><p>given <code>groupby</code> object in hand, we can <strong>iterate</strong> through the object.</p>
+</li>
+<li><p><strong>select</strong> a group by using <code>get_group()</code> to select a single group.</p>
+</li>
+<li><p><code>agg()</code> function can be performed on the grouped data, aggregation functions can be applied multiple at once. eg: <code>agg([np.sum, np.mean, np.std])</code></p>
+</li>
+<li><p><code>transform(&lt;my_function&gt;)</code> - Transformation on a group or a column returns an object that is indexed the <strong>same size</strong> of that is being grouped. Thus, the transform should return a result that is the same size as that of a group chunk.</p>
+</li>
+<li><p><code>filter()</code> - Filtration filters the data on a defined criteria and returns the subset of data. The <code>filter()</code> function is used to filter the data.</p>
+</li>
+</ul>
+<h2 id="merge-sql-join"><a href="#merge-sql-join" class="headerlink" title="merge() == sql join"></a><code>merge()</code> == sql join</h2><p><code>merge(left_data, right_data, how=&#39;inner/left/right/outer&#39;, on=[&lt;columns&gt;])</code></p>
+<h2 id="cancat-stack-and-or-union"><a href="#cancat-stack-and-or-union" class="headerlink" title="cancat() == stack() and/or union()"></a><code>cancat()</code> == stack() and/or union()</h2><p><code>df.concat([df1, df2, ...], keys=[&#39;x&#39;, &#39;y&#39;, ...], ignore_index=True/False, axis=&#39;&lt;axis&gt;&#39;)</code></p>
+<p>concatenating using <code>append</code></p>
+<p><code>df1.append([df2, df3, ...])</code></p>
+<h2 id="Time-in-pandas"><a href="#Time-in-pandas" class="headerlink" title="Time in pandas"></a>Time in pandas</h2><h3 id="datetime"><a href="#datetime" class="headerlink" title="datetime"></a>datetime</h3><p>usage</p>
+<figure class="highlight py"><figcaption><span>time_script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">print(pd.datetime.now())</span><br><span class="line"></span><br><span class="line"><span class="comment"># create a range of time</span></span><br><span class="line">pd.date_range(<span class="string">&quot;11:00&quot;</span>, <span class="string">&quot;13:30&quot;</span>, freq=<span class="string">&quot;30min&quot;</span>).time</span><br><span class="line"><span class="comment"># output is [datetime.time(11, 0) datetime.time(11, 30) datetime.time(12, 0) datetime.time(12, 30) datetime.time(13, 0) datetime.time(13, 30)]</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># converting to Timestamps</span></span><br><span class="line">pd.to_datetime(&lt;pandas_object&gt;)</span><br></pre></td></tr></table></figure>
+
+<p><code>NaT</code> Not a Time equivlent to NaN</p>
+<h3 id="dates"><a href="#dates" class="headerlink" title="dates"></a>dates</h3><figure class="highlight py"><figcaption><span>dates_script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pd.date_range(<span class="string">&#x27;1/1/2011&#x27;</span>, periods=<span class="number">5</span>, freq=<span class="string">&#x27;M&#x27;</span>)</span><br><span class="line"><span class="comment"># output is a list of DateTimeIndex, M stand for Month</span></span><br></pre></td></tr></table></figure>
+
+<p>some offset aliases are listed below</p>
+<table>
+<thead>
+<tr>
+<th>Alias</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>B</td>
+<td>business day frequency</td>
+</tr>
+<tr>
+<td>D</td>
+<td>calendar day frequency</td>
+</tr>
+<tr>
+<td>W</td>
+<td>weekly frequency</td>
+</tr>
+<tr>
+<td>M</td>
+<td>month end frequency</td>
+</tr>
+<tr>
+<td>SM</td>
+<td>semi-month end frequency</td>
+</tr>
+<tr>
+<td>BM</td>
+<td>business month end frequency</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>month start frequency</td>
+</tr>
+<tr>
+<td>SMS</td>
+<td>SMS semi month start frequency</td>
+</tr>
+<tr>
+<td>BMS</td>
+<td>business month start frequency</td>
+</tr>
+<tr>
+<td>Q</td>
+<td>quarter end frequency</td>
+</tr>
+<tr>
+<td>BQ</td>
+<td>business quarter end frequency</td>
+</tr>
+<tr>
+<td>QS</td>
+<td>quarter start frequency</td>
+</tr>
+<tr>
+<td>BQS</td>
+<td>business quarter start frequency</td>
+</tr>
+<tr>
+<td>A</td>
+<td>annual(Year) end frequency</td>
+</tr>
+<tr>
+<td>BA</td>
+<td>business year end frequency</td>
+</tr>
+<tr>
+<td>BAS</td>
+<td>business year start frequency</td>
+</tr>
+<tr>
+<td>BH</td>
+<td>business hour frequency</td>
+</tr>
+<tr>
+<td>H</td>
+<td>hourly frequency</td>
+</tr>
+<tr>
+<td>T, min</td>
+<td>minutely frequency</td>
+</tr>
+<tr>
+<td>S</td>
+<td>secondly frequency</td>
+</tr>
+<tr>
+<td>L, ms</td>
+<td>milliseconds</td>
+</tr>
+<tr>
+<td>U, us</td>
+<td>microseconds</td>
+</tr>
+<tr>
+<td>N</td>
+<td>nanoseconds</td>
+</tr>
+</tbody></table>
+<h3 id="Timedelta"><a href="#Timedelta" class="headerlink" title="Timedelta"></a>Timedelta</h3><figure class="highlight py"><figcaption><span>timedelta</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">pd.Timedelta(<span class="string">&#x27;2 days 2 hours 15 minutes 30 seconds&#x27;</span>)\</span><br><span class="line"><span class="comment"># 2 days 02:15:30</span></span><br><span class="line"></span><br><span class="line">pd.Timedelta(<span class="number">6</span>, unit=<span class="string">&#x27;h&#x27;</span>)</span><br><span class="line"><span class="comment"># 0 days 06:00:00</span></span><br><span class="line"></span><br><span class="line">pd.Timedelta(days=<span class="number">2</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>date object can also add/minus with other date object</p>
+<h2 id="Categorical-data"><a href="#Categorical-data" class="headerlink" title="Categorical data"></a>Categorical data</h2><h2 id="Visualization"><a href="#Visualization" class="headerlink" title="Visualization"></a>Visualization</h2><h3 id="basic-plot"><a href="#basic-plot" class="headerlink" title="basic plot"></a>basic plot</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">df = pd.DataFrame(np.random.randn(<span class="number">10</span>, <span class="number">4</span>), index=pd.date_range(<span class="string">&#x27;1/1/2000&#x27;</span>, periods=<span class="number">10</span>), columns=<span class="built_in">list</span>(<span class="string">&#x27;ABCD&#x27;</span>))</span><br><span class="line"></span><br><span class="line">df.plot()</span><br></pre></td></tr></table></figure>
+
+<h3 id="bar-plot"><a href="#bar-plot" class="headerlink" title="bar plot"></a>bar plot</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df.plot.bar(stacked=<span class="literal">True</span>)</span><br><span class="line">df.plot.barh(stacked=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="histograms"><a href="#histograms" class="headerlink" title="histograms"></a>histograms</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">df.plot.hist(bins=<span class="number">20</span>)</span><br><span class="line">df.diff.hist(bins=<span class="number">20</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="box-plots"><a href="#box-plots" class="headerlink" title="box plots"></a>box plots</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.plot.box() <span class="comment"># df can be Series/DataFrame</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="area-plots"><a href="#area-plots" class="headerlink" title="area plots"></a>area plots</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.plot.area() <span class="comment"># df can be Series/DataFrame</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="scatter-plots"><a href="#scatter-plots" class="headerlink" title="scatter plots"></a>scatter plots</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.plot.scatter(x=<span class="string">&#x27;cola&#x27;</span>, y=<span class="string">&#x27;colb&#x27;</span>) <span class="comment"># DataFrame</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="pie-charts"><a href="#pie-charts" class="headerlink" title="pie charts"></a>pie charts</h3><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df.plot.pie(subplots=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="I-O"><a href="#I-O" class="headerlink" title="I/O"></a>I/O</h2><figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pandas.read_csv(filepath_or_buffer, sep=<span class="string">&#x27;,&#x27;</span>, delimiter=<span class="literal">None</span>, header=<span class="string">&#x27;infer&#x27;</span>,</span><br><span class="line">names=<span class="literal">None</span>, index_col=<span class="literal">None</span>, usecols=<span class="literal">None</span>, dtype=&#123;<span class="string">&#x27;colx&#x27;</span>: np.numeric_type&#125;, skiprows=[&lt;row_nums&gt;])</span><br></pre></td></tr></table></figure>
+
+<p>people can change <code>dtype</code> while read csv on the fly, can change header names and can skip rows by identifying row number</p>
+<h2 id="sparse-data"><a href="#sparse-data" class="headerlink" title="sparse data"></a>sparse data</h2><p>Sparse objects are “compressed” when any data matching a specific value (<code>NaN</code> / missing value, though any value can be chosen) is omitted.</p>
+<p>using <code>to_sparse()</code> method creates sparse objects, existing for memory efficiency reasons.</p>
+<p>Any sparse object can be converted back to the standard dense form by calling <code>to_dense()</code></p>
+<p>sparse and dense objects have the same dtype</p>
+<h2 id="other-functions"><a href="#other-functions" class="headerlink" title="other functions"></a>other functions</h2><ul>
+<li><strong>any()</strong>: return whether any element is True. </li>
+<li><strong>isin()</strong>: whether each element in the DataFrame is contained in values</li>
+</ul>
+<h2 id="pandas-vs-SQL"><a href="#pandas-vs-SQL" class="headerlink" title="pandas vs. SQL"></a>pandas vs. SQL</h2><h3 id="top-N"><a href="#top-N" class="headerlink" title="top N"></a>top N</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> total_bill, tip, smoker, <span class="built_in">time</span></span><br><span class="line"><span class="keyword">FROM</span> tips</span><br><span class="line"><span class="keyword">LIMIT</span> <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+
+<p>in pandas</p>
+<figure class="highlight py"><figcaption><span>select_top_5.py</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tips[[<span class="string">&#x27;total_bill&#x27;</span>, <span class="string">&#x27;tip&#x27;</span>, <span class="string">&#x27;smoker&#x27;</span>, <span class="string">&#x27;time&#x27;</span>]].head(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="where-clause"><a href="#where-clause" class="headerlink" title="where clause"></a>where clause</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> tips <span class="keyword">WHERE</span> <span class="built_in">time</span> = <span class="string">&#x27;Dinner&#x27;</span> <span class="keyword">LIMIT</span> <span class="number">5</span>;</span><br></pre></td></tr></table></figure>
+
+<p>in pandas</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tips[tips[<span class="string">&#x27;time&#x27;</span>] == <span class="string">&#x27;Dinner&#x27;</span>].head(<span class="number">5</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="group-by"><a href="#group-by" class="headerlink" title="group by"></a>group by</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> sex, <span class="keyword">count</span>(*)</span><br><span class="line"><span class="keyword">FROM</span> tips</span><br><span class="line"><span class="keyword">GROUP</span> <span class="keyword">BY</span> sex;</span><br></pre></td></tr></table></figure>
+
+<p>in pandas</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tips.groupby(<span class="string">&#x27;sex&#x27;</span>).size()</span><br></pre></td></tr></table></figure>
+</div><div class="tags"><a href="/tags/cheating-sheet/"><i class="fa fa-tag"></i>cheating sheet</a></div><div class="post-nav"><a class="pre" href="/2019/02/26/code/176-second-highest-salary/">176.second highest salary</a><a class="next" href="/2019/02/22/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/">迟到的jenkins自动部署</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'http://example.com/2019/02/25/pandas-cheat-sheet/';
+    this.page.identifier = '2019/02/25/pandas-cheat-sheet/';
+    this.page.title = 'pandas cheat sheet';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//joejztang.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//joejztang.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://joejztang.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/alg-summary/">Alg summary</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/alison-photography/">Alison photography</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/c/">C#</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/django/">Django</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">Hexo</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">Java</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/math/">Math</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/math/linear-algebra/">Linear Algebra</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/r/">R</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/sql-server/">SQL Server</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/scrapy/">Scrapy</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/selfnotes/">SelfNotes</a><span class="category-list-count">30</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/unit-test/">Unit Test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/apache-beam/">apache beam</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/big-data/">big data</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/cheat-sheet/">cheat sheet</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/css/">css</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/data-structure/">data structure</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/database/">database</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/deep-learning/">deep learning</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/elasticsearch/">elasticsearch</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/flask/">flask</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/git/">git</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/graph/">graph</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hexo/">hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/javascript/">javascript</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/jenkins/">jenkins</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/language-common/">language common</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linear-algebra/">linear algebra</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/nodejs/">nodejs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/pandas/">pandas</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/photoshop/">photoshop</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/php/">php</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/reactjs/">reactjs</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/security/">security</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/server/">server</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/spark/">spark</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"><a href="/tags/recommender-system/" style="font-size: 15px;">recommender system</a> <a href="/tags/python/" style="font-size: 15px;">python</a> <a href="/tags/https/" style="font-size: 15px;">https</a> <a href="/tags/cheat-sheet/" style="font-size: 15px;">cheat sheet</a> <a href="/tags/logging/" style="font-size: 15px;">logging</a> <a href="/tags/conda/" style="font-size: 15px;">conda</a> <a href="/tags/venv/" style="font-size: 15px;">venv</a> <a href="/tags/unittest/" style="font-size: 15px;">unittest</a> <a href="/tags/cheating-sheet/" style="font-size: 15px;">cheating sheet</a> <a href="/tags/recursion/" style="font-size: 15px;">recursion</a> <a href="/tags/cte/" style="font-size: 15px;">CTE</a> <a href="/tags/sql-server/" style="font-size: 15px;">SQL Server</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/keras/" style="font-size: 15px;">keras</a> <a href="/tags/tensorflow/" style="font-size: 15px;">tensorflow</a> <a href="/tags/elk/" style="font-size: 15px;">elk</a> <a href="/tags/graph-theory/" style="font-size: 15px;">graph theory</a> <a href="/tags/hexo-404-issue/" style="font-size: 15px;">hexo 404 issue</a> <a href="/tags/seo/" style="font-size: 15px;">seo</a> <a href="/tags/hexo-%E4%BC%98%E5%8C%96/" style="font-size: 15px;">hexo 优化</a> <a href="/tags/kubernetes/" style="font-size: 15px;">kubernetes</a> <a href="/tags/java-io/" style="font-size: 15px;">Java IO</a> <a href="/tags/java-8-streams/" style="font-size: 15px;">java 8 streams</a> <a href="/tags/java-lambda/" style="font-size: 15px;">java lambda</a> <a href="/tags/alg/" style="font-size: 15px;">alg</a> <a href="/tags/binary-search/" style="font-size: 15px;">binary search</a> <a href="/tags/pandas/" style="font-size: 15px;">pandas</a> <a href="/tags/photography/" style="font-size: 15px;">photography</a> <a href="/tags/php-tools/" style="font-size: 15px;">php tools</a> <a href="/tags/debug-trick/" style="font-size: 15px;">debug trick</a> <a href="/tags/circular-imports/" style="font-size: 15px;">circular imports</a> <a href="/tags/mock/" style="font-size: 15px;">mock</a> <a href="/tags/react-redux/" style="font-size: 15px;">react-redux</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/react/" style="font-size: 15px;">react</a> <a href="/tags/apache/" style="font-size: 15px;">apache</a> <a href="/tags/redux/" style="font-size: 15px;">redux</a> <a href="/tags/regular-expression/" style="font-size: 15px;">regular expression</a> <a href="/tags/python3/" style="font-size: 15px;">python3</a> <a href="/tags/template/" style="font-size: 15px;">template</a> <a href="/tags/java-8-io/" style="font-size: 15px;">Java 8 IO</a> <a href="/tags/idea/" style="font-size: 15px;">idea</a> <a href="/tags/whim/" style="font-size: 15px;">whim</a> <a href="/tags/hexo-math-equations/" style="font-size: 15px;">hexo math equations</a> <a href="/tags/jenkins/" style="font-size: 15px;">jenkins</a> <a href="/tags/amazon/" style="font-size: 15px;">amazon</a> <a href="/tags/tag/" style="font-size: 15px;">tag</a> <a href="/tags/ood/" style="font-size: 15px;">ood</a> <a href="/tags/epic/" style="font-size: 15px;">Epic</a> <a href="/tags/sql/" style="font-size: 15px;">sql</a> <a href="/tags/frequent/" style="font-size: 15px;">frequent</a> <a href="/tags/tbd/" style="font-size: 15px;">tbd</a> <a href="/tags/google/" style="font-size: 15px;">google</a> <a href="/tags/linkedlist/" style="font-size: 15px;">linkedlist</a> <a href="/tags/sliding-window/" style="font-size: 15px;">sliding window</a> <a href="/tags/tree/" style="font-size: 15px;">tree</a> <a href="/tags/dp/" style="font-size: 15px;">dp</a> <a href="/tags/%E9%9D%A2%E8%AF%95%E9%AB%98%E9%A2%91/" style="font-size: 15px;">面试高频</a> <a href="/tags/bfs/" style="font-size: 15px;">BFS</a> <a href="/tags/dfs/" style="font-size: 15px;">DFS</a> <a href="/tags/two-pointer/" style="font-size: 15px;">two pointer</a> <a href="/tags/rabin-karp/" style="font-size: 15px;">rabin-karp</a> <a href="/tags/graph/" style="font-size: 15px;">graph</a> <a href="/tags/stack/" style="font-size: 15px;">stack</a> <a href="/tags/bst/" style="font-size: 15px;">BST</a> <a href="/tags/twitter/" style="font-size: 15px;">twitter</a> <a href="/tags/iterative/" style="font-size: 15px;">iterative</a> <a href="/tags/two-pointers/" style="font-size: 15px;">two pointers</a> <a href="/tags/ood/" style="font-size: 15px;">OOD</a> <a href="/tags/io/" style="font-size: 15px;">io</a> <a href="/tags/object-oriented-design/" style="font-size: 15px;">Object Oriented Design</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/09/24/code/329-Longest-Increasing-Path-in-a-Matrix/">329. Longest Increasing Path in a Matrix</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/23/code/311-Sparse-Matrix-Multiplication/">311. Sparse Matrix Multiplication</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/17/code/203-Remove-Linked-List-Elements/">203. Remove Linked List Elements</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/17/code/148-Sort-List/">148. Sort List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/16/code/143-Reorder-List/">143. Reorder List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/16/code/86-Partition-List/">86. Partition List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/15/code/61-Rotate-List/">61. Rotate List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/15/code/19-Remove-Nth-Node-From-End-of-List/">19. Remove Nth Node From End of List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/15/code/237-Delete-Node-in-a-Linked-List/">237. Delete Node in a Linked List</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/09/14/code/25-Reverse-Nodes-in-kGroup/">25. Reverse Nodes in k-Group</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> Recent Comments</i></div><script type="text/javascript" src="//joejztang.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">130L blog.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=0.0.0"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
