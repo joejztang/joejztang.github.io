@@ -131,11 +131,13 @@ ga('create','UA-118615339-1','auto');ga('send','pageview');
 <ol>
 <li>\( {P(A)} \), the Prior Probablility</li>
 <li>\( {P(B)} \), the Marginal Likelihood</li>
-<li>\( {P(B|A)} \), the LIkelihood</li>
+<li>\( {P(B|A)} \), the Likelihood</li>
 <li>\( {P(A|B)} \), the Posterior Probablility</li>
 </ol>
 <p>When attack a problem, we want to calculate elements <em>in order</em>.</p>
 <p>A concrete example, we assign <code>B</code> as the features dataset <code>X</code>, and given <code>X</code>, we have multiple categories that can classify to; in other words, <code>A</code> can assign to <code>cat1</code>, <code>cat2</code>, etc.</p>
+<p>So the function now becomes:</p>
+<p>\( {P(cat1|X)} = \frac{P(X|cat1)*P(cat1)}{P(X)} \)</p>
 <p>If we want to predict a data point, <code>x</code>, we need to calculate all \( {P(cat1|X)} \) and \( {P(cat2|X)} \), at last compare them and assign to the correct cat</p>
 <p>Noted for number2, the marginal likelihood. Calculating that likelihood will introduce a “margin”, which will be having the similar features of the “newly added point/the point to be predicted”. So feels like choosing that “margin” is an critical work during the calulation.</p>
 </div><div class="tags"><a href="/tags/cheat-sheet/"><i class="fa fa-tag"></i>cheat sheet</a></div><div class="post-nav"><a class="next" href="/2020/12/08/code/224-Basic-Calculator/">224. Basic Calculator</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
