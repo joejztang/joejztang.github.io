@@ -28,8 +28,13 @@ ga('create','UA-118615339-1','auto');ga('send','pageview');
 
 <p>the result would be a clean linear history</p>
 <p><img src="/images/after_fast_foward.png" alt="after_fast_foward"></p>
+<p>if you want to reflect this in the remote repo, then do <code>git push --force-with-lease</code>.</p>
 <h3 id="Don’ts-on-rebase"><a href="#Don’ts-on-rebase" class="headerlink" title="Don’ts on rebase"></a>Don’ts on rebase</h3><p>currently, according to my experience, I can just suggest DON’T use rebase on a remote repo. Just use rebase on local branches.</p>
 <p>Always use <code>merge</code></p>
+<h2 id="squash-commits-history"><a href="#squash-commits-history" class="headerlink" title="squash commits history"></a>squash commits history</h2><p><a target="_blank" rel="noopener" href="https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/">some introduction</a></p>
+<p>the above works when something is changing in master, people could use <code>git rebase -i master</code>.</p>
+<p>when doing so, it will ask you to edit the <code>rebase-todo</code> file, within which, it askes you to modify it.</p>
+<p>you can <code>reword</code>, <code>squash</code>, and others. by doing squash, we are making it from long to short commits.</p>
 </div><div class="tags"><a href="/tags/cheating-sheet/"><i class="fa fa-tag"></i>cheating sheet</a></div><div class="post-nav"><a class="pre" href="/2019/03/14/anaconda-python-environment-mess/">anaconda python venv environment mess</a><a class="next" href="/2019/02/28/why-mock-a-general-question/">why mock? a general question</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
     this.page.url = 'http://example.com/2019/03/01/git-cheating-sheet/';
     this.page.identifier = '2019/03/01/git-cheating-sheet/';
