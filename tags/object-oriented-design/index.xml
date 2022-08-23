@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Oriented Design on 130L</title>
+    <link>http://www.example.com/tags/object-oriented-design/</link>
+    <description>Recent content in Object Oriented Design on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 23 May 2018 19:00:59 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/object-oriented-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OOD</title>
+      <link>http://www.example.com/posts/notes/ood/</link>
+      <pubDate>Wed, 23 May 2018 19:00:59 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/ood/</guid>
+      <description>use case -&amp;gt; data&amp;amp;api(functionality) -&amp;gt; class ......
+Object Oriented Programming, basic steps in OOD Design patterns More advanced examples Why leaning OOD practical problems -&amp;gt; model -&amp;gt; code better understanding of OOP How to write good code what is good code? complete functionality easy to use by others clear, elegant, easy to understand, no ambiguity prevent users from making mistakes easy to evolve motivation of Object Oriented Programming modular, reusable</description>
+    </item>
+    
+  </channel>
+</rss>

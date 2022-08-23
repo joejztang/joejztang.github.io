@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SelfNotes on 130L</title>
+    <link>http://www.example.com/categories/selfnotes/</link>
+    <description>Recent content in SelfNotes on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 30 Jun 2018 10:12:48 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/selfnotes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>elevator</title>
+      <link>http://www.example.com/posts/notes/elevator/</link>
+      <pubDate>Sat, 30 Jun 2018 10:12:48 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/elevator/</guid>
+      <description>elevator simulator main functionality of an elevator press button to request one elevator wait the elevator to come take the elevator, try to run input move exit the input/output of the main functionality what is the semantic for each component request -&amp;gt; schedule &amp;amp; move elevator -&amp;gt; load into elevator -&amp;gt; send request -&amp;gt; schedule and move elevator -&amp;gt; unload what do we need to model? something visible elevators: elevator will perform actual actions to fulfill all requests/perform as a container or executor.</description>
+    </item>
+    
+    <item>
+      <title>unit test</title>
+      <link>http://www.example.com/posts/notes/unit-test/</link>
+      <pubDate>Wed, 27 Jun 2018 19:05:25 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/unit-test/</guid>
+      <description>all kinds of tests unit test: 测试基本模块 integration test (black box): 把不同模块串在一起 regression test: 以前版本对整体输出有什么影响 A/B test: 是一种实验, 看哪一种更好 stress test/load test/latency test: 百万级响应 smoke test: 是不是 work, 非常简单的 test. annotations @Before: 每一次执行@Test 之 前 都执行 @Before @After : 每一次执行@Test 之 后 都执行 @Before @BeforeClass: 全部 methods 之 前 执行 @BeforeClass @AfterClass: 全部 methods 之 后 执行 @AfterClass methods with @BeforeClass and @AfterClass must be static</description>
+    </item>
+    
+    <item>
+      <title>system design</title>
+      <link>http://www.example.com/posts/notes/system-design/</link>
+      <pubDate>Mon, 25 Jun 2018 19:00:35 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/system-design/</guid>
+      <description>HDFS commodity hardware / 性能差, 容易坏
+metadata in namenode/master node
+content in datanode/slave node</description>
+    </item>
+    
+    <item>
+      <title>concurrency</title>
+      <link>http://www.example.com/posts/notes/concurrency/</link>
+      <pubDate>Mon, 18 Jun 2018 19:01:07 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/concurrency/</guid>
+      <description>concepts and constructs concurrency multiple tasks run simultaneously. This is a semantic concept, the &amp;ldquo;time&amp;rdquo; here is an abstract concept. You cannot tell who is first and who is second.
+parallel multiple tasks physically run simutaneously. Implementation level concept.
+Do we need to take care of concurrency on a single core machine?
+yes, concurrency is in the program; (parallelism is in actual execution, no-existence(parallel) in single core).
+multiprocess vs multi-thread process an independent execution of instructions with independent memory space, stack, heap and os resource</description>
+    </item>
+    
+    <item>
+      <title>garbage collection, JVM</title>
+      <link>http://www.example.com/posts/notes/garbage-collection/</link>
+      <pubDate>Sat, 16 Jun 2018 18:03:47 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/garbage-collection/</guid>
+      <description>difference between java &amp;amp; c++ c++: written once, compile everywhere. the source code need to be compiled directly to machine instructions.
+java: written once, compile once, run everywhere. with JRE installed, the code can run on that machine.
+jre: java runtime environment is the jvm program
+jdk: contains tools for developing. like: javac
+java can only do single inheritance.
+JVM jvm is an abstract virtual machine. the JVM is a program that looks like a machine to the programs.</description>
+    </item>
+    
+    <item>
+      <title>probability, sampling, randomization</title>
+      <link>http://www.example.com/posts/notes/probability-sampling-randomization/</link>
+      <pubDate>Sun, 10 Jun 2018 18:24:23 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/probability-sampling-randomization/</guid>
+      <description> random number generator random(): return random float/double number in [0, 1)
+random(int x): return random int number in [0, x)
+random shuffle sampling reservoir sampling given a stream and find a median </description>
+    </item>
+    
+    <item>
+      <title>nested class, iterators, generics, enum</title>
+      <link>http://www.example.com/posts/notes/nested-class-iterators-generics-enum/</link>
+      <pubDate>Fri, 08 Jun 2018 19:05:50 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/nested-class-iterators-generics-enum/</guid>
+      <description>nested class a class within another class
+it is a way of logically grouping classes that are only used in one place: if a class is useful to only one other class, then it is logical to embed it in that class and keep the two together. Nesting such &amp;ldquo;helper classes&amp;rdquo; makes their package more streamlined. it increases encapsulation it can lead to more readable and maintainable code. difference between non-static nested class and static nested class.</description>
+    </item>
+    
+    <item>
+      <title>dynamic programming</title>
+      <link>http://www.example.com/posts/notes/dynamic-programming/</link>
+      <pubDate>Sat, 02 Jun 2018 18:02:09 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/dynamic-programming/</guid>
+      <description>引子 Fibonacci number
+recursion 解法
+public int finN(int n) { if (n==0||n==1) { return n; } return fibN(n-1) + fibN(n-2); } Time O(2^n)
+space O(n)
+有没有好一点的解法? recursion+memorization
+public int fibN(int n) { if (n==0||n==1) { return n; } if (n is already in the HashMap) { return hashMap.get(n); } int a = fibN(n-1); int b = fibN(n-2); insert a and b into hashMap return fibN(n-1) + fibN(n-2); } Time O(n)</description>
+    </item>
+    
+    <item>
+      <title>interface abstract class access modifier exceptions</title>
+      <link>http://www.example.com/posts/notes/interface-abstract-class-access-modifier-exceptions/</link>
+      <pubDate>Sat, 02 Jun 2018 09:55:17 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/interface-abstract-class-access-modifier-exceptions/</guid>
+      <description>inheritance a class that is derived from another class is called a subclass. the class from which the subclass is derived is called a superclass.
+annotation 编译器会 check. 避免自己/别人犯错误
+override vs overload override is when you redefine a method that has been defined in parent class (using the same signature). resolved at runtime.
+overload is when you define two methods with the same name, in the same class, distinguished by their signatures(different), resolved at compile time.</description>
+    </item>
+    
+    <item>
+      <title>counting sort, bucket sort</title>
+      <link>http://www.example.com/posts/notes/counting-sort/</link>
+      <pubDate>Wed, 30 May 2018 20:37:09 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/counting-sort/</guid>
+      <description>counting sort counting sort is a sorting technique based on keys between a specific range.
+take a count array to store the count of each unique object input data: 1, 4, 1, 2, 7, 5, 2 index: 0 1 2 3 4 5 6 7 8 9 count: 0 2 2 0 1 1 0 1 0 0 iterate the count array and put the numbers in the right positions.</description>
+    </item>
+    
+    <item>
+      <title>implement parking lot</title>
+      <link>http://www.example.com/posts/notes/implement-parking-lot/</link>
+      <pubDate>Wed, 30 May 2018 17:42:34 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/implement-parking-lot/</guid>
+      <description>Assumptions: multiple levels check vehicle size APIs: boolean hasSpot(Vehicle v); boolean park(Vehicle v); boolean leave(Vehicle v); classes ParkingLot, Level, Vehicle, ParkingSpot, Car, Truck
+implement public enum VehicleSize { Compact(1), Large(2); private final int size; VehicleSize(int size) { this.size = size; } public int getSize() { return size; } } public abstract class Vehicle { public abstract VehicleSize getSize(); } public class Car extends Vehicle { @Override public Vehicle getSize() { return VehicleSize.</description>
+    </item>
+    
+    <item>
+      <title>bit operations</title>
+      <link>http://www.example.com/posts/notes/bit-operations/</link>
+      <pubDate>Sat, 26 May 2018 18:02:48 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/bit-operations/</guid>
+      <description>significant bits 5 : (most significant bit) 0000 0000 0000 0000 0000 0000 0000 0101 (least significant bit)
+常见表示 0x 十六进制 0b 二进制 0 八进制
+负数表示 two complement(补码) 口诀: 变反加一
+bit operations &amp;amp; AND bitwise and(for each bit) difference from &amp;amp;&amp;amp;: has no short-circuit evaluation | OR bitwise and(for each bit) difference from &amp;amp;&amp;amp;: has no short-circuit evaluation ~ NOT (telter) ^ XOR 00-&amp;gt;0 11-&amp;gt;0 10-&amp;gt;1 01-&amp;gt;1 &amp;laquo; left shift (arthmetic) 右侧补充零, (符号位可能被冲掉)</description>
+    </item>
+    
+    <item>
+      <title>bit rep autoboxing unboxing cache pool</title>
+      <link>http://www.example.com/posts/notes/bit-representations-integers-and-strings/</link>
+      <pubDate>Fri, 25 May 2018 19:06:04 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/bit-representations-integers-and-strings/</guid>
+      <description>Bit representations for integers how are integers represented in bits in java most significant bit(the leftmost bit): the sign bit, determines whether number is positive(0) or negative(1). (negative number representation)补码(complements) 2次: 取反 + 加一 : 正负数加在一起得到零(但是都用二进制表示). &amp;gt;&amp;gt;&amp;gt; vs. &amp;gt;&amp;gt; &amp;gt;&amp;gt; arithmetical shift, (看符号为进行补充)(负数的时候右移的话补一, 正数右移的话补0) &amp;gt;&amp;gt;&amp;gt; logic shift, (负数的时候右移的话补0, 正数右移的话补0) autoboxing and unboxing int vs. Integer Integer has null. Integer is object Integer, String (all wrapper class objects) are immutable. Generic type cannot be primtive type.</description>
+    </item>
+    
+    <item>
+      <title>implement heaps</title>
+      <link>http://www.example.com/posts/notes/implement-heaps/</link>
+      <pubDate>Fri, 25 May 2018 18:53:51 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/implement-heaps/</guid>
+      <description>basic operations percolateUp() and percolateDown()
+implementations class MinHeap { private int[] array; private int size; public MinHeap(int[] array) { if (array==null||array.length==0) { throw new IlleagalArgumentException(&amp;#34;input array cannot be null or empty&amp;#34;); } this.array = array; size = array.length; heapify(); } private void heapify() { for (int i=size/2-1; i&amp;gt;=0; i--) { percolateDown(i); } } public MinHeap(int cap) { if (cap&amp;lt;=0) { throw new IllegealArgumentException(&amp;#34;capacity cannot be &amp;lt;=0&amp;#34;); } array = new int[cap]; size = 0; } public int size() { return size; } public boolean isEmpty() { return size==0; } public boolean isFull() { return size==array.</description>
+    </item>
+    
+    <item>
+      <title>OOD</title>
+      <link>http://www.example.com/posts/notes/ood/</link>
+      <pubDate>Wed, 23 May 2018 19:00:59 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/ood/</guid>
+      <description>use case -&amp;gt; data&amp;amp;api(functionality) -&amp;gt; class ......
+Object Oriented Programming, basic steps in OOD Design patterns More advanced examples Why leaning OOD practical problems -&amp;gt; model -&amp;gt; code better understanding of OOP How to write good code what is good code? complete functionality easy to use by others clear, elegant, easy to understand, no ambiguity prevent users from making mistakes easy to evolve motivation of Object Oriented Programming modular, reusable</description>
+    </item>
+    
+    <item>
+      <title>String</title>
+      <link>http://www.example.com/posts/notes/string/</link>
+      <pubDate>Wed, 16 May 2018 20:13:23 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/string/</guid>
+      <description>string is an array of characters
+ASCII: representation of a letter Unicode: the latest version of Unicode contains a repertoire of more than 110,000 characters covering 100 scripts and various symbols. 常考题 char removal remove some particular chars from a string remove all leading/trailing/duplicated empty spaces from a string. de-duplication replace empty space &amp;quot; &amp;quot; with &amp;ldquo;20%&amp;rdquo; reversal(swap) char removal Q1: in place remove particular chars from a string 尽量避免调用 deleteCharAt(i) 和 subString(start, end), 因为他们都是 O(n) 的.</description>
+    </item>
+    
+    <item>
+      <title>hashtable</title>
+      <link>http://www.example.com/posts/notes/hashtable/</link>
+      <pubDate>Wed, 16 May 2018 19:03:24 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/hashtable/</guid>
+      <description>&amp;lt;key, value&amp;gt; pairs, not allow duplicate keys hash table is a general data structure - HashMap, HashSet are its implementation classes in Java Algorithm Average worst case Space O(n) O(n) Search O(1) O(n) Insert O(1) O(n) Delete O(1) O(n) Collision using Seperate Chaining with LinkedList, Open addressing/linear probing --map / hashtable - - - set \ -- hash set a collection that cannot contain duplicate elements.
+HashSet which stores its element in a hashtable, is the best performing implementation; it has no guarantees concerning the order</description>
+    </item>
+    
+    <item>
+      <title>graph search algorithm DFS</title>
+      <link>http://www.example.com/posts/notes/graph-search-algorithm-dfs/</link>
+      <pubDate>Sat, 12 May 2018 19:03:28 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/graph-search-algorithm-dfs/</guid>
+      <description>graph search BFS, 系统思考方法 initial state expansion/generation rule termination condition recursion vs DFS recursion 是一个 implementation
+DFS 是一个 general search algorithm, can implement in recursive or iterative way
+backtracking vs DFS backtracking describes the behavior of DFS (backtracking 是 DFS 的一个小名)
+用 dfs 干什么用的 枚举 (组合, 排列) DFS 基本方法 几层(1.)几岔(2.)
+what does it store on each level (每层代表什么物理意义? 一般来讲解题之前就知道 DFS recurse 多少层) how many different states should we try to put on this level (每层有多少状态/case 需要 try) 一般来讲, 只要能够把这棵树或者图在脑海画出来, 基本上题目就解出来了.</description>
+    </item>
+    
+    <item>
+      <title>implementation stack queue and deque</title>
+      <link>http://www.example.com/posts/notes/lai-implementation-stack-queue-and-deque/</link>
+      <pubDate>Sat, 05 May 2018 20:05:18 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-implementation-stack-queue-and-deque/</guid>
+      <description>Stack, Queue and Deque are not premier data structures meaning their implementations depend on other data structure.
+appropriate candidates are sequence type.
+use linkedlist to implement stack class ListNode { int value; ListNode next; //ListNode prev; public ListNode(int value) { this.value = value; } } implement stack idea: head + head - class MyStack { private ListNode head; private size; public void push(int value) { ListNode node = new ListNode(value); node.</description>
+    </item>
+    
+    <item>
+      <title>linkedlist vs arraylist</title>
+      <link>http://www.example.com/posts/notes/linkedlist/</link>
+      <pubDate>Sun, 29 Apr 2018 19:05:41 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/linkedlist/</guid>
+      <description>array: 连续存放. 具体是在 virtual memeory 里.
+linked list: 链表. 自己的数据和下一个元素在哪
+doublely linked list: 双向链表.
+NPE = dereference null
+写 linked list 的时候, 要注意 while 里面的 statement, 想好最后 pointer 要停在哪.
+单链表的题必须随时持有对 head 的控制.
+linkedlist 需要注意一下两点 when you want to dereference a listnode, make sure it is not a null pointer never ever lose the control of the head pointer of the linkedlist. array vs. linked list comparison memory layout array: consecutive allocated memory space overhead linked list: non-consecutive, overhead of multiple objects with the &amp;ldquo;next&amp;rdquo; reference random access time - get ith element array: O(1) linked list: O(n) search time non-sorted array: O(n) linked list: O(n) sorted array: O(logn) linked list: O(n) reason: random access time is different for array and list LinkedList in Java java 中 linkedlist 是双链表.</description>
+    </item>
+    
+    <item>
+      <title>queue and stack</title>
+      <link>http://www.example.com/posts/notes/queue-and-stack/</link>
+      <pubDate>Sat, 28 Apr 2018 19:13:24 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/queue-and-stack/</guid>
+      <description>Deque (Double Ended QUEue) Deque can be both FIFO &amp;amp; LIFO.
+deque 可以 mix stack/queue 换着用.(超级方便)
+queue implements queue vs list: there is no random access common APIs queue type of operations throw exception return special value (null) insert add(e) offer(e) remove remove() poll() examine element() peek() use the same set of APIs
+deque deque has push() pop() methods, it operates on first.
+all the operations cost is O(1)</description>
+    </item>
+    
+    <item>
+      <title>array</title>
+      <link>http://www.example.com/posts/notes/lai-array/</link>
+      <pubDate>Wed, 25 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-array/</guid>
+      <description>Array vs Objects arrays are objects
+length is a field of array object
+Arrays, Collections 都是工具类
+random access 由于 array 连续排列存储, 所以访问时间是 O(1).
+= 永远是赋值
+exceptions/errors ArrayIndexOutOfBoundException NullPointerException NPE 是最常见的 error
+immutable 处理并发非常好用 - effective java</description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>http://www.example.com/posts/notes/lai-graph/</link>
+      <pubDate>Sat, 14 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-graph/</guid>
+      <description>graph 可以有独立的item, 不一定都是连通的. 给 graph 的时候需要给List&amp;lt;GraphNode&amp;gt; graph.
+链表, tree 用 nodes 的个数来表征时间复杂度
+graph 用一般两个参数来表征 V and E
+V : vertex E: numbers of Edges
+if allow self-edges:
+direct graph E 最多可有 V^2 个. 起点有 V 个选择, 终点有 V 个选择
+E 最小可以是0
+non direct graph E 最多可以有 C_v^2 + V = V(V+1)/2
+E 最小还是0
+0 &amp;lt;&amp;ndash; O(E) &amp;ndash;&amp;gt; O(V^2)
+comparison for linkedlist and tree, O(E) == O(V)
+Sparse graph is one where |E| = O(|V|)</description>
+    </item>
+    
+    <item>
+      <title>binary search</title>
+      <link>http://www.example.com/posts/notes/lai-binary-search/</link>
+      <pubDate>Fri, 13 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-binary-search/</guid>
+      <description>by using binary search, array has to be sorted.
+principles we must guarantee that the search space (that possibly contains the target to find) decrease over time(after each iteration) we must guarantee that the target (if exists) cannot be ruled out accidentally 面试官的 what if 面试官会问如果 while 里面的 statement 改动一下对不对?
+用一个元素的 array debug.
+关于 while 循环的条件和死循环 while 循环的条件如果写错了, 那么有可能 while 循环进不来
+如果 left right 和 mid 的关系写错了, 那么可能出不去(死循环)
+classic binary search while(left &amp;lt;= right) right = mid -1 left = mid + 1 target 4 index 0 1 2 3 4 5 6 A[7] 1 2 4 5 7 8 9 left l mid m R1 right r left l mid m R2 right r left l mid m R3 right r target is not in array, but in range of [min, max] while(left &amp;lt;= right) right = mid -1 left = mid + 1 这样的 while 循环, r 最后一定在 l 左边一个.</description>
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>http://www.example.com/posts/notes/lai-heap/</link>
+      <pubDate>Fri, 13 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-heap/</guid>
+      <description>heap 也被称为 priority queue. 我们可以指定什么是 priority
+用途: 维护一个变化的数据集的最小值(或者最优值)
+heap vs. stack &amp;mdash; data structure opeating system stack LIFO Call Stack Heap Priority Queue Dynamic memory allocation min heap the parent node is always &amp;lt;= its two child nodes the relation between the two child nodes can differ the common implementing a heap is using a complete binary tree. implementing heaps can be represented as an array.
+left child of index = 2*i+1 ( 完全树的性质 ) right child of index = 2*i+2 ( 完全树的性质 ) parent of index = (i-1)/2 ( 完全树的性质 ) root index is 0.</description>
+    </item>
+    
+    <item>
+      <title>merge sort</title>
+      <link>http://www.example.com/posts/notes/lai-merge-sort/</link>
+      <pubDate>Fri, 13 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-merge-sort/</guid>
+      <description>description Given an array of integers, sort the elements in the array in ascending order. The merge sort algorithm should be used to solve this problem.
+analysis time 3 5 2 | 7 9 0 1 / \ 3 5 | 2 7 9 | 0 2 / \ / \ 3 | 5 2 7 | 9 0 4 / \ / \ divide 3 5 7 9 n/2 ^ | 1+2+4+8+.</description>
+    </item>
+    
+    <item>
+      <title>quick sort</title>
+      <link>http://www.example.com/posts/notes/lai-quick-sort/</link>
+      <pubDate>Fri, 13 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-quick-sort/</guid>
+      <description>description Given an array of integers, sort the elements in the array in ascending order. The quick sort algorithm should be used to solve this problem.
+analysis 挡板思想: [0, left) 比 pivot 小 (right, n-1] 比 pivot 大 array[i]&amp;lt;array[pivot] ? array[j]&amp;gt;= array[pivot] ? array[i] &amp;gt;= array[pivot] &amp;amp;&amp;amp; ? array[j] &amp;lt; array[pivot] inital 1 9 8 3 5 ^ pivot before 1 9 8 3 5 step ^ 1 i--&amp;gt; &amp;lt;--j after 1 9 8 3 5 step ^ 1 i--&amp;gt; &amp;lt;--j before 1 9 8 3 5 step ^ 2 i--&amp;gt; &amp;lt;--j after 1 3 8 9 5 step ^ 2 i--&amp;gt; &amp;lt;--j before 1 3 8 9 5 step ^ 3 i--&amp;gt; &amp;lt;--j after 1 3 8 9 5 step ^ 3 i--&amp;gt; &amp;lt;--j swap 1 3 5 9 8 i--&amp;gt; &amp;lt;--j ^ | pivot in right place at last, j will out of bound, but it doesn&amp;rsquo;t matter, because we just curious about i.</description>
+    </item>
+    
+    <item>
+      <title>recursion</title>
+      <link>http://www.example.com/posts/notes/lai-recursion/</link>
+      <pubDate>Fri, 13 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-recursion/</guid>
+      <description>recursion的表象 function 自己 call 自己
+recursion 的实质 break down a big problem into small problems. (size n depends one size n-1, or n-2 or &amp;hellip; n/2)
+recursion implementation/三部曲 define subproblem find recursion rule define base case time &amp;amp; space complexity time complexity: 一般数所有 nodes 的总和, 那么前面所有的的 nodes 的总和都没有最后一层 node 的个数多, 因此我们分析 tree 的 O, 往往只看最后一层 node 的个数. recursion 与 1D or 2D array 的结合 1D array: 二分法比较常见 mergesort quicksort 2D array 逐层(row by row) 递归: 8 queen with obsticles spiral print linkedlist 和 recursion string 和 recursion tree 和 recursion how many nodes in each node&amp;rsquo;s left subtree find the node with the max difference in the total number of descendents in its left subtree and right subtree LCA/LCA of k nodes/LCA in a k-ary tree discussion: if LCA(root, a, b) return c: then we know: a.</description>
+    </item>
+    
+    <item>
+      <title>tree</title>
+      <link>http://www.example.com/posts/notes/lai-tree/</link>
+      <pubDate>Thu, 12 Apr 2018 20:50:52 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/lai-tree/</guid>
+      <description>recursion related to binary tree recursion:
+subproblem(左子树, 右子树) recursion rule base case(leaf 下一层, 写起来简单, 经常情况) 要点:
+向孩子们要什么值? 本层做什么 返回什么? 第一点和第三点一定是相同的.
+recursion 在 tree 上的题目基本应用大致分为两类 value 从上往下 传递的题目 pre order, pre order helper 很常常返回值是 void
+这种题目通常先从上往下then从下往上 eg:BST 判定 value 从下往上 传递的题目 post order(更为常见), post order helper 有返回值, 因为 post order 是当前 node 在管 children 要值.
+recursion 应用之对应 sort 的方法 经典 recursion 是 post order, somehow 可以转化成 while loop 的题目一般是 pre order.</description>
+    </item>
+    
+  </channel>
+</rss>

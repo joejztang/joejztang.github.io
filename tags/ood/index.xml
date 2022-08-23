@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OOD on 130L</title>
+    <link>http://www.example.com/tags/ood/</link>
+    <description>Recent content in OOD on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 30 May 2018 17:42:34 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/ood/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>implement parking lot</title>
+      <link>http://www.example.com/posts/notes/implement-parking-lot/</link>
+      <pubDate>Wed, 30 May 2018 17:42:34 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/implement-parking-lot/</guid>
+      <description>Assumptions: multiple levels check vehicle size APIs: boolean hasSpot(Vehicle v); boolean park(Vehicle v); boolean leave(Vehicle v); classes ParkingLot, Level, Vehicle, ParkingSpot, Car, Truck
+implement public enum VehicleSize { Compact(1), Large(2); private final int size; VehicleSize(int size) { this.size = size; } public int getSize() { return size; } } public abstract class Vehicle { public abstract VehicleSize getSize(); } public class Car extends Vehicle { @Override public Vehicle getSize() { return VehicleSize.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cheating sheet on 130L</title>
+    <link>http://www.example.com/tags/cheating-sheet/</link>
+    <description>Recent content in cheating sheet on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Feb 2020 15:31:09 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/cheating-sheet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>graph 概念及总结</title>
+      <link>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sun, 02 Feb 2020 15:31:09 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</guid>
+      <description>概念 vertex 点; edge 线
+v1 -&amp;gt; v2, v3, &amp;hellip; (被 vertex 指到的 v), 这里指的是 v2, v3, 被称为 v1 的 successors.
+v1 -&amp;gt; v2, v3, &amp;hellip; ( 指向 v2, v3 的 v), 这里指的是 v1, 被称为 v2, v3 的 predecessors.
+out degree: 从 vertex 指出去的箭头个数
+in degree: 从别的 v 指向当前 v 的箭头个数
+degree: 与 v 的连线总数
+degree 在解题上有很大的用处. 比如: 如果图和树结合的题目, 当 out degree 为0 时,我们就能认定他是 leaf.
+degree 为 0 的 vertex 叫做 isolated vertex.</description>
+    </item>
+    
+  </channel>
+</rss>

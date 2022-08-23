@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on 130L</title>
+    <link>http://www.example.com/categories/math/</link>
+    <description>Recent content in Math on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Apr 2018 15:15:29 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>quickly calculate determinant of matrix</title>
+      <link>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</link>
+      <pubDate>Mon, 16 Apr 2018 15:15:29 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</guid>
+      <description>2x2 Matrix Let&amp;rsquo;s review how to calculate determinant of a 2x2 matrix. For example, given below matrix:
+\[ det(A) = a11a12-a12a21 \]
+from the image, we can conclude that it equals to GREEN arrow minus RED arrow.
+3x3 Matrix Let&amp;rsquo;s move to 3x3 matrix, given below matrix:
+\[ det(A) = a11a22a33 + a12a23a31 + a13a21a32 - a12a21a33 - a11a23a32 - a13a22a31 \]
+again, from the image, we can conclude that it equals to GREEN arrow minus RED arrow, except that in this time, we write the first column and second column one more time.</description>
+    </item>
+    
+  </channel>
+</rss>

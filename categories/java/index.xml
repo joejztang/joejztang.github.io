@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 130L</title>
+    <link>http://www.example.com/categories/java/</link>
+    <description>Recent content in Java on 130L</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Jun 2018 19:56:34 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>java io</title>
+      <link>http://www.example.com/posts/notes/java-io/</link>
+      <pubDate>Mon, 11 Jun 2018 19:56:34 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/notes/java-io/</guid>
+      <description>stream can be defined as a sequence of data.
+Byte Streams FileInputStream FileOutputStream used for 8-bit characters.
+character streams FileReader FileWriter used for 16-bit unicode.
+standard Streams InputStreamReader(System.in) System.out.print() code ... FileInputStream in = null; FileOutputStream out = null; // FileReader in = null; // FileWriter out = null; try { in = new FileInputStream(&amp;#34;/Users/Shared/wordspace/testdata/input.txt&amp;#34;); out = new FileOutputStream(&amp;#34;/Users/Shared/worksapce/testdata/output.txt&amp;#34;); int c; // BufferReader br = new BufferReader(new InputStreamReader(in)); while ((c = in.</description>
+    </item>
+    
+  </channel>
+</rss>
