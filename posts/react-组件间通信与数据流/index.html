@@ -1,0 +1,63 @@
+<!doctype html><html lang=en><head><title>react 组件间通信与数据流 · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  数据流向
+  
+    
+    Link to heading
+  
+
+
+React是单向数据流，从父节点传递到子节点（通过props）。如果顶层的某个props改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式
+数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?
+答案是: callback function
+
+  组件沟通
+  
+    
+    Link to heading
+  
+
+最常见的是先 父组件更新状态然后子组件更新状态. 通过 **props** 传递给子组件来实现
+还有一种情况就是 子组件更新状态然后父组件更新状态. 这种情况通过父组件 传递 callback 给子组件, 子组件触发即可.
+还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.
+
+  全局事件
+  
+    
+    Link to heading
+  
+
+全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说."><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="react 组件间通信与数据流"><meta name=twitter:description content="数据流向 Link to heading React是单向数据流，从父节点传递到子节点（通过props）。如果顶层的某个props改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式
+数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?
+答案是: callback function
+组件沟通 Link to heading 最常见的是先 父组件更新状态然后子组件更新状态. 通过 **props** 传递给子组件来实现
+还有一种情况就是 子组件更新状态然后父组件更新状态. 这种情况通过父组件 传递 callback 给子组件, 子组件触发即可.
+还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.
+全局事件 Link to heading 全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说."><meta property="og:url" content="http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/"><meta property="og:site_name" content="130l"><meta property="og:title" content="react 组件间通信与数据流"><meta property="og:description" content="数据流向 Link to heading React是单向数据流，从父节点传递到子节点（通过props）。如果顶层的某个props改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式
+数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?
+答案是: callback function
+组件沟通 Link to heading 最常见的是先 父组件更新状态然后子组件更新状态. 通过 **props** 传递给子组件来实现
+还有一种情况就是 子组件更新状态然后父组件更新状态. 这种情况通过父组件 传递 callback 给子组件, 子组件触发即可.
+还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.
+全局事件 Link to heading 全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-08-28T14:32:41+00:00"><meta property="article:modified_time" content="2018-08-28T14:32:41+00:00"><meta property="article:tag" content="React"><link rel=canonical href=http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/>react 组件间通信与数据流</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-08-28T14:32:41Z>August 28, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+One-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/javascript/>Javascript</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/react/>React</a></span></div></div></header><div class=post-content><h1 id=数据流向>数据流向
+<a class=heading-link href=#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><blockquote><p>React是单向数据流，从父节点传递到子节点（通过<code>props</code>）。如果顶层的某个<code>props</code>改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式</p></blockquote><p>数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?</p><p>答案是: <strong>callback function</strong></p><h1 id=组件沟通>组件沟通
+<a class=heading-link href=#%e7%bb%84%e4%bb%b6%e6%b2%9f%e9%80%9a><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>最常见的是先 <strong>父组件更新状态然后子组件更新状态</strong>. 通过 <code>**props**</code> 传递给子组件来实现</p><p>还有一种情况就是 <strong>子组件更新状态然后父组件更新状态</strong>. 这种情况通过父组件 <strong>传递 callback 给子组件</strong>, 子组件触发即可.</p><p>还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.</p><h1 id=全局事件>全局事件
+<a class=heading-link href=#%e5%85%a8%e5%b1%80%e4%ba%8b%e4%bb%b6><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.</p><h1 id=flux>Flux
+<a class=heading-link href=#flux><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><blockquote><p>Flux 的核心思想就是 <strong>数据和逻辑永远单向流动</strong></p></blockquote><p><img src=/images/flux.png alt=flux></p><p>react-redux 就是 flux 模式的一个实现. 我另外开辟帖子来说.</p><h1 id=credit-to>credit to
+<a class=heading-link href=#credit-to><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><a href=https://segmentfault.com/a/1190000006831820 class=external-link target=_blank rel=noopener>React 组件数据流 && 组件间沟通</a></li><li><a href=https://www.jianshu.com/p/79f414053384 class=external-link target=_blank rel=noopener>Flux架构模式</a></li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

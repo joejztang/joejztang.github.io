@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Database on 130l</title><link>http://www.example.com/categories/database/</link><description>Recent content in Database on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 29 May 2018 11:45:17 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/database/index.xml" rel="self" type="application/rss+xml"/><item><title>database normalization</title><link>http://www.example.com/posts/database-normalization/</link><pubDate>Tue, 29 May 2018 11:45:17 +0000</pubDate><guid>http://www.example.com/posts/database-normalization/</guid><description>&lt;p&gt;最近看见了 database normalization. 之前老师上课没好好讲, 现在看见了就自己再总结一下.&lt;/p&gt;
+&lt;p&gt;Edgar F. Codd 有三个 definations, 甚至更多???&lt;/p&gt;
+&lt;h1 id="znf---zero-normalized-from"&gt;
+ ZNF - zero normalized from
+ &lt;a class="heading-link" href="#znf---zero-normalized-from"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;A non-normalized table structure is considered to be zero normal form (ZNF)&lt;/p&gt;
+&lt;h1 id="1nf---first-normalized-form"&gt;
+ 1NF - first normalized form
+ &lt;a class="heading-link" href="#1nf---first-normalized-form"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Atomicity&lt;/em&gt;: cannot be decomposed into smaller pieces by the DBMS (excluding certain special functions)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;no repeating groups&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Identify each set of related data with &lt;strong&gt;a primary key&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Create a separate table for each set of related data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;compound/multiple primary keys doesn&amp;rsquo;t voilate 1NF&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Unittest on 130l</title><link>http://www.example.com/tags/unittest/</link><description>Recent content in Unittest on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2019 13:04:56 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/unittest/index.xml" rel="self" type="application/rss+xml"/><item><title>attemped-relative-import-with-no-parent-package</title><link>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</link><pubDate>Fri, 14 Jun 2019 13:04:56 +0000</pubDate><guid>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</guid><description>&lt;p&gt;I created a project using python and happily finished implementing functions with following structure.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;- project
+ |
+ - pipelines
+ | |
+ | - functions.py
+ |
+ - tests
+ |
+ - unittest.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I created unittest/integration test and then I saw this exception&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Traceback &lt;span style="color:#ff7b72;font-weight:bold"&gt;(&lt;/span&gt;most recent call last&lt;span style="color:#ff7b72;font-weight:bold"&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &lt;span style="color:#a5d6ff"&gt;&amp;#34;/home/xxxx/anaconda3/lib/python3.7/unittest/loader.py&amp;#34;&lt;/span&gt;, line 154, in loadTestsFromName
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79c0ff"&gt;module&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; __import__&lt;span style="color:#ff7b72;font-weight:bold"&gt;(&lt;/span&gt;module_name&lt;span style="color:#ff7b72;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &lt;span style="color:#a5d6ff"&gt;&amp;#34;/home/xxxx/datascience.my-project/test/test-unittest.py&amp;#34;&lt;/span&gt;, line 1, in &amp;lt;module&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; from .my_great_script import queryer
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ImportError: attempted relative import with no known parent package
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i was so frustrated.&lt;/p&gt;</description></item><item><title>python-unittest-mock</title><link>http://www.example.com/posts/python-unittest-mock/</link><pubDate>Thu, 06 Jun 2019 15:42:00 +0000</pubDate><guid>http://www.example.com/posts/python-unittest-mock/</guid><description>&lt;p&gt;recently, i started to write unittest for python applications. because what i did is data pipeline, i will use a lot of mocking and patching. this post is for recording purposes.&lt;/p&gt;
+&lt;p&gt;unittest framework is MUCH MORE POWERFUL than I expected. so let me talked about a little bit about &lt;code&gt;unittest&lt;/code&gt; framework itself first.&lt;/p&gt;
+&lt;h2 id="mock"&gt;
+ &lt;code&gt;Mock&lt;/code&gt;
+ &lt;a class="heading-link" href="#mock"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;this is one powerful object that unittest provides. basically, one can use &lt;code&gt;mock = Mock()&lt;/code&gt; to &amp;lsquo;fake&amp;rsquo; any object that you want to replace.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>http://www.example.com/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>http://www.example.com/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
+ what is mock?
+ &lt;a class="heading-link" href="#what-is-mock"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;as it implies, it is a object that pretend it being something else.&lt;/p&gt;
+&lt;h2 id="why-we-want-to-mock"&gt;
+ why we want to mock?
+ &lt;a class="heading-link" href="#why-we-want-to-mock"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Assume that we want to test a function. Let&amp;rsquo;s call it &lt;code&gt;count_all_after_connection(connection)&lt;/code&gt;. It consumed a parameter called &lt;code&gt;connection&lt;/code&gt;, and this connection is not available so far(possibly because of not having access yet).&lt;/p&gt;
+&lt;p&gt;But you still want to test it, but how?&lt;/p&gt;</description></item></channel></rss>

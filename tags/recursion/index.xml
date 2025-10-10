@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recursion on 130l</title><link>http://www.example.com/tags/recursion/</link><description>Recent content in Recursion on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 27 Aug 2019 14:05:21 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/recursion/index.xml" rel="self" type="application/rss+xml"/><item><title>common table expression (CTE) and the recursion</title><link>http://www.example.com/posts/common-table-expression-cte-and-the-recursion/</link><pubDate>Tue, 27 Aug 2019 14:05:21 +0000</pubDate><guid>http://www.example.com/posts/common-table-expression-cte-and-the-recursion/</guid><description>&lt;h2 id="introduction-to-cte"&gt;
+ introduction to CTE
+ &lt;a class="heading-link" href="#introduction-to-cte"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A CTE (Common Table Expression) is temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;to give you a visual example&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;WITH&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;CTE&lt;span style="color:#6e7681"&gt; &lt;/span&gt;(param1,&lt;span style="color:#6e7681"&gt; &lt;/span&gt;param2)&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;AS&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;(&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#ff7b72"&gt;some&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;fancy&lt;span style="color:#6e7681"&gt; &lt;/span&gt;query&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;&lt;/span&gt;)&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;previous to this post, I always called it &amp;lsquo;with block&amp;rsquo;, right now I am calling it &lt;code&gt;common table expression&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id="cte-details"&gt;
+ CTE details
+ &lt;a class="heading-link" href="#cte-details"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;let&amp;rsquo;s see an example&lt;/p&gt;</description></item></channel></rss>

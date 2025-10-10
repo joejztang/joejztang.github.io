@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Php Tools on 130l</title><link>http://www.example.com/tags/php-tools/</link><description>Recent content in Php Tools on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 20 Apr 2017 21:53:35 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/php-tools/index.xml" rel="self" type="application/rss+xml"/><item><title>php composer stuff</title><link>http://www.example.com/posts/php-composer/</link><pubDate>Thu, 20 Apr 2017 21:53:35 +0000</pubDate><guid>http://www.example.com/posts/php-composer/</guid><description>&lt;p&gt;开宗明义, 这是个介绍帖. 如果懒得看这个介绍, 请移步&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://getcomposer.org/" class="external-link" target="_blank" rel="noopener"&gt;https://getcomposer.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今天写 php, 需要一个 lib, 本来打算就 &lt;code&gt;require_once&lt;/code&gt; 一下就得了, 结果发现 github repo 有一堆东西, 发现好像跟我想象的不是特别一样. 而且安装指南写了推荐 composer, 并且给出了有 composer 的时候的使用方法, 但是并没有给出非 composer 的使用方法&amp;hellip;&amp;hellip;这不是逼人用这个 composer 么&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;转到正体,&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这么一看, 有点像 npm 啊. 暂且咱就先理解他为 npm.&lt;/p&gt;
+&lt;p&gt;然后安装上也很贴心的分为 locally 和 globally 两种. 暂时只试了 locally 的方法.(其实也是个误打误撞)&lt;/p&gt;
+&lt;h3 id="locally-安装"&gt;
+ locally 安装
+ &lt;a class="heading-link" href="#locally-%e5%ae%89%e8%a3%85"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Run this in your terminal to get the latest Composer version:&lt;/p&gt;</description></item></channel></rss>

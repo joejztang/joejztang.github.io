@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 130l</title><link>http://www.example.com/categories/linux/</link><description>Recent content in Linux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 01 Apr 2019 10:32:39 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>common-unix-commands</title><link>http://www.example.com/posts/common-unix-commands/</link><pubDate>Mon, 01 Apr 2019 10:32:39 +0000</pubDate><guid>http://www.example.com/posts/common-unix-commands/</guid><description>&lt;ol&gt;
+&lt;li&gt;Archives (compress, extract and so on)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tar cvf archive_name.tar dirname/ &lt;span style="color:#8b949e;font-style:italic"&gt;# create a new tar archive named archive_name by packing all stuff from dirname&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tar xvf archive_name.tar &lt;span style="color:#8b949e;font-style:italic"&gt;# extracting from existing tar archive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tar tvf archive_name.tar &lt;span style="color:#8b949e;font-style:italic"&gt;# view an existing tar archive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;&lt;code&gt;grep&lt;/code&gt; command&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;grep -i &lt;span style="color:#a5d6ff"&gt;&amp;#34;the&amp;#34;&lt;/span&gt; demo_file &lt;span style="color:#8b949e;font-style:italic"&gt;# search for a given string in a file&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;grep -r &lt;span style="color:#a5d6ff"&gt;&amp;#34;ramesh&amp;#34;&lt;/span&gt; * &lt;span style="color:#8b949e;font-style:italic"&gt;# search for a given string in all files RECURSIVELY&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;&lt;code&gt;find&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;find -iname &lt;span style="color:#a5d6ff"&gt;&amp;#34;MyProgram.c&amp;#34;&lt;/span&gt; &lt;span style="color:#8b949e;font-style:italic"&gt;# find files using file-name(case in-sensitive)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;find -iname &lt;span style="color:#a5d6ff"&gt;&amp;#34;MyCProgram.c&amp;#34;&lt;/span&gt; -exec md5sum &lt;span style="color:#ff7b72;font-weight:bold"&gt;{}&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;&lt;code&gt;sed&lt;/code&gt; &amp;ndash; Stream editor&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;when copy a DOS file to Unix, one could probably find &lt;code&gt;\r\n&lt;/code&gt; at the end of each line. the following command converts the DOS file formate to Unix file format using sed command&lt;/p&gt;</description></item></channel></rss>

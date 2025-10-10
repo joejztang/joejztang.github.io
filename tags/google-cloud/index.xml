@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Google Cloud on 130l</title><link>http://www.example.com/tags/google-cloud/</link><description>Recent content in Google Cloud on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 16 Aug 2021 22:58:19 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/google-cloud/index.xml" rel="self" type="application/rss+xml"/><item><title>everything about google cloud</title><link>http://www.example.com/posts/everything-about-google-cloud/</link><pubDate>Mon, 16 Aug 2021 22:58:19 +0000</pubDate><guid>http://www.example.com/posts/everything-about-google-cloud/</guid><description>&lt;h2 id="google-cloud-storage"&gt;
+ google cloud storage
+ &lt;a class="heading-link" href="#google-cloud-storage"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;There are 4 types of storage:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;standard storage
+&lt;ul&gt;
+&lt;li&gt;frequently accessed, so called hot data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;nearline storage
+&lt;ul&gt;
+&lt;li&gt;read or modify on average ONCE per month or less&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;coldline storage
+&lt;ul&gt;
+&lt;li&gt;read or modify at most once per quater&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;archive storage
+&lt;ul&gt;
+&lt;li&gt;data archiving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="google-cloud-resource-hierarchy"&gt;
+ google cloud resource hierarchy
+ &lt;a class="heading-link" href="#google-cloud-resource-hierarchy"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;organization (think it as a folder representing org) -&amp;gt; folders (think it as a folder rep teams) -&amp;gt; projects -&amp;gt; resources.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deep Learning on 130l</title><link>http://www.example.com/categories/deep-learning/</link><description>Recent content in Deep Learning on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 02 Oct 2019 14:33:30 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/deep-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>deep learning image recognization abstract</title><link>http://www.example.com/posts/deep-learning-image-recog-bastract/</link><pubDate>Wed, 02 Oct 2019 14:33:30 +0000</pubDate><guid>http://www.example.com/posts/deep-learning-image-recog-bastract/</guid><description>&lt;p&gt;this post is mainly focus on image recognizaton.&lt;/p&gt;
+&lt;h2 id="traslation-invariance"&gt;
+ traslation invariance
+ &lt;a class="heading-link" href="#traslation-invariance"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;neural network will recognize traditional images for sure. but what if our target image is very small and at the left top corner?&lt;/p&gt;
+&lt;p&gt;in this case, neural network will not be so helpful.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;when a machine learning model can recognize an object no matter whether it is moved (or &lt;em&gt;translated&lt;/em&gt;) in the image.&lt;/p&gt;</description></item></channel></rss>

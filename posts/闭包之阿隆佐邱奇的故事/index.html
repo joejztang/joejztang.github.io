@@ -1,0 +1,176 @@
+<!doctype html><html lang=en><head><title>闭包之阿隆佐邱奇的故事 · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  写在前面
+  
+    
+    Link to heading
+  
+
+这是廖雪峰老师的博客出现的不计其数的例子, 原来看了没懂, 最近补上了一些基础知识, 试着再理解一下.
+廖老师的博客原文在这, 如果还不知道廖老师, 那么非常推荐你去看看.
+
+  阿隆佐邱奇的脑洞
+  
+    
+    Link to heading
+  
+
+很久很久以前，有个叫阿隆佐·邱奇的帅哥，发现只需要用函数，就可以用计算机实现运算，而不需要0、1、2、3这些数字和+、-、*、/这些符号。
+JavaScript支持函数，所以可以用JavaScript用函数来写这些计算。来试试：
+'use strict';
+
+// 定义数字0:
+var zero = function (f) {
+    return function (x) {
+        return x;
+    }
+};
+
+// 定义数字1:
+var one = function (f) {
+    return function (x) {
+        return f(x);
+    }
+};
+
+// 定义加法:
+function add(n, m) {
+    return function (f) {
+        return function (x) {
+            return m(f)(n(f)(x));
+        }
+    }
+}
+
+// 计算数字2 = 1 + 1:
+var two = add(one, one);
+
+// 计算数字3 = 1 + 2:
+var three = add(one, two);
+
+// 计算数字5 = 2 + 3:
+var five = add(two, three);
+
+// 你说它是3就是3，你说它是5就是5，你怎么证明？
+
+// 呵呵，看这里:
+
+// 给3传一个函数,会打印3次:
+(three(function () {
+    console.log('print 3 times');
+}))();
+
+// 给5传一个函数,会打印5次:
+(five(function () {
+    console.log('print 5 times');
+}))();
+
+// 继续接着玩一会...
+console 运行的结果还真是和预言的一样(让人头大)"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="闭包之阿隆佐邱奇的故事"><meta name=twitter:description content="写在前面 Link to heading 这是廖雪峰老师的博客出现的不计其数的例子, 原来看了没懂, 最近补上了一些基础知识, 试着再理解一下.
+廖老师的博客原文在这, 如果还不知道廖老师, 那么非常推荐你去看看.
+阿隆佐邱奇的脑洞 Link to heading 很久很久以前，有个叫阿隆佐·邱奇的帅哥，发现只需要用函数，就可以用计算机实现运算，而不需要0、1、2、3这些数字和+、-、*、/这些符号。
+JavaScript支持函数，所以可以用JavaScript用函数来写这些计算。来试试：
+'use strict'; // 定义数字0: var zero = function (f) { return function (x) { return x; } }; // 定义数字1: var one = function (f) { return function (x) { return f(x); } }; // 定义加法: function add(n, m) { return function (f) { return function (x) { return m(f)(n(f)(x)); } } } // 计算数字2 = 1 + 1: var two = add(one, one); // 计算数字3 = 1 + 2: var three = add(one, two); // 计算数字5 = 2 + 3: var five = add(two, three); // 你说它是3就是3，你说它是5就是5，你怎么证明？ // 呵呵，看这里: // 给3传一个函数,会打印3次: (three(function () { console.log('print 3 times'); }))(); // 给5传一个函数,会打印5次: (five(function () { console.log('print 5 times'); }))(); // 继续接着玩一会... console 运行的结果还真是和预言的一样(让人头大)"><meta property="og:url" content="http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/"><meta property="og:site_name" content="130l"><meta property="og:title" content="闭包之阿隆佐邱奇的故事"><meta property="og:description" content="写在前面 Link to heading 这是廖雪峰老师的博客出现的不计其数的例子, 原来看了没懂, 最近补上了一些基础知识, 试着再理解一下.
+廖老师的博客原文在这, 如果还不知道廖老师, 那么非常推荐你去看看.
+阿隆佐邱奇的脑洞 Link to heading 很久很久以前，有个叫阿隆佐·邱奇的帅哥，发现只需要用函数，就可以用计算机实现运算，而不需要0、1、2、3这些数字和+、-、*、/这些符号。
+JavaScript支持函数，所以可以用JavaScript用函数来写这些计算。来试试：
+'use strict'; // 定义数字0: var zero = function (f) { return function (x) { return x; } }; // 定义数字1: var one = function (f) { return function (x) { return f(x); } }; // 定义加法: function add(n, m) { return function (f) { return function (x) { return m(f)(n(f)(x)); } } } // 计算数字2 = 1 + 1: var two = add(one, one); // 计算数字3 = 1 + 2: var three = add(one, two); // 计算数字5 = 2 + 3: var five = add(two, three); // 你说它是3就是3，你说它是5就是5，你怎么证明？ // 呵呵，看这里: // 给3传一个函数,会打印3次: (three(function () { console.log('print 3 times'); }))(); // 给5传一个函数,会打印5次: (five(function () { console.log('print 5 times'); }))(); // 继续接着玩一会... console 运行的结果还真是和预言的一样(让人头大)"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-08-07T11:30:56+00:00"><meta property="article:modified_time" content="2018-08-07T11:30:56+00:00"><link rel=canonical href=http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/>闭包之阿隆佐邱奇的故事</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-08-07T11:30:56Z>August 7, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+2-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/data-structure/>Data Structure</a></div></div></header><div class=post-content><h1 id=写在前面>写在前面
+<a class=heading-link href=#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>这是廖雪峰老师的博客出现的不计其数的例子, 原来看了没懂, 最近补上了一些基础知识, 试着再理解一下.</p><p><a href=https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449934543461c9d5dfeeb848f5b72bd012e1113d15000#0 class=external-link target=_blank rel=noopener>廖老师的博客</a>原文在这, 如果还不知道廖老师, 那么非常推荐你去看看.</p><h1 id=阿隆佐邱奇的脑洞>阿隆佐邱奇的脑洞
+<a class=heading-link href=#%e9%98%bf%e9%9a%86%e4%bd%90%e9%82%b1%e5%a5%87%e7%9a%84%e8%84%91%e6%b4%9e><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>很久很久以前，有个叫阿隆佐·邱奇的帅哥，发现只需要用函数，就可以用计算机实现运算，而不需要<code>0</code>、<code>1</code>、<code>2</code>、<code>3</code>这些数字和<code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>这些符号。</p><p>JavaScript支持函数，所以可以用JavaScript用函数来写这些计算。来试试：</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#a5d6ff>&#39;use strict&#39;</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 定义数字0:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> zero <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> (f) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (x) {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> x;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 定义数字1:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> one <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> (f) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (x) {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> f(x);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 定义加法:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>function</span> add(n, m) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (f) {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (x) {
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>return</span> m(f)(n(f)(x));
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 计算数字2 = 1 + 1:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> two <span style=color:#ff7b72;font-weight:700>=</span> add(one, one);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 计算数字3 = 1 + 2:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> three <span style=color:#ff7b72;font-weight:700>=</span> add(one, two);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 计算数字5 = 2 + 3:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> five <span style=color:#ff7b72;font-weight:700>=</span> add(two, three);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 你说它是3就是3，你说它是5就是5，你怎么证明？
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 呵呵，看这里:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 给3传一个函数,会打印3次:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>(three(<span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a5d6ff>&#39;print 3 times&#39;</span>);
+</span></span><span style=display:flex><span>}))();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 给5传一个函数,会打印5次:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>(five(<span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a5d6ff>&#39;print 5 times&#39;</span>);
+</span></span><span style=display:flex><span>}))();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 继续接着玩一会...
+</span></span></span></code></pre></div><p>console 运行的结果还真是和预言的一样(让人头大)</p><pre tabindex=0><code>print 3 times
+print 3 times
+print 3 times
+print 5 times
+print 5 times
+print 5 times
+print 5 times
+print 5 times
+</code></pre><p>怎么来解释这个现象呢?</p><h1 id=我的解释>我的解释
+<a class=heading-link href=#%e6%88%91%e7%9a%84%e8%a7%a3%e9%87%8a><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>首先在我说我的解释之前看看一个叫 <em>大肥肥的大飞爸爸</em> 的网友的解释:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//定义数字2:# 廖老师解释的不清楚,其实按照数字1把2定义一次,就很容易推导了.
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> two <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span>(f){
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span>(x){
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> f(f(x))
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//打印两次也就是要执行2次f函数,也就是f(f(x)),可以看成f(g),g=f(x),初中数学的知识,我们要先求g=f(x),执行f(x)也就是打印了一次,现在得到了g=f(x),把g代入f(g),也就是又执行了一次f函数,又打印了一次,所以是2次.其中f(x)===one(f)(x)的return,还是拆开,f(g)也就是one(f)(g)===one(f)(f(x))===one(f)(one(f)(x)).这样应该都能看明白了~~
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//同理,3的话就要打印3次也就是f(f(f(x))), 其中设g=f(f(x)),f(g)===one(f)(g),g是我们刚求的two(f)(x),代入得one(f)(two(f)(x)).再不懂自杀.
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//那么乘法也就很好推导了:# one(f)(x)中,f是执行的次数.那么two(three(f))(x)就是把&#34;打印3遍&#34;执行2次.至于为什么是n(f)而不是n(f)(x),因为参数要求的是函数名.其他减法除法就不写了.
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>function</span> multi(n, m) {    
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (f) {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>function</span> (x) {
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>return</span> m(n(f))(x);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//test six
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span>  six <span style=color:#ff7b72;font-weight:700>=</span> multi(three,two);
+</span></span><span style=display:flex><span>(multi(<span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>    console.log(<span style=color:#a5d6ff>&#39;print 6 times&#39;</span>);
+</span></span><span style=display:flex><span>}))();
+</span></span></code></pre></div><p>这种解释方法是不错, 但是我觉得在 cs 里面遇到函数执行的分析如果不说 call stack 好像有点弄不清楚, 所以我就猜一下可能的道理.</p><p>首先看一下 zero 的定义</p><p><img src=/images/alonso-zero.png alt=zero></p><p>再看一下 one 的定义</p><p><img src=/images/alonso-one.png alt=one></p><p>注意 one 中return 的值是函数 f, 也就是说他会执行一次函数 f.</p><p>在看 add 之前,我们想一想怎么能表示 two 这个函数呢?</p><p>开动脑筋, 无非是 <code>return one(f)(one(f)(x))</code></p><p>three 呢?</p><p><code>return one(f)(one(f)(one(f)(x))</code></p><p>通俗的解释一下就是:</p><blockquote><p>call stack 上压上 one 函数, 执行到return 会再压上 f 函数.
+这个时候 f 函数 x 值带入什么呢? x = 又是一个 one 函数的嵌套.
+那么再压上 one 函数, 执行到return 会再压上 f 函数&mldr;&mldr;</p></blockquote><p>仔细看看这不就是 <code>add</code> 的原理么?</p><p><img src=/images/alonso-add.png alt=add></p><p>至于 <code>multiply</code>, 和这个原理是相似的, 压上 m 函数的第一次, 带入 x, x = n 函数的嵌套; 压上 m 函数的第二次, 带入 x, x = n 函数的嵌套; &mldr;&mldr;</p><p>最后总共会执行 m*n次.</p><h1 id=写在最后>写在最后
+<a class=heading-link href=#%e5%86%99%e5%9c%a8%e6%9c%80%e5%90%8e><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>如果您看到了这里, 应该会对我的理解有了一个了解. 如果您觉得我的理解是错误的, 欢迎在下面留言, 我们共同探讨.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

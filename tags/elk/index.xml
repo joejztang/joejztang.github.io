@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elk on 130l</title><link>http://www.example.com/tags/elk/</link><description>Recent content in Elk on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 10 Jun 2019 17:19:40 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/elk/index.xml" rel="self" type="application/rss+xml"/><item><title>elk single node</title><link>http://www.example.com/posts/elk-single-node/</link><pubDate>Mon, 10 Jun 2019 17:19:40 +0000</pubDate><guid>http://www.example.com/posts/elk-single-node/</guid><description>&lt;h2 id="introduction"&gt;
+ introduction
+ &lt;a class="heading-link" href="#introduction"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;os: ubuntu 14.04&lt;/li&gt;
+&lt;li&gt;elasticsearch: 2.2.x&lt;/li&gt;
+&lt;li&gt;logstash: 2.2.x&lt;/li&gt;
+&lt;li&gt;kibana: 4.5.x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;what does it like for ELK stack&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://www.example.com/images/elk.png" alt="elk"&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;client servers installed with filebeat sends logs to elk server&lt;/li&gt;
+&lt;li&gt;elk/logstash server process and index log, store logs, search and visualize and using nginx to do reverse proxy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="installations"&gt;
+ installations
+ &lt;a class="heading-link" href="#installations"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="install-java-8"&gt;
+ install java 8
+ &lt;a class="heading-link" href="#install-java-8"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo add-apt-repository -y ppa:webupd8team/java
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get -y install oracle-java8-installer
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="install-elasticsearch"&gt;
+ install elasticsearch
+ &lt;a class="heading-link" href="#install-elasticsearch"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#a5d6ff"&gt;&amp;#34;deb http://packages.elastic.co/elasticsearch/2.x/debian stable main&amp;#34;&lt;/span&gt; | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y elasticsearch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;elasticsearch is installed, now configurations.&lt;/p&gt;</description></item></channel></rss>

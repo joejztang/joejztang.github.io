@@ -1,0 +1,109 @@
+<!doctype html><html lang=en><head><title>javascript 中的 bind 函数 · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content='
+  什么是 bind 函数
+  
+    
+    Link to heading
+  
+
+bind() 方法会创建一个 新函数. bind 允许你设置这个值而不调用 新函数.
+
+  bind 函数的语法
+  
+    
+    Link to heading
+  
+
+fun.bind(thisArg[, arg1[, arg2[, ...]]])
+
+thisArg 当 新函数 被调用的时候, 该参数会作为原函数的 this 指向. 但是, 当使用 new 操作符调用新函数的时候, 该参数无效.
+arg1, arg2, &mldr; 这些参数会依次作为原函数的运行参数
+
+
+  例子
+  
+    
+    Link to heading
+  
+
+this.name = "John"
+
+var myName = {
+  name: "Tom",
+  getName: function() {
+    return this.name
+  }
+}
+
+var storeMyName = myName.getName; // example 1
+var storeMyName2 = myName.getName.bind(myName); // example 2
+var storeMyName3 = myName.getName(); // example 3
+
+console.log("example 1: " + storeMyName()); // John
+console.log("example 2: " + storeMyName2()); // Tom
+console.log("example 3: " + storeMyName3); // Tom
+我们可以看到对于 example1 来说, 没有 bind(myName), 那么在运行 getName 函数的时候, this 指向了全局, 全局下 name 属性是 John.'><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="javascript 中的 bind 函数"><meta name=twitter:description content='什么是 bind 函数 Link to heading bind() 方法会创建一个 新函数. bind 允许你设置这个值而不调用 新函数.
+bind 函数的语法 Link to heading fun.bind(thisArg[, arg1[, arg2[, ...]]]) thisArg 当 新函数 被调用的时候, 该参数会作为原函数的 this 指向. 但是, 当使用 new 操作符调用新函数的时候, 该参数无效. arg1, arg2, … 这些参数会依次作为原函数的运行参数 例子 Link to heading this.name = "John" var myName = { name: "Tom", getName: function() { return this.name } } var storeMyName = myName.getName; // example 1 var storeMyName2 = myName.getName.bind(myName); // example 2 var storeMyName3 = myName.getName(); // example 3 console.log("example 1: " + storeMyName()); // John console.log("example 2: " + storeMyName2()); // Tom console.log("example 3: " + storeMyName3); // Tom 我们可以看到对于 example1 来说, 没有 bind(myName), 那么在运行 getName 函数的时候, this 指向了全局, 全局下 name 属性是 John.'><meta property="og:url" content="http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/"><meta property="og:site_name" content="130l"><meta property="og:title" content="javascript 中的 bind 函数"><meta property="og:description" content='什么是 bind 函数 Link to heading bind() 方法会创建一个 新函数. bind 允许你设置这个值而不调用 新函数.
+bind 函数的语法 Link to heading fun.bind(thisArg[, arg1[, arg2[, ...]]]) thisArg 当 新函数 被调用的时候, 该参数会作为原函数的 this 指向. 但是, 当使用 new 操作符调用新函数的时候, 该参数无效. arg1, arg2, … 这些参数会依次作为原函数的运行参数 例子 Link to heading this.name = "John" var myName = { name: "Tom", getName: function() { return this.name } } var storeMyName = myName.getName; // example 1 var storeMyName2 = myName.getName.bind(myName); // example 2 var storeMyName3 = myName.getName(); // example 3 console.log("example 1: " + storeMyName()); // John console.log("example 2: " + storeMyName2()); // Tom console.log("example 3: " + storeMyName3); // Tom 我们可以看到对于 example1 来说, 没有 bind(myName), 那么在运行 getName 函数的时候, this 指向了全局, 全局下 name 属性是 John.'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-08-24T10:56:22+00:00"><meta property="article:modified_time" content="2018-08-24T10:56:22+00:00"><link rel=canonical href=http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/>javascript 中的 bind 函数</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-08-24T10:56:22Z>August 24, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+2-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/javascript/>Javascript</a></div></div></header><div class=post-content><h1 id=什么是-bind-函数>什么是 <code>bind</code> 函数
+<a class=heading-link href=#%e4%bb%80%e4%b9%88%e6%98%af-bind-%e5%87%bd%e6%95%b0><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p><code>bind()</code> 方法会创建一个 <strong>新函数</strong>. <code>bind</code> 允许你设置这个值而不调用 <strong>新函数</strong>.</p><h1 id=bind-函数的语法><code>bind</code> 函数的语法
+<a class=heading-link href=#bind-%e5%87%bd%e6%95%b0%e7%9a%84%e8%af%ad%e6%b3%95><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>fun.bind(thisArg[, arg1[, arg2[, ...]]])
+</span></span></code></pre></div><ul><li>thisArg 当 <strong>新函数</strong> 被调用的时候, 该参数会作为原函数的 <code>this</code> 指向. 但是, 当使用 <code>new</code> 操作符调用新函数的时候, 该参数无效.</li><li>arg1, arg2, &mldr; 这些参数会依次作为原函数的运行参数</li></ul><h1 id=例子>例子
+<a class=heading-link href=#%e4%be%8b%e5%ad%90><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>this</span>.name <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;John&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> myName <span style=color:#ff7b72;font-weight:700>=</span> {
+</span></span><span style=display:flex><span>  name<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;Tom&#34;</span>,
+</span></span><span style=display:flex><span>  getName<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#ff7b72>function</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>this</span>.name
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> storeMyName <span style=color:#ff7b72;font-weight:700>=</span> myName.getName; <span style=color:#8b949e;font-style:italic>// example 1
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> storeMyName2 <span style=color:#ff7b72;font-weight:700>=</span> myName.getName.bind(myName); <span style=color:#8b949e;font-style:italic>// example 2
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> storeMyName3 <span style=color:#ff7b72;font-weight:700>=</span> myName.getName(); <span style=color:#8b949e;font-style:italic>// example 3
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span>console.log(<span style=color:#a5d6ff>&#34;example 1: &#34;</span> <span style=color:#ff7b72;font-weight:700>+</span> storeMyName()); <span style=color:#8b949e;font-style:italic>// John
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>console.log(<span style=color:#a5d6ff>&#34;example 2: &#34;</span> <span style=color:#ff7b72;font-weight:700>+</span> storeMyName2()); <span style=color:#8b949e;font-style:italic>// Tom
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>console.log(<span style=color:#a5d6ff>&#34;example 3: &#34;</span> <span style=color:#ff7b72;font-weight:700>+</span> storeMyName3); <span style=color:#8b949e;font-style:italic>// Tom
+</span></span></span></code></pre></div><p>我们可以看到对于 example1 来说, 没有 <code>bind(myName)</code>, 那么在运行 getName 函数的时候, <code>this</code> 指向了全局, 全局下 name 属性是 John.</p><p>对于 example2 来说, <code>this</code> bind 到了 myName, 那么 myName 的 name 属性是 Tom.</p><p>对于 example3 来说, 函数在当下就执行了, 给出了 Tom 的结果, 付给了 storeMyName3.</p><h1 id=我们再看看下面的图>我们再看看下面的图
+<a class=heading-link href=#%e6%88%91%e4%bb%ac%e5%86%8d%e7%9c%8b%e7%9c%8b%e4%b8%8b%e9%9d%a2%e7%9a%84%e5%9b%be><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><pre tabindex=0><code>                    +-------------------+-------------------+
+                    |                   |                   |
+                    |      time of      |       time of     |
+                    |function execution |    this binding   |
+                    |                   |                   |
++-------------------+-------------------+-------------------+
+|                   |                   |                   |
+|  function object  |      future       |      future       |
+|         f         |                   |                   |
+|                   |                   |                   |
++-------------------+-------------------+-------------------+
+|                   |                   |                   |
+|   function call   |       now         |        now        |
+|        f()        |                   |                   |
+|                   |                   |                   |
++-------------------+-------------------+-------------------+
+|                   |                   |                   |
+|     f.call()      |       now         |        now        |
+|     f.apply()     |                   |                   |
+|                   |                   |                   |
++-------------------+-------------------+-------------------+
+|                   |                   |                   |
+|     f.bind()      |      future       |        now        |
+|                   |                   |                   |
++-------------------+-------------------+-------------------+
+</code></pre><h1 id=credit-to>credit to
+<a class=heading-link href=#credit-to><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><a href=http://www.webhek.com/post/javascript-bind.html class=external-link target=_blank rel=noopener>理解 javascript 里的 bind() 函数</a></li><li><a href=https://codeday.me/bug/20180113/116888.html class=external-link target=_blank rel=noopener>为什么需要 javascript bind()</a></li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

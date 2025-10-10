@@ -1,0 +1,92 @@
+<!doctype html><html lang=en><head><title>regular expression python3 · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  Regular expression in Python3
+  
+    
+    Link to heading
+  
+
+credit from 廖雪峰的官网
+
+常见表达
+
+\d &mdash; 用来匹配数字(digit)
+\w &mdash; 用来匹配字母或数字(Word)
+\s &mdash; 用来匹配空格(space)
+. &mdash; 用来匹配任意字符
+* &mdash; 匹配>=0个字符
++ &mdash; 匹配>0个字符
+? &mdash; 匹配0或1个字符
+{n, m} &mdash;  表示 n-m 个字符, 通常和\d,\w,\s搭配着用
+[] &mdash; 表示范围. eg: [a-zA-Z\_][0-9a-zA-Z\_]*可以匹配由字母或下划线开头，后接任意个由一个数字、字母或者下划线组成的字符串，也就是Python合法的变量；
+A|B &mdash; 可以匹配A或B
+^ &mdash; 表示行的开头
+$ &mdash; 表示行的结束
+
+
+re 模块
+
+使用 r 前缀, 不考虑转译的问题. eg:
+
+s = r'ABC\-001' # Python的字符串
+# 对应的正则表达式字符串不变：
+# 'ABC\-001'
+
+
+使用 match() 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 None"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="regular expression python3"><meta name=twitter:description content="Regular expression in Python3 Link to heading credit from 廖雪峰的官网
+常见表达 \d — 用来匹配数字(digit)
+\w — 用来匹配字母或数字(Word)
+\s — 用来匹配空格(space)
+. — 用来匹配任意字符
+* — 匹配>=0个字符
++ — 匹配>0个字符
+? — 匹配0或1个字符
+{n, m} — 表示 n-m 个字符, 通常和\d,\w,\s搭配着用
+[] — 表示范围. eg: [a-zA-Z\_][0-9a-zA-Z\_]*可以匹配由字母或下划线开头，后接任意个由一个数字、字母或者下划线组成的字符串，也就是Python合法的变量；
+A|B — 可以匹配A或B
+^ — 表示行的开头
+$ — 表示行的结束
+re 模块
+使用 r 前缀, 不考虑转译的问题. eg: s = r'ABC\-001' # Python的字符串 # 对应的正则表达式字符串不变： # 'ABC\-001' 使用 match() 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 None"><meta property="og:url" content="http://www.example.com/posts/regular-expression-python3/"><meta property="og:site_name" content="130l"><meta property="og:title" content="regular expression python3"><meta property="og:description" content="Regular expression in Python3 Link to heading credit from 廖雪峰的官网
+常见表达 \d — 用来匹配数字(digit)
+\w — 用来匹配字母或数字(Word)
+\s — 用来匹配空格(space)
+. — 用来匹配任意字符
+* — 匹配>=0个字符
++ — 匹配>0个字符
+? — 匹配0或1个字符
+{n, m} — 表示 n-m 个字符, 通常和\d,\w,\s搭配着用
+[] — 表示范围. eg: [a-zA-Z\_][0-9a-zA-Z\_]*可以匹配由字母或下划线开头，后接任意个由一个数字、字母或者下划线组成的字符串，也就是Python合法的变量；
+A|B — 可以匹配A或B
+^ — 表示行的开头
+$ — 表示行的结束
+re 模块
+使用 r 前缀, 不考虑转译的问题. eg: s = r'ABC\-001' # Python的字符串 # 对应的正则表达式字符串不变： # 'ABC\-001' 使用 match() 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 None"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-10-30T17:49:22+00:00"><meta property="article:modified_time" content="2017-10-30T17:49:22+00:00"><meta property="article:tag" content="Regular Expression"><meta property="article:tag" content="Python3"><link rel=canonical href=http://www.example.com/posts/regular-expression-python3/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/regular-expression-python3/>regular expression python3</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2017-10-30T17:49:22Z>October 30, 2017
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+One-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/python/>Python</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/regular-expression/>Regular Expression</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/python3/>Python3</a></span></div></div></header><div class=post-content><h1 id=regular-expression-in-python3>Regular expression in Python3
+<a class=heading-link href=#regular-expression-in-python3><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>credit from 廖雪峰的官网</p><ul><li>常见表达</li></ul><p><code>\d</code> &mdash; 用来匹配数字(digit)</p><p><code>\w</code> &mdash; 用来匹配字母或数字(Word)</p><p><code>\s</code> &mdash; 用来匹配空格(space)</p><p><code>.</code> &mdash; 用来匹配任意字符</p><p><code>*</code> &mdash; 匹配>=0个字符</p><p><code>+</code> &mdash; 匹配>0个字符</p><p><code>?</code> &mdash; 匹配0或1个字符</p><p><code>{n, m}</code> &mdash; 表示 n-m 个字符, 通常和<code>\d</code>,<code>\w</code>,<code>\s</code>搭配着用</p><p><code>[]</code> &mdash; 表示范围. eg: <code>[a-zA-Z\_][0-9a-zA-Z\_]*</code>可以匹配由字母或下划线开头，后接任意个由一个数字、字母或者下划线组成的字符串，也就是Python合法的变量；</p><p><code>A|B</code> &mdash; 可以匹配A或B</p><p><code>^</code> &mdash; 表示行的开头</p><p><code>$</code> &mdash; 表示行的结束</p><ul><li><p>re 模块</p><ul><li>使用 <code>r</code> 前缀, 不考虑转译的问题. eg:</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>s <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#79c0ff>r</span><span style=color:#a5d6ff>&#39;ABC\-001&#39;</span> <span style=color:#8b949e;font-style:italic># Python的字符串</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># 对应的正则表达式字符串不变：</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># &#39;ABC\-001&#39;</span>
+</span></span></code></pre></div><ul><li><p>使用 <code>match()</code> 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 <code>None</code></p></li><li><p>切分字符串用 <code>split()</code>. 除了切分, 还可以用<code>()</code>表示要提取的分组 eg:</p></li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> m <span style=color:#ff7b72;font-weight:700>=</span> re<span style=color:#ff7b72;font-weight:700>.</span><span style=color:#ff7b72>match</span>(<span style=color:#79c0ff>r</span><span style=color:#a5d6ff>&#39;^(\d</span><span style=color:#a5d6ff>{3}</span><span style=color:#a5d6ff>)-(\d{3,8})$&#39;</span>, <span style=color:#a5d6ff>&#39;010-12345&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> m<span style=color:#ff7b72;font-weight:700>.</span>group(<span style=color:#a5d6ff>0</span>)
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>&#39;010-12345&#39;</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> m<span style=color:#ff7b72;font-weight:700>.</span>group(<span style=color:#a5d6ff>1</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> m<span style=color:#ff7b72;font-weight:700>.</span>group(<span style=color:#a5d6ff>2</span>)
+</span></span></code></pre></div><p><code>group(0)</code>永远是原始字符串</p><ul><li>python 默认正则匹配是贪婪匹配, 如果想要取消贪婪匹配, 需要在后面加<code>?</code></li></ul><p>eg:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> re<span style=color:#ff7b72;font-weight:700>.</span><span style=color:#ff7b72>match</span>(<span style=color:#79c0ff>r</span><span style=color:#a5d6ff>&#39;^(\d+)(0*)$&#39;</span>, <span style=color:#a5d6ff>&#39;102300&#39;</span>)<span style=color:#ff7b72;font-weight:700>.</span>groups()
+</span></span><span style=display:flex><span>(<span style=color:#a5d6ff>&#39;102300&#39;</span>, <span style=color:#a5d6ff>&#39;&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>&gt;&gt;&gt;</span> re<span style=color:#ff7b72;font-weight:700>.</span><span style=color:#ff7b72>match</span>(<span style=color:#79c0ff>r</span><span style=color:#a5d6ff>&#39;^(\d+?)(0*)$&#39;</span>, <span style=color:#a5d6ff>&#39;102300&#39;</span>)<span style=color:#ff7b72;font-weight:700>.</span>groups()
+</span></span><span style=display:flex><span>(<span style=color:#a5d6ff>&#39;1023&#39;</span>, <span style=color:#a5d6ff>&#39;00&#39;</span>)
+</span></span></code></pre></div><ul><li>python 在使用正则表达式的时候, re 模块会做两件事, 1. compile 正则表达式; 2. match 字符串</li></ul><p>所以在一个正则表达式要重复使用几千次的时候, 先 compile 就可以提升效率</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>re_prime <span style=color:#ff7b72;font-weight:700>=</span> re<span style=color:#ff7b72;font-weight:700>.</span>complie(<span style=color:#79c0ff>r</span><span style=color:#a5d6ff>&#39;^$&#39;</span>)
+</span></span></code></pre></div></li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

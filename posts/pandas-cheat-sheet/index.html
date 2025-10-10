@@ -1,0 +1,379 @@
+<!doctype html><html lang=en><head><title>pandas cheat sheet · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  dimension
+  
+    
+    Link to heading
+  
+
+
+  
+      
+          Data Structure
+          Dimensions
+          Description
+      
+  
+  
+      
+          Series
+          1
+          1d array
+      
+      
+          Data Frames
+          2
+          2d array
+      
+      
+          Panel
+          3
+          3d array
+      
+  
+
+
+Series: size immutable, data mutable
+Data Frames: size immutable, data mutable
+Panel: size mutable, data mutable
+
+To sum, all the data structures are data mutable.
+
+  Data Structures
+  
+    
+    Link to heading
+  
+
+
+  pandas.Series
+  
+    
+    Link to heading
+  
+
+pandas.Series(data, index, dtype, copy)"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="pandas cheat sheet"><meta name=twitter:description content="dimension Link to heading Data Structure Dimensions Description Series 1 1d array Data Frames 2 2d array Panel 3 3d array Series: size immutable, data mutable Data Frames: size immutable, data mutable Panel: size mutable, data mutable To sum, all the data structures are data mutable.
+Data Structures Link to heading pandas.Series Link to heading pandas.Series(data, index, dtype, copy)"><meta property="og:url" content="http://www.example.com/posts/pandas-cheat-sheet/"><meta property="og:site_name" content="130l"><meta property="og:title" content="pandas cheat sheet"><meta property="og:description" content="dimension Link to heading Data Structure Dimensions Description Series 1 1d array Data Frames 2 2d array Panel 3 3d array Series: size immutable, data mutable Data Frames: size immutable, data mutable Panel: size mutable, data mutable To sum, all the data structures are data mutable.
+Data Structures Link to heading pandas.Series Link to heading pandas.Series(data, index, dtype, copy)"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-02-25T09:40:09+00:00"><meta property="article:modified_time" content="2019-02-25T09:40:09+00:00"><meta property="article:tag" content="Cheating Sheet"><link rel=canonical href=http://www.example.com/posts/pandas-cheat-sheet/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/pandas-cheat-sheet/>pandas cheat sheet</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2019-02-25T09:40:09Z>February 25, 2019
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+10-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/pandas/>Pandas</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/cheating-sheet/>Cheating Sheet</a></span></div></div></header><div class=post-content><h2 id=dimension>dimension
+<a class=heading-link href=#dimension><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><table><thead><tr><th>Data Structure</th><th>Dimensions</th><th>Description</th></tr></thead><tbody><tr><td>Series</td><td>1</td><td>1d array</td></tr><tr><td>Data Frames</td><td>2</td><td>2d array</td></tr><tr><td>Panel</td><td>3</td><td>3d array</td></tr></tbody></table><ul><li>Series: size immutable, data mutable</li><li>Data Frames: size immutable, data mutable</li><li>Panel: size mutable, data mutable</li></ul><p>To sum, all the data structures are data mutable.</p><h2 id=data-structures>Data Structures
+<a class=heading-link href=#data-structures><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=pandasseries>pandas.Series
+<a class=heading-link href=#pandasseries><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><code>pandas.Series(data, index, dtype, copy)</code></p><p>data is array-like</p><p>index value must be unique and hashable, same lenght as data.</p><p>dtype is for <strong>data type</strong>.</p><ul><li>create a Series from dict</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>numpy</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>np</span>
+</span></span><span style=display:flex><span>data <span style=color:#ff7b72;font-weight:700>=</span> {<span style=color:#a5d6ff>&#39;a&#39;</span>:<span style=color:#a5d6ff>0</span>, <span style=color:#a5d6ff>&#39;b&#39;</span>:<span style=color:#a5d6ff>1.</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>:<span style=color:#a5d6ff>2.</span>}
+</span></span><span style=display:flex><span>s <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>Series(data)
+</span></span><span style=display:flex><span>print s
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>a <span style=color:#a5d6ff>0</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>b <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>dtype: float64
+</span></span></code></pre></div><p>obeserve that dictionary keys are used to construct index</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>numpy</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>np</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>data <span style=color:#ff7b72;font-weight:700>=</span> {<span style=color:#a5d6ff>&#39;a&#39;</span>:<span style=color:#a5d6ff>0</span>, <span style=color:#a5d6ff>&#39;b&#39;</span>:<span style=color:#a5d6ff>1.</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>:<span style=color:#a5d6ff>2.</span>}
+</span></span><span style=display:flex><span>s <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>Series(data, index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;b&#39;</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>, <span style=color:#a5d6ff>&#39;d&#39;</span>, <span style=color:#a5d6ff>&#39;a&#39;</span>])
+</span></span><span style=display:flex><span>print s
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>b <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>d NaN
+</span></span><span style=display:flex><span>a <span style=color:#a5d6ff>0</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>dtype: float64
+</span></span></code></pre></div><p><strong>observe that index order is persisted and missing element is filled with NaN</strong></p><ul><li><p>accessing data from Series with position</p><ul><li><p>very similiar to array data access</p></li><li><p>if Series is <strong>indexed</strong>, one can access using index label values.</p></li></ul></li></ul><h3 id=pandasdataframe>pandas.DataFrame
+<a class=heading-link href=#pandasdataframe><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><ul><li>size is mutable</li><li>labeled axes</li></ul><p>one can think of it as sql table data representation</p><p><code>pandas.DataFrame(data, index, columns, dtype, copy)</code></p><ul><li>create a DataFrame from dict or arrays/lists</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>data <span style=color:#ff7b72;font-weight:700>=</span> {<span style=color:#a5d6ff>&#39;Name&#39;</span>: [<span style=color:#a5d6ff>&#39;Tom&#39;</span>, <span style=color:#a5d6ff>&#39;Jack&#39;</span>, <span style=color:#a5d6ff>&#39;Steve&#39;</span>, <span style=color:#a5d6ff>&#39;Ricky&#39;</span>], <span style=color:#a5d6ff>&#39;Age&#39;</span>: [<span style=color:#a5d6ff>28</span>, <span style=color:#a5d6ff>34</span>, <span style=color:#a5d6ff>29</span>, <span style=color:#a5d6ff>42</span>]}
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame(data, index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;rank1&#39;</span>, <span style=color:#a5d6ff>&#39;rank2&#39;</span>, <span style=color:#a5d6ff>&#39;rank3&#39;</span>, <span style=color:#a5d6ff>&#39;rank4&#39;</span>])
+</span></span><span style=display:flex><span>print df
+</span></span></code></pre></div><p>the <strong>output</strong> is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>         Age   Name
+</span></span><span style=display:flex><span>rank1     <span style=color:#a5d6ff>28</span>   Tom
+</span></span><span style=display:flex><span>rank2     <span style=color:#a5d6ff>34</span>   Jack
+</span></span><span style=display:flex><span>rank3     <span style=color:#a5d6ff>29</span>   Steve
+</span></span><span style=display:flex><span>rank4     <span style=color:#a5d6ff>42</span>   Ricky
+</span></span></code></pre></div><ul><li><p>column <strong>selection</strong>, <strong>addition</strong> and <strong>deletion</strong></p><p>first, let&rsquo;s see a script</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>d <span style=color:#ff7b72;font-weight:700>=</span> {<span style=color:#a5d6ff>&#39;one&#39;</span>:pd<span style=color:#ff7b72;font-weight:700>.</span>Series([<span style=color:#a5d6ff>1</span>,<span style=color:#a5d6ff>2</span>,<span style=color:#a5d6ff>3</span>], index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;a&#39;</span>, <span style=color:#a5d6ff>&#39;b&#39;</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>]),
+</span></span><span style=display:flex><span>	 <span style=color:#a5d6ff>&#39;two&#39;</span>:pd<span style=color:#ff7b72;font-weight:700>.</span>Series([<span style=color:#a5d6ff>1</span>,<span style=color:#a5d6ff>2</span>,<span style=color:#a5d6ff>3</span>,<span style=color:#a5d6ff>4</span>], index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;a&#39;</span>, <span style=color:#a5d6ff>&#39;b&#39;</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>, <span style=color:#a5d6ff>&#39;d&#39;</span>])}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame(d)
+</span></span><span style=display:flex><span>print df
+</span></span></code></pre></div><p>and it will print</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>      one    two
+</span></span><span style=display:flex><span>a     <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>1</span>
+</span></span><span style=display:flex><span>b     <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>2</span>
+</span></span><span style=display:flex><span>c     <span style=color:#a5d6ff>3</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>3</span>
+</span></span><span style=display:flex><span>d     NaN    <span style=color:#a5d6ff>4</span>
+</span></span></code></pre></div><ul><li><p>if do <strong>selection</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>print(df[<span style=color:#a5d6ff>&#39;one&#39;</span>])
+</span></span></code></pre></div><p>the output is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>a     <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>b     <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c     <span style=color:#a5d6ff>3</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>d     NaN
+</span></span><span style=display:flex><span>Name: one, dtype: float64
+</span></span></code></pre></div></li><li><p>if do <strong>addition</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df[<span style=color:#a5d6ff>&#39;three&#39;</span>] <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>Series([<span style=color:#a5d6ff>10</span>,<span style=color:#a5d6ff>20.30</span>], index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;a&#39;</span>, <span style=color:#a5d6ff>&#39;b&#39;</span>, <span style=color:#a5d6ff>&#39;c&#39;</span>])
+</span></span><span style=display:flex><span>print(df)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># and even this</span>
+</span></span><span style=display:flex><span>df[<span style=color:#a5d6ff>&#39;four&#39;</span>] <span style=color:#ff7b72;font-weight:700>=</span> df[<span style=color:#a5d6ff>&#39;one&#39;</span>]<span style=color:#ff7b72;font-weight:700>+</span>df[<span style=color:#a5d6ff>&#39;three&#39;</span>]
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>the output is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>Adding a new column by passing as Series:
+</span></span><span style=display:flex><span>     one   two   three
+</span></span><span style=display:flex><span>a    <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>1</span>    <span style=color:#a5d6ff>10</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>b    <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>2</span>    <span style=color:#a5d6ff>20</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c    <span style=color:#a5d6ff>3</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>3</span>    <span style=color:#a5d6ff>30</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>d    NaN    <span style=color:#a5d6ff>4</span>    NaN
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Adding a new column using the existing columns in DataFrame:
+</span></span><span style=display:flex><span>      one   two   three    four
+</span></span><span style=display:flex><span>a     <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>1</span>    <span style=color:#a5d6ff>10</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>11</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>b     <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>2</span>    <span style=color:#a5d6ff>20</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>22</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c     <span style=color:#a5d6ff>3</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>3</span>    <span style=color:#a5d6ff>30</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>33</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>d     NaN    <span style=color:#a5d6ff>4</span>     NaN     NaN
+</span></span></code></pre></div></li><li><p>if do <strong>deletion</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>print(df)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># using del function</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>del</span> df[<span style=color:#a5d6ff>&#39;one&#39;</span>]
+</span></span><span style=display:flex><span>print(df)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># using pop function</span>
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>pop(<span style=color:#a5d6ff>&#39;two&#39;</span>)
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>the output is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>Our dataframe is:
+</span></span><span style=display:flex><span>      one   three  two
+</span></span><span style=display:flex><span>a     <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>10</span>.<span style=color:#a5d6ff>0</span>   <span style=color:#a5d6ff>1</span>
+</span></span><span style=display:flex><span>b     <span style=color:#a5d6ff>2</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>20</span>.<span style=color:#a5d6ff>0</span>   <span style=color:#a5d6ff>2</span>
+</span></span><span style=display:flex><span>c     <span style=color:#a5d6ff>3</span>.<span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>30</span>.<span style=color:#a5d6ff>0</span>   <span style=color:#a5d6ff>3</span>
+</span></span><span style=display:flex><span>d     NaN     NaN   <span style=color:#a5d6ff>4</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Deleting the first column using DEL <span style=color:#ff7b72>function</span>:
+</span></span><span style=display:flex><span>      three    two
+</span></span><span style=display:flex><span>a     <span style=color:#a5d6ff>10</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>1</span>
+</span></span><span style=display:flex><span>b     <span style=color:#a5d6ff>20</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>2</span>
+</span></span><span style=display:flex><span>c     <span style=color:#a5d6ff>30</span>.<span style=color:#a5d6ff>0</span>     <span style=color:#a5d6ff>3</span>
+</span></span><span style=display:flex><span>d     NaN      <span style=color:#a5d6ff>4</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Deleting another column using POP <span style=color:#ff7b72>function</span>:
+</span></span><span style=display:flex><span>   three
+</span></span><span style=display:flex><span>a  <span style=color:#a5d6ff>10</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>b  <span style=color:#a5d6ff>20</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>c  <span style=color:#a5d6ff>30</span>.<span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span>d  NaN
+</span></span></code></pre></div></li></ul></li><li><p>row <strong>selection</strong>, <strong>addtion</strong> and <strong>deletion</strong></p><ul><li><p><strong>selection</strong></p><ol><li>selection by label using <code>loc</code> function</li><li>selection by integer location using <code>iloc</code> function</li></ol></li><li><p><strong>addition</strong></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame([[<span style=color:#a5d6ff>1</span>, <span style=color:#a5d6ff>2</span>], [<span style=color:#a5d6ff>3</span>, <span style=color:#a5d6ff>4</span>]], columns <span style=color:#ff7b72;font-weight:700>=</span> [<span style=color:#a5d6ff>&#39;a&#39;</span>,<span style=color:#a5d6ff>&#39;b&#39;</span>])
+</span></span><span style=display:flex><span>df2 <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame([[<span style=color:#a5d6ff>5</span>, <span style=color:#a5d6ff>6</span>], [<span style=color:#a5d6ff>7</span>, <span style=color:#a5d6ff>8</span>]], columns <span style=color:#ff7b72;font-weight:700>=</span> [<span style=color:#a5d6ff>&#39;a&#39;</span>,<span style=color:#a5d6ff>&#39;b&#39;</span>])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> df<span style=color:#ff7b72;font-weight:700>.</span>append(df2)
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>output is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>   a  b
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>0</span>  <span style=color:#a5d6ff>1</span>  <span style=color:#a5d6ff>2</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span>  <span style=color:#a5d6ff>3</span>  <span style=color:#a5d6ff>4</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>0</span>  <span style=color:#a5d6ff>5</span>  <span style=color:#a5d6ff>6</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span>  <span style=color:#a5d6ff>7</span>  <span style=color:#a5d6ff>8</span>
+</span></span></code></pre></div></li><li><p><strong>deletion</strong></p><p>using <code>drop(&lt;label>)</code></p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame([[<span style=color:#a5d6ff>1</span>, <span style=color:#a5d6ff>2</span>], [<span style=color:#a5d6ff>3</span>, <span style=color:#a5d6ff>4</span>]], columns <span style=color:#ff7b72;font-weight:700>=</span> [<span style=color:#a5d6ff>&#39;a&#39;</span>,<span style=color:#a5d6ff>&#39;b&#39;</span>])
+</span></span><span style=display:flex><span>df2 <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame([[<span style=color:#a5d6ff>5</span>, <span style=color:#a5d6ff>6</span>], [<span style=color:#a5d6ff>7</span>, <span style=color:#a5d6ff>8</span>]], columns <span style=color:#ff7b72;font-weight:700>=</span> [<span style=color:#a5d6ff>&#39;a&#39;</span>,<span style=color:#a5d6ff>&#39;b&#39;</span>])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> df<span style=color:#ff7b72;font-weight:700>.</span>append(df2)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># Drop rows with label 0</span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> df<span style=color:#ff7b72;font-weight:700>.</span>drop(<span style=color:#a5d6ff>0</span>)
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>output is as follows</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>  a b
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span> <span style=color:#a5d6ff>3</span> <span style=color:#a5d6ff>4</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span> <span style=color:#a5d6ff>7</span> <span style=color:#a5d6ff>8</span>
+</span></span></code></pre></div></li></ul></li></ul><h3 id=pandaspanel>pandas.Panel()
+<a class=heading-link href=#pandaspanel><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><code>pandas.Panel(data, items, major_axis, dtype, copy)</code></p><ul><li><strong>items</strong> - axis 0, each item in DataFrame</li><li><strong>major_axis</strong> - axis 1, row (index) of each DataFrame</li><li><strong>major_axis</strong> - axis 2, columns of each DataFrame</li></ul><p>data can be accessed by using <strong>major_axis</strong> method.</p><h2 id=basic-functionality>Basic Functionality
+<a class=heading-link href=#basic-functionality><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><table><thead><tr><th>x</th><th><strong>axes</strong></th><th><strong>dtype</strong></th><th><strong>empty</strong></th><th><strong>ndim</strong></th><th><strong>size</strong></th><th><strong>values</strong></th><th><strong>head()</strong></th><th><strong>tail()</strong></th><th><strong>T</strong></th><th><strong>shape</strong></th></tr></thead><tbody><tr><td>Series</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td></td><td></td></tr><tr><td>DataFrame</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td><td>x</td></tr></tbody></table><ul><li>ndim - return the number of dimensions of the underlying data by definition 1</li><li>head() - return the first n rows</li><li>tail() - return the last n rows</li><li>T - transpose rows and columns</li><li>shape - tuple representing the dimenstionality of DataFrame</li></ul><h2 id=statistic-methods>statistic methods
+<a class=heading-link href=#statistic-methods><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>most of them are aggregations function take an <strong>axis</strong> argument</p><table><thead><tr><th>Sr.No.</th><th>Function</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>count()</td><td>Number of non-null observations</td></tr><tr><td>2</td><td>sum()</td><td>Sum of values</td></tr><tr><td>3</td><td>mean()</td><td>Mean of Values</td></tr><tr><td>4</td><td>median()</td><td>Median of Values</td></tr><tr><td>5</td><td>mode()</td><td>Mode of values</td></tr><tr><td>6</td><td>std()</td><td>Standard Deviation of the Values</td></tr><tr><td>7</td><td>min()</td><td>Minimum Value</td></tr><tr><td>8</td><td>max()</td><td>Maximum Value</td></tr><tr><td>9</td><td>abs()</td><td>Absolute Value</td></tr><tr><td>10</td><td>prod()</td><td>Product of Values</td></tr><tr><td>11</td><td>cumsum()</td><td>Cumulative Sum</td></tr><tr><td>12</td><td>cumprod()</td><td>Cumulative Product</td></tr></tbody></table><ul><li><p><strong>discribe()</strong></p><p>function computes a summary of statistics pertaining to the DataFrame columns</p></li></ul><h2 id=function-application>function application
+<a class=heading-link href=#function-application><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=table-wise-function-application--pipe>table wise function application : <strong>pipe()</strong>
+<a class=heading-link href=#table-wise-function-application--pipe><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>pipe(<span style=color:#ff7b72;font-weight:700>&lt;</span>my_function<span style=color:#ff7b72;font-weight:700>&gt;</span>, <span style=color:#ff7b72;font-weight:700>...</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span></code></pre></div><p>the above script tells us that apply <em>my_function</em> to the whole DataFrame</p><h3 id=row-or-column-wise-function-application--apply>row or column wise function application : <strong>apply()</strong>
+<a class=heading-link href=#row-or-column-wise-function-application--apply><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>numpy</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>np</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame(np<span style=color:#ff7b72;font-weight:700>.</span>random<span style=color:#ff7b72;font-weight:700>.</span>randn(<span style=color:#a5d6ff>5</span>,<span style=color:#a5d6ff>3</span>),columns<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;col1&#39;</span>,<span style=color:#a5d6ff>&#39;col2&#39;</span>,<span style=color:#a5d6ff>&#39;col3&#39;</span>])
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> df<span style=color:#ff7b72;font-weight:700>.</span>apply(np<span style=color:#ff7b72;font-weight:700>.</span>mean,axis<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>1</span>)
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>the output is as following</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span><span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>0</span>.<span style=color:#a5d6ff>248585</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span>   <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>552151</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>2</span>   <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>579080</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>3</span>   <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>351066</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>4</span>   <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>401736</span>
+</span></span><span style=display:flex><span>dtype: float64
+</span></span></code></pre></div><p>parameter <strong>axis</strong> can be passed. 0 represent <strong>to row</strong>, whereas 1 represent <strong>to column</strong></p><h3 id=element-wise-function-application--applymap>element wise function application : <strong>applymap()</strong>
+<a class=heading-link href=#element-wise-function-application--applymap><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>the methods <code>applymap()</code> on DataFrame and analogously <code>map()</code> on <strong>Series</strong> accept any Python function taking a single value and returning a single value.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>numpy</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>np</span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame(np<span style=color:#ff7b72;font-weight:700>.</span>random<span style=color:#ff7b72;font-weight:700>.</span>randn(<span style=color:#a5d6ff>5</span>,<span style=color:#a5d6ff>3</span>),columns<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;col1&#39;</span>,<span style=color:#a5d6ff>&#39;col2&#39;</span>,<span style=color:#a5d6ff>&#39;col3&#39;</span>])
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># My custom function</span>
+</span></span><span style=display:flex><span>print(df)
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> df[<span style=color:#a5d6ff>&#39;col1&#39;</span>]<span style=color:#ff7b72;font-weight:700>.</span>map(<span style=color:#ff7b72>lambda</span> x:x<span style=color:#ff7b72;font-weight:700>*</span><span style=color:#a5d6ff>100</span>)
+</span></span><span style=display:flex><span>print(df)
+</span></span></code></pre></div><p>output is following</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span>       col1      col2      col3
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>0</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>728627</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>101886</span>  <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>025377</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span>  <span style=color:#a5d6ff>0</span>.<span style=color:#a5d6ff>530011</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>999194</span>  <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>060044</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>2</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>284739</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>423325</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>599201</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>3</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>064372</span>  <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>523775</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>321916</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>4</span>  <span style=color:#a5d6ff>1</span>.<span style=color:#a5d6ff>391365</span>  <span style=color:#a5d6ff>0</span>.<span style=color:#a5d6ff>436669</span> <span style=color:#a5d6ff>-0</span>.<span style=color:#a5d6ff>342277</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>0</span>    <span style=color:#a5d6ff>-72</span>.<span style=color:#a5d6ff>862671</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>1</span>     <span style=color:#a5d6ff>53</span>.<span style=color:#a5d6ff>001126</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>2</span>    <span style=color:#a5d6ff>-28</span>.<span style=color:#a5d6ff>473895</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>3</span>     <span style=color:#a5d6ff>-6</span>.<span style=color:#a5d6ff>437233</span>
+</span></span><span style=display:flex><span><span style=color:#a5d6ff>4</span>    <span style=color:#a5d6ff>139</span>.<span style=color:#a5d6ff>136522</span>
+</span></span><span style=display:flex><span>Name: col1, dtype: float64
+</span></span></code></pre></div><p><em>to tell the truth, I think pipe() and map() are so similar</em></p><h2 id=reindex>reindex
+<a class=heading-link href=#reindex><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><strong>Reindexing</strong> changes the row labels and column labels of a DataFrame.</p><p>usage is like following:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#8b949e;font-style:italic># reindex using index 0, 2, 5</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>reindex(index<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>0</span>, <span style=color:#a5d6ff>2</span>, <span style=color:#a5d6ff>5</span>], columns<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#a5d6ff>&#39;A&#39;</span>, <span style=color:#a5d6ff>&#39;B&#39;</span>, <span style=color:#a5d6ff>&#39;C&#39;</span>])
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># reindex align to other</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df1 <span style=color:#ff7b72;font-weight:700>=</span> df1<span style=color:#ff7b72;font-weight:700>.</span>reindex_like(df2)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># ffill/bfill/nearst</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># ffill with pad Nan(s)</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df2<span style=color:#ff7b72;font-weight:700>.</span>reindex_like(df1, method<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;ffill&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># limit how many rows to fill</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df2<span style=color:#ff7b72;font-weight:700>.</span>reindex_like(df1, method<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;ffill&#39;</span>, limit<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>1</span>)
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># rename column name</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>df1<span style=color:#ff7b72;font-weight:700>.</span>rename(columns<span style=color:#ff7b72;font-weight:700>=</span>{<span style=color:#a5d6ff>&#39;col1&#39;</span>:<span style=color:#a5d6ff>&#39;c1&#39;</span>, <span style=color:#a5d6ff>&#39;col2&#39;</span>: <span style=color:#a5d6ff>&#39;c2&#39;</span>})
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span></code></pre></div><h2 id=iterations>iterations
+<a class=heading-link href=#iterations><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>iterate</p><ul><li>Series - on <strong>values</strong></li><li>DataFrame - on <strong>column labels</strong></li><li>Panel - on <strong>item labels</strong></li></ul><p>three functions can be used</p><ul><li><strong>iteritems()</strong></li><li><strong>iterrows()</strong></li><li><strong>itertuples()</strong></li></ul><h2 id=sort>sort
+<a class=heading-link href=#sort><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><code>sort_index(ascending=False, axis=&lt;axis>)</code></p><p><code>sort_value(by='[&lt;which_cols>]', kind='mergesort/quicksort/heapsort')</code></p><h2 id=working-with-text-data>working with text data
+<a class=heading-link href=#working-with-text-data><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>these all applies to <code>df.str</code></p><table><thead><tr><th>Sr.No</th><th>Function & Description</th></tr></thead><tbody><tr><td>1</td><td>lower()Converts strings in the Series/Index to lower case.</td></tr><tr><td>2</td><td>upper()Converts strings in the Series/Index to upper case.</td></tr><tr><td>3</td><td>len()Computes String length().</td></tr><tr><td>4</td><td>strip()Helps strip whitespace(including newline) from each string in the Series/index from both the sides.</td></tr><tr><td>5</td><td>split(&rsquo; &lsquo;)Splits each string with the given pattern.</td></tr><tr><td>6</td><td>cat(sep=&rsquo; &lsquo;)Concatenates the series/index elements with given separator.</td></tr><tr><td>7</td><td>get_dummies()Returns the DataFrame with One-Hot Encoded values.</td></tr><tr><td>8</td><td>contains(pattern)Returns a Boolean value True for each element if the substring contains in the element, else False.</td></tr><tr><td>9</td><td>replace(a,b)Replaces the value a with the value b.</td></tr><tr><td>10</td><td>repeat(value)Repeats each element with specified number of times.</td></tr><tr><td>11</td><td>count(pattern)Returns count of appearance of pattern in each element.</td></tr><tr><td>12</td><td>startswith(pattern)Returns true if the element in the Series/Index starts with the pattern.</td></tr><tr><td>13</td><td>endswith(pattern)Returns true if the element in the Series/Index ends with the pattern.</td></tr><tr><td>14</td><td>find(pattern)Returns the first position of the first occurrence of the pattern.</td></tr><tr><td>15</td><td>findall(pattern)Returns a list of all occurrence of the pattern.</td></tr><tr><td>16</td><td>swapcaseSwaps the case lower/upper.</td></tr><tr><td>17</td><td>islower()Checks whether all characters in each string in the Series/Index in lower case or not. Returns Boolean</td></tr><tr><td>18</td><td>isupper()Checks whether all characters in each string in the Series/Index in upper case or not. Returns Boolean.</td></tr><tr><td>19</td><td>isnumeric()Checks whether all characters in each string in the Series/Index are numeric. Returns Boolean.</td></tr></tbody></table><h2 id=indexing-and-selecting-data>indexing and selecting data
+<a class=heading-link href=#indexing-and-selecting-data><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><code>.loc()</code> - index based</li><li><code>.iloc()</code> - 0-based integer indexing</li><li><code>.ix()</code> - both label and integer based</li></ul><table><thead><tr><th>Object</th><th>Indexers</th><th>Return Type</th></tr></thead><tbody><tr><td>Series</td><td>s.loc[indexer]</td><td>Scalar value</td></tr><tr><td>DataFrame</td><td>df.loc[row_index,col_index]</td><td>Series object</td></tr><tr><td>Panel</td><td>p.loc[item_index,major_index, minor_index]</td><td>p.loc[item_index,major_index, minor_index]</td></tr></tbody></table><h2 id=window-functions>window functions
+<a class=heading-link href=#window-functions><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>imagine a sliding window that works on top of DataFrame objects</p><ul><li><code>.rolling()</code> - Specify the <strong>window=n</strong> argument and apply the appropriate statistical function on top of it. usage <code>df.rolling(window=x)...</code></li><li><code>.expanding()</code> - This function can be applied on a series of data. Specify the <strong>min_periods=n</strong> argument and apply the appropriate statistical function on top of it. usage <code>df.expanding(min_periods=x)...</code></li></ul><h2 id=missing-data>Missing Data
+<a class=heading-link href=#missing-data><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li>cleaning / filling missing data</li></ul><p><code>df.fillna(0, method='pad/bfill')</code> - fill <code>NaN</code> with 0</p><ul><li>drop missing value</li></ul><p><code>df.dropna(0, axis=&lt;axis>)</code></p><ul><li>replace missing or generic values</li></ul><p><code>df.replace({&lt;generic>:&lt;replaced>, ...})</code></p><h2 id=group-by>Group by
+<a class=heading-link href=#group-by><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><p>using <code>groupby()</code> function, it can group by one col, or multiple cols</p></li><li><p>given <code>groupby</code> object in hand, we can <strong>iterate</strong> through the object.</p></li><li><p><strong>select</strong> a group by using <code>get_group()</code> to select a single group.</p></li><li><p><code>agg()</code> function can be performed on the grouped data, aggregation functions can be applied multiple at once. eg: <code>agg([np.sum, np.mean, np.std])</code></p></li><li><p><code>transform(&lt;my_function>)</code> - Transformation on a group or a column returns an object that is indexed the <strong>same size</strong> of that is being grouped. Thus, the transform should return a result that is the same size as that of a group chunk.</p></li><li><p><code>filter()</code> - Filtration filters the data on a defined criteria and returns the subset of data. The <code>filter()</code> function is used to filter the data.</p></li></ul><h2 id=merge--sql-join><code>merge()</code> == sql join
+<a class=heading-link href=#merge--sql-join><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><code>merge(left_data, right_data, how='inner/left/right/outer', on=[&lt;columns>])</code></p><h2 id=cancat--stack-andor-union><code>cancat()</code> == stack() and/or union()
+<a class=heading-link href=#cancat--stack-andor-union><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><code>df.concat([df1, df2, ...], keys=['x', 'y', ...], ignore_index=True/False, axis='&lt;axis>')</code></p><p>concatenating using <code>append</code></p><p><code>df1.append([df2, df3, ...])</code></p><h2 id=time-in-pandas>Time in pandas
+<a class=heading-link href=#time-in-pandas><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=datetime>datetime
+<a class=heading-link href=#datetime><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>usage</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>print(pd<span style=color:#ff7b72;font-weight:700>.</span>datetime<span style=color:#ff7b72;font-weight:700>.</span>now())
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># create a range of time</span>
+</span></span><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>date_range(<span style=color:#a5d6ff>&#34;11:00&#34;</span>, <span style=color:#a5d6ff>&#34;13:30&#34;</span>, freq<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;30min&#34;</span>)<span style=color:#ff7b72;font-weight:700>.</span>time
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># output is [datetime.time(11, 0) datetime.time(11, 30) datetime.time(12, 0) datetime.time(12, 30) datetime.time(13, 0) datetime.time(13, 30)]</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># converting to Timestamps</span>
+</span></span><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>to_datetime(<span style=color:#ff7b72;font-weight:700>&lt;</span>pandas_object<span style=color:#ff7b72;font-weight:700>&gt;</span>)
+</span></span></code></pre></div><p><code>NaT</code> Not a Time equivlent to NaN</p><h3 id=dates>dates
+<a class=heading-link href=#dates><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>date_range(<span style=color:#a5d6ff>&#39;1/1/2011&#39;</span>, periods<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>5</span>, freq<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;M&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># output is a list of DateTimeIndex, M stand for Month</span>
+</span></span></code></pre></div><p>some offset aliases are listed below</p><table><thead><tr><th>Alias</th><th>Description</th></tr></thead><tbody><tr><td>B</td><td>business day frequency</td></tr><tr><td>D</td><td>calendar day frequency</td></tr><tr><td>W</td><td>weekly frequency</td></tr><tr><td>M</td><td>month end frequency</td></tr><tr><td>SM</td><td>semi-month end frequency</td></tr><tr><td>BM</td><td>business month end frequency</td></tr><tr><td>MS</td><td>month start frequency</td></tr><tr><td>SMS</td><td>SMS semi month start frequency</td></tr><tr><td>BMS</td><td>business month start frequency</td></tr><tr><td>Q</td><td>quarter end frequency</td></tr><tr><td>BQ</td><td>business quarter end frequency</td></tr><tr><td>QS</td><td>quarter start frequency</td></tr><tr><td>BQS</td><td>business quarter start frequency</td></tr><tr><td>A</td><td>annual(Year) end frequency</td></tr><tr><td>BA</td><td>business year end frequency</td></tr><tr><td>BAS</td><td>business year start frequency</td></tr><tr><td>BH</td><td>business hour frequency</td></tr><tr><td>H</td><td>hourly frequency</td></tr><tr><td>T, min</td><td>minutely frequency</td></tr><tr><td>S</td><td>secondly frequency</td></tr><tr><td>L, ms</td><td>milliseconds</td></tr><tr><td>U, us</td><td>microseconds</td></tr><tr><td>N</td><td>nanoseconds</td></tr></tbody></table><h3 id=timedelta>Timedelta
+<a class=heading-link href=#timedelta><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>Timedelta(<span style=color:#a5d6ff>&#39;2 days 2 hours 15 minutes 30 seconds&#39;</span>)\
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># 2 days 02:15:30</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>Timedelta(<span style=color:#a5d6ff>6</span>, unit<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;h&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># 0 days 06:00:00</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>pd<span style=color:#ff7b72;font-weight:700>.</span>Timedelta(days<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>2</span>)
+</span></span></code></pre></div><p>date object can also add/minus with other date object</p><h2 id=categorical-data>Categorical data
+<a class=heading-link href=#categorical-data><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h2 id=visualization>Visualization
+<a class=heading-link href=#visualization><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=basic-plot>basic plot
+<a class=heading-link href=#basic-plot><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>pandas</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>pd</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> <span style=color:#ff7b72>numpy</span> <span style=color:#ff7b72>as</span> <span style=color:#ff7b72>np</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df <span style=color:#ff7b72;font-weight:700>=</span> pd<span style=color:#ff7b72;font-weight:700>.</span>DataFrame(np<span style=color:#ff7b72;font-weight:700>.</span>random<span style=color:#ff7b72;font-weight:700>.</span>randn(<span style=color:#a5d6ff>10</span>, <span style=color:#a5d6ff>4</span>), index<span style=color:#ff7b72;font-weight:700>=</span>pd<span style=color:#ff7b72;font-weight:700>.</span>date_range(<span style=color:#a5d6ff>&#39;1/1/2000&#39;</span>, periods<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>10</span>), columns<span style=color:#ff7b72;font-weight:700>=</span>list(<span style=color:#a5d6ff>&#39;ABCD&#39;</span>))
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot()
+</span></span></code></pre></div><h3 id=bar-plot>bar plot
+<a class=heading-link href=#bar-plot><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>bar(stacked<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>True</span>)
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>barh(stacked<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>True</span>)
+</span></span></code></pre></div><h3 id=histograms>histograms
+<a class=heading-link href=#histograms><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>hist(bins<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>20</span>)
+</span></span><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>diff<span style=color:#ff7b72;font-weight:700>.</span>hist(bins<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>20</span>)
+</span></span></code></pre></div><h3 id=box-plots>box plots
+<a class=heading-link href=#box-plots><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>box() <span style=color:#8b949e;font-style:italic># df can be Series/DataFrame</span>
+</span></span></code></pre></div><h3 id=area-plots>area plots
+<a class=heading-link href=#area-plots><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>area() <span style=color:#8b949e;font-style:italic># df can be Series/DataFrame</span>
+</span></span></code></pre></div><h3 id=scatter-plots>scatter plots
+<a class=heading-link href=#scatter-plots><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>scatter(x<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;cola&#39;</span>, y<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;colb&#39;</span>) <span style=color:#8b949e;font-style:italic># DataFrame</span>
+</span></span></code></pre></div><h3 id=pie-charts>pie charts
+<a class=heading-link href=#pie-charts><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>df<span style=color:#ff7b72;font-weight:700>.</span>plot<span style=color:#ff7b72;font-weight:700>.</span>pie(subplots<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>True</span>)
+</span></span></code></pre></div><h2 id=io>I/O
+<a class=heading-link href=#io><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>pandas<span style=color:#ff7b72;font-weight:700>.</span>read_csv(filepath_or_buffer, sep<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;,&#39;</span>, delimiter<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>None</span>, header<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#39;infer&#39;</span>,
+</span></span><span style=display:flex><span>names<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>None</span>, index_col<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>None</span>, usecols<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#79c0ff>None</span>, dtype<span style=color:#ff7b72;font-weight:700>=</span>{<span style=color:#a5d6ff>&#39;colx&#39;</span>: np<span style=color:#ff7b72;font-weight:700>.</span>numeric_type}, skiprows<span style=color:#ff7b72;font-weight:700>=</span>[<span style=color:#ff7b72;font-weight:700>&lt;</span>row_nums<span style=color:#ff7b72;font-weight:700>&gt;</span>])
+</span></span></code></pre></div><p>people can change <code>dtype</code> while read csv on the fly, can change header names and can skip rows by identifying row number</p><h2 id=sparse-data>sparse data
+<a class=heading-link href=#sparse-data><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Sparse objects are “compressed” when any data matching a specific value (<code>NaN</code> / missing value, though any value can be chosen) is omitted.</p><p>using <code>to_sparse()</code> method creates sparse objects, existing for memory efficiency reasons.</p><p>Any sparse object can be converted back to the standard dense form by calling <code>to_dense()</code></p><p>sparse and dense objects have the same dtype</p><h2 id=other-functions>other functions
+<a class=heading-link href=#other-functions><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><strong>any()</strong>: return whether any element is True.</li><li><strong>isin()</strong>: whether each element in the DataFrame is contained in values</li></ul><h2 id=pandas-vs-sql>pandas vs. SQL
+<a class=heading-link href=#pandas-vs-sql><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=top-n>top N
+<a class=heading-link href=#top-n><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#ff7b72>SELECT</span><span style=color:#6e7681> </span>total_bill,<span style=color:#6e7681> </span>tip,<span style=color:#6e7681> </span>smoker,<span style=color:#6e7681> </span>time<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span><span style=color:#ff7b72>FROM</span><span style=color:#6e7681> </span>tips<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span><span style=color:#ff7b72>LIMIT</span><span style=color:#6e7681> </span><span style=color:#a5d6ff>5</span>;<span style=color:#6e7681>
+</span></span></span></code></pre></div><p>in pandas</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>tips[[<span style=color:#a5d6ff>&#39;total_bill&#39;</span>, <span style=color:#a5d6ff>&#39;tip&#39;</span>, <span style=color:#a5d6ff>&#39;smoker&#39;</span>, <span style=color:#a5d6ff>&#39;time&#39;</span>]]<span style=color:#ff7b72;font-weight:700>.</span>head(<span style=color:#a5d6ff>5</span>)
+</span></span></code></pre></div><h3 id=where-clause>where clause
+<a class=heading-link href=#where-clause><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#ff7b72>SELECT</span><span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>*</span><span style=color:#6e7681> </span><span style=color:#ff7b72>FROM</span><span style=color:#6e7681> </span>tips<span style=color:#6e7681> </span><span style=color:#ff7b72>WHERE</span><span style=color:#6e7681> </span>time<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#a5d6ff>&#39;Dinner&#39;</span><span style=color:#6e7681> </span><span style=color:#ff7b72>LIMIT</span><span style=color:#6e7681> </span><span style=color:#a5d6ff>5</span>;<span style=color:#6e7681>
+</span></span></span></code></pre></div><p>in pandas</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>tips[tips[<span style=color:#a5d6ff>&#39;time&#39;</span>] <span style=color:#ff7b72;font-weight:700>==</span> <span style=color:#a5d6ff>&#39;Dinner&#39;</span>]<span style=color:#ff7b72;font-weight:700>.</span>head(<span style=color:#a5d6ff>5</span>)
+</span></span></code></pre></div><h3 id=group-by-1>group by
+<a class=heading-link href=#group-by-1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#ff7b72>SELECT</span><span style=color:#6e7681> </span>sex,<span style=color:#6e7681> </span><span style=color:#ff7b72>count</span>(<span style=color:#ff7b72;font-weight:700>*</span>)<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span><span style=color:#ff7b72>FROM</span><span style=color:#6e7681> </span>tips<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span><span style=color:#ff7b72>GROUP</span><span style=color:#6e7681> </span><span style=color:#ff7b72>BY</span><span style=color:#6e7681> </span>sex;<span style=color:#6e7681>
+</span></span></span></code></pre></div><p>in pandas</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-py data-lang=py><span style=display:flex><span>tips<span style=color:#ff7b72;font-weight:700>.</span>groupby(<span style=color:#a5d6ff>&#39;sex&#39;</span>)<span style=color:#ff7b72;font-weight:700>.</span>size()
+</span></span></code></pre></div></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

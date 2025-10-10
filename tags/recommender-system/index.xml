@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Recommender System on 130l</title><link>http://www.example.com/tags/recommender-system/</link><description>Recent content in Recommender System on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 28 Oct 2018 11:42:19 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/recommender-system/index.xml" rel="self" type="application/rss+xml"/><item><title>recommender system</title><link>http://www.example.com/posts/recommender-system/</link><pubDate>Sun, 28 Oct 2018 11:42:19 +0000</pubDate><guid>http://www.example.com/posts/recommender-system/</guid><description>&lt;h1 id="algorithm"&gt;
+ algorithm
+ &lt;a class="heading-link" href="#algorithm"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;user collaborative filtering / user CF&lt;/li&gt;
+&lt;li&gt;item collaborative filtering / item CF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们选取 item cf 来做.&lt;/p&gt;
+&lt;h1 id="细节"&gt;
+ 细节
+ &lt;a class="heading-link" href="#%e7%bb%86%e8%8a%82"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;build co-occurrence matrix&lt;/li&gt;
+&lt;li&gt;build rating matrix&lt;/li&gt;
+&lt;li&gt;matrix computation to get predicted result&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="item-cf-alg"&gt;
+ item cf alg
+ &lt;a class="heading-link" href="#item-cf-alg"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;什么时候用 item cf, 什么时候用 user cf.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf.&lt;/p&gt;</description></item></channel></rss>

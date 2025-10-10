@@ -1,0 +1,182 @@
+<!doctype html><html lang=en><head><title>Java read file and write file template · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content='
+  read file template
+  
+    
+    Link to heading
+  
+
+auto close file reader.
+public static void main(String[] args) {
+
+	try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
+
+		String sCurrentLine;
+
+		while ((sCurrentLine = br.readLine()) != null) {
+			System.out.println(sCurrentLine);
+		}
+
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+
+}
+public static void main(String[] args) {
+
+	BufferedReader br = null;
+	FileReader fr = null;
+
+	try {
+
+		fr = new FileReader(FILENAME);
+		br = new BufferedReader(fr);
+
+		String sCurrentLine;
+
+		br = new BufferedReader(new FileReader(FILENAME));
+
+		while ((sCurrentLine = br.readLine()) != null) {
+			System.out.println(sCurrentLine);
+		}
+
+	} catch (IOException e) {
+
+		e.printStackTrace();
+
+	} finally {
+
+		try {
+
+			if (br != null)
+				br.close();
+
+			if (fr != null)
+				fr.close();
+
+		} catch (IOException ex) {
+
+			ex.printStackTrace();
+
+		}
+
+	}
+
+}
+
+  write to file
+  
+    
+    Link to heading
+  
+
+import java.io.*;
+public class FileWrite {
+
+   public static void main(String args[])throws IOException {
+      File file = new File("Hello1.txt");
+      
+      // creates the file
+      file.createNewFile();
+      
+      // creates a FileWriter Object
+      FileWriter writer = new FileWriter(file); 
+      
+      // Writes the content to the file
+      writer.write("This\n is\n an\n example\n"); 
+      writer.flush();
+      writer.close();
+   }
+}
+'><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Java read file and write file template"><meta name=twitter:description content='read file template Link to heading auto close file reader.
+public static void main(String[] args) { try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) { String sCurrentLine; while ((sCurrentLine = br.readLine()) != null) { System.out.println(sCurrentLine); } } catch (IOException e) { e.printStackTrace(); } } public static void main(String[] args) { BufferedReader br = null; FileReader fr = null; try { fr = new FileReader(FILENAME); br = new BufferedReader(fr); String sCurrentLine; br = new BufferedReader(new FileReader(FILENAME)); while ((sCurrentLine = br.readLine()) != null) { System.out.println(sCurrentLine); } } catch (IOException e) { e.printStackTrace(); } finally { try { if (br != null) br.close(); if (fr != null) fr.close(); } catch (IOException ex) { ex.printStackTrace(); } } } write to file Link to heading import java.io.*; public class FileWrite { public static void main(String args[])throws IOException { File file = new File("Hello1.txt"); // creates the file file.createNewFile(); // creates a FileWriter Object FileWriter writer = new FileWriter(file); // Writes the content to the file writer.write("This\n is\n an\n example\n"); writer.flush(); writer.close(); } }'><meta property="og:url" content="http://www.example.com/posts/java-read-write/"><meta property="og:site_name" content="130l"><meta property="og:title" content="Java read file and write file template"><meta property="og:description" content='read file template Link to heading auto close file reader.
+public static void main(String[] args) { try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) { String sCurrentLine; while ((sCurrentLine = br.readLine()) != null) { System.out.println(sCurrentLine); } } catch (IOException e) { e.printStackTrace(); } } public static void main(String[] args) { BufferedReader br = null; FileReader fr = null; try { fr = new FileReader(FILENAME); br = new BufferedReader(fr); String sCurrentLine; br = new BufferedReader(new FileReader(FILENAME)); while ((sCurrentLine = br.readLine()) != null) { System.out.println(sCurrentLine); } } catch (IOException e) { e.printStackTrace(); } finally { try { if (br != null) br.close(); if (fr != null) fr.close(); } catch (IOException ex) { ex.printStackTrace(); } } } write to file Link to heading import java.io.*; public class FileWrite { public static void main(String args[])throws IOException { File file = new File("Hello1.txt"); // creates the file file.createNewFile(); // creates a FileWriter Object FileWriter writer = new FileWriter(file); // Writes the content to the file writer.write("This\n is\n an\n example\n"); writer.flush(); writer.close(); } }'><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-04-19T15:36:01+00:00"><meta property="article:modified_time" content="2017-04-19T15:36:01+00:00"><meta property="article:tag" content="Java IO"><link rel=canonical href=http://www.example.com/posts/java-read-write/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/java-read-write/>Java read file and write file template</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2017-04-19T15:36:01Z>April 19, 2017
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+One-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/java/>Java</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/java-io/>Java IO</a></span></div></div></header><div class=post-content><h3 id=read-file-template>read file template
+<a class=heading-link href=#read-file-template><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>auto close file reader.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#ff7b72>public</span><span style=color:#6e7681> </span><span style=color:#ff7b72>static</span><span style=color:#6e7681> </span><span style=color:#ff7b72>void</span><span style=color:#6e7681> </span><span style=color:#d2a8ff;font-weight:700>main</span>(String<span style=color:#ff7b72;font-weight:700>[]</span><span style=color:#6e7681> </span>args)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span><span style=color:#ff7b72>try</span><span style=color:#6e7681> </span>(BufferedReader<span style=color:#6e7681> </span>br<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>BufferedReader(<span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>FileReader(FILENAME)))<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>String<span style=color:#6e7681> </span>sCurrentLine;<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span><span style=color:#ff7b72>while</span><span style=color:#6e7681> </span>((sCurrentLine<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span>br.readLine())<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>!=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>			</span>System.out.println(sCurrentLine);<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>}<span style=color:#6e7681> </span><span style=color:#ff7b72>catch</span><span style=color:#6e7681> </span>(IOException<span style=color:#6e7681> </span>e)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>e.printStackTrace();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span>}<span style=color:#6e7681>
+</span></span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#ff7b72>public</span><span style=color:#6e7681> </span><span style=color:#ff7b72>static</span><span style=color:#6e7681> </span><span style=color:#ff7b72>void</span><span style=color:#6e7681> </span><span style=color:#d2a8ff;font-weight:700>main</span>(String<span style=color:#ff7b72;font-weight:700>[]</span><span style=color:#6e7681> </span>args)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>BufferedReader<span style=color:#6e7681> </span>br<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>;<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>FileReader<span style=color:#6e7681> </span>fr<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>;<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span><span style=color:#ff7b72>try</span><span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>fr<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>FileReader(FILENAME);<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>br<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>BufferedReader(fr);<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>String<span style=color:#6e7681> </span>sCurrentLine;<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>br<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>BufferedReader(<span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>FileReader(FILENAME));<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span><span style=color:#ff7b72>while</span><span style=color:#6e7681> </span>((sCurrentLine<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span>br.readLine())<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>!=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>			</span>System.out.println(sCurrentLine);<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>}<span style=color:#6e7681> </span><span style=color:#ff7b72>catch</span><span style=color:#6e7681> </span>(IOException<span style=color:#6e7681> </span>e)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>e.printStackTrace();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>}<span style=color:#6e7681> </span><span style=color:#ff7b72>finally</span><span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span><span style=color:#ff7b72>try</span><span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>			</span><span style=color:#ff7b72>if</span><span style=color:#6e7681> </span>(br<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>!=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>)<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>				</span>br.close();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>			</span><span style=color:#ff7b72>if</span><span style=color:#6e7681> </span>(fr<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>!=</span><span style=color:#6e7681> </span><span style=color:#79c0ff>null</span>)<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>				</span>fr.close();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>}<span style=color:#6e7681> </span><span style=color:#ff7b72>catch</span><span style=color:#6e7681> </span>(IOException<span style=color:#6e7681> </span>ex)<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>			</span>ex.printStackTrace();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>		</span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>	</span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span>}<span style=color:#6e7681>
+</span></span></span></code></pre></div><h3 id=write-to-file>write to file
+<a class=heading-link href=#write-to-file><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-java data-lang=java><span style=display:flex><span><span style=color:#ff7b72>import</span><span style=color:#6e7681> </span><span style=color:#ff7b72>java.io.*</span>;<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span><span style=color:#ff7b72>public</span><span style=color:#6e7681> </span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>FileWrite</span><span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>   </span><span style=color:#ff7b72>public</span><span style=color:#6e7681> </span><span style=color:#ff7b72>static</span><span style=color:#6e7681> </span><span style=color:#ff7b72>void</span><span style=color:#6e7681> </span><span style=color:#d2a8ff;font-weight:700>main</span>(String<span style=color:#6e7681> </span>args<span style=color:#ff7b72;font-weight:700>[]</span>)<span style=color:#ff7b72>throws</span><span style=color:#6e7681> </span>IOException<span style=color:#6e7681> </span>{<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>File<span style=color:#6e7681> </span>file<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>File(<span style=color:#a5d6ff>&#34;Hello1.txt&#34;</span>);<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span><span style=color:#8b949e;font-style:italic>// creates the file</span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>file.createNewFile();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span><span style=color:#8b949e;font-style:italic>// creates a FileWriter Object</span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>FileWriter<span style=color:#6e7681> </span>writer<span style=color:#6e7681> </span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#6e7681> </span><span style=color:#ff7b72>new</span><span style=color:#6e7681> </span>FileWriter(file);<span style=color:#6e7681> 
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span><span style=color:#8b949e;font-style:italic>// Writes the content to the file</span><span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>writer.write(<span style=color:#a5d6ff>&#34;This\n is\n an\n example\n&#34;</span>);<span style=color:#6e7681> 
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>writer.flush();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>      </span>writer.close();<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681>   </span>}<span style=color:#6e7681>
+</span></span></span><span style=display:flex><span><span style=color:#6e7681></span>}<span style=color:#6e7681>
+</span></span></span></code></pre></div></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

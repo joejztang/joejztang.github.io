@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React on 130l</title><link>http://www.example.com/tags/react/</link><description>Recent content in React on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Sep 2018 14:20:02 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/react/index.xml" rel="self" type="application/rss+xml"/><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+ Flux
+ &lt;a class="heading-link" href="#flux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="redux"&gt;
+ redux
+ &lt;a class="heading-link" href="#redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;redux 借鉴了很多 flux 里的概念, 只是略有不同. redux 也是一种模式的设计.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Flux&lt;/th&gt;
+ &lt;th&gt;Redux&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;多个 store&lt;/td&gt;
+ &lt;td&gt;一个 store&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;dispatcher对 store 进行修改&lt;/td&gt;
+ &lt;td&gt;没有 dispatcher这个概念. 它使用 reducer 进行事件的处理. reducer 是纯函数.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id="createstore"&gt;
+ createStore
+ &lt;a class="heading-link" href="#createstore"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
+ 数据流向
+ &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;React是单向数据流，从父节点传递到子节点（通过&lt;code&gt;props&lt;/code&gt;）。如果顶层的某个&lt;code&gt;props&lt;/code&gt;改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?&lt;/p&gt;
+&lt;p&gt;答案是: &lt;strong&gt;callback function&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id="组件沟通"&gt;
+ 组件沟通
+ &lt;a class="heading-link" href="#%e7%bb%84%e4%bb%b6%e6%b2%9f%e9%80%9a"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;最常见的是先 &lt;strong&gt;父组件更新状态然后子组件更新状态&lt;/strong&gt;. 通过 &lt;code&gt;**props**&lt;/code&gt; 传递给子组件来实现&lt;/p&gt;
+&lt;p&gt;还有一种情况就是 &lt;strong&gt;子组件更新状态然后父组件更新状态&lt;/strong&gt;. 这种情况通过父组件 &lt;strong&gt;传递 callback 给子组件&lt;/strong&gt;, 子组件触发即可.&lt;/p&gt;
+&lt;p&gt;还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.&lt;/p&gt;
+&lt;h1 id="全局事件"&gt;
+ 全局事件
+ &lt;a class="heading-link" href="#%e5%85%a8%e5%b1%80%e4%ba%8b%e4%bb%b6"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item></channel></rss>

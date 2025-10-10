@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Whim on 130l</title><link>http://www.example.com/tags/whim/</link><description>Recent content in Whim on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 03 May 2019 10:36:15 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/whim/index.xml" rel="self" type="application/rss+xml"/><item><title>what i think about switching db seamlessly on the fly</title><link>http://www.example.com/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</link><pubDate>Fri, 03 May 2019 10:36:15 +0000</pubDate><guid>http://www.example.com/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</guid><description>&lt;h2 id="problem-description"&gt;
+ problem description
+ &lt;a class="heading-link" href="#problem-description"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;it is pretty simple I guess. I have an application which read data from a mongodb. every sunday I will just simply flush the db and update it using an updater.
+by doing so, I introduce 3 hours down time/inconsistency time. I want to minimize it.&lt;/p&gt;
+&lt;h2 id="what-i-researched"&gt;
+ what I researched
+ &lt;a class="heading-link" href="#what-i-researched"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="mongodb-replication"&gt;
+ mongodb replication
+ &lt;a class="heading-link" href="#mongodb-replication"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;in general, db repliaction is the process of storing data in more than one site or node. by doing so it improves the availability of data. at the same time, it also raises the problem of how to maintain consistency of data. it related to distributed system though.&lt;/p&gt;</description></item></channel></rss>

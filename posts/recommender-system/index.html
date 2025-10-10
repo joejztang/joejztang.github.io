@@ -1,0 +1,65 @@
+<!doctype html><html lang=en><head><title>recommender system · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  algorithm
+  
+    
+    Link to heading
+  
+
+
+user collaborative filtering / user CF
+item collaborative filtering / item CF
+
+我们选取 item cf 来做.
+
+  细节
+  
+    
+    Link to heading
+  
+
+
+build co-occurrence matrix
+build rating matrix
+matrix computation to get predicted result
+
+
+  item cf alg
+  
+    
+    Link to heading
+  
+
+
+什么时候用 item cf, 什么时候用 user cf.
+
+当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf."><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="recommender system"><meta name=twitter:description content="algorithm Link to heading user collaborative filtering / user CF item collaborative filtering / item CF 我们选取 item cf 来做.
+细节 Link to heading build co-occurrence matrix build rating matrix matrix computation to get predicted result item cf alg Link to heading 什么时候用 item cf, 什么时候用 user cf. 当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf."><meta property="og:url" content="http://www.example.com/posts/recommender-system/"><meta property="og:site_name" content="130l"><meta property="og:title" content="recommender system"><meta property="og:description" content="algorithm Link to heading user collaborative filtering / user CF item collaborative filtering / item CF 我们选取 item cf 来做.
+细节 Link to heading build co-occurrence matrix build rating matrix matrix computation to get predicted result item cf alg Link to heading 什么时候用 item cf, 什么时候用 user cf. 当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-10-28T11:42:19+00:00"><meta property="article:modified_time" content="2018-10-28T11:42:19+00:00"><meta property="article:tag" content="Recommender System"><link rel=canonical href=http://www.example.com/posts/recommender-system/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/recommender-system/>recommender system</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-10-28T11:42:19Z>October 28, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+2-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/big-data/>Big Data</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/recommender-system/>Recommender System</a></span></div></div></header><div class=post-content><h1 id=algorithm>algorithm
+<a class=heading-link href=#algorithm><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li>user collaborative filtering / user CF</li><li>item collaborative filtering / item CF</li></ul><p>我们选取 item cf 来做.</p><h1 id=细节>细节
+<a class=heading-link href=#%e7%bb%86%e8%8a%82><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li>build co-occurrence matrix</li><li>build rating matrix</li><li>matrix computation to get predicted result</li></ul><h1 id=item-cf-alg>item cf alg
+<a class=heading-link href=#item-cf-alg><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ol><li>什么时候用 item cf, 什么时候用 user cf.</li></ol><p>当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf.</p><ol start=2><li>怎么来表示两个不同物品间的 relationship?</li></ol><p>用 user 的 rating histroy 来表示两个物品的 relationship. 如果一个 user 有同时 rate 两个不用的物品, 那么这两个物品是 related.</p><p>可能有点违背常识, 但是因为 user 的数量要远大于 item 的数量, 单一 user 的打分并不能代表最终两个物品是不是真的相关联. 也许最后两个物品只有1%的 user 同时评价过, 99%的 user 没有同时评价. 那么两个物品是不相关的.</p><ol start=3><li>co-occurrence matrix</li></ol><blockquote><p>The similarity values between items are measured by observing all the users <strong>who have rated both the items</strong>.</p></blockquote><table><thead><tr><th>user</th><th>Item1</th><th>Item2</th><th>Item3</th><th>Item4</th><th>Item5</th></tr></thead><tbody><tr><td>A</td><td>1</td><td>1</td><td></td><td>1</td><td></td></tr><tr><td>B</td><td>1</td><td>1</td><td>1</td><td></td><td></td></tr><tr><td>C</td><td></td><td>1</td><td>1</td><td></td><td>1</td></tr><tr><td>D</td><td></td><td>1</td><td></td><td>1</td><td></td></tr></tbody></table><p>this rating table could convert to <strong>co-occurrence matrix</strong> below</p><pre><code>    | Item1 | Item2 | Item3 | Item4 | Item5
+</code></pre><p>&mdash;&mdash;|&mdash;&mdash;-|&mdash;&mdash;-|&mdash;&mdash;-|&mdash;&mdash;-|&mdash;&mdash;
+Item1 | 2 | 2 | 1 | 1 | 0
+Item2 | 2 | 4 | 2 | 2 | 1
+Item3 | 1 | 2 | 2 | 0 | 1
+Item4 | 1 | 2 | 0 | 2 | 0
+Item5 | 0 | 1 | 1 | 0 | 1</p><p>归一化处理 co-occurrence matrix, 每行进行归一化处理</p><p>normalized co-occurrence matrix <strong>X</strong> rating matrix = result matrix</p><h1 id=implementation>implementation
+<a class=heading-link href=#implementation><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ol><li>怎么生成co-occurrence matrix</li><li>divide data for same user_id</li><li>do count</li><li>merge data for same user_id</li></ol><h1 id=credit-to>credit to
+<a class=heading-link href=#credit-to><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><a href=http://www.cs.carleton.edu/cs_comps/0607/recommend/recommender/itembased.html class=external-link target=_blank rel=noopener>http://www.cs.carleton.edu/cs_comps/0607/recommend/recommender/itembased.html</a></li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Scrapy on 130l</title><link>http://www.example.com/categories/scrapy/</link><description>Recent content in Scrapy on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 03 Jul 2018 16:39:39 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/scrapy/index.xml" rel="self" type="application/rss+xml"/><item><title>scrapy recipe</title><link>http://www.example.com/posts/scrapy/</link><pubDate>Tue, 03 Jul 2018 16:39:39 +0000</pubDate><guid>http://www.example.com/posts/scrapy/</guid><description>&lt;h1 id="basic-command"&gt;
+ basic command
+ &lt;a class="heading-link" href="#basic-command"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="create-a-project"&gt;
+ create a project
+ &lt;a class="heading-link" href="#create-a-project"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;scrapy startproject &amp;lt;project_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cd &amp;lt;project_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;scrapy genspider &amp;lt;spider_name&amp;gt; &amp;lt;url&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;for &lt;code&gt;url&lt;/code&gt;, remove &lt;code&gt;www.&lt;/code&gt; or it will creates error.&lt;/p&gt;
+&lt;h2 id="list-all-spiders"&gt;
+ list all spiders
+ &lt;a class="heading-link" href="#list-all-spiders"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;scrapy list&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="start-shell"&gt;
+ start shell
+ &lt;a class="heading-link" href="#start-shell"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;scrapy shell&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="scrapy-argument"&gt;
+ scrapy argument
+ &lt;a class="heading-link" href="#scrapy-argument"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;scrapy crawl &amp;lt;spider name&amp;gt; -a &amp;lt;argument name: &amp;quot;argument content&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

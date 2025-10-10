@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python3 on 130l</title><link>http://www.example.com/tags/python3/</link><description>Recent content in Python3 on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 30 Oct 2017 17:49:22 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/python3/index.xml" rel="self" type="application/rss+xml"/><item><title>regular expression python3</title><link>http://www.example.com/posts/regular-expression-python3/</link><pubDate>Mon, 30 Oct 2017 17:49:22 +0000</pubDate><guid>http://www.example.com/posts/regular-expression-python3/</guid><description>&lt;h1 id="regular-expression-in-python3"&gt;
+ Regular expression in Python3
+ &lt;a class="heading-link" href="#regular-expression-in-python3"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;credit from 廖雪峰的官网&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常见表达&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;\d&lt;/code&gt; &amp;mdash; 用来匹配数字(digit)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\w&lt;/code&gt; &amp;mdash; 用来匹配字母或数字(Word)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\s&lt;/code&gt; &amp;mdash; 用来匹配空格(space)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.&lt;/code&gt; &amp;mdash; 用来匹配任意字符&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; &amp;mdash; 匹配&amp;gt;=0个字符&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;+&lt;/code&gt; &amp;mdash; 匹配&amp;gt;0个字符&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;?&lt;/code&gt; &amp;mdash; 匹配0或1个字符&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;{n, m}&lt;/code&gt; &amp;mdash; 表示 n-m 个字符, 通常和&lt;code&gt;\d&lt;/code&gt;,&lt;code&gt;\w&lt;/code&gt;,&lt;code&gt;\s&lt;/code&gt;搭配着用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt; &amp;mdash; 表示范围. eg: &lt;code&gt;[a-zA-Z\_][0-9a-zA-Z\_]*&lt;/code&gt;可以匹配由字母或下划线开头，后接任意个由一个数字、字母或者下划线组成的字符串，也就是Python合法的变量；&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;A|B&lt;/code&gt; &amp;mdash; 可以匹配A或B&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;^&lt;/code&gt; &amp;mdash; 表示行的开头&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$&lt;/code&gt; &amp;mdash; 表示行的结束&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;re 模块&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用 &lt;code&gt;r&lt;/code&gt; 前缀, 不考虑转译的问题. eg:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;s &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;r&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#39;ABC\-001&amp;#39;&lt;/span&gt; &lt;span style="color:#8b949e;font-style:italic"&gt;# Python的字符串&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# 对应的正则表达式字符串不变：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# &amp;#39;ABC\-001&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;使用 &lt;code&gt;match()&lt;/code&gt; 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>http://www.example.com/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>http://www.example.com/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item></channel></rss>

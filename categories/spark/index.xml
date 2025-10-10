@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Spark on 130l</title><link>http://www.example.com/categories/spark/</link><description>Recent content in Spark on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 03 Sep 2019 14:39:31 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/spark/index.xml" rel="self" type="application/rss+xml"/><item><title>essential training on apache spark</title><link>http://www.example.com/posts/essential-training-on-apache-spark/</link><pubDate>Tue, 03 Sep 2019 14:39:31 +0000</pubDate><guid>http://www.example.com/posts/essential-training-on-apache-spark/</guid><description>&lt;h2 id="two-insteresting-points-gonna-record-in-this-post"&gt;
+ two insteresting points gonna record in this post
+ &lt;a class="heading-link" href="#two-insteresting-points-gonna-record-in-this-post"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MLlib&lt;/li&gt;
+&lt;li&gt;real-time data analysis with spark streaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="mllib"&gt;
+ MLlib
+ &lt;a class="heading-link" href="#mllib"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;MLlib&lt;/code&gt; is handy that just simply import module and then use it.&lt;/p&gt;
+&lt;p&gt;worth metioning root-mean-squared error, aka RMSE, using this error we can compare two predictions with each other. if RMSE is similiar, then two predictions are about the same in accuracy.&lt;/p&gt;</description></item></channel></rss>

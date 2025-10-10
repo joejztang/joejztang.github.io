@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Php on 130l</title><link>http://www.example.com/categories/php/</link><description>Recent content in Php on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 20 Apr 2017 21:53:35 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/php/index.xml" rel="self" type="application/rss+xml"/><item><title>php composer stuff</title><link>http://www.example.com/posts/php-composer/</link><pubDate>Thu, 20 Apr 2017 21:53:35 +0000</pubDate><guid>http://www.example.com/posts/php-composer/</guid><description>&lt;p&gt;开宗明义, 这是个介绍帖. 如果懒得看这个介绍, 请移步&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://getcomposer.org/" class="external-link" target="_blank" rel="noopener"&gt;https://getcomposer.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;今天写 php, 需要一个 lib, 本来打算就 &lt;code&gt;require_once&lt;/code&gt; 一下就得了, 结果发现 github repo 有一堆东西, 发现好像跟我想象的不是特别一样. 而且安装指南写了推荐 composer, 并且给出了有 composer 的时候的使用方法, 但是并没有给出非 composer 的使用方法&amp;hellip;&amp;hellip;这不是逼人用这个 composer 么&amp;hellip;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;转到正体,&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;Composer is a tool for dependency management in PHP. It allows you to declare the libraries your project depends on and it will manage (install/update) them for you.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这么一看, 有点像 npm 啊. 暂且咱就先理解他为 npm.&lt;/p&gt;
+&lt;p&gt;然后安装上也很贴心的分为 locally 和 globally 两种. 暂时只试了 locally 的方法.(其实也是个误打误撞)&lt;/p&gt;
+&lt;h3 id="locally-安装"&gt;
+ locally 安装
+ &lt;a class="heading-link" href="#locally-%e5%ae%89%e8%a3%85"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Run this in your terminal to get the latest Composer version:&lt;/p&gt;</description></item><item><title>php debug 500</title><link>http://www.example.com/posts/php-debug-500/</link><pubDate>Wed, 19 Apr 2017 17:33:32 +0000</pubDate><guid>http://www.example.com/posts/php-debug-500/</guid><description>&lt;p&gt;next time when encounter 500 error using php scripts, try following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-php" data-lang="php"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;error_reporting(&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;); &lt;span style="color:#8b949e;font-style:italic"&gt;// reports all errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;display_errors&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;&amp;#34;1&amp;#34;&lt;/span&gt;); &lt;span style="color:#8b949e;font-style:italic"&gt;// shows all errors
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;log_errors&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;error_log&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;&amp;#34;/tmp/php-error.log&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP include, include_once, require, require_once</title><link>http://www.example.com/posts/php-include-include-once-require-require-once/</link><pubDate>Wed, 19 Apr 2017 16:33:59 +0000</pubDate><guid>http://www.example.com/posts/php-include-include-once-require-require-once/</guid><description>&lt;p&gt;there are four ways to import library to php, they are &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;include_once&lt;/code&gt;, &lt;code&gt;require&lt;/code&gt; and &lt;code&gt;require_once&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;what is the difference?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;require&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;when the file is required by your application, e.g. an important message template or a file containing configuration variables without which the app would break.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;require_once&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;when the file contains content that would produce an error on subsequent inclusion, e.g. function important() { /* important code */} is definitely needed in your application but since functions cannot be redeclared should not be included again.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 130l</title><link>http://www.example.com/tags/python/</link><description>Recent content in Python on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 14 Jun 2019 13:04:56 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>attemped-relative-import-with-no-parent-package</title><link>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</link><pubDate>Fri, 14 Jun 2019 13:04:56 +0000</pubDate><guid>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</guid><description>&lt;p&gt;I created a project using python and happily finished implementing functions with following structure.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;- project
+ |
+ - pipelines
+ | |
+ | - functions.py
+ |
+ - tests
+ |
+ - unittest.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;I created unittest/integration test and then I saw this exception&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Traceback &lt;span style="color:#ff7b72;font-weight:bold"&gt;(&lt;/span&gt;most recent call last&lt;span style="color:#ff7b72;font-weight:bold"&gt;)&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &lt;span style="color:#a5d6ff"&gt;&amp;#34;/home/xxxx/anaconda3/lib/python3.7/unittest/loader.py&amp;#34;&lt;/span&gt;, line 154, in loadTestsFromName
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#79c0ff"&gt;module&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; __import__&lt;span style="color:#ff7b72;font-weight:bold"&gt;(&lt;/span&gt;module_name&lt;span style="color:#ff7b72;font-weight:bold"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &lt;span style="color:#a5d6ff"&gt;&amp;#34;/home/xxxx/datascience.my-project/test/test-unittest.py&amp;#34;&lt;/span&gt;, line 1, in &amp;lt;module&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; from .my_great_script import queryer
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ImportError: attempted relative import with no known parent package
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i was so frustrated.&lt;/p&gt;</description></item><item><title>python underscore naming patterns summary</title><link>http://www.example.com/posts/python-underscore-naming-patterns-summary/</link><pubDate>Fri, 26 Apr 2019 17:31:12 +0000</pubDate><guid>http://www.example.com/posts/python-underscore-naming-patterns-summary/</guid><description>&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Pattern&lt;/th&gt;
+ &lt;th&gt;Example&lt;/th&gt;
+ &lt;th&gt;Meaning&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Single Leading Underscore&lt;/td&gt;
+ &lt;td&gt;_var&lt;/td&gt;
+ &lt;td&gt;Naming convention indicating a name is meant for internal use. Generally not enforced by the Python interpreter (except in wildcard imports) and meant as a hint to the programmer only.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Single Trailing Underscore&lt;/td&gt;
+ &lt;td&gt;var_&lt;/td&gt;
+ &lt;td&gt;Used by convention to avoid naming conflicts with Python keywords.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Double Leading Underscore&lt;/td&gt;
+ &lt;td&gt;__var&lt;/td&gt;
+ &lt;td&gt;Triggers name mangling when used in a class context. Enforced by the Python interpreter.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Double Leading and Trailing Underscore&lt;/td&gt;
+ &lt;td&gt;__var__&lt;/td&gt;
+ &lt;td&gt;Indicates special methods defined by the Python language. Avoid this naming scheme for your own attributes.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Single Underscore&lt;/td&gt;
+ &lt;td&gt;_&lt;/td&gt;
+ &lt;td&gt;Sometimes used as a name for temporary or insignificant variables (“don’t care”). Also: The result of the last expression in a Python REPL.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="credit-to"&gt;
+ credit to
+ &lt;a class="heading-link" href="#credit-to"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://dbader.org/blog/meaning-of-underscores-in-python" class="external-link" target="_blank" rel="noopener"&gt;The Meaning of Underscores in Python&lt;/a&gt;&lt;/p&gt;</description></item><item><title>anaconda python venv environment mess</title><link>http://www.example.com/posts/anaconda-python-environment-mess/</link><pubDate>Thu, 14 Mar 2019 16:47:26 +0000</pubDate><guid>http://www.example.com/posts/anaconda-python-environment-mess/</guid><description>&lt;p&gt;I have encountered an strange issue today, and want to record it in case I met it again or others who find it is helpful.&lt;/p&gt;
+&lt;h2 id="intro-anaconda"&gt;
+ intro: anaconda
+ &lt;a class="heading-link" href="#intro-anaconda"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;It is so famous that almost everyone that code with python knows it. (if you don&amp;rsquo;t know that, please search and get familiar with it, very helpful) it provides python version control so that you don&amp;rsquo;t worries about install so many versions of python and mess up system.&lt;/p&gt;</description></item><item><title>python circular imports</title><link>http://www.example.com/posts/python-circular-imports/</link><pubDate>Thu, 29 Mar 2018 11:47:27 +0000</pubDate><guid>http://www.example.com/posts/python-circular-imports/</guid><description>&lt;h3 id="many-ways-to-import-a-module"&gt;
+ many ways to import a module
+ &lt;a class="heading-link" href="#many-ways-to-import-a-module"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h4 id="import-x"&gt;
+ &lt;code&gt;import X&lt;/code&gt;
+ &lt;a class="heading-link" href="#import-x"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;imports module X, and creates a reference to module in current namespace.&lt;/p&gt;
+&lt;h4 id="from-x-import-a-b-c"&gt;
+ &lt;code&gt;from X import a, b, c&lt;/code&gt;
+ &lt;a class="heading-link" href="#from-x-import-a-b-c"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;imports module X and creates references in the current namespace to given objects, in this case a, b, c.&lt;/p&gt;
+&lt;h3 id="what-does-python-do-to-import-module"&gt;
+ what does python do to import module
+ &lt;a class="heading-link" href="#what-does-python-do-to-import-module"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;if module has already registered (sys.modules), it just passes.&lt;/p&gt;</description></item><item><title>Django application simple tutorial</title><link>http://www.example.com/posts/django-application-simple-tutorial/</link><pubDate>Mon, 06 Nov 2017 20:50:52 +0000</pubDate><guid>http://www.example.com/posts/django-application-simple-tutorial/</guid><description>&lt;p&gt;This is sort of a cheating sheet for a simple django application. You can get ideas on how to create a fully functional django application.&lt;/p&gt;</description></item><item><title>django sqlite migrate and admin</title><link>http://www.example.com/posts/django-sqlite-migrate-and-admin/</link><pubDate>Sun, 05 Nov 2017 12:49:06 +0000</pubDate><guid>http://www.example.com/posts/django-sqlite-migrate-and-admin/</guid><description>&lt;h1 id="django-sqlite-creation-and-admin"&gt;
+ Django SQLite creation and Admin
+ &lt;a class="heading-link" href="#django-sqlite-creation-and-admin"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Django provides very powerful admin panel for administrator to control the web application.&lt;/p&gt;
+&lt;p&gt;In order to use python admin panel, one has to create several models. Under a certain apps package in &lt;code&gt;models.py&lt;/code&gt;, one can create SQL Models. And under the same directory in &lt;code&gt;admin.py&lt;/code&gt;, one can register the model by using &lt;code&gt;admin.site.register()&lt;/code&gt; to register.&lt;/p&gt;
+&lt;h1 id="migration"&gt;
+ Migration
+ &lt;a class="heading-link" href="#migration"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

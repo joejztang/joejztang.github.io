@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data Structure on 130l</title><link>http://www.example.com/categories/data-structure/</link><description>Recent content in Data Structure on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 07 Aug 2018 11:30:56 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/data-structure/index.xml" rel="self" type="application/rss+xml"/><item><title>闭包之阿隆佐邱奇的故事</title><link>http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</link><pubDate>Tue, 07 Aug 2018 11:30:56 +0000</pubDate><guid>http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</guid><description>&lt;h1 id="写在前面"&gt;
+ 写在前面
+ &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;这是廖雪峰老师的博客出现的不计其数的例子, 原来看了没懂, 最近补上了一些基础知识, 试着再理解一下.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449934543461c9d5dfeeb848f5b72bd012e1113d15000#0" class="external-link" target="_blank" rel="noopener"&gt;廖老师的博客&lt;/a&gt;原文在这, 如果还不知道廖老师, 那么非常推荐你去看看.&lt;/p&gt;
+&lt;h1 id="阿隆佐邱奇的脑洞"&gt;
+ 阿隆佐邱奇的脑洞
+ &lt;a class="heading-link" href="#%e9%98%bf%e9%9a%86%e4%bd%90%e9%82%b1%e5%a5%87%e7%9a%84%e8%84%91%e6%b4%9e"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;很久很久以前，有个叫阿隆佐·邱奇的帅哥，发现只需要用函数，就可以用计算机实现运算，而不需要&lt;code&gt;0&lt;/code&gt;、&lt;code&gt;1&lt;/code&gt;、&lt;code&gt;2&lt;/code&gt;、&lt;code&gt;3&lt;/code&gt;这些数字和&lt;code&gt;+&lt;/code&gt;、&lt;code&gt;-&lt;/code&gt;、&lt;code&gt;*&lt;/code&gt;、&lt;code&gt;/&lt;/code&gt;这些符号。&lt;/p&gt;
+&lt;p&gt;JavaScript支持函数，所以可以用JavaScript用函数来写这些计算。来试试：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;#39;use strict&amp;#39;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 定义数字0:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; zero &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (f) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; x;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 定义数字1:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; one &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (f) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; f(x);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;};
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 定义加法:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; add(n, m) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (f) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; (x) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; m(f)(n(f)(x));
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 计算数字2 = 1 + 1:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; two &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; add(one, one);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 计算数字3 = 1 + 2:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; three &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; add(one, two);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 计算数字5 = 2 + 3:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; five &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; add(two, three);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 你说它是3就是3，你说它是5就是5，你怎么证明？
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 呵呵，看这里:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 给3传一个函数,会打印3次:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;(three(&lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#39;print 3 times&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}))();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 给5传一个函数,会打印5次:
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;(five(&lt;span style="color:#ff7b72"&gt;function&lt;/span&gt; () {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#39;print 5 times&amp;#39;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}))();
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 继续接着玩一会...
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;console 运行的结果还真是和预言的一样(让人头大)&lt;/p&gt;</description></item></channel></rss>

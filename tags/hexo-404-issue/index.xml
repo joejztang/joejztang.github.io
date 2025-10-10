@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo 404 Issue on 130l</title><link>http://www.example.com/tags/hexo-404-issue/</link><description>Recent content in Hexo 404 Issue on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 21 Mar 2018 13:35:54 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/hexo-404-issue/index.xml" rel="self" type="application/rss+xml"/><item><title>hexo categories/tags 404 issue on github</title><link>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</link><pubDate>Wed, 21 Mar 2018 13:35:54 +0000</pubDate><guid>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</guid><description>&lt;p&gt;Sometimes, when you run server locally aka &lt;code&gt;hexo s&lt;/code&gt;, you will find your categories page and tags page (mainly these two pages) are working fine. But when you deploy pages using &lt;code&gt;hexo d&lt;/code&gt;, the pages suddenly give you 404.&lt;/p&gt;
+&lt;h2 id="why-is-that"&gt;
+ Why is that?
+ &lt;a class="heading-link" href="#why-is-that"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;git is case in-sensitive defaultly, but javascript is a case sensitive language. That is telling you node.js will not find your route if case in-sensitive.&lt;/p&gt;</description></item></channel></rss>

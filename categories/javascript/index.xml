@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on 130l</title><link>http://www.example.com/categories/javascript/</link><description>Recent content in Javascript on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
+ flux 和 redux
+ &lt;a class="heading-link" href="#flux-%e5%92%8c-redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;说到 react-redux 就绕不开 flux 和 redux 模式. 他们有很多相同, 也有不同. 现在我们来回顾一下什么是 flux, 什么是 redux.&lt;/p&gt;
+&lt;h2 id="flux"&gt;
+ flux
+ &lt;a class="heading-link" href="#flux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;可以看到 flux 的精髓即数据永远单向流动.&lt;/p&gt;
+&lt;h2 id="redux"&gt;
+ Redux
+ &lt;a class="heading-link" href="#redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;redux 借鉴了很多 flux 里的概念, 只是略有不同. redux 也是一种模式的设计.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Flux&lt;/th&gt;
+ &lt;th&gt;Redux&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;多个 store&lt;/td&gt;
+ &lt;td&gt;一个 store&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;dispatcher对 store 进行修改&lt;/td&gt;
+ &lt;td&gt;没有 dispatcher这个概念. 它使用 reducer 进行事件的处理. reducer 是纯函数.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+ Flux
+ &lt;a class="heading-link" href="#flux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="redux"&gt;
+ redux
+ &lt;a class="heading-link" href="#redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;redux 借鉴了很多 flux 里的概念, 只是略有不同. redux 也是一种模式的设计.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Flux&lt;/th&gt;
+ &lt;th&gt;Redux&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;多个 store&lt;/td&gt;
+ &lt;td&gt;一个 store&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;dispatcher对 store 进行修改&lt;/td&gt;
+ &lt;td&gt;没有 dispatcher这个概念. 它使用 reducer 进行事件的处理. reducer 是纯函数.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id="createstore"&gt;
+ createStore
+ &lt;a class="heading-link" href="#createstore"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>callback 函数的一点理解</title><link>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</link><pubDate>Tue, 28 Aug 2018 15:29:16 +0000</pubDate><guid>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</guid><description>&lt;h1 id="什么是-callback"&gt;
+ 什么是 callback
+ &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-callback"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A callback function is a &lt;strong&gt;function&lt;/strong&gt; passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="callback-函数执行过程的想象"&gt;
+ callback 函数执行过程的想象
+ &lt;a class="heading-link" href="#callback-%e5%87%bd%e6%95%b0%e6%89%a7%e8%a1%8c%e8%bf%87%e7%a8%8b%e7%9a%84%e6%83%b3%e8%b1%a1"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所谓的回调函数处理逻辑，其实就是先将回调函数的代码 冻结（或者理解为闲置），接着将这个回调函数的代码放到 &lt;strong&gt;回调函数管理器的队列&lt;/strong&gt; 里面。
+待回调函数被触发调用的时候，对应的回调函数的代码才会从管理器队列 &lt;strong&gt;取出来并自动执行&lt;/strong&gt;（激活回调函数的代码），实现异步的编程效果。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="一个小问题"&gt;
+ 一个小问题
+ &lt;a class="heading-link" href="#%e4%b8%80%e4%b8%aa%e5%b0%8f%e9%97%ae%e9%a2%98"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;如同上面的引用说的, callback 被触发, 那么回调函数代码会被从队列里面 pull 出来, 自动执行/激活.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
+ 数据流向
+ &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;React是单向数据流，从父节点传递到子节点（通过&lt;code&gt;props&lt;/code&gt;）。如果顶层的某个&lt;code&gt;props&lt;/code&gt;改变了，React会重渲染所有的子节点（未做性能优化）。严格意义上React只提供，也强烈建议使用这种数据交流方式&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;数据既然只能从父传到子, 那么像以下的情景: 点击 button 改变状态是怎么实现的呢?&lt;/p&gt;
+&lt;p&gt;答案是: &lt;strong&gt;callback function&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id="组件沟通"&gt;
+ 组件沟通
+ &lt;a class="heading-link" href="#%e7%bb%84%e4%bb%b6%e6%b2%9f%e9%80%9a"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;最常见的是先 &lt;strong&gt;父组件更新状态然后子组件更新状态&lt;/strong&gt;. 通过 &lt;code&gt;**props**&lt;/code&gt; 传递给子组件来实现&lt;/p&gt;
+&lt;p&gt;还有一种情况就是 &lt;strong&gt;子组件更新状态然后父组件更新状态&lt;/strong&gt;. 这种情况通过父组件 &lt;strong&gt;传递 callback 给子组件&lt;/strong&gt;, 子组件触发即可.&lt;/p&gt;
+&lt;p&gt;还有一种是兄弟组件沟通, 可以通过 props 传递(通过 callback 实现)给父组件, 然后改变兄弟的状态.&lt;/p&gt;
+&lt;h1 id="全局事件"&gt;
+ 全局事件
+ &lt;a class="heading-link" href="#%e5%85%a8%e5%b1%80%e4%ba%8b%e4%bb%b6"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item><item><title>javascript 中的 bind 函数</title><link>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</link><pubDate>Fri, 24 Aug 2018 10:56:22 +0000</pubDate><guid>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</guid><description>&lt;h1 id="什么是-bind-函数"&gt;
+ 什么是 &lt;code&gt;bind&lt;/code&gt; 函数
+ &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-bind-%e5%87%bd%e6%95%b0"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;bind()&lt;/code&gt; 方法会创建一个 &lt;strong&gt;新函数&lt;/strong&gt;. &lt;code&gt;bind&lt;/code&gt; 允许你设置这个值而不调用 &lt;strong&gt;新函数&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1 id="bind-函数的语法"&gt;
+ &lt;code&gt;bind&lt;/code&gt; 函数的语法
+ &lt;a class="heading-link" href="#bind-%e5%87%bd%e6%95%b0%e7%9a%84%e8%af%ad%e6%b3%95"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;fun.bind(thisArg[, arg1[, arg2[, ...]]])
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;thisArg 当 &lt;strong&gt;新函数&lt;/strong&gt; 被调用的时候, 该参数会作为原函数的 &lt;code&gt;this&lt;/code&gt; 指向. 但是, 当使用 &lt;code&gt;new&lt;/code&gt; 操作符调用新函数的时候, 该参数无效.&lt;/li&gt;
+&lt;li&gt;arg1, arg2, &amp;hellip; 这些参数会依次作为原函数的运行参数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="例子"&gt;
+ 例子
+ &lt;a class="heading-link" href="#%e4%be%8b%e5%ad%90"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;this&lt;/span&gt;.name &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;John&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; myName &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; name&lt;span style="color:#ff7b72;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;Tom&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; getName&lt;span style="color:#ff7b72;font-weight:bold"&gt;:&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;function&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;this&lt;/span&gt;.name
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; storeMyName &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; myName.getName; &lt;span style="color:#8b949e;font-style:italic"&gt;// example 1
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; storeMyName2 &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; myName.getName.bind(myName); &lt;span style="color:#8b949e;font-style:italic"&gt;// example 2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; storeMyName3 &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; myName.getName(); &lt;span style="color:#8b949e;font-style:italic"&gt;// example 3
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 1: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName()); &lt;span style="color:#8b949e;font-style:italic"&gt;// John
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 2: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName2()); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 3: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName3); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们可以看到对于 example1 来说, 没有 &lt;code&gt;bind(myName)&lt;/code&gt;, 那么在运行 getName 函数的时候, &lt;code&gt;this&lt;/code&gt; 指向了全局, 全局下 name 属性是 John.&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>http://www.example.com/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>http://www.example.com/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
+ 写在前头
+ &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e5%a4%b4"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;还是得要膜拜一下&lt;a href="https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000" class="external-link" target="_blank" rel="noopener"&gt;廖雪峰大神&lt;/a&gt;, 原文都在这了. 这篇帖子只是单纯的笔记整理&lt;/p&gt;
+&lt;h1 id="数据类型"&gt;
+ 数据类型
+ &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;number: 不区分整数和浮点数&lt;/li&gt;
+&lt;li&gt;字符串&lt;/li&gt;
+&lt;li&gt;布尔值: &lt;code&gt;true&lt;/code&gt;/&lt;code&gt;false&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="比较运算符--vs-"&gt;
+ 比较运算符, == vs. ===
+ &lt;a class="heading-link" href="#%e6%af%94%e8%be%83%e8%bf%90%e7%ae%97%e7%ac%a6--vs-"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;javascript 允许对任意数据类型作比较&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#79c0ff"&gt;false&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;==&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; &lt;span style="color:#8b949e;font-style:italic"&gt;// true
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#79c0ff"&gt;false&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;===&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt; &lt;span style="color:#8b949e;font-style:italic"&gt;// false
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;==&lt;/code&gt; 会自动转换数据类型再比较 (&lt;strong&gt;不推荐使用&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;===&lt;/code&gt; 不会转换数据类型 (&lt;strong&gt;应该坚持使用&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;NaN&lt;/code&gt; 与所有值(包括自己都不同), 只有通过 &lt;code&gt;isNaN()&lt;/code&gt; 才能判断.&lt;/li&gt;
+&lt;li&gt;比较浮点数时候, 要计算他们的绝对值是不是小于某个阈值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="null-vs-undefined"&gt;
+ null vs. undefined
+ &lt;a class="heading-link" href="#null-vs-undefined"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;null&lt;/code&gt;, 空. 它不等于0, 也不等于&lt;code&gt;''&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;undefined&lt;/code&gt; 表示值未定义, 只有在未规定 return 值的时候/object 中没有这个 prop 时候,会返回&lt;code&gt;undefined&lt;/code&gt;, 其他时候我都会用&lt;code&gt; null&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="javascript-中的对象"&gt;
+ javascript 中的对象
+ &lt;a class="heading-link" href="#javascript-%e4%b8%ad%e7%9a%84%e5%af%b9%e8%b1%a1"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;unsorted key-value pair&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

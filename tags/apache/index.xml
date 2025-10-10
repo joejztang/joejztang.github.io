@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache on 130l</title><link>http://www.example.com/tags/apache/</link><description>Recent content in Apache on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 27 Feb 2019 14:38:39 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/apache/index.xml" rel="self" type="application/rss+xml"/><item><title>apache-beam-intro</title><link>http://www.example.com/posts/apache-beam-intro/</link><pubDate>Wed, 27 Feb 2019 14:38:39 +0000</pubDate><guid>http://www.example.com/posts/apache-beam-intro/</guid><description>&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/43796046/explain-apache-beam-python-syntax" class="external-link" target="_blank" rel="noopener"&gt;Don&amp;rsquo;t feel afraid of &amp;lsquo;fancy&amp;rsquo; syntax of Apache Beam Python&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="basic-concepts"&gt;
+ Basic Concepts
+ &lt;a class="heading-link" href="#basic-concepts"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="pipelines"&gt;
+ pipelines
+ &lt;a class="heading-link" href="#pipelines"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A pipeline encapsulates the entire series of computations involved in reading input data, transforming that data, and writing output data. The input source and output sink can be the same or of different types, allowing you to convert data from one format to another. Apache Beam programs start by constructing a Pipeline object, and then using that object as the basis for creating the pipeline&amp;rsquo;s datasets. Each pipeline represents a single, repeatable job.&lt;/p&gt;</description></item><item><title>Https local environment</title><link>http://www.example.com/posts/https-local-environment/</link><pubDate>Sun, 30 Apr 2017 17:28:32 +0000</pubDate><guid>http://www.example.com/posts/https-local-environment/</guid><description>&lt;p&gt;最近做一个项目, 需要用到 ssl 环境, 于是需要折腾一个本地环境.&lt;/p&gt;
+&lt;p&gt;我采用的是 mamp pro, 步骤如下.&lt;/p&gt;</description></item></channel></rss>

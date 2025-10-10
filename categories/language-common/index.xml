@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Language Common on 130l</title><link>http://www.example.com/categories/language-common/</link><description>Recent content in Language Common on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 22 May 2018 11:28:49 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/language-common/index.xml" rel="self" type="application/rss+xml"/><item><title>String interning in java and python</title><link>http://www.example.com/posts/string-interning-in-java-and-python/</link><pubDate>Tue, 22 May 2018 11:28:49 +0000</pubDate><guid>http://www.example.com/posts/string-interning-in-java-and-python/</guid><description>&lt;h1 id="什么是-string-interning"&gt;
+ 什么是 string interning
+ &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-string-interning"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;In computer science, string interning is a method of storing only one copy of each distinct string value, which must be immutable. Interning strings makes some string processing tasks more time- or space-efficient at the cost of requiring more time when the string is created or interned. The distinct values are stored in a string intern pool.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&amp;mdash; from Wikipedia&lt;/p&gt;</description></item></channel></rss>

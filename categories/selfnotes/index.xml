@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SelfNotes on 130l</title><link>http://www.example.com/categories/selfnotes/</link><description>Recent content in SelfNotes on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 08 Aug 2018 19:06:04 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/selfnotes/index.xml" rel="self" type="application/rss+xml"/><item><title>intervals</title><link>http://www.example.com/posts/intervals/</link><pubDate>Wed, 08 Aug 2018 19:06:04 +0000</pubDate><guid>http://www.example.com/posts/intervals/</guid><description>&lt;h1 id="merge-intervals-lc-56"&gt;
+ merge intervals LC 56
+ &lt;a class="heading-link" href="#merge-intervals-lc-56"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="method-1"&gt;
+ method 1
+ &lt;a class="heading-link" href="#method-1"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;sort by start&lt;/li&gt;
+&lt;li&gt;sort by end (see from right to left)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="method-2"&gt;
+ method 2
+ &lt;a class="heading-link" href="#method-2"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;mergeSort (divide and conquer)&lt;/p&gt;
+&lt;p&gt;谁小移谁&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt; [6,7) [2,5) [1,2) [0,3)
+ \ / \ /
+ [2,5) [6,7) [0,3)
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Photography on 130l</title><link>http://www.example.com/tags/photography/</link><description>Recent content in Photography on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 04 May 2018 13:45:35 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/photography/index.xml" rel="self" type="application/rss+xml"/><item><title>photoshop essential</title><link>http://www.example.com/posts/photoshop-essential/</link><pubDate>Fri, 04 May 2018 13:45:35 +0000</pubDate><guid>http://www.example.com/posts/photoshop-essential/</guid><description>&lt;h1 id="crop-tools"&gt;
+ crop tools
+ &lt;a class="heading-link" href="#crop-tools"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;You can retain the information from the cropped area, if you choose to, for use again in later edits.&lt;/li&gt;
+&lt;li&gt;Specialist options within the cropping tool will allow you straighten images - and either crop out all transparent areas to allow you auto fill theses areas(content aware).&lt;/li&gt;
+&lt;li&gt;Autofill content aware will fill the transparent areas, created by cropping, by sampling the surrounding area and creating information that is similar.&lt;/li&gt;
+&lt;li&gt;You must always check the autofill and make any necessary corrections.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="self-healing-brush"&gt;
+ self-healing brush
+ &lt;a class="heading-link" href="#self-healing-brush"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Like using the autofill, the self-healing brush will sample the area around it and paint the area to match as best it can.&lt;/li&gt;
+&lt;li&gt;Always do the corrections on a new blank layer above the layer being corrected.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In the Spot Healing tool select sample all layers&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="layers"&gt;
+ layers
+ &lt;a class="heading-link" href="#layers"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Photoshop layers are like sheets of stacked acetate. You can see through transparent areas of a layer to the layers below. You move the content on the layer where you want it to appear, like sliding a sheet of acetate in a stack. You can also change the opacity of a layer to make content partially transparent.&lt;/p&gt;</description></item></channel></rss>

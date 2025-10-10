@@ -1,0 +1,41 @@
+<!doctype html><html lang=en><head><title>django sqlite migrate and admin · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  Django SQLite creation and Admin
+  
+    
+    Link to heading
+  
+
+Django provides very powerful admin panel for administrator to control the web application.
+In order to use python admin panel, one has to create several models. Under a certain apps package in models.py, one can create SQL Models. And under the same directory in admin.py, one can register the model by using admin.site.register() to register.
+
+  Migration
+  
+    
+    Link to heading
+  
+
+
+
+python manage.py migrate"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="django sqlite migrate and admin"><meta name=twitter:description content="Django SQLite creation and Admin Link to heading Django provides very powerful admin panel for administrator to control the web application.
+In order to use python admin panel, one has to create several models. Under a certain apps package in models.py, one can create SQL Models. And under the same directory in admin.py, one can register the model by using admin.site.register() to register.
+Migration Link to heading python manage.py migrate"><meta property="og:url" content="http://www.example.com/posts/django-sqlite-migrate-and-admin/"><meta property="og:site_name" content="130l"><meta property="og:title" content="django sqlite migrate and admin"><meta property="og:description" content="Django SQLite creation and Admin Link to heading Django provides very powerful admin panel for administrator to control the web application.
+In order to use python admin panel, one has to create several models. Under a certain apps package in models.py, one can create SQL Models. And under the same directory in admin.py, one can register the model by using admin.site.register() to register.
+Migration Link to heading python manage.py migrate"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2017-11-05T12:49:06+00:00"><meta property="article:modified_time" content="2017-11-05T12:49:06+00:00"><meta property="article:tag" content="Python"><link rel=canonical href=http://www.example.com/posts/django-sqlite-migrate-and-admin/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/django-sqlite-migrate-and-admin/>django sqlite migrate and admin</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2017-11-05T12:49:06Z>November 5, 2017
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+One-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/django/>Django</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/python/>Python</a></span></div></div></header><div class=post-content><h1 id=django-sqlite-creation-and-admin>Django SQLite creation and Admin
+<a class=heading-link href=#django-sqlite-creation-and-admin><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>Django provides very powerful admin panel for administrator to control the web application.</p><p>In order to use python admin panel, one has to create several models. Under a certain apps package in <code>models.py</code>, one can create SQL Models. And under the same directory in <code>admin.py</code>, one can register the model by using <code>admin.site.register()</code> to register.</p><h1 id=migration>Migration
+<a class=heading-link href=#migration><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><p><code>python manage.py migrate</code></p></li><li><p>Then register the changes to your app, <code>python manage.py makemigrations app1</code></p></li><li><p>Then migrate the database one more time: <code>python manage.py migrate</code></p></li></ul><h1 id=superuser>superuser
+<a class=heading-link href=#superuser><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>after registration, in shell command, you can type in <code>python manage.py createsuperuser</code> to create a superuser, then you can use this panel then.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

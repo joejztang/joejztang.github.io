@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo 优化 on 130l</title><link>http://www.example.com/tags/hexo-%E4%BC%98%E5%8C%96/</link><description>Recent content in Hexo 优化 on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 13 Apr 2018 23:20:52 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/hexo-%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>hexo seo</title><link>http://www.example.com/posts/hexo-seo/</link><pubDate>Fri, 13 Apr 2018 23:20:52 +0000</pubDate><guid>http://www.example.com/posts/hexo-seo/</guid><description>&lt;p&gt;以前一直都不明白 seo 是个什么东西.&lt;/p&gt;
+&lt;p&gt;但是最近重新用 hexo 记录一些学习过程. 写完手贱在 google 上搜了一下, 什么都搜不到, 于是 seo 这个词就蹦到了我的脑子里. 原来 seo 是干这个的.&lt;/p&gt;
+&lt;h2 id="sitemap"&gt;
+ sitemap
+ &lt;a class="heading-link" href="#sitemap"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Sitemap即网站地图，它的作用在于便于搜索引擎更加智能地抓取网站。最简单和常见的sitemap形式，是XML文件，在其中列出网站中的网址以及关于每个网址的其他元数据&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="使用的hexo-plugin"&gt;
+ 使用的hexo plugin
+ &lt;a class="heading-link" href="#%e4%bd%bf%e7%94%a8%e7%9a%84hexo-plugin"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;root下&lt;code&gt;_config.yml&lt;/code&gt; 添加&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#hexo sitemap
+sitemap:
+ path: sitemap.xml
+baidusitemap:
+ path: baidusitemap.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="添加-robotstxt"&gt;
+ 添加 &lt;code&gt;robots.txt&lt;/code&gt;
+ &lt;a class="heading-link" href="#%e6%b7%bb%e5%8a%a0-robotstxt"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;robots.txt&lt;/code&gt;（统一小写）是一种存放于网站根目录下的ASCII编码的文本文件，它的作用是告诉搜索引擎此网站中哪些内容是可以被爬取的，哪些是禁止爬取的。
+在 &lt;code&gt;source&lt;/code&gt; 目录下增加 &lt;code&gt;robots.txt&lt;/code&gt; 文件，网站生成后在网站的根目录(&lt;code&gt;站点目录/public/&lt;/code&gt;)下。&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://&amp;lt;your_domain&amp;gt;/sitemap.xml
+Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Allow表示允许被访问的，Disallow是不允许的意思。注意后面两个Sitemap就是网站地图了。而网站地图前面说了是给爬虫用的。这里配置在robots中。&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

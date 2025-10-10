@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Jenkins on 130l</title><link>http://www.example.com/categories/jenkins/</link><description>Recent content in Jenkins on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Jul 2019 15:54:20 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/jenkins/index.xml" rel="self" type="application/rss+xml"/><item><title>jenkins setup for hexo auto deploy</title><link>http://www.example.com/posts/jenkins-setup-for-hexo-auto-deploy/</link><pubDate>Mon, 15 Jul 2019 15:54:20 +0000</pubDate><guid>http://www.example.com/posts/jenkins-setup-for-hexo-auto-deploy/</guid><description>&lt;h1 id="what-did-i-do-before"&gt;
+ what did I do before
+ &lt;a class="heading-link" href="#what-did-i-do-before"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://joejztang.github.io/2019/02/22/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/" class="external-link" target="_blank" rel="noopener"&gt;this&lt;/a&gt; is what I did before. and with the capacity of vm being relative small (hexo is memory consuming!!!), have to recreate my vm.&lt;/p&gt;
+&lt;h1 id="about-aws"&gt;
+ about aws
+ &lt;a class="heading-link" href="#about-aws"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;I used aws as jenkins host. aws seems quicky to me because sometimes I got no permission sign in again to vm, even though I got the private key.&lt;/p&gt;</description></item><item><title>迟到的jenkins自动部署</title><link>http://www.example.com/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</link><pubDate>Fri, 22 Feb 2019 14:12:26 +0000</pubDate><guid>http://www.example.com/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</guid><description>&lt;p&gt;用了hexo很久， 最近想要不止在自己的电脑上写博客， 每个电脑都能写。 然而hexo不支持， 所以想到了用jenkins配hexo。 当然jenkins可不是专门干这个的， jenkins可还有大用处。 我自己配置的时候遇见了很多坑， 如果遇见了一样的， 可以参考这篇帖子。 希望给你帮助。&lt;/p&gt;
+&lt;h2 id="hexo配置"&gt;
+ hexo配置
+ &lt;a class="heading-link" href="#hexo%e9%85%8d%e7%bd%ae"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;由于我不太想要把自己的帖子source都暴露在网上， 所以我用了一个private repo。所有就有了如下的配置图&lt;/p&gt;
+&lt;h2 id="配置图"&gt;
+ 配置图
+ &lt;a class="heading-link" href="#%e9%85%8d%e7%bd%ae%e5%9b%be"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-配置图" data-lang="配置图"&gt;
+hexo/source &amp;gt;------
+ commit|
+ |------&amp;gt; jenkins
+ -----&amp;lt; hook &amp;amp;&amp;amp; logic
+ |
+ |
+hexo/public &amp;lt;-------
+ update
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="jenkins配置"&gt;
+ jenkins配置
+ &lt;a class="heading-link" href="#jenkins%e9%85%8d%e7%bd%ae"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;我把jenkins放在了aws上面。 之前很久就想要用ec2， 但是总是没有机会。 通过这次机会， 一并用了。我参考了这个&lt;a href="https://d1.awsstatic.com/Projects/P5505030/aws-project_Jenkins-build-server.pdf" class="external-link" target="_blank" rel="noopener"&gt;文件&lt;/a&gt;
+当然， 折腾也开始了。&lt;/p&gt;
+&lt;h3 id="host-name-is-not-ec2-user"&gt;
+ host name is not ec2-user
+ &lt;a class="heading-link" href="#host-name-is-not-ec2-user"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;不要用ssh去&lt;code&gt;ec2-user@xxxxxx.amazon.com&lt;/code&gt;， amazon不会创建ec2-user给你，用要用&lt;code&gt;ubuntu&lt;/code&gt;。&lt;/p&gt;</description></item></channel></rss>

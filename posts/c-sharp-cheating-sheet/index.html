@@ -1,0 +1,413 @@
+<!doctype html><html lang=en><head><title>c sharp cheating sheet · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  DLL vs EXE
+  
+    
+    Link to heading
+  
+
+Dynamic Linked Library, cannot run individually.
+Executable file have Main function.
+
+  Naming Conventions
+  
+    
+    Link to heading
+  
+
+
+  
+      
+          Object Name
+          Notation
+          Length
+          Plural
+          Prefix
+          Suffix
+          Abbreviation
+          Char Mask
+          Underscores
+      
+  
+  
+      
+          Class name
+          PascalCase
+          128
+          No
+          No
+          Yes
+          No
+          [A-z][0-9]
+          No
+      
+      
+          Constructor name
+          PascalCase
+          128
+          No
+          No
+          Yes
+          No
+          [A-z][0-9]
+          No
+      
+      
+          Method name
+          PascalCase
+          128
+          Yes
+          No
+          No
+          No
+          [A-z][0-9]
+          No
+      
+      
+          Method arguments
+          camelCase
+          128
+          Yes
+          No
+          No
+          Yes
+          [A-z][0-9]
+          No
+      
+      
+          Local variables
+          camelCase
+          50
+          Yes
+          No
+          No
+          Yes
+          [A-z][0-9]
+          No
+      
+      
+          Constants name
+          PascalCase
+          50
+          No
+          No
+          No
+          No
+          [A-z][0-9]
+          No
+      
+      
+          Field name
+          camelCase
+          50
+          Yes
+          No
+          No
+          Yes
+          [A-z][0-9]
+          Yes
+      
+      
+          Properties name
+          PascalCase
+          50
+          Yes
+          No
+          No
+          Yes
+          [A-z][0-9]
+          No
+      
+      
+          Delegate name
+          PascalCase
+          128
+          No
+          No
+          Yes
+          Yes
+          [A-z]
+          No
+      
+      
+          Enum type name
+          PascalCase
+          128
+          Yes
+          No
+          No
+          No
+          [A-z]
+          No
+      
+  
+
+
+  fields vs properties
+  
+    
+    Link to heading
+  
+
+properties exposes fields. meaning properties have getter and setter whereas fields store actual data."><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="c sharp cheating sheet"><meta name=twitter:description content="DLL vs EXE Link to heading Dynamic Linked Library, cannot run individually. Executable file have Main function.
+Naming Conventions Link to heading Object Name Notation Length Plural Prefix Suffix Abbreviation Char Mask Underscores Class name PascalCase 128 No No Yes No [A-z][0-9] No Constructor name PascalCase 128 No No Yes No [A-z][0-9] No Method name PascalCase 128 Yes No No No [A-z][0-9] No Method arguments camelCase 128 Yes No No Yes [A-z][0-9] No Local variables camelCase 50 Yes No No Yes [A-z][0-9] No Constants name PascalCase 50 No No No No [A-z][0-9] No Field name camelCase 50 Yes No No Yes [A-z][0-9] Yes Properties name PascalCase 50 Yes No No Yes [A-z][0-9] No Delegate name PascalCase 128 No No Yes Yes [A-z] No Enum type name PascalCase 128 Yes No No No [A-z] No fields vs properties Link to heading properties exposes fields. meaning properties have getter and setter whereas fields store actual data."><meta property="og:url" content="http://www.example.com/posts/c-sharp-cheating-sheet/"><meta property="og:site_name" content="130l"><meta property="og:title" content="c sharp cheating sheet"><meta property="og:description" content="DLL vs EXE Link to heading Dynamic Linked Library, cannot run individually. Executable file have Main function.
+Naming Conventions Link to heading Object Name Notation Length Plural Prefix Suffix Abbreviation Char Mask Underscores Class name PascalCase 128 No No Yes No [A-z][0-9] No Constructor name PascalCase 128 No No Yes No [A-z][0-9] No Method name PascalCase 128 Yes No No No [A-z][0-9] No Method arguments camelCase 128 Yes No No Yes [A-z][0-9] No Local variables camelCase 50 Yes No No Yes [A-z][0-9] No Constants name PascalCase 50 No No No No [A-z][0-9] No Field name camelCase 50 Yes No No Yes [A-z][0-9] Yes Properties name PascalCase 50 Yes No No Yes [A-z][0-9] No Delegate name PascalCase 128 No No Yes Yes [A-z] No Enum type name PascalCase 128 Yes No No No [A-z] No fields vs properties Link to heading properties exposes fields. meaning properties have getter and setter whereas fields store actual data."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-02-27T12:59:41+00:00"><meta property="article:modified_time" content="2019-02-27T12:59:41+00:00"><meta property="article:tag" content="Cheating Sheet"><link rel=canonical href=http://www.example.com/posts/c-sharp-cheating-sheet/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/c-sharp-cheating-sheet/>c sharp cheating sheet</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2019-02-27T12:59:41Z>February 27, 2019
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+9-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/c%23/>C#</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/cheating-sheet/>Cheating Sheet</a></span></div></div></header><div class=post-content><h2 id=dll-vs-exe>DLL vs EXE
+<a class=heading-link href=#dll-vs-exe><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Dynamic Linked Library, cannot run individually.
+Executable file have Main function.</p><h2 id=naming-conventions>Naming Conventions
+<a class=heading-link href=#naming-conventions><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><table><thead><tr><th>Object Name</th><th>Notation</th><th>Length</th><th>Plural</th><th>Prefix</th><th>Suffix</th><th>Abbreviation</th><th>Char Mask</th><th>Underscores</th></tr></thead><tbody><tr><td>Class name</td><td>PascalCase</td><td>128</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Constructor name</td><td>PascalCase</td><td>128</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Method name</td><td>PascalCase</td><td>128</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Method arguments</td><td>camelCase</td><td>128</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Local variables</td><td>camelCase</td><td>50</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Constants name</td><td>PascalCase</td><td>50</td><td>No</td><td>No</td><td>No</td><td>No</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Field name</td><td>camelCase</td><td>50</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>[A-z][0-9]</td><td>Yes</td></tr><tr><td>Properties name</td><td>PascalCase</td><td>50</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>[A-z][0-9]</td><td>No</td></tr><tr><td>Delegate name</td><td>PascalCase</td><td>128</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>[A-z]</td><td>No</td></tr><tr><td>Enum type name</td><td>PascalCase</td><td>128</td><td>Yes</td><td>No</td><td>No</td><td>No</td><td>[A-z]</td><td>No</td></tr></tbody></table><h2 id=fields-vs-properties><code>fields</code> vs <code>properties</code>
+<a class=heading-link href=#fields-vs-properties><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>properties exposes fields. meaning properties have getter and setter whereas fields store actual data.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span>
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// this is a field</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>private</span> <span style=color:#ff7b72>string</span> _myField;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// this is a property</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>public</span> <span style=color:#ff7b72>string</span> MyProperties
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  <span style=color:#ff7b72>get</span> =&gt; _myField;
+</span></span><span style=display:flex><span>  <span style=color:#ff7b72>set</span> =&gt; _myField = <span style=color:#ff7b72>value</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>...
+</span></span></code></pre></div><h2 id=numbers><code>Numbers</code>
+<a class=heading-link href=#numbers><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><code>int</code> can be <strong>overflowed</strong></p><h2 id=class><code>class</code>
+<a class=heading-link href=#class><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><p>class modifier: <code>sealed</code>, <code>abstract</code></p></li><li><p>Class inheritance: only directly inherit one base class that is not defined as <code>sealed</code></p><p><code>sealed</code> modifier prevents other classes from inheriting from it.</p><p><code>abstract</code> is intended only to be a base class of other classes.</p><p>members marked as <code>abstract</code> must be implemented by classes that derive from the <code>abstract</code> class.</p></li><li><p>The <code>volatile</code> keyword indicates that a field might be modified by multiple threads that are executing at the same time.</p></li><li><p>C# is both passing by <strong>value</strong> and <strong>reference</strong></p><p>if the intent is passing by <strong>reference</strong>, using keyword <code>ref</code> and <code>out</code></p></li><li><p><code>using</code> The reason for the <code>using</code> statement is to ensure that the object is disposed as soon as it goes out of scope, and it doesn&rsquo;t require explicit code to ensure that this happens.</p></li></ul><h2 id=class-vs-struct><code>class</code> vs. <code>struct</code>
+<a class=heading-link href=#class-vs-struct><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>almost the same, it is recommended that group small data using <code>struct</code>, however, <code>struct</code> can also have methods, properties, fields, constructor, in that case, class is recommended being used.</p><h2 id=square-brackets>Square Brackets
+<a class=heading-link href=#square-brackets><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li>array access, like name[0]</li><li>indexer (mainly used for dictionary I guess), like dict[“idx”];</li><li>square brackets in front of classes called Attribute, which is a counterpart of Java annotations, but with differences like assembly level attributes and stuff.</li></ul><h2 id=pointers>pointers
+<a class=heading-link href=#pointers><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>C sharp allows pointers.</p><p>use <code>unsafe</code> keyword to allow pointers in code blocks.</p><p><code>unsafe</code> keyword can be used in methods, members.</p><h2 id=exceptions>Exceptions
+<a class=heading-link href=#exceptions><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>unlike Java, in C# people cannot throw exceptions in signatures.</p><p>just throw exceptions inside code block.</p><h2 id=inheritance>Inheritance
+<a class=heading-link href=#inheritance><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=heading>&ldquo;<strong>:</strong>&rdquo;
+<a class=heading-link href=#heading><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>Child</span> : Parent
+</span></span></code></pre></div><p>meaning class called Child is derived from class called Parent, and Parent is the base class of Child</p><h3 id=base-keyword><code>base</code> keyword
+<a class=heading-link href=#base-keyword><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><code>base</code> class does not have to be an <code>abstract</code> class, it can be a real class.</p><p>It is an error to use the <code>base</code> keyword from within a static method.(<em>reason: for static method, there is no current instance. when calls <code>base</code>, it will ask for the <code>base</code> instance of derived instance, conflicted</em>).</p><h3 id=override-keyword-both-inheritance-and-polymorphism><code>override</code> keyword (both inheritance and polymorphism)
+<a class=heading-link href=#override-keyword-both-inheritance-and-polymorphism><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>The overridden base method must be <code>virtual</code>, <code>abstract</code>, or <code>override</code></p><h2 id=polymorphismc-polymorphism-is-more-flexiable-than-java>Polymorphism(C# polymorphism is more flexiable than java)
+<a class=heading-link href=#polymorphismc-polymorphism-is-more-flexiable-than-java><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>initiate an instance of <code>Interface</code></p><p>接口不能实例化！但是如果非要 实现接口的类 实例 = new 实现接口的类() 那要接口有什么用？</p><p>接口 实例 = new 实现接口的类A()</p><p>接口 实例 = new 实现接口的类B()</p><p>接口 实例 = new 实现接口的类C()</p><p>We can create a new Class D that implements this Interface to encapsulate method ABC. This is the <strong>Factory Mode</strong></p><h2 id=encapsulation>Encapsulation
+<a class=heading-link href=#encapsulation><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Access Modifier</p><ul><li><code>public</code>: access is not restricted</li><li><code>protected</code>: Access is limited to the containing class or types derived from the containing class. (in other words, this class and/or subclass)</li><li><code>internal</code>: (seems like protected internal is more valuable)</li><li><code>private</code>: Access is limited to the containing type</li></ul><h2 id=heading-1>&ldquo;::&rdquo;
+<a class=heading-link href=#heading-1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>called The <strong>namespace alias qualifier</strong></p><h2 id=-after-a-type>&ldquo;?&rdquo; after a type
+<a class=heading-link href=#-after-a-type><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>meaning the value of type is nullable.</p><p>Nullable types are declared in one of two ways:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span>System.Nullable&lt;T&gt; variable
+</span></span></code></pre></div><p>-or-</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span>T? variable
+</span></span></code></pre></div><h2 id=-or-null-coalescing-operator>&ldquo;??&rdquo; or null coalescing operator
+<a class=heading-link href=#-or-null-coalescing-operator><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>string</span> Answer = Answer1 ?? Answer2;
+</span></span></code></pre></div><p>Translation in English is that &ldquo;<em>if whatever in left is NOT null, use that, otherwise, use what is to the right</em>&rdquo;.</p><h2 id=-before-a-string>&ldquo;@&rdquo; before a string
+<a class=heading-link href=#-before-a-string><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>It means to interpret the string literally (that is, you cannot escape any characters within the string if you use the @ prefix)</p><h2 id=generics-in-c>Generics in C#
+<a class=heading-link href=#generics-in-c><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// Declare the generic class.</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>public</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>GenericList</span>&lt;T&gt;
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>void</span> Add(T input) { }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>TestGenericList</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>private</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>ExampleClass</span> { }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>static</span> <span style=color:#ff7b72>void</span> Main()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Declare a list of type int.</span>
+</span></span><span style=display:flex><span>        GenericList&lt;<span style=color:#ff7b72>int</span>&gt; list1 = <span style=color:#ff7b72>new</span> GenericList&lt;<span style=color:#ff7b72>int</span>&gt;();
+</span></span><span style=display:flex><span>        list1.Add(<span style=color:#a5d6ff>1</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Declare a list of type string.</span>
+</span></span><span style=display:flex><span>        GenericList&lt;<span style=color:#ff7b72>string</span>&gt; list2 = <span style=color:#ff7b72>new</span> GenericList&lt;<span style=color:#ff7b72>string</span>&gt;();
+</span></span><span style=display:flex><span>        list2.Add(<span style=color:#a5d6ff>&#34;&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Declare a list of type ExampleClass.</span>
+</span></span><span style=display:flex><span>        GenericList&lt;ExampleClass&gt; list3 = <span style=color:#ff7b72>new</span> GenericList&lt;ExampleClass&gt;();
+</span></span><span style=display:flex><span>        list3.Add(<span style=color:#ff7b72>new</span> ExampleClass());
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>The most common use of generics is to create collection classes</p><p>You can create your own generic interfaces, classes, methods, events and delegates</p><p>more advanced about generic classes, firstly know some concepts: <strong>concrete type, closed constructed type, open constructed type</strong></p><p>Generic classes can inherit from concrete, closed constructed, or open constructed base classes:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>BaseNode</span> { }
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>BaseNodeGeneric</span>&lt;T&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// concrete type</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>NodeConcrete</span>&lt;T&gt; : BaseNode { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//closed constructed type</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>NodeClosed</span>&lt;T&gt; : BaseNodeGeneric&lt;<span style=color:#ff7b72>int</span>&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//open constructed type </span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>NodeOpen</span>&lt;T&gt; : BaseNodeGeneric&lt;T&gt; { }
+</span></span></code></pre></div><p>Non-generic classes can only inherit concrete or closed structured base classes.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//No error</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>Node1</span> : BaseNodeGeneric&lt;<span style=color:#ff7b72>int</span>&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//Generates an error</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//class Node2 : BaseNodeGeneric&lt;T&gt; {}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//Generates an error</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//class Node3 : T {}</span>
+</span></span></code></pre></div><p>Generic classes can also do some I-call-it smart mapping</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>BaseNodeMultiple</span>&lt;T, U&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//No error</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>Node4</span>&lt;T&gt; : BaseNodeMultiple&lt;T, <span style=color:#ff7b72>int</span>&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//No error</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>Node5</span>&lt;T, U&gt; : BaseNodeMultiple&lt;T, U&gt; { }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//Generates an error</span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>//class Node6&lt;T&gt; : BaseNodeMultiple&lt;T, U&gt; {}</span>
+</span></span></code></pre></div><p>Generic classes that inherit from open constructed types must specify constraints that are a superset of, or imply, the constraints on the base type:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// constraints on T</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>NodeItem</span>&lt;T&gt; <span style=color:#ff7b72>where</span> T : System.IComparable&lt;T&gt;, <span style=color:#ff7b72>new</span>() { }
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>SpecialNodeItem</span>&lt;T&gt; : NodeItem&lt;T&gt; <span style=color:#ff7b72>where</span> T : System.IComparable&lt;T&gt;, <span style=color:#ff7b72>new</span>() { }
+</span></span><span style=display:flex><span>...
+</span></span><span style=display:flex><span><span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>SuperKeyType</span>&lt;K, V, U&gt;
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>where</span> U : System.IComparable&lt;U&gt;
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>where</span> V : <span style=color:#ff7b72>new</span>()
+</span></span><span style=display:flex><span>{ }
+</span></span></code></pre></div><h2 id=interfaces>Interfaces
+<a class=heading-link href=#interfaces><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>By convention, interface names begin with a capital <code>I</code>.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>interface</span> <span style=color:#f0883e;font-weight:700>IEquatable</span>&lt;T&gt;
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>bool</span> Equals(T obj);
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>To implement an interface member, the corresponding member of the implementing class must be <strong>public, non-static</strong>, and have the same name and signature as the interface member.</p><p>Any class implements interface <code>IEquatable&lt;T></code> must provide an implementation of <code>Equal</code> method.</p><p>Example:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>public</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>Car</span> : IEquatable&lt;Car&gt;
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>string</span> Make {<span style=color:#ff7b72>get</span>; <span style=color:#ff7b72>set</span>;}
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>string</span> Model { <span style=color:#ff7b72>get</span>; <span style=color:#ff7b72>set</span>; }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>string</span> Year { <span style=color:#ff7b72>get</span>; <span style=color:#ff7b72>set</span>; }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// Implementation of IEquatable&lt;T&gt; interface</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>bool</span> Equals(Car car)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>this</span>.Make == car.Make &amp;&amp;
+</span></span><span style=display:flex><span>               <span style=color:#ff7b72>this</span>.Model == car.Model &amp;&amp;
+</span></span><span style=display:flex><span>               <span style=color:#ff7b72>this</span>.Year == car.Year;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=events-and-delegates>events and delegates
+<a class=heading-link href=#events-and-delegates><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>we&rsquo;d like to be able to pass it to somebody else so that they can call it. This is especially useful in an <strong>event-driven</strong> system such as a graphical user interface, when I want some code to be executed when the user clicks on a button, or when I want to log some information but can&rsquo;t specify how it is logged.</p><p>The signature of a single cast delegate is shown below:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>delegate</span> result-type identifier ([parameters]);
+</span></span></code></pre></div><p>Examples:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>public</span> <span style=color:#ff7b72>delegate</span> <span style=color:#ff7b72>void</span> SimpleDelegate ()
+</span></span></code></pre></div><p>This declaration defines a <code>delegate</code> named <code>SimpleDelegate</code>, which will encapsulate any method that takes no parameters and returns no value.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>public</span> <span style=color:#ff7b72>delegate</span> <span style=color:#ff7b72>int</span> ButtonClickHandler (<span style=color:#ff7b72>object</span> obj1, <span style=color:#ff7b72>object</span> obj2)
+</span></span></code></pre></div><p>This declaration defines a <code>delegate</code> named <code>ButtonClickHandler</code>, which will encapsulate any method that takes two objects as parameters and returns an int.</p><p>Let’s see a more advanced example</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>using</span> <span style=color:#ff7b72>System</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>using</span> <span style=color:#ff7b72>System.IO</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>namespace</span> <span style=color:#ff7b72>Akadia.SimpleDelegate</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// Delegate Specification</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>MyClass</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Declare a delegate that takes a single string parameter</span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// and has no return type.</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>delegate</span> <span style=color:#ff7b72>void</span> LogHandler(<span style=color:#ff7b72>string</span> message);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// The use of the delegate is just like calling a function directly,</span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// though we need to add a check to see if the delegate is null</span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// (that is, not pointing to a function) before calling the function.</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>void</span> Process(LogHandler logHandler)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>if</span> (logHandler != <span style=color:#79c0ff>null</span>)
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                logHandler(<span style=color:#a5d6ff>&#34;Process() begin&#34;</span>);
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>if</span> (logHandler != <span style=color:#79c0ff>null</span>)
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                logHandler (<span style=color:#a5d6ff>&#34;Process() end&#34;</span>);
+</span></span><span style=display:flex><span>            }
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// The FileLogger class merely encapsulates the file I/O</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>FileLogger</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        FileStream fileStream;
+</span></span><span style=display:flex><span>        StreamWriter streamWriter;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Constructor</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>public</span> FileLogger(<span style=color:#ff7b72>string</span> filename)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            fileStream = <span style=color:#ff7b72>new</span> FileStream(filename, FileMode.Create);
+</span></span><span style=display:flex><span>            streamWriter = <span style=color:#ff7b72>new</span> StreamWriter(fileStream);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#8b949e;font-style:italic>// Member Function which is used in the Delegate</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>void</span> Logger(<span style=color:#ff7b72>string</span> s)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            streamWriter.WriteLine(s);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>void</span> Close()
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            streamWriter.Close();
+</span></span><span style=display:flex><span>            fileStream.Close();
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// Test Application which calls both Delegates</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>public</span> <span style=color:#ff7b72>class</span> <span style=color:#f0883e;font-weight:700>TestApplication</span>
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>         <span style=color:#8b949e;font-style:italic>// Static Function which is used in the Delegate</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>static</span> <span style=color:#ff7b72>void</span> Logger(<span style=color:#ff7b72>string</span> s)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            Console.WriteLine(s);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>static</span> <span style=color:#ff7b72>void</span> Main(<span style=color:#ff7b72>string</span>[] args)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            FileLogger fl = <span style=color:#ff7b72>new</span> FileLogger(<span style=color:#a5d6ff>&#34;process.log&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            MyClass myClass = <span style=color:#ff7b72>new</span> MyClass();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#8b949e;font-style:italic>// Crate an instance of the delegates, pointing to the static</span>
+</span></span><span style=display:flex><span>            <span style=color:#8b949e;font-style:italic>// Logger() function defined in the TestApplication class and</span>
+</span></span><span style=display:flex><span>            <span style=color:#8b949e;font-style:italic>// then to member function on the fl instance of a FileLogger.</span>
+</span></span><span style=display:flex><span>            MyClass.LogHandler myLogger = <span style=color:#79c0ff>null</span>;
+</span></span><span style=display:flex><span>            myLogger += <span style=color:#ff7b72>new</span> MyClass.LogHandler(Logger);
+</span></span><span style=display:flex><span>            myLogger += <span style=color:#ff7b72>new</span> MyClass.LogHandler(fl.Logger);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            myClass.Process(myLogger);
+</span></span><span style=display:flex><span>            fl.Close();
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p>Compile an test:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-vim data-lang=vim><span style=display:flex><span># csc SimpleDelegate4.cs
+</span></span><span style=display:flex><span># SimpleDelegate4.exe
+</span></span><span style=display:flex><span>Process() begin
+</span></span><span style=display:flex><span>Process() end
+</span></span><span style=display:flex><span># cat process.log
+</span></span><span style=display:flex><span>Process() begin
+</span></span><span style=display:flex><span>Process() end
+</span></span></code></pre></div><p>This is called <strong>multicasting</strong>. Being able to point to member functions is nice, but there are more tricks you can do with <strong>delegates</strong>. In C#, <strong>delegates</strong> are <strong>multicast</strong>, which means that they can point to more than one function at a time (that is, they&rsquo;re based off the System.MulticastDelegate type).</p><h2 id=data-structures-in-c>Data Structures in C#
+<a class=heading-link href=#data-structures-in-c><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><p><code>ArrayList</code>: a dynamic array.
+Usage: <code>ArrayList myArrayList = new ArrayList();</code>
+<code>ArrayList</code> doesn’t implicit any type, so accept different objects.</p></li><li><p><code>List&lt;T></code>: single type elements <code>ArrayList</code></p></li><li><p><code>LinkedList&lt;T></code>: <strong>DOUBLY</strong> linked list. Cool!
+and also I can grab <code>LinkedListNode&lt;T></code> using either <code>First</code> or <code>Last</code></p></li><li><p><code>Stack&lt;T></code>: <code>Push()</code>, <code>Pop()</code>, <code>Peek()</code></p></li><li><p><code>Queue&lt;T></code>: <code>Contains()</code>, <code>Enqueue()</code>, <code>Dequeue()</code>, <code>Peek()</code></p></li><li><p><code>HashSet&lt;T></code>: <code>bool Add(), bool Contains(), IntersectWith(), Remove()</code></p></li><li><p><code>Dictionary&lt;TKey, TValue></code>: C#&rsquo;s Dictionary uses [] indexing for setting/getting items</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span>myDictionary[key] = <span style=color:#ff7b72>value</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>bool</span> TryGetValue();
+</span></span></code></pre></div></li></ul><h2 id=linq>LINQ
+<a class=heading-link href=#linq><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><p>Lamda (Method) Syntax</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>var</span> longWords = words.Where( w <span style=color:#f85149>⇒</span> w.length &gt; <span style=color:#a5d6ff>10</span>);
+</span></span><span style=display:flex><span>Dim longWords = words.Where(Function(w) w.length &gt; <span style=color:#a5d6ff>10</span>)
+</span></span></code></pre></div></li><li><p>Query (Comprehension) Syntax</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#ff7b72>var</span> longwords = <span style=color:#ff7b72>from</span> w <span style=color:#ff7b72>in</span> words <span style=color:#ff7b72>where</span> w.length &gt; <span style=color:#a5d6ff>10</span>;
+</span></span><span style=display:flex><span>Dim longwords = <span style=color:#ff7b72>from</span> w <span style=color:#ff7b72>in</span> words <span style=color:#ff7b72>where</span> w.length &gt; <span style=color:#a5d6ff>10</span>
+</span></span></code></pre></div></li></ul><p>LINQ to SQL (DLINQ)</p><h2 id=unit-tests>Unit Tests
+<a class=heading-link href=#unit-tests><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Here take Nunit as example.</p><p>I found cannot using namespace right away, that is because I don’t reference.</p><ol><li><p>Add a Reference to Your Project</p><p>In order to test the code in your main project, you need to add a reference to it in your test project.</p><ul><li>Right click on your test project</li><li>Click on <strong>Add | Reference</strong>…</li><li>Select <strong>Projects | Solution</strong></li><li>Add a checkmark on your main project.</li><li>Click <strong>OK</strong>.</li></ul></li><li><p>open the Test Explorer Window.</p><p>To do this, in the main menu, click <strong>Test | Windows | Test Explorer</strong>.</p></li><li><p>Click Run All to run your tests</p></li></ol><h2 id=mock-moq>Mock (Moq)
+<a class=heading-link href=#mock-moq><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p><a href=https://github.com/Moq/moq4/wiki/Quickstart class=external-link target=_blank rel=noopener>moq documentations</a></p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

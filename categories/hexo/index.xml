@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on 130l</title><link>http://www.example.com/categories/hexo/</link><description>Recent content in Hexo on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 02 Aug 2018 22:41:08 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>hexo 自动部署 本地自动执行 hexo g -d 的 python 脚本</title><link>http://www.example.com/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</link><pubDate>Thu, 02 Aug 2018 22:41:08 +0000</pubDate><guid>http://www.example.com/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</guid><description>&lt;p&gt;用 hexo 一段时间了, 主要就是写写刷题心得和自己学习过程, 算是自己给自己写的 reference.&lt;/p&gt;
+&lt;p&gt;不幸的是前一段时间写了好多 draft, 然后其中一篇有 syntax error, 导致 &lt;code&gt;hexo g&lt;/code&gt; 就是过不了. 在几十篇帖子里二分查找真是&amp;rsquo;爽&amp;rsquo;啊! 于是我就想到了很早之前就已经关注到的 hexo 自动部署 solution.&lt;/p&gt;
+&lt;p&gt;网上很容易找到的 solution 的思路都是把自己 source 里面的一些文件包括文章啊, 可能还有 theme 什么的放到 github 另一个 branch, 然后通过 webhook 监听, 如果有变动就执行 &lt;code&gt;hexo g -d&lt;/code&gt;, 大概就是这样子. 由于我不太想把自己的源代码都放到另一个 branch 上(万一想加个密啥的呢), 所以这个 solution 显然不是我能用的 solution.&lt;/p&gt;
+&lt;p&gt;于是我在网上找, 发现linux 有个叫 &lt;code&gt;crontab&lt;/code&gt; 的定时执行程序, 于是我的思路来了, 为什么不定时执行 python script 来执行 &lt;code&gt;hexo g -d&lt;/code&gt; 这条命令呢? (后来在网上查到早有人已经写了, 但是没给放代码, 帖子后面会放上我写的 script)&lt;/p&gt;
+&lt;p&gt;这篇帖子我就来说说我写这个 script 的时候遇见的坑.&lt;/p&gt;
+&lt;h1 id="思路"&gt;
+ 思路
+ &lt;a class="heading-link" href="#%e6%80%9d%e8%b7%af"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;通过 &lt;code&gt;crontab&lt;/code&gt; 定时执行 python script, 达到自动执行 &lt;code&gt;hexo g -d&lt;/code&gt; 的目的.&lt;/p&gt;</description></item><item><title>hexo seo</title><link>http://www.example.com/posts/hexo-seo/</link><pubDate>Fri, 13 Apr 2018 23:20:52 +0000</pubDate><guid>http://www.example.com/posts/hexo-seo/</guid><description>&lt;p&gt;以前一直都不明白 seo 是个什么东西.&lt;/p&gt;
+&lt;p&gt;但是最近重新用 hexo 记录一些学习过程. 写完手贱在 google 上搜了一下, 什么都搜不到, 于是 seo 这个词就蹦到了我的脑子里. 原来 seo 是干这个的.&lt;/p&gt;
+&lt;h2 id="sitemap"&gt;
+ sitemap
+ &lt;a class="heading-link" href="#sitemap"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Sitemap即网站地图，它的作用在于便于搜索引擎更加智能地抓取网站。最简单和常见的sitemap形式，是XML文件，在其中列出网站中的网址以及关于每个网址的其他元数据&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id="使用的hexo-plugin"&gt;
+ 使用的hexo plugin
+ &lt;a class="heading-link" href="#%e4%bd%bf%e7%94%a8%e7%9a%84hexo-plugin"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;root下&lt;code&gt;_config.yml&lt;/code&gt; 添加&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;#hexo sitemap
+sitemap:
+ path: sitemap.xml
+baidusitemap:
+ path: baidusitemap.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="添加-robotstxt"&gt;
+ 添加 &lt;code&gt;robots.txt&lt;/code&gt;
+ &lt;a class="heading-link" href="#%e6%b7%bb%e5%8a%a0-robotstxt"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;&lt;code&gt;robots.txt&lt;/code&gt;（统一小写）是一种存放于网站根目录下的ASCII编码的文本文件，它的作用是告诉搜索引擎此网站中哪些内容是可以被爬取的，哪些是禁止爬取的。
+在 &lt;code&gt;source&lt;/code&gt; 目录下增加 &lt;code&gt;robots.txt&lt;/code&gt; 文件，网站生成后在网站的根目录(&lt;code&gt;站点目录/public/&lt;/code&gt;)下。&lt;/em&gt;&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /categories/
+Allow: /tags/
+
+Disallow: /vendors/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /vendors/
+Disallow: /fancybox/
+
+Sitemap: https://&amp;lt;your_domain&amp;gt;/sitemap.xml
+Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Allow表示允许被访问的，Disallow是不允许的意思。注意后面两个Sitemap就是网站地图了。而网站地图前面说了是给爬虫用的。这里配置在robots中。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>working with math equations in hexo next theme</title><link>http://www.example.com/posts/working-with-math-equations-in-hexo-next-theme/</link><pubDate>Thu, 22 Mar 2018 12:03:41 +0000</pubDate><guid>http://www.example.com/posts/working-with-math-equations-in-hexo-next-theme/</guid><description>&lt;p&gt;If you are using hexo with the help of Next theme and you want to show some professional equations, please see this post. It will tell you how to render math equations.&lt;/p&gt;
+&lt;p&gt;Since hexo cannot recover the exactly environment if you change you computer or what so ever, so it is not necessary to show the env parameters.&lt;/p&gt;
+&lt;p&gt;The followings are steps:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;go to &lt;code&gt;themes/next/_config.yml&lt;/code&gt;, look for &lt;code&gt;math&lt;/code&gt; and you will find:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;math:
+ enable: false
+ ...
+ engine: mathjax
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;change it to&lt;/p&gt;</description></item><item><title>hexo categories/tags 404 issue on github</title><link>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</link><pubDate>Wed, 21 Mar 2018 13:35:54 +0000</pubDate><guid>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</guid><description>&lt;p&gt;Sometimes, when you run server locally aka &lt;code&gt;hexo s&lt;/code&gt;, you will find your categories page and tags page (mainly these two pages) are working fine. But when you deploy pages using &lt;code&gt;hexo d&lt;/code&gt;, the pages suddenly give you 404.&lt;/p&gt;
+&lt;h2 id="why-is-that"&gt;
+ Why is that?
+ &lt;a class="heading-link" href="#why-is-that"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;git is case in-sensitive defaultly, but javascript is a case sensitive language. That is telling you node.js will not find your route if case in-sensitive.&lt;/p&gt;</description></item><item><title>hexo cheating sheet</title><link>http://www.example.com/posts/hexo-cheating-sheet/</link><pubDate>Thu, 28 Sep 2017 19:53:00 +0000</pubDate><guid>http://www.example.com/posts/hexo-cheating-sheet/</guid><description>&lt;h1 id="hexo-system-command"&gt;
+ hexo system command
+ &lt;a class="heading-link" href="#hexo-system-command"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;npm install hexo -g #Install hexo 
+npm update hexo -g #Upgrade hexo 
+hexo init #Initialize
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id="hexo-post-related"&gt;
+ hexo post related
+ &lt;a class="heading-link" href="#hexo-post-related"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;hexo n &amp;#34;my post&amp;#34; == hexo new &amp;#34;my post&amp;#34; #create a new post
+hexo p &amp;#34;my post&amp;#34; == hexo publish &amp;#34;my post&amp;#34; #publish
+hexo g == hexo generate
+hexo s == hexo server #start server to preview
+hexo d == hexo deploy
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

@@ -1,0 +1,229 @@
+<!doctype html><html lang=en><head><title>javascript cheating sheet · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  写在前头
+  
+    
+    Link to heading
+  
+
+还是得要膜拜一下廖雪峰大神, 原文都在这了. 这篇帖子只是单纯的笔记整理
+
+  数据类型
+  
+    
+    Link to heading
+  
+
+
+number: 不区分整数和浮点数
+字符串
+布尔值: true/false
+
+
+  比较运算符, == vs. ===
+  
+    
+    Link to heading
+  
+
+javascript 允许对任意数据类型作比较
+false == 0 // true
+false === 0 // false
+
+== 会自动转换数据类型再比较 (不推荐使用)
+=== 不会转换数据类型 (应该坚持使用)
+NaN 与所有值(包括自己都不同), 只有通过 isNaN() 才能判断.
+比较浮点数时候, 要计算他们的绝对值是不是小于某个阈值
+
+
+  null vs. undefined
+  
+    
+    Link to heading
+  
+
+
+null, 空. 它不等于0, 也不等于''.
+undefined 表示值未定义, 只有在未规定 return 值的时候/object 中没有这个 prop 时候,会返回undefined, 其他时候我都会用 null.
+
+
+  javascript 中的对象
+  
+    
+    Link to heading
+  
+
+unsorted key-value pair"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="javascript cheating sheet"><meta name=twitter:description content="写在前头 Link to heading 还是得要膜拜一下廖雪峰大神, 原文都在这了. 这篇帖子只是单纯的笔记整理
+数据类型 Link to heading number: 不区分整数和浮点数 字符串 布尔值: true/false 比较运算符, == vs. === Link to heading javascript 允许对任意数据类型作比较
+false == 0 // true false === 0 // false == 会自动转换数据类型再比较 (不推荐使用) === 不会转换数据类型 (应该坚持使用) NaN 与所有值(包括自己都不同), 只有通过 isNaN() 才能判断. 比较浮点数时候, 要计算他们的绝对值是不是小于某个阈值 null vs. undefined Link to heading null, 空. 它不等于0, 也不等于''. undefined 表示值未定义, 只有在未规定 return 值的时候/object 中没有这个 prop 时候,会返回undefined, 其他时候我都会用 null. javascript 中的对象 Link to heading unsorted key-value pair"><meta property="og:url" content="http://www.example.com/posts/javascript-cheating-sheet/"><meta property="og:site_name" content="130l"><meta property="og:title" content="javascript cheating sheet"><meta property="og:description" content="写在前头 Link to heading 还是得要膜拜一下廖雪峰大神, 原文都在这了. 这篇帖子只是单纯的笔记整理
+数据类型 Link to heading number: 不区分整数和浮点数 字符串 布尔值: true/false 比较运算符, == vs. === Link to heading javascript 允许对任意数据类型作比较
+false == 0 // true false === 0 // false == 会自动转换数据类型再比较 (不推荐使用) === 不会转换数据类型 (应该坚持使用) NaN 与所有值(包括自己都不同), 只有通过 isNaN() 才能判断. 比较浮点数时候, 要计算他们的绝对值是不是小于某个阈值 null vs. undefined Link to heading null, 空. 它不等于0, 也不等于''. undefined 表示值未定义, 只有在未规定 return 值的时候/object 中没有这个 prop 时候,会返回undefined, 其他时候我都会用 null. javascript 中的对象 Link to heading unsorted key-value pair"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-08-06T22:44:51+00:00"><meta property="article:modified_time" content="2018-08-06T22:44:51+00:00"><meta property="article:tag" content="Cheating Sheet"><link rel=canonical href=http://www.example.com/posts/javascript-cheating-sheet/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/javascript-cheating-sheet/>javascript cheating sheet</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-08-06T22:44:51Z>August 6, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+5-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/javascript/>Javascript</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/cheating-sheet/>Cheating Sheet</a></span></div></div></header><div class=post-content><h1 id=写在前头>写在前头
+<a class=heading-link href=#%e5%86%99%e5%9c%a8%e5%89%8d%e5%a4%b4><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>还是得要膜拜一下<a href=https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000 class=external-link target=_blank rel=noopener>廖雪峰大神</a>, 原文都在这了. 这篇帖子只是单纯的笔记整理</p><h1 id=数据类型>数据类型
+<a class=heading-link href=#%e6%95%b0%e6%8d%ae%e7%b1%bb%e5%9e%8b><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ol><li>number: 不区分整数和浮点数</li><li>字符串</li><li>布尔值: <code>true</code>/<code>false</code></li></ol><h1 id=比较运算符--vs->比较运算符, == vs. ===
+<a class=heading-link href=#%e6%af%94%e8%be%83%e8%bf%90%e7%ae%97%e7%ac%a6--vs-><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>javascript 允许对任意数据类型作比较</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#79c0ff>false</span> <span style=color:#ff7b72;font-weight:700>==</span> <span style=color:#a5d6ff>0</span> <span style=color:#8b949e;font-style:italic>// true
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#79c0ff>false</span> <span style=color:#ff7b72;font-weight:700>===</span> <span style=color:#a5d6ff>0</span> <span style=color:#8b949e;font-style:italic>// false
+</span></span></span></code></pre></div><ul><li><code>==</code> 会自动转换数据类型再比较 (<strong>不推荐使用</strong>)</li><li><code>===</code> 不会转换数据类型 (<strong>应该坚持使用</strong>)</li><li><code>NaN</code> 与所有值(包括自己都不同), 只有通过 <code>isNaN()</code> 才能判断.</li><li>比较浮点数时候, 要计算他们的绝对值是不是小于某个阈值</li></ul><h1 id=null-vs-undefined>null vs. undefined
+<a class=heading-link href=#null-vs-undefined><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><code>null</code>, 空. 它不等于0, 也不等于<code>''</code>.</li><li><code>undefined</code> 表示值未定义, 只有在未规定 return 值的时候/object 中没有这个 prop 时候,会返回<code>undefined</code>, 其他时候我都会用<code> null</code>.</li></ul><h1 id=javascript-中的对象>javascript 中的对象
+<a class=heading-link href=#javascript-%e4%b8%ad%e7%9a%84%e5%af%b9%e8%b1%a1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p><strong>unsorted key-value pair</strong></p><h1 id=strict模式>strict模式
+<a class=heading-link href=#strict%e6%a8%a1%e5%bc%8f><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量</p><p>为了避免这一缺陷，所有的JavaScript代码都应该使用strict模式</p><h1 id=字符串-es6-新规范>字符串 ES6 新规范
+<a class=heading-link href=#%e5%ad%97%e7%ac%a6%e4%b8%b2-es6-%e6%96%b0%e8%a7%84%e8%8c%83><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li>反引号&rsquo;`&rsquo;: 反引号括起来的多行字符串可以保留多行</li><li>串起来字符串: 通过${}实现</li><li>javascript 中字符串是可以 slicing 的</li></ul><h1 id=forof>for&mldr;of&mldr;
+<a class=heading-link href=#forof><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>for &mldr; in &mldr; 是个历史遗留问题, 如果给<code>array</code>添加新的属性会得到一个被扩展的 array (手动滑稽)</p><p>for &mldr; of &mldr; 修复了这个问题.</p><p>当然, 更好的方法是使用 <code>iterable</code> 自带的 <code>forEach()</code> 方法</p><p>有人说 for &mldr; in &mldr; 用于 objects.</p><p>for &mldr; of &mldr; 用于 string/array.</p><h1 id=函数定义和调用>函数定义和调用
+<a class=heading-link href=#%e5%87%bd%e6%95%b0%e5%ae%9a%e4%b9%89%e5%92%8c%e8%b0%83%e7%94%a8><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li>一旦执行到 <code>return</code>, 函数就会返回; 如果没有 <code>return</code>, 函数返回的结果为 <code>undefined</code></li><li>javascript 允许传入任意个参数而不影响调用</li></ul><h1 id=this-与控制-this-指向>this 与控制 this 指向
+<a class=heading-link href=#this-%e4%b8%8e%e6%8e%a7%e5%88%b6-this-%e6%8c%87%e5%90%91><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>this 指向的是 <strong>当前</strong> 的对象 (被赋值给了谁, 就指向谁; 如果没有赋值, 指向 <code>undefined</code>)</p><p>当用了 strict, 那么 this 指向当前函数, 如果没用 strict, this 指向 window</p><h1 id=apply-与-装饰器>apply 与 装饰器
+<a class=heading-link href=#apply-%e4%b8%8e-%e8%a3%85%e9%a5%b0%e5%99%a8><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p><code>apply(&lt;需要指向的参数>, &lt;传入的参数/类型为array>)</code> 可以把 this 指定到一个对象</p><h1 id=函数作为返回值---闭包>函数作为返回值 - <strong>闭包</strong>
+<a class=heading-link href=#%e5%87%bd%e6%95%b0%e4%bd%9c%e4%b8%ba%e8%bf%94%e5%9b%9e%e5%80%bc---%e9%97%ad%e5%8c%85><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>顾名思义, 把函数作为结果值返回, 我们来看以下例子:</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>function</span> lazy_sum(arr) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>var</span> sum <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span> arr.reduce(<span style=color:#ff7b72>function</span> (x, y) {
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>return</span> x <span style=color:#ff7b72;font-weight:700>+</span> y;
+</span></span><span style=display:flex><span>        });
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> sum;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>var</span> f <span style=color:#ff7b72;font-weight:700>=</span> lazy_sum([<span style=color:#a5d6ff>1</span>, <span style=color:#a5d6ff>2</span>, <span style=color:#a5d6ff>3</span>, <span style=color:#a5d6ff>4</span>, <span style=color:#a5d6ff>5</span>]); <span style=color:#8b949e;font-style:italic>// type of f  = function sum()
+</span></span></span></code></pre></div><p>只有当调用函数<code>f()</code>时候, 才真正求和</p><p>在这个例子中，我们在函数<code>lazy_sum</code>中又定义了函数<code>sum</code>，并且，内部函数<code>sum</code>可以引用外部函数<code>lazy_sum</code>的参数和局部变量，当<code>lazy_sum</code>返回函数<code>sum</code>时，相关参数和变量都保存在返回的函数中，这种称为“<strong>闭包(Closure)</strong>”的程序结构拥有极大的威力。</p><p>此处参考 python cheating sheet 闭包</p><p>[我的补充]:
+闭包就是普通函数, 没有区别, 当作用域是全部的时候, 那么函数可以读到全部作用域的值.</p><h1 id=创建匿名函数并立刻执行的语法>创建匿名函数并立刻执行的语法
+<a class=heading-link href=#%e5%88%9b%e5%bb%ba%e5%8c%bf%e5%90%8d%e5%87%bd%e6%95%b0%e5%b9%b6%e7%ab%8b%e5%88%bb%e6%89%a7%e8%a1%8c%e7%9a%84%e8%af%ad%e6%b3%95><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>(<span style=color:#ff7b72>function</span> (x) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> x <span style=color:#ff7b72;font-weight:700>*</span> x;
+</span></span><span style=display:flex><span>})(<span style=color:#a5d6ff>3</span>); <span style=color:#8b949e;font-style:italic>// 9
+</span></span></span></code></pre></div><h1 id=闭包的常见用途>闭包的常见用途
+<a class=heading-link href=#%e9%97%ad%e5%8c%85%e7%9a%84%e5%b8%b8%e8%a7%81%e7%94%a8%e9%80%94><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li>延后执行函数 (lazy_sum)</li><li>闭包就是携带状态的函数，并且它的状态可以完全对外隐藏起来.</li></ul><h1 id=如果忘了闭包的话-那么点点下面的连接复习一下>如果忘了闭包的话, 那么点点下面的连接复习一下
+<a class=heading-link href=#%e5%a6%82%e6%9e%9c%e5%bf%98%e4%ba%86%e9%97%ad%e5%8c%85%e7%9a%84%e8%af%9d-%e9%82%a3%e4%b9%88%e7%82%b9%e7%82%b9%e4%b8%8b%e9%9d%a2%e7%9a%84%e8%bf%9e%e6%8e%a5%e5%a4%8d%e4%b9%a0%e4%b8%80%e4%b8%8b><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p><a href=https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000/00143449934543461c9d5dfeeb848f5b72bd012e1113d15000 class=external-link target=_blank rel=noopener>连接</a></p><h1 id=javascript-原型链>javascript 原型链
+<a class=heading-link href=#javascript-%e5%8e%9f%e5%9e%8b%e9%93%be><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>var</span> arr <span style=color:#ff7b72;font-weight:700>=</span> [<span style=color:#a5d6ff>1</span>, <span style=color:#a5d6ff>2</span>, <span style=color:#a5d6ff>3</span>];
+</span></span></code></pre></div><p>其原型链是</p><pre tabindex=0><code>arr ----&gt; Array.prototype ----&gt; Object.prototype ----&gt; null
+</code></pre><h1 id=创建对象>创建对象
+<a class=heading-link href=#%e5%88%9b%e5%bb%ba%e5%af%b9%e8%b1%a1><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>当我们用<code>obj.xxx</code>访问一个对象的属性时，JavaScript引擎先在当前对象上查找该属性，如果没有找到，就到其原型对象上找，如果还没有找到，就一直上溯到<code>Object.prototype</code>对象，最后，如果还没有找到，就只能返回<code>undefined</code>.</p><h2 id=new的用处><code>new</code>的用处
+<a class=heading-link href=#new%e7%9a%84%e7%94%a8%e5%a4%84><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>在 javascript 中, 可以用 <code>new</code> 关键字来调用一个函数并返回对象. 如果不写 <code>new</code>, 那么这个函数就是普通函数, 如果没有规定 <code>return</code>, 那么就会返回 <code>undefined</code>. 如果写了 <code>new</code>, 那么 <code>this</code> 指向新创建的对象, 并默认返回 <code>this</code>.</p><h1 id=桥接函数-f>桥接函数 F
+<a class=heading-link href=#%e6%a1%a5%e6%8e%a5%e5%87%bd%e6%95%b0-f><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>如果有以下原型链,</p><pre tabindex=0><code>new PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Object.prototype ----&gt; null
+</code></pre><p>如果现在，我们要基于<code>Student</code>扩展出<code>PrimaryStudent</code>，可以先定义出<code>PrimaryStudent</code>, 就必须有如下的原型链</p><pre tabindex=0><code>new PrimaryStudent() ----&gt; PrimaryStudent.prototype ----&gt; Student.prototype ----&gt; Object.prototype ----&gt; null
+</code></pre><p>怎么弄呢?</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// Student 构造函数
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>function</span> Student(props) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>this</span>.name <span style=color:#ff7b72;font-weight:700>=</span> props.name <span style=color:#ff7b72;font-weight:700>||</span> <span style=color:#a5d6ff>&#39;Unnamed&#39;</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>Student.prototype.hello <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>    alert(<span style=color:#a5d6ff>&#39;Hello, &#39;</span> <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#ff7b72>this</span>.name <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>&#39;!&#39;</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// PrimaryStudent构造函数:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>function</span> PrimaryStudent(props) {
+</span></span><span style=display:flex><span>    Student.call(<span style=color:#ff7b72>this</span>, props);
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>this</span>.grade <span style=color:#ff7b72;font-weight:700>=</span> props.grade <span style=color:#ff7b72;font-weight:700>||</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 空函数F:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>function</span> F() {
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 把F的原型指向Student.prototype:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>F.prototype <span style=color:#ff7b72;font-weight:700>=</span> Student.prototype;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 把PrimaryStudent的原型指向一个新的F对象，F对象的原型正好指向Student.prototype:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>PrimaryStudent.prototype <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>new</span> F();
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 把PrimaryStudent原型的构造函数修复为PrimaryStudent:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>PrimaryStudent.prototype.constructor <span style=color:#ff7b72;font-weight:700>=</span> PrimaryStudent;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 继续在PrimaryStudent原型（就是new F()对象）上定义方法：
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>PrimaryStudent.prototype.getGrade <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> () {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#ff7b72>this</span>.grade;
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 创建xiaoming:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span><span style=color:#ff7b72>var</span> xiaoming <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>new</span> PrimaryStudent({
+</span></span><span style=display:flex><span>    name<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#39;小明&#39;</span>,
+</span></span><span style=display:flex><span>    grade<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>2</span>
+</span></span><span style=display:flex><span>});
+</span></span><span style=display:flex><span>xiaoming.name; <span style=color:#8b949e;font-style:italic>// &#39;小明&#39;
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>xiaoming.grade; <span style=color:#8b949e;font-style:italic>// 2
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 验证原型:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>xiaoming.__proto__ <span style=color:#ff7b72;font-weight:700>===</span> PrimaryStudent.prototype; <span style=color:#8b949e;font-style:italic>// true
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>xiaoming.__proto__.__proto__ <span style=color:#ff7b72;font-weight:700>===</span> Student.prototype; <span style=color:#8b949e;font-style:italic>// true
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>
+</span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// 验证继承关系:
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>xiaoming <span style=color:#ff7b72>instanceof</span> PrimaryStudent; <span style=color:#8b949e;font-style:italic>// true
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>xiaoming <span style=color:#ff7b72>instanceof</span> Student; <span style=color:#8b949e;font-style:italic>// true
+</span></span></span></code></pre></div><p>如果把继承这个动作用一个<code>inherits()</code>函数封装起来，还可以隐藏<code>F</code>的定义，并简化代码：</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>function</span> inherits(Child, Parent) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>var</span> F <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> () {};
+</span></span><span style=display:flex><span>    F.prototype <span style=color:#ff7b72;font-weight:700>=</span> Parent.prototype;
+</span></span><span style=display:flex><span>    Child.prototype <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>new</span> F();
+</span></span><span style=display:flex><span>    Child.prototype.constructor <span style=color:#ff7b72;font-weight:700>=</span> Child;
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h1 id=promise-vs-callback>promise vs. callback
+<a class=heading-link href=#promise-vs-callback><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><h2 id=callback>callback
+<a class=heading-link href=#callback><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><blockquote><p>A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.</p></blockquote><p>callback 的出现是因为 javascript 是单线程执行, 所以所有的网络操作, 浏览器事件都必须是 <strong>异步执行</strong>, 因为异步是非阻塞的. 由于 javascript 对耗时的操作时间不确定, 所以异步成了必然选择.</p><p>javascript 引擎中只有一个主线程, 负责解释代码.</p><p>但是, 还有其他线程存在, 这些线程不管在 js 引擎内还是引擎外. 比如 ajax 线程. 我们把那些都叫工作线程.</p><p>异步是回调/callback 的基础, 回调多了, 代码看上去不好理解, 这就叫回调地狱.</p><h2 id=promise>promise
+<a class=heading-link href=#promise><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><blockquote><p>A promise is an object that wraps an asynchronous operation and notifies when it’s done. This sounds exactly like callbacks, but the important differences are in the usage of Promises.</p></blockquote><p>原文在<a href=https://medium.com/codebuddies/getting-to-know-asynchronous-javascript-callbacks-promises-and-async-await-17e0673281ee class=external-link target=_blank rel=noopener>这里</a></p><p>promise 解决了回调地狱的问题, 原来要 callback 的东西, 我们现在直接用 <code>then</code> 连接在一起, error 用 <code>catch</code> 来解决.</p><p>当我们再函数中返回了一个 promise 的时候, 我们再 call 这个函数的时候自然就有了 <code>then</code> 和 <code>catch</code> 方法.</p><h1 id=async-and-await><code>async</code> and <code>await</code>
+<a class=heading-link href=#async-and-await><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p><code>async</code> keyword before a function has two effects:</p><ol><li>make it always return a <strong>promise</strong></li><li>allow to use <code>await</code> in it</li></ol><p>The <code>await</code> keyword before a promise makes javascript wait until that promise settles, and then:</p><ol><li>If it is an error, the exception is generated, same as if <code>throw error</code> were called at that very place.</li><li>otherwise, it returns the result, so we can assign it to a value.</li></ol><p>但是好像大家并不是特别鼓励用 <code>await</code>.</p><blockquote><p>&mldr; easiest way to solve that is to group concurrent async calls with <code>Promise.all</code>
+&ndash;solstice333</p></blockquote><h1 id=destructuring---es6>destructuring - ES6
+<a class=heading-link href=#destructuring---es6><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><p>destructing 可以非常智能的按照顺序取出你想要拿出的variables. 不够直观? 看个例子</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>var</span> [first, second, third] <span style=color:#ff7b72;font-weight:700>=</span> someArray;
+</span></span></code></pre></div><p>是不是看着有点眼熟, 在哪见过? 没错, <strong>python 也用 destructuring</strong>. 但是 python 和 javascript 的 destructuring 是有一点不一样的.</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span>d <span style=color:#ff7b72;font-weight:700>=</span> dict(a<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>1</span>,b<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>2</span>,c<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>3</span>)
+</span></span><span style=display:flex><span>a, b <span style=color:#ff7b72;font-weight:700>=</span> [d[k] <span style=color:#ff7b72>for</span> k <span style=color:#ff7b72;font-weight:700>in</span> (<span style=color:#a5d6ff>&#39;a&#39;</span>,<span style=color:#a5d6ff>&#39;b&#39;</span>)]
+</span></span></code></pre></div><p>总之, 记得 python 也有 destructuring 就好了.</p><p>回到这一小节的正题:</p><h2 id=array-and-iterables>array and iterables
+<a class=heading-link href=#array-and-iterables><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>[ variable1, variable2, ..., variableN ] <span style=color:#ff7b72;font-weight:700>=</span> array;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> [ variable1, variable2, ..., variableN ] <span style=color:#ff7b72;font-weight:700>=</span> array;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>let</span> [ variable1, variable2, ..., variableN ] <span style=color:#ff7b72;font-weight:700>=</span> array;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>const</span> [ variable1, variable2, ..., variableN ] <span style=color:#ff7b72;font-weight:700>=</span> array;
+</span></span></code></pre></div><h2 id=object>object
+<a class=heading-link href=#object><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>var</span> robotA <span style=color:#ff7b72;font-weight:700>=</span> { name<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;Bender&#34;</span> };
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> robotB <span style=color:#ff7b72;font-weight:700>=</span> { name<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#34;Flexo&#34;</span> };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> { name<span style=color:#ff7b72;font-weight:700>:</span> nameA } <span style=color:#ff7b72;font-weight:700>=</span> robotA;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>var</span> { name<span style=color:#ff7b72;font-weight:700>:</span> nameB } <span style=color:#ff7b72;font-weight:700>=</span> robotB;
+</span></span></code></pre></div><h2 id=destructuring-的实际用处>destructuring 的实际用处
+<a class=heading-link href=#destructuring-%e7%9a%84%e5%ae%9e%e9%99%85%e7%94%a8%e5%a4%84><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li>不用让 API user 记住 param 的顺序, API 使用更加友好</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>function</span> removeBreakpoint({ url, line, column }) {
+</span></span><span style=display:flex><span>  <span style=color:#8b949e;font-style:italic>// ...
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>}
+</span></span></code></pre></div><ul><li>传入 default config</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span>jQuery.ajax <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#ff7b72>function</span> (url, {
+</span></span><span style=display:flex><span>  <span style=color:#ff7b72>async</span> <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#79c0ff>true</span>,
+</span></span><span style=display:flex><span>  beforeSend <span style=color:#ff7b72;font-weight:700>=</span> noop,
+</span></span><span style=display:flex><span>  cache <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#79c0ff>true</span>,
+</span></span><span style=display:flex><span>  complete <span style=color:#ff7b72;font-weight:700>=</span> noop,
+</span></span><span style=display:flex><span>  crossDomain <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#79c0ff>false</span>,
+</span></span><span style=display:flex><span>  global <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#79c0ff>true</span>,
+</span></span><span style=display:flex><span>  <span style=color:#8b949e;font-style:italic>// ... more config
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>}) {
+</span></span><span style=display:flex><span>  <span style=color:#8b949e;font-style:italic>// ... do stuff
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>};
+</span></span></code></pre></div><ul><li>importing names from module</li></ul><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=display:flex><span><span style=color:#ff7b72>const</span> { SourceMapConsumer, SourceNode } <span style=color:#ff7b72;font-weight:700>=</span> require(<span style=color:#a5d6ff>&#34;source-map&#34;</span>);
+</span></span><span style=display:flex><span><span style=color:#ff7b72>import</span> React, { Component } from <span style=color:#a5d6ff>&#39;react&#39;</span>
+</span></span></code></pre></div><h1 id=credit-to>credit to
+<a class=heading-link href=#credit-to><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h1><ul><li><a href=https://segmentfault.com/a/1190000004322358 class=external-link target=_blank rel=noopener>彻底理解同步,异步和时间循环</a></li><li><a href=https://www.liaoxuefeng.com/ class=external-link target=_blank rel=noopener>廖雪峰的博客</a></li><li><a href=https://javascript.info/async-await class=external-link target=_blank rel=noopener>Async/await</a></li><li><a href=https://hacks.mozilla.org/2015/05/es6-in-depth-destructuring/ class=external-link target=_blank rel=noopener>ES6 In Depth: Destructuring</a></li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

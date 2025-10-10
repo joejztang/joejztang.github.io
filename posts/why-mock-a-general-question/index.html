@@ -1,0 +1,43 @@
+<!doctype html><html lang=en><head><title>why mock? a general question · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+  what is mock?
+  
+    
+    Link to heading
+  
+
+as it implies, it is a object that pretend it being something else.
+
+  why we want to mock?
+  
+    
+    Link to heading
+  
+
+Assume that we want to test a function. Let&rsquo;s call it count_all_after_connection(connection). It consumed a parameter called connection, and this connection is not available so far(possibly because of not having access yet).
+But you still want to test it, but how?"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="why mock? a general question"><meta name=twitter:description content="what is mock? Link to heading as it implies, it is a object that pretend it being something else.
+why we want to mock? Link to heading Assume that we want to test a function. Let’s call it count_all_after_connection(connection). It consumed a parameter called connection, and this connection is not available so far(possibly because of not having access yet).
+But you still want to test it, but how?"><meta property="og:url" content="http://www.example.com/posts/why-mock-a-general-question/"><meta property="og:site_name" content="130l"><meta property="og:title" content="why mock? a general question"><meta property="og:description" content="what is mock? Link to heading as it implies, it is a object that pretend it being something else.
+why we want to mock? Link to heading Assume that we want to test a function. Let’s call it count_all_after_connection(connection). It consumed a parameter called connection, and this connection is not available so far(possibly because of not having access yet).
+But you still want to test it, but how?"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2019-02-28T14:11:03+00:00"><meta property="article:modified_time" content="2019-02-28T14:11:03+00:00"><meta property="article:tag" content="Mock"><meta property="article:tag" content="Unittest"><link rel=canonical href=http://www.example.com/posts/why-mock-a-general-question/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/why-mock-a-general-question/>why mock? a general question</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2019-02-28T14:11:03Z>February 28, 2019
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+One-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/python/>Python</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/mock/>Mock</a>
+</span><span class=separator>•</span>
+<span class=tag><a href=/tags/unittest/>Unittest</a></span></div></div></header><div class=post-content><h2 id=what-is-mock>what is mock?
+<a class=heading-link href=#what-is-mock><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>as it implies, it is a object that pretend it being something else.</p><h2 id=why-we-want-to-mock>why we want to mock?
+<a class=heading-link href=#why-we-want-to-mock><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Assume that we want to test a function. Let&rsquo;s call it <code>count_all_after_connection(connection)</code>. It consumed a parameter called <code>connection</code>, and this connection is not available so far(possibly because of not having access yet).</p><p>But you still want to test it, but how?</p><p>The solution is that you mock a connction for this function so that you don&rsquo;t have to connect with the actual source.</p><p>After you mock one connection, you send this fake connection to the real function, and see what happened.</p><p>Remember, it should behave as if it has a real connection.</p><h2 id=when-to-use-mock>when to use mock?
+<a class=heading-link href=#when-to-use-mock><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>For example, when the resource is not easy to connect. Situation includes connecting to a database, an activity requiring long time processing time, etc.</p><h2 id=some-mock-framework>some mock framework
+<a class=heading-link href=#some-mock-framework><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ul><li><a href=https://github.com/Moq/moq4/wiki/Quickstart class=external-link target=_blank rel=noopener>Moq</a> for C#</li><li><a href=https://docs.python.org/3/library/unittest.mock.html class=external-link target=_blank rel=noopener>Mock</a> for python</li><li><a href=jmock.org>jMock</a> for Java</li></ul></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

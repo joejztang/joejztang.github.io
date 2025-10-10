@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React-Redux on 130l</title><link>http://www.example.com/tags/react-redux/</link><description>Recent content in React-Redux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/react-redux/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
+ flux 和 redux
+ &lt;a class="heading-link" href="#flux-%e5%92%8c-redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;说到 react-redux 就绕不开 flux 和 redux 模式. 他们有很多相同, 也有不同. 现在我们来回顾一下什么是 flux, 什么是 redux.&lt;/p&gt;
+&lt;h2 id="flux"&gt;
+ flux
+ &lt;a class="heading-link" href="#flux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;可以看到 flux 的精髓即数据永远单向流动.&lt;/p&gt;
+&lt;h2 id="redux"&gt;
+ Redux
+ &lt;a class="heading-link" href="#redux"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;redux 借鉴了很多 flux 里的概念, 只是略有不同. redux 也是一种模式的设计.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Flux&lt;/th&gt;
+ &lt;th&gt;Redux&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;多个 store&lt;/td&gt;
+ &lt;td&gt;一个 store&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;dispatcher对 store 进行修改&lt;/td&gt;
+ &lt;td&gt;没有 dispatcher这个概念. 它使用 reducer 进行事件的处理. reducer 是纯函数.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item></channel></rss>

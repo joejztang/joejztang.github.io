@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Template on 130l</title><link>http://www.example.com/tags/template/</link><description>Recent content in Template on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 31 Oct 2017 20:10:03 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/template/index.xml" rel="self" type="application/rss+xml"/><item><title>templates excise</title><link>http://www.example.com/posts/templates-excise/</link><pubDate>Tue, 31 Oct 2017 20:10:03 +0000</pubDate><guid>http://www.example.com/posts/templates-excise/</guid><description>&lt;h1 id="excisesusing-template-to-show-help-page"&gt;
+ Excises&amp;mdash;using template to show help page
+ &lt;a class="heading-link" href="#excisesusing-template-to-show-help-page"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;create new app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code&gt;django-admin startproject ProTwo&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python manage.py startapp AppTwo&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new &lt;code&gt;templates&lt;/code&gt; folder in project folder&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;in this way, django knows where to find these templates&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;create new html template&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;under &lt;code&gt;templates&lt;/code&gt; folder, we create a new html file(create new folder for app and create new html file into that folder)&lt;/p&gt;
+&lt;p&gt;in the new html file, we can use template tags(a.k.a Django Template Variable) that pass content into this template to show.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheat Sheet on 130l</title><link>http://www.example.com/categories/cheat-sheet/</link><description>Recent content in Cheat Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 07 Aug 2019 10:47:40 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/cheat-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>fluentd cheating sheet</title><link>http://www.example.com/posts/fluentd-cheating-sheet/</link><pubDate>Wed, 07 Aug 2019 10:47:40 +0000</pubDate><guid>http://www.example.com/posts/fluentd-cheating-sheet/</guid><description>&lt;h2 id="installation"&gt;
+ installation
+ &lt;a class="heading-link" href="#installation"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;can be found online.&lt;/p&gt;
+&lt;h2 id="config-file"&gt;
+ config file
+ &lt;a class="heading-link" href="#config-file"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="list-of-directives"&gt;
+ list of directives
+ &lt;a class="heading-link" href="#list-of-directives"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;source&lt;/strong&gt;: determine input source&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;must include &lt;code&gt;@type&lt;/code&gt; parameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;match&lt;/strong&gt;: determine output destinations&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;filter&lt;/strong&gt;: determine pipelines&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a typical pipeline is like this: &lt;code&gt;Input -&amp;gt; Filter1 -&amp;gt; Filter2 ... -&amp;gt; Output&lt;/code&gt;, in &lt;code&gt;config&lt;/code&gt; file is like&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;source&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;/source&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;filter&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;/filter&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;match&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;system: directives set system wide configuration&lt;/p&gt;</description></item></channel></rss>

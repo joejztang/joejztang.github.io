@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nodejs on 130l</title><link>http://www.example.com/categories/nodejs/</link><description>Recent content in Nodejs on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Aug 2018 23:53:39 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/nodejs/index.xml" rel="self" type="application/rss+xml"/><item><title>nodejs require function</title><link>http://www.example.com/posts/nodejs-require-function/</link><pubDate>Mon, 13 Aug 2018 23:53:39 +0000</pubDate><guid>http://www.example.com/posts/nodejs-require-function/</guid><description>&lt;p&gt;最近自己在写 hexo 的插件, 然后发现 &lt;code&gt;require&lt;/code&gt; 函数里面写的东西有的时候不 make sense(至少在刚开始的时候). 所以我就搜索了一下这个 require 函数是怎么回事. 现在明白了一点点.&lt;/p&gt;
+&lt;h1 id="require-核心模块"&gt;
+ require 核心模块
+ &lt;a class="heading-link" href="#require-%e6%a0%b8%e5%bf%83%e6%a8%a1%e5%9d%97"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;比如&lt;code&gt;var fs = require('fs');&lt;/code&gt;. 它就会去找 nodejs 的核心 fs 模块.&lt;/p&gt;
+&lt;h1 id="require-文件模块"&gt;
+ require 文件模块
+ &lt;a class="heading-link" href="#require-%e6%96%87%e4%bb%b6%e6%a8%a1%e5%9d%97"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;文件模块的 js 里面必须有 &lt;code&gt;exports&lt;/code&gt; 或者 &lt;code&gt;module.exports&lt;/code&gt; 关键词来暴露这个模块.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-javascript" data-lang="javascript"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;var&lt;/span&gt; foo&lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt;require(&lt;span style="color:#a5d6ff"&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;); 
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;//foo在默认目录下面没有，没有的话nodejs会在node_modules里面找这个模块
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;通过这个例子我们可以看到如果默认目录下没有, 那么会在 &lt;code&gt;node_modules&lt;/code&gt; 里面找, 所以现在可以理解 hexo 中 require 函数里面如果没有特别指定地址, 他就会去 &lt;code&gt;node_modules&lt;/code&gt; 里面找.&lt;/p&gt;
+&lt;h1 id="credit-to"&gt;
+ credit to
+ &lt;a class="heading-link" href="#credit-to"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.csdn.net/houyanhua1/article/details/79438222" class="external-link" target="_blank" rel="noopener"&gt;nodejs 引入外部模块 require()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

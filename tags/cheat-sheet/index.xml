@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheat Sheet on 130l</title><link>http://www.example.com/tags/cheat-sheet/</link><description>Recent content in Cheat Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 10 Jan 2021 13:02:28 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>machine learning a-z cheat sheet</title><link>http://www.example.com/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>http://www.example.com/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
+ null hypothesis and p-value
+ &lt;a class="heading-link" href="#null-hypothesis-and-p-value"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://towardsdatascience.com/null-hypothesis-and-the-p-value-fdc129db6502" class="external-link" target="_blank" rel="noopener"&gt;very useful post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;so to summarize somewhat into my own words:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;null hypothesis is&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The null hypothesis, H0 is the commonly accepted fact; it is the opposite of the alternate hypothesis. Researchers work to reject, nullify or disprove the null hypothesis.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;this is coming from &lt;a href="https://www.statisticshowto.com/probability-and-statistics/null-hypothesis/" class="external-link" target="_blank" rel="noopener"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;so how do we &amp;ldquo;nullify&amp;rdquo; the hypothesis? we are using p-value&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;we are using p-value to nullify the hypothesis&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item><item><title>R-cheat-sheet</title><link>http://www.example.com/posts/r-cheat-sheet/</link><pubDate>Wed, 19 Jun 2019 13:48:16 +0000</pubDate><guid>http://www.example.com/posts/r-cheat-sheet/</guid><description>&lt;p&gt;to me, R is a little bit quirky.&lt;/p&gt;
+&lt;h2 id="installation-and-execution"&gt;
+ installation and execution
+ &lt;a class="heading-link" href="#installation-and-execution"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-R" data-lang="R"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;$&lt;/span&gt; sudo apt install r&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;base&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;core
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="open-command-prompt"&gt;
+ open command prompt
+ &lt;a class="heading-link" href="#open-command-prompt"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-R" data-lang="R"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;$&lt;/span&gt; R
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="run-script-in-command-line"&gt;
+ run script in command line
+ &lt;a class="heading-link" href="#run-script-in-command-line"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-R" data-lang="R"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72;font-weight:bold"&gt;$&lt;/span&gt; Rscript &lt;span style="color:#ff7b72;font-weight:bold"&gt;&amp;lt;&lt;/span&gt;awesome_test.R&lt;span style="color:#ff7b72;font-weight:bold"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="r-objects"&gt;
+ R-objects
+ &lt;a class="heading-link" href="#r-objects"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;there are many type of R-objects, including&lt;/p&gt;
+&lt;h3 id="vectorsatomic-vector"&gt;
+ vectors/atomic vector
+ &lt;a class="heading-link" href="#vectorsatomic-vector"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;atomic vector is a vector with a single object, like &lt;code&gt;v&amp;lt;-TRUE&lt;/code&gt; is a &lt;strong&gt;atomic vector&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

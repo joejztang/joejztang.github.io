@@ -1,0 +1,55 @@
+<!doctype html><html lang=en><head><title>standard sql advance · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="Recently, I have been asked to form a table, the schema is very simple:
+pid: STRING (NULLABLE)
+rec_list1: STRING (NULLABLE)
+rec_list2: STRING (NULLABLE)
+It&rsquo;s a simple mapping from pid to its recommending list. Note that they are all strings.
+However, My boss wants me to convert to something like this:
+pid: STRING (NULLABLE)
+left: STRUCT
+  pid: NUMBERIC (NULLABLE)
+  cat_id: NUMBERIC (NULLABLE)
+  cat_name: STRING (NULLABLE)
+right: STRUCT
+  pid: NUMBERIC (NULLABLE)
+  cat_id: NUMBERIC (NULLABLE)
+  cat_name: STRING (NULLABLE)
+It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing UNNEST, ARRAY, STRUCT, etc to me."><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="standard sql advance"><meta name=twitter:description content="Recently, I have been asked to form a table, the schema is very simple:
+pid: STRING (NULLABLE) rec_list1: STRING (NULLABLE) rec_list2: STRING (NULLABLE) It’s a simple mapping from pid to its recommending list. Note that they are all strings. However, My boss wants me to convert to something like this:
+pid: STRING (NULLABLE) left: STRUCT pid: NUMBERIC (NULLABLE) cat_id: NUMBERIC (NULLABLE) cat_name: STRING (NULLABLE) right: STRUCT pid: NUMBERIC (NULLABLE) cat_id: NUMBERIC (NULLABLE) cat_name: STRING (NULLABLE) It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing UNNEST, ARRAY, STRUCT, etc to me."><meta property="og:url" content="http://www.example.com/posts/standard-sql-advance/"><meta property="og:site_name" content="130l"><meta property="og:title" content="standard sql advance"><meta property="og:description" content="Recently, I have been asked to form a table, the schema is very simple:
+pid: STRING (NULLABLE) rec_list1: STRING (NULLABLE) rec_list2: STRING (NULLABLE) It’s a simple mapping from pid to its recommending list. Note that they are all strings. However, My boss wants me to convert to something like this:
+pid: STRING (NULLABLE) left: STRUCT pid: NUMBERIC (NULLABLE) cat_id: NUMBERIC (NULLABLE) cat_name: STRING (NULLABLE) right: STRUCT pid: NUMBERIC (NULLABLE) cat_id: NUMBERIC (NULLABLE) cat_name: STRING (NULLABLE) It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing UNNEST, ARRAY, STRUCT, etc to me."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2020-06-26T15:24:19+00:00"><meta property="article:modified_time" content="2020-06-26T15:24:19+00:00"><link rel=canonical href=http://www.example.com/posts/standard-sql-advance/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/standard-sql-advance/>standard sql advance</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2020-06-26T15:24:19Z>June 26, 2020
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+2-minute read</span></div></div></header><div class=post-content><p>Recently, I have been asked to form a table, the schema is very simple:</p><pre tabindex=0><code>pid: STRING (NULLABLE)
+rec_list1: STRING (NULLABLE)
+rec_list2: STRING (NULLABLE)
+</code></pre><p>It&rsquo;s a simple mapping from pid to its recommending list. Note that they are all strings.
+However, My boss wants me to convert to something like this:</p><pre tabindex=0><code>pid: STRING (NULLABLE)
+left: STRUCT
+  pid: NUMBERIC (NULLABLE)
+  cat_id: NUMBERIC (NULLABLE)
+  cat_name: STRING (NULLABLE)
+right: STRUCT
+  pid: NUMBERIC (NULLABLE)
+  cat_id: NUMBERIC (NULLABLE)
+  cat_name: STRING (NULLABLE)
+</code></pre><p>It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing <code>UNNEST</code>, <code>ARRAY</code>, <code>STRUCT</code>, etc to me.</p><ul><li><p><code>UNNEST</code></p><p>Some <a href=https://cloud.google.com/bigquery/docs/reference/standard-sql/arrays#flattening_arrays class=external-link target=_blank rel=noopener>documentation</a> from google that I can find.
+<code>UNNEST</code> will break <code>ARRAY</code> into rows and it&rsquo;s a powerful breaker. Sometimes there are array of structs, you can use <code>UNNEST</code> to break some and join;
+Other usage of <code>UNNEST</code> I saw before is to using it to create additional info and joining the additional info into table to filter accordingly.
+<code>UNNEST</code> can be used together as <code>CROSS JOIN</code></p></li><li><p><code>ARRAY</code></p><p>Again some <a href=https://cloud.google.com/bigquery/docs/reference/standard-sql/arrays class=external-link target=_blank rel=noopener>documentation</a> from google that I can find.
+<code>ARRAY</code> doesn&rsquo;t support fancy <code>JOIN</code> inside of it. Something like this below is forbidden by google</p><pre tabindex=0><code>  select array(
+    select as struct pid, cat
+    from unnest(some_array)
+    left join some_table
+    using some_column
+    order by some_other_column
+  )
+</code></pre><p><code>LEFT JOIN</code> is prohibited inside array, google will error you do an efficient join outside. However <code>INNER JOIN/JOIN</code> will work.</p></li><li><p><code>STRUCT</code></p><p>It&rsquo;s like an object that you can put a lot of things inside, but remember it&rsquo;s hard to do <code>ORDER BY</code>, <code>GROUP</code> all related operations touching the field inside.
+I would recommend prepare the data before actually forming the <code>STRUCT</code>.</p></li></ul><p>Additionally, use Common Table Expression (CTE) wisely. As I mentioned earlier, avoid doing sorting and grouping involves <code>STRUCT</code>. My trick would be join tables using sub CTE before hand and form structs and only do simple sort and group when necessary.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flask on 130l</title><link>http://www.example.com/categories/flask/</link><description>Recent content in Flask on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 29 Mar 2018 11:47:27 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/flask/index.xml" rel="self" type="application/rss+xml"/><item><title>python circular imports</title><link>http://www.example.com/posts/python-circular-imports/</link><pubDate>Thu, 29 Mar 2018 11:47:27 +0000</pubDate><guid>http://www.example.com/posts/python-circular-imports/</guid><description>&lt;h3 id="many-ways-to-import-a-module"&gt;
+ many ways to import a module
+ &lt;a class="heading-link" href="#many-ways-to-import-a-module"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;h4 id="import-x"&gt;
+ &lt;code&gt;import X&lt;/code&gt;
+ &lt;a class="heading-link" href="#import-x"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;imports module X, and creates a reference to module in current namespace.&lt;/p&gt;
+&lt;h4 id="from-x-import-a-b-c"&gt;
+ &lt;code&gt;from X import a, b, c&lt;/code&gt;
+ &lt;a class="heading-link" href="#from-x-import-a-b-c"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;imports module X and creates references in the current namespace to given objects, in this case a, b, c.&lt;/p&gt;
+&lt;h3 id="what-does-python-do-to-import-module"&gt;
+ what does python do to import module
+ &lt;a class="heading-link" href="#what-does-python-do-to-import-module"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;if module has already registered (sys.modules), it just passes.&lt;/p&gt;</description></item></channel></rss>

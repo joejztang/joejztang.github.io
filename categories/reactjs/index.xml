@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reactjs on 130l</title><link>http://www.example.com/categories/reactjs/</link><description>Recent content in Reactjs on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 24 Aug 2018 16:54:53 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/reactjs/index.xml" rel="self" type="application/rss+xml"/><item><title>react 中 setState() 和 source of truth</title><link>http://www.example.com/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</link><pubDate>Fri, 24 Aug 2018 16:54:53 +0000</pubDate><guid>http://www.example.com/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</guid><description>&lt;h1 id="setstate"&gt;
+ &lt;code&gt;setState()&lt;/code&gt;
+ &lt;a class="heading-link" href="#setstate"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;setState()&lt;/code&gt; 接受对象作为参数. 只要调用 &lt;code&gt;setState()&lt;/code&gt;, 组件就会重新渲染. 但是当调用 &lt;code&gt;setState()&lt;/code&gt;的时候, &lt;strong&gt;reactjs 并不会马上修改 state&lt;/strong&gt;. reactjs 会把修改放到一个更新队列里面, 稍后才会从队列中把新的状态提取出来合并到 state 中, 然后再触发组件更新.&lt;/p&gt;
+&lt;p&gt;还有就是 &lt;code&gt;setState()&lt;/code&gt; 只能在已经挂载或者正在挂载的组件上调用.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们一般会把组件的 &lt;code&gt;state&lt;/code&gt; 的初始化工作放在 &lt;code&gt;constructor&lt;/code&gt; 里面去做；在 &lt;code&gt;componentWillMount&lt;/code&gt; 进行组件的启动工作，例如 &lt;code&gt;Ajax&lt;/code&gt; 数据拉取、定时器的启动；组件从页面上销毁的时候，有时候需要一些数据的清理，例如定时器的清理，就会放在 &lt;code&gt;componentWillUnmount&lt;/code&gt; 里面去做。&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h1 id="为什么有-setstate"&gt;
+ 为什么有 &lt;code&gt;setState()&lt;/code&gt;?
+ &lt;a class="heading-link" href="#%e4%b8%ba%e4%bb%80%e4%b9%88%e6%9c%89-setstate"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;html form 和 react 中的 dom 元素不太一样. html 中 form &lt;strong&gt;maintain their own state and update it based on user input&lt;/strong&gt;. 但是在 reactjs 中, &lt;strong&gt;state is typically kept in the state property of components&lt;/strong&gt;, 所以需要用 &lt;code&gt;setState()&lt;/code&gt; 来 update.&lt;/p&gt;</description></item></channel></rss>

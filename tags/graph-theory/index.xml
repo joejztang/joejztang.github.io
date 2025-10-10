@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph Theory on 130l</title><link>http://www.example.com/tags/graph-theory/</link><description>Recent content in Graph Theory on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 18 Jun 2019 16:41:28 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/graph-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>graph-theory-cheat-sheet</title><link>http://www.example.com/posts/graph-theory-cheat-sheet/</link><pubDate>Tue, 18 Jun 2019 16:41:28 +0000</pubDate><guid>http://www.example.com/posts/graph-theory-cheat-sheet/</guid><description>&lt;h2 id="basic-concepts"&gt;
+ basic concepts
+ &lt;a class="heading-link" href="#basic-concepts"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Vertices - &lt;strong&gt;V&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Edges - &lt;strong&gt;E&lt;/strong&gt;, can be represented as {u, v}&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="path-and-walk"&gt;
+ path and walk
+ &lt;a class="heading-link" href="#path-and-walk"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A path is an ordered sequence of edges that are distinct from one other.&lt;/li&gt;
+&lt;li&gt;A walk is a sequence of vertices, such that any two consecutive vertices form an edge in the graph. eg: v1, v2, v4, v2 is a walk.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;the difference of above two is the same edge &lt;strong&gt;cannot appear twice in a path&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item></channel></rss>

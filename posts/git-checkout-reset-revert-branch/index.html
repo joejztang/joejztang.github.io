@@ -1,0 +1,89 @@
+<!doctype html><html lang=en><head><title>git checkout reset revert branch · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="Besides some very useful git commands, such as git add, git status, git commit, etc., there are three additional commands that gives more flexibility to your work&mdash; they are git reset, git checkout and git revert.
+credit to Atlassian Bitbucket tutorials"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="git checkout reset revert branch"><meta name=twitter:description content="Besides some very useful git commands, such as git add, git status, git commit, etc., there are three additional commands that gives more flexibility to your work— they are git reset, git checkout and git revert.
+credit to Atlassian Bitbucket tutorials"><meta property="og:url" content="http://www.example.com/posts/git-checkout-reset-revert-branch/"><meta property="og:site_name" content="130l"><meta property="og:title" content="git checkout reset revert branch"><meta property="og:description" content="Besides some very useful git commands, such as git add, git status, git commit, etc., there are three additional commands that gives more flexibility to your work— they are git reset, git checkout and git revert.
+credit to Atlassian Bitbucket tutorials"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2018-04-04T12:14:54+00:00"><meta property="article:modified_time" content="2018-04-04T12:14:54+00:00"><meta property="article:tag" content="Cheating Sheet"><link rel=canonical href=http://www.example.com/posts/git-checkout-reset-revert-branch/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/img/favicon.svg sizes=any><link rel=icon type=image/png href=/img/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/img/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=http://www.example.com/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=http://www.example.com/posts/git-checkout-reset-revert-branch/>git checkout reset revert branch</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2018-04-04T12:14:54Z>April 4, 2018
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+3-minute read</span></div><div class=categories><i class="fa-solid fa-folder" aria-hidden=true></i>
+<a href=/categories/git/>Git</a></div><div class=tags><i class="fa-solid fa-tag" aria-hidden=true></i>
+<span class=tag><a href=/tags/cheating-sheet/>Cheating Sheet</a></span></div></div></header><div class=post-content><p>Besides some very useful git commands, such as <code>git add</code>, <code>git status</code>, <code>git commit</code>, etc., there are three additional commands that gives more flexibility to your work&mdash; they are <code>git reset</code>, <code>git checkout</code> and <code>git revert</code>.</p><p>credit to <a href=https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting class=external-link target=_blank rel=noopener>Atlassian Bitbucket tutorials</a></p><p>It is help to think about each command having effect on three state management mechanisms. They are <strong>Working directory</strong>, <strong>Staged snapshot</strong> and <strong>commit history</strong>.</p><table><thead><tr><th><strong>Command</strong></th><th><strong>Scope</strong></th><th><strong>Common use cases</strong></th></tr></thead><tbody><tr><td><code>git reset</code></td><td>commit-level</td><td>Discard commits in a private branch or throw away uncommited changes</td></tr><tr><td><code>git reset</code></td><td>file-lever</td><td>Unstage a file</td></tr><tr><td><code>git checkout</code></td><td>commit-level</td><td>Switch between branches or inspect old snapshots</td></tr><tr><td><code>git checkout</code></td><td>file-level</td><td>Discard changes in the working directory</td></tr><tr><td><code>git revert</code></td><td>commit-level</td><td>Undo commits in a public branch</td></tr><tr><td><code>git revert</code></td><td>file-levle</td><td>(N/A)</td></tr></tbody></table><h3 id=reset>reset
+<a class=heading-link href=#reset><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>resetting means you move your <code>HEAD</code> forward/previous commits. And it will DELETE dangling/orphaned commits.</p><pre tabindex=0><code>                               HEAD/Hotfix
+                                    |
+                                    V
+                       / N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master                
+</code></pre><p><code>git checkout hotfix</code>
+<code>git reset HEAD~2</code></p><pre tabindex=0><code>                    HEAD/Hotfix
+                         |
+                         V
+                       / N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master                
+</code></pre><p>there are options like <code>--soft</code>, <code>--mixed</code> and <code>--hard</code>, for more details, find online.</p><h3 id=checkout>checkout
+<a class=heading-link href=#checkout><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><code>checkout</code> doesn&rsquo;t move any branches, it just moves the pointer points to the git tree.</p><pre tabindex=0><code>                               HEAD/Hotfix
+                                    |
+                                    V
+                       / N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master                
+</code></pre><p><code>git checkout HEAD~2</code></p><pre tabindex=0><code>                       HEAD       Hotfix
+                         |          |
+                         V          V
+                       / N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master                
+</code></pre><p>You should always make sure at least an additional pointer that is pointing to HEAD so that you don&rsquo;t lose control on head.</p><h3 id=revert>revert
+<a class=heading-link href=#revert><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>As the time I am writing this, I find I rarely use this command. However, it is useful at some circumstances.</p><p>reverting undoes a commit by creating a new commit.</p><pre tabindex=0><code>                         *        Hotfix
+                         |          |
+                         V          V
+                       / N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master  
+* is where a I want to undoes the commit, by undoing changes and add new commit              
+</code></pre><p><code>git checkout hotfix</code></p><p><code>git revert HEAD~2</code></p><pre tabindex=0><code>                       used
+                        to
+                        be 
+                         *             Hotfix
+                         |                |
+                         V                V
+                       / N --- N --- N ---N
+                      /
+                     /
+   N --- N --- N --- N --- N --- N
+                                 ^
+                                 |
+                               master                
+</code></pre><p><code>git revert</code> does add changes to existing commit history. for this reason, <code>git revert</code> should be used on public branches and <code>git reset</code> should be used on private branches.</p><h3 id=branch>branch
+<a class=heading-link href=#branch><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p><code>git branch &lt;new_branch_name></code> is used to create a new branch here at <code>HEAD</code> pointer.</p></div><footer></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script></body></html>

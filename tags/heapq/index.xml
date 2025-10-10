@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Heapq on 130l</title><link>http://www.example.com/tags/heapq/</link><description>Recent content in Heapq on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 10 Sep 2021 23:47:46 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/heapq/index.xml" rel="self" type="application/rss+xml"/><item><title>priority queue, min and max heap implementation in python</title><link>http://www.example.com/posts/priority-queue-min-and-max-heap-implementaton-in-python/</link><pubDate>Fri, 10 Sep 2021 23:47:46 +0000</pubDate><guid>http://www.example.com/posts/priority-queue-min-and-max-heap-implementaton-in-python/</guid><description>&lt;h2 id="pq-and-min-heap"&gt;
+ pq and min heap
+ &lt;a class="heading-link" href="#pq-and-min-heap"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The following is some implementation of priority queue in python
+In python, the default order is ascending, so it&amp;rsquo;s also a min-heap&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;from&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;heapq&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;import&lt;/span&gt; heappop, heappush, nlargest, nsmallest
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;from&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;typing&lt;/span&gt; &lt;span style="color:#ff7b72"&gt;import&lt;/span&gt; Any
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;class&lt;/span&gt; &lt;span style="color:#f0883e;font-weight:bold"&gt;PriorityQueue&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;&amp;#34;&amp;#34;PriortyQuque implementation.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;__init__&lt;/span&gt;(self) &lt;span style="color:#ff7b72;font-weight:bold"&gt;-&amp;gt;&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;None&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; []
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;peek&lt;/span&gt;(self) &lt;span style="color:#ff7b72;font-weight:bold"&gt;-&amp;gt;&lt;/span&gt; Any:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;if&lt;/span&gt; self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq: &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq[&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;pop&lt;/span&gt;(self) &lt;span style="color:#ff7b72;font-weight:bold"&gt;-&amp;gt;&lt;/span&gt; Any:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;if&lt;/span&gt; self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq: &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; heappop(self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;return&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;def&lt;/span&gt; &lt;span style="color:#d2a8ff;font-weight:bold"&gt;push&lt;/span&gt;(self, obj: Any) &lt;span style="color:#ff7b72;font-weight:bold"&gt;-&amp;gt;&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;None&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; heappush(self&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq, obj)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;if&lt;/span&gt; &lt;span style="color:#79c0ff"&gt;__name__&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;==&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pq &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; PriorityQueue()
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;push(&lt;span style="color:#a5d6ff"&gt;3&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;push(&lt;span style="color:#a5d6ff"&gt;5&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;push(&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;push(&lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;assert&lt;/span&gt; (nlargest(&lt;span style="color:#a5d6ff"&gt;3&lt;/span&gt;, pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq) &lt;span style="color:#ff7b72;font-weight:bold"&gt;==&lt;/span&gt; [&lt;span style="color:#a5d6ff"&gt;5&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;3&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#ff7b72"&gt;assert&lt;/span&gt; (nsmallest(&lt;span style="color:#a5d6ff"&gt;3&lt;/span&gt;, pq&lt;span style="color:#ff7b72;font-weight:bold"&gt;.&lt;/span&gt;pq) &lt;span style="color:#ff7b72;font-weight:bold"&gt;==&lt;/span&gt; [&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;0&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;3&lt;/span&gt;])
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# time complexity:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# push -- heappush O(logn)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# pop -- heappop O(logn)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# peek -- random access iterable 0 O(1)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;P.S: All the interesting methods are in &lt;code&gt;Lib/heapq.py&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>
