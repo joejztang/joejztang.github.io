@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheating Sheet on 130l</title><link>http://www.example.com/tags/cheating-sheet/</link><description>Recent content in Cheating Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 02 Feb 2020 15:31:09 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/cheating-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>graph 概念及总结</title><link>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</link><pubDate>Sun, 02 Feb 2020 15:31:09 +0000</pubDate><guid>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="概念"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheating Sheet on 130l</title><link>https://joejztang.github.io/tags/cheating-sheet/</link><description>Recent content in Cheating Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 02 Feb 2020 15:31:09 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/cheating-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>graph 概念及总结</title><link>https://joejztang.github.io/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</link><pubDate>Sun, 02 Feb 2020 15:31:09 +0000</pubDate><guid>https://joejztang.github.io/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="概念"&gt;
  概念
  &lt;a class="heading-link" href="#%e6%a6%82%e5%bf%b5"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -25,7 +25,7 @@
 &lt;p&gt;degree: 与 v 的连线总数&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;degree 在解题上有很大的用处. 比如: 如果图和树结合的题目, 当 out degree 为0 时,我们就能认定他是 leaf.&lt;/p&gt;</description></item><item><title>elasticsearch cheating sheet</title><link>http://www.example.com/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>http://www.example.com/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
+&lt;p&gt;degree 在解题上有很大的用处. 比如: 如果图和树结合的题目, 当 out degree 为0 时,我们就能认定他是 leaf.&lt;/p&gt;</description></item><item><title>elasticsearch cheating sheet</title><link>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
  concepts
  &lt;a class="heading-link" href="#concepts"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -40,7 +40,7 @@
 &lt;li&gt;document: json formated data&lt;/li&gt;
 &lt;li&gt;shard/replica: shard of a &lt;strong&gt;portion&lt;/strong&gt; of indexes, whereas replica is a segment of an index.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
 &lt;h2 id="roles-of-node"&gt;
  roles of node
  &lt;a class="heading-link" href="#roles-of-node"&gt;
@@ -54,7 +54,7 @@
 &lt;li&gt;ingest: it somewhat like simplified &lt;code&gt;logstash&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;ml&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;by default, it&amp;rsquo;s &lt;code&gt;dim&lt;/code&gt; permission. for different size of cluster, especially medium and large size, we could have dedicated master nodes.&lt;/p&gt;</description></item><item><title>introduction to kubernetes</title><link>http://www.example.com/posts/introduction-to-kubernetes/</link><pubDate>Fri, 19 Apr 2019 16:54:16 +0000</pubDate><guid>http://www.example.com/posts/introduction-to-kubernetes/</guid><description>&lt;h2 id="kubernetes-architecture"&gt;
+&lt;p&gt;by default, it&amp;rsquo;s &lt;code&gt;dim&lt;/code&gt; permission. for different size of cluster, especially medium and large size, we could have dedicated master nodes.&lt;/p&gt;</description></item><item><title>introduction to kubernetes</title><link>https://joejztang.github.io/posts/introduction-to-kubernetes/</link><pubDate>Fri, 19 Apr 2019 16:54:16 +0000</pubDate><guid>https://joejztang.github.io/posts/introduction-to-kubernetes/</guid><description>&lt;h2 id="kubernetes-architecture"&gt;
  kubernetes architecture
  &lt;a class="heading-link" href="#kubernetes-architecture"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -74,7 +74,7 @@
  &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;master nodes are entry point for administrative tasks. if there are more master nodes, then it would be in HA (high availability) mode.&lt;/p&gt;
-&lt;p&gt;in this time, one of them is a &amp;rsquo;leader&amp;rsquo; and others are followers.&lt;/p&gt;</description></item><item><title>git-cheating-sheet</title><link>http://www.example.com/posts/git-cheating-sheet/</link><pubDate>Fri, 01 Mar 2019 17:40:26 +0000</pubDate><guid>http://www.example.com/posts/git-cheating-sheet/</guid><description>&lt;h2 id="backtracking"&gt;
+&lt;p&gt;in this time, one of them is a &amp;rsquo;leader&amp;rsquo; and others are followers.&lt;/p&gt;</description></item><item><title>git-cheating-sheet</title><link>https://joejztang.github.io/posts/git-cheating-sheet/</link><pubDate>Fri, 01 Mar 2019 17:40:26 +0000</pubDate><guid>https://joejztang.github.io/posts/git-cheating-sheet/</guid><description>&lt;h2 id="backtracking"&gt;
  backtracking
  &lt;a class="heading-link" href="#backtracking"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -93,7 +93,7 @@
 &lt;p&gt;then, I made some changes to this file and then I realize that I did a silly thing.&lt;/p&gt;
 &lt;p&gt;I need to be back!!!&lt;/p&gt;
 &lt;p&gt;what I do is the following: &lt;code&gt;git checkout HEAD &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then you can check git status, it back to the last commit.&lt;/p&gt;</description></item><item><title>sql-server-cheating-sheet</title><link>http://www.example.com/posts/sql-server-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 14:11:26 +0000</pubDate><guid>http://www.example.com/posts/sql-server-cheating-sheet/</guid><description>&lt;h2 id="overpartition-by--vs-group-by"&gt;
+&lt;p&gt;Then you can check git status, it back to the last commit.&lt;/p&gt;</description></item><item><title>sql-server-cheating-sheet</title><link>https://joejztang.github.io/posts/sql-server-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 14:11:26 +0000</pubDate><guid>https://joejztang.github.io/posts/sql-server-cheating-sheet/</guid><description>&lt;h2 id="overpartition-by--vs-group-by"&gt;
  OVER(PARTITION BY &amp;hellip;) VS. GROUP BY
  &lt;a class="heading-link" href="#overpartition-by--vs-group-by"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -109,7 +109,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;schema can be used to control the accesses.&lt;/p&gt;</description></item><item><title>c sharp cheating sheet</title><link>http://www.example.com/posts/c-sharp-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 12:59:41 +0000</pubDate><guid>http://www.example.com/posts/c-sharp-cheating-sheet/</guid><description>&lt;h2 id="dll-vs-exe"&gt;
+&lt;p&gt;schema can be used to control the accesses.&lt;/p&gt;</description></item><item><title>c sharp cheating sheet</title><link>https://joejztang.github.io/posts/c-sharp-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 12:59:41 +0000</pubDate><guid>https://joejztang.github.io/posts/c-sharp-cheating-sheet/</guid><description>&lt;h2 id="dll-vs-exe"&gt;
  DLL vs EXE
  &lt;a class="heading-link" href="#dll-vs-exe"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -259,16 +259,16 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;properties exposes fields. meaning properties have getter and setter whereas fields store actual data.&lt;/p&gt;</description></item><item><title>google dataflow introduction</title><link>http://www.example.com/posts/google-dataflow-introduction/</link><pubDate>Wed, 27 Feb 2019 10:13:36 +0000</pubDate><guid>http://www.example.com/posts/google-dataflow-introduction/</guid><description>&lt;h2 id="data-analytics-products"&gt;
+&lt;p&gt;properties exposes fields. meaning properties have getter and setter whereas fields store actual data.&lt;/p&gt;</description></item><item><title>google dataflow introduction</title><link>https://joejztang.github.io/posts/google-dataflow-introduction/</link><pubDate>Wed, 27 Feb 2019 10:13:36 +0000</pubDate><guid>https://joejztang.github.io/posts/google-dataflow-introduction/</guid><description>&lt;h2 id="data-analytics-products"&gt;
  data analytics products
  &lt;a class="heading-link" href="#data-analytics-products"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/data_trans_with_dataflow.png" alt="cloud_dataflow"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/data_trans_with_dataflow.png" alt="cloud_dataflow"&gt;&lt;/p&gt;
 &lt;p&gt;cloud dataflow is a data pipeline that transform data from one form to another, as you can see in above paradiagm.&lt;/p&gt;
-&lt;p&gt;according to what I read so far, dataflow build on top of &lt;strong&gt;apache beam&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>http://www.example.com/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>http://www.example.com/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
+&lt;p&gt;according to what I read so far, dataflow build on top of &lt;strong&gt;apache beam&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>https://joejztang.github.io/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>https://joejztang.github.io/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
  dimension
  &lt;a class="heading-link" href="#dimension"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -321,7 +321,7 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;pandas.Series(data, index, dtype, copy)&lt;/code&gt;&lt;/p&gt;</description></item><item><title>golang cheating sheet</title><link>http://www.example.com/posts/golang-cheating-sheet/</link><pubDate>Fri, 02 Nov 2018 15:04:26 +0000</pubDate><guid>http://www.example.com/posts/golang-cheating-sheet/</guid><description>&lt;h1 id="overview"&gt;
+&lt;p&gt;&lt;code&gt;pandas.Series(data, index, dtype, copy)&lt;/code&gt;&lt;/p&gt;</description></item><item><title>golang cheating sheet</title><link>https://joejztang.github.io/posts/golang-cheating-sheet/</link><pubDate>Fri, 02 Nov 2018 15:04:26 +0000</pubDate><guid>https://joejztang.github.io/posts/golang-cheating-sheet/</guid><description>&lt;h1 id="overview"&gt;
  overview
  &lt;a class="heading-link" href="#overview"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -343,7 +343,7 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;unlike &lt;code&gt;structs&lt;/code&gt; in C which is a combination of variables, structs in go is a combination of variables and methods.&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>http://www.example.com/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>http://www.example.com/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
+&lt;p&gt;unlike &lt;code&gt;structs&lt;/code&gt; in C which is a combination of variables, structs in go is a combination of variables and methods.&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>https://joejztang.github.io/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>https://joejztang.github.io/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
  写在前头
  &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e5%a4%b4"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -397,7 +397,7 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;unsorted key-value pair&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>git merge</title><link>http://www.example.com/posts/git-merge/</link><pubDate>Thu, 05 Apr 2018 12:10:50 +0000</pubDate><guid>http://www.example.com/posts/git-merge/</guid><description>&lt;p&gt;command &lt;code&gt;git merge&lt;/code&gt; is usually used in conjunction with &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git branch -d&lt;/code&gt;(for deleting obsolete branches).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;unsorted key-value pair&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>git merge</title><link>https://joejztang.github.io/posts/git-merge/</link><pubDate>Thu, 05 Apr 2018 12:10:50 +0000</pubDate><guid>https://joejztang.github.io/posts/git-merge/</guid><description>&lt;p&gt;command &lt;code&gt;git merge&lt;/code&gt; is usually used in conjunction with &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git branch -d&lt;/code&gt;(for deleting obsolete branches).&lt;/p&gt;
 &lt;p&gt;credits to &lt;a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket Tutorials&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="prepare-to-merge"&gt;
  prepare to merge
@@ -413,9 +413,9 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h4&gt;
-&lt;p&gt;use &lt;code&gt;git checkout &amp;lt;receiving_branch&amp;gt;&lt;/code&gt; to switch to receiving branch. In some case, I want to merge to master so that I execute &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;</description></item><item><title>git common commands</title><link>http://www.example.com/posts/git-common-commands/</link><pubDate>Wed, 04 Apr 2018 14:20:18 +0000</pubDate><guid>http://www.example.com/posts/git-common-commands/</guid><description>&lt;p&gt;some comman git commands&lt;/p&gt;</description></item><item><title>git checkout reset revert branch</title><link>http://www.example.com/posts/git-checkout-reset-revert-branch/</link><pubDate>Wed, 04 Apr 2018 12:14:54 +0000</pubDate><guid>http://www.example.com/posts/git-checkout-reset-revert-branch/</guid><description>&lt;p&gt;Besides some very useful git commands, such as &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, etc., there are three additional commands that gives more flexibility to your work&amp;mdash; they are &lt;code&gt;git reset&lt;/code&gt;, &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git revert&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;credit to &lt;a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket tutorials&lt;/a&gt;&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>http://www.example.com/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>http://www.example.com/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
-&lt;p&gt;I have read &lt;a href="http://tutorial.math.lamar.edu" class="external-link" target="_blank" rel="noopener"&gt;Paul Dawkin&lt;/a&gt;&amp;rsquo;s previous contents and accumulated some gists that I found useful. (content seems not to be there anymore, for more infomation, please contact the author)&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>http://www.example.com/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>http://www.example.com/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item><item><title>hexo cheating sheet</title><link>http://www.example.com/posts/hexo-cheating-sheet/</link><pubDate>Thu, 28 Sep 2017 19:53:00 +0000</pubDate><guid>http://www.example.com/posts/hexo-cheating-sheet/</guid><description>&lt;h1 id="hexo-system-command"&gt;
+&lt;p&gt;use &lt;code&gt;git checkout &amp;lt;receiving_branch&amp;gt;&lt;/code&gt; to switch to receiving branch. In some case, I want to merge to master so that I execute &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;</description></item><item><title>git common commands</title><link>https://joejztang.github.io/posts/git-common-commands/</link><pubDate>Wed, 04 Apr 2018 14:20:18 +0000</pubDate><guid>https://joejztang.github.io/posts/git-common-commands/</guid><description>&lt;p&gt;some comman git commands&lt;/p&gt;</description></item><item><title>git checkout reset revert branch</title><link>https://joejztang.github.io/posts/git-checkout-reset-revert-branch/</link><pubDate>Wed, 04 Apr 2018 12:14:54 +0000</pubDate><guid>https://joejztang.github.io/posts/git-checkout-reset-revert-branch/</guid><description>&lt;p&gt;Besides some very useful git commands, such as &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, etc., there are three additional commands that gives more flexibility to your work&amp;mdash; they are &lt;code&gt;git reset&lt;/code&gt;, &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git revert&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;credit to &lt;a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket tutorials&lt;/a&gt;&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
+&lt;p&gt;I have read &lt;a href="http://tutorial.math.lamar.edu" class="external-link" target="_blank" rel="noopener"&gt;Paul Dawkin&lt;/a&gt;&amp;rsquo;s previous contents and accumulated some gists that I found useful. (content seems not to be there anymore, for more infomation, please contact the author)&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>https://joejztang.github.io/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>https://joejztang.github.io/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item><item><title>hexo cheating sheet</title><link>https://joejztang.github.io/posts/hexo-cheating-sheet/</link><pubDate>Thu, 28 Sep 2017 19:53:00 +0000</pubDate><guid>https://joejztang.github.io/posts/hexo-cheating-sheet/</guid><description>&lt;h1 id="hexo-system-command"&gt;
  hexo system command
  &lt;a class="heading-link" href="#hexo-system-command"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

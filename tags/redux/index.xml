@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redux on 130l</title><link>http://www.example.com/tags/redux/</link><description>Recent content in Redux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Sep 2018 14:20:02 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/redux/index.xml" rel="self" type="application/rss+xml"/><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Redux on 130l</title><link>https://joejztang.github.io/tags/redux/</link><description>Recent content in Redux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Sep 2018 14:20:02 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/redux/index.xml" rel="self" type="application/rss+xml"/><item><title>redux 和 react-redux</title><link>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
  Flux
  &lt;a class="heading-link" href="#flux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -6,7 +6,7 @@
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id="redux"&gt;

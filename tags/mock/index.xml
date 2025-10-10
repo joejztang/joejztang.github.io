@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mock on 130l</title><link>http://www.example.com/tags/mock/</link><description>Recent content in Mock on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 30 Mar 2021 17:28:40 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/mock/index.xml" rel="self" type="application/rss+xml"/><item><title>python unittest mock and pytest monkeypatch</title><link>http://www.example.com/posts/python-unittest-mock-and-pytest-monkeypatch/</link><pubDate>Tue, 30 Mar 2021 17:28:40 +0000</pubDate><guid>http://www.example.com/posts/python-unittest-mock-and-pytest-monkeypatch/</guid><description>&lt;h2 id="what-is-mockmonkeypatch"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mock on 130l</title><link>https://joejztang.github.io/tags/mock/</link><description>Recent content in Mock on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 30 Mar 2021 17:28:40 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/mock/index.xml" rel="self" type="application/rss+xml"/><item><title>python unittest mock and pytest monkeypatch</title><link>https://joejztang.github.io/posts/python-unittest-mock-and-pytest-monkeypatch/</link><pubDate>Tue, 30 Mar 2021 17:28:40 +0000</pubDate><guid>https://joejztang.github.io/posts/python-unittest-mock-and-pytest-monkeypatch/</guid><description>&lt;h2 id="what-is-mockmonkeypatch"&gt;
  What is mock/monkeypatch?
  &lt;a class="heading-link" href="#what-is-mockmonkeypatch"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -14,7 +14,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;I would like to use mock, but when project is becoming really large, suddenly mock doesn&amp;rsquo;t work! (amazing isn&amp;rsquo;t it? but it&amp;rsquo;s not mock, it&amp;rsquo;s purely me.)&lt;/p&gt;</description></item><item><title>python-unittest-mock</title><link>http://www.example.com/posts/python-unittest-mock/</link><pubDate>Thu, 06 Jun 2019 15:42:00 +0000</pubDate><guid>http://www.example.com/posts/python-unittest-mock/</guid><description>&lt;p&gt;recently, i started to write unittest for python applications. because what i did is data pipeline, i will use a lot of mocking and patching. this post is for recording purposes.&lt;/p&gt;
+&lt;p&gt;I would like to use mock, but when project is becoming really large, suddenly mock doesn&amp;rsquo;t work! (amazing isn&amp;rsquo;t it? but it&amp;rsquo;s not mock, it&amp;rsquo;s purely me.)&lt;/p&gt;</description></item><item><title>python-unittest-mock</title><link>https://joejztang.github.io/posts/python-unittest-mock/</link><pubDate>Thu, 06 Jun 2019 15:42:00 +0000</pubDate><guid>https://joejztang.github.io/posts/python-unittest-mock/</guid><description>&lt;p&gt;recently, i started to write unittest for python applications. because what i did is data pipeline, i will use a lot of mocking and patching. this post is for recording purposes.&lt;/p&gt;
 &lt;p&gt;unittest framework is MUCH MORE POWERFUL than I expected. so let me talked about a little bit about &lt;code&gt;unittest&lt;/code&gt; framework itself first.&lt;/p&gt;
 &lt;h2 id="mock"&gt;
  &lt;code&gt;Mock&lt;/code&gt;
@@ -23,7 +23,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;this is one powerful object that unittest provides. basically, one can use &lt;code&gt;mock = Mock()&lt;/code&gt; to &amp;lsquo;fake&amp;rsquo; any object that you want to replace.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>http://www.example.com/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>http://www.example.com/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
+&lt;p&gt;this is one powerful object that unittest provides. basically, one can use &lt;code&gt;mock = Mock()&lt;/code&gt; to &amp;lsquo;fake&amp;rsquo; any object that you want to replace.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>https://joejztang.github.io/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>https://joejztang.github.io/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
  what is mock?
  &lt;a class="heading-link" href="#what-is-mock"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheat Sheet on 130l</title><link>http://www.example.com/tags/cheat-sheet/</link><description>Recent content in Cheat Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 10 Jan 2021 13:02:28 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>machine learning a-z cheat sheet</title><link>http://www.example.com/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>http://www.example.com/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cheat Sheet on 130l</title><link>https://joejztang.github.io/tags/cheat-sheet/</link><description>Recent content in Cheat Sheet on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 10 Jan 2021 13:02:28 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/cheat-sheet/index.xml" rel="self" type="application/rss+xml"/><item><title>machine learning a-z cheat sheet</title><link>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
  null hypothesis and p-value
  &lt;a class="heading-link" href="#null-hypothesis-and-p-value"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -17,7 +17,7 @@
 &lt;ol start="2"&gt;
 &lt;li&gt;we are using p-value to nullify the hypothesis&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item><item><title>R-cheat-sheet</title><link>http://www.example.com/posts/r-cheat-sheet/</link><pubDate>Wed, 19 Jun 2019 13:48:16 +0000</pubDate><guid>http://www.example.com/posts/r-cheat-sheet/</guid><description>&lt;p&gt;to me, R is a little bit quirky.&lt;/p&gt;
+&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item><item><title>R-cheat-sheet</title><link>https://joejztang.github.io/posts/r-cheat-sheet/</link><pubDate>Wed, 19 Jun 2019 13:48:16 +0000</pubDate><guid>https://joejztang.github.io/posts/r-cheat-sheet/</guid><description>&lt;p&gt;to me, R is a little bit quirky.&lt;/p&gt;
 &lt;h2 id="installation-and-execution"&gt;
  installation and execution
  &lt;a class="heading-link" href="#installation-and-execution"&gt;

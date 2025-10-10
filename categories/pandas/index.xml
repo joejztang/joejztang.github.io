@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pandas on 130l</title><link>http://www.example.com/categories/pandas/</link><description>Recent content in Pandas on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 19 Mar 2019 16:33:08 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>pandasg roupby vs index</title><link>http://www.example.com/posts/pandas-groupby-vs-index/</link><pubDate>Tue, 19 Mar 2019 16:33:08 +0000</pubDate><guid>http://www.example.com/posts/pandas-groupby-vs-index/</guid><description>&lt;h2 id="groupby-in-pandas"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pandas on 130l</title><link>https://joejztang.github.io/categories/pandas/</link><description>Recent content in Pandas on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 19 Mar 2019 16:33:08 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/pandas/index.xml" rel="self" type="application/rss+xml"/><item><title>pandasg roupby vs index</title><link>https://joejztang.github.io/posts/pandas-groupby-vs-index/</link><pubDate>Tue, 19 Mar 2019 16:33:08 +0000</pubDate><guid>https://joejztang.github.io/posts/pandas-groupby-vs-index/</guid><description>&lt;h2 id="groupby-in-pandas"&gt;
  groupby in pandas
  &lt;a class="heading-link" href="#groupby-in-pandas"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -15,7 +15,7 @@
 &lt;li&gt;Combining the results&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In many situations, we split the data into sets and we apply some functionality on each subset. In the apply functionality, we can perform the following operations −&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>http://www.example.com/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>http://www.example.com/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
+&lt;p&gt;In many situations, we split the data into sets and we apply some functionality on each subset. In the apply functionality, we can perform the following operations −&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>https://joejztang.github.io/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>https://joejztang.github.io/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
  dimension
  &lt;a class="heading-link" href="#dimension"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

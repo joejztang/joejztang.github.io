@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React-Redux on 130l</title><link>http://www.example.com/tags/react-redux/</link><description>Recent content in React-Redux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/react-redux/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React-Redux on 130l</title><link>https://joejztang.github.io/tags/react-redux/</link><description>Recent content in React-Redux on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/react-redux/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
  flux 和 redux
  &lt;a class="heading-link" href="#flux-%e5%92%8c-redux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -13,7 +13,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;p&gt;可以看到 flux 的精髓即数据永远单向流动.&lt;/p&gt;
 &lt;h2 id="redux"&gt;
  Redux

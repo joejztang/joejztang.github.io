@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 130l</title><link>http://www.example.com/categories/python/</link><description>Recent content in Python on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Jul 2019 13:52:38 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>about python logging</title><link>http://www.example.com/posts/about-python-logging/</link><pubDate>Thu, 11 Jul 2019 13:52:38 +0000</pubDate><guid>http://www.example.com/posts/about-python-logging/</guid><description>&lt;h1 id="logging-basics"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 130l</title><link>https://joejztang.github.io/categories/python/</link><description>Recent content in Python on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Jul 2019 13:52:38 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/python/index.xml" rel="self" type="application/rss+xml"/><item><title>about python logging</title><link>https://joejztang.github.io/posts/about-python-logging/</link><pubDate>Thu, 11 Jul 2019 13:52:38 +0000</pubDate><guid>https://joejztang.github.io/posts/about-python-logging/</guid><description>&lt;h1 id="logging-basics"&gt;
  logging basics
  &lt;a class="heading-link" href="#logging-basics"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -17,7 +17,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;it gave me a headache at first. and I tried importing &lt;code&gt;logging&lt;/code&gt; module in each module and log in the same file. it works somehow but with issues.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>http://www.example.com/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>http://www.example.com/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
+&lt;p&gt;it gave me a headache at first. and I tried importing &lt;code&gt;logging&lt;/code&gt; module in each module and log in the same file. it works somehow but with issues.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>https://joejztang.github.io/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>https://joejztang.github.io/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
  what is mock?
  &lt;a class="heading-link" href="#what-is-mock"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -33,7 +33,7 @@
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Assume that we want to test a function. Let&amp;rsquo;s call it &lt;code&gt;count_all_after_connection(connection)&lt;/code&gt;. It consumed a parameter called &lt;code&gt;connection&lt;/code&gt;, and this connection is not available so far(possibly because of not having access yet).&lt;/p&gt;
-&lt;p&gt;But you still want to test it, but how?&lt;/p&gt;</description></item><item><title>python from import vs import</title><link>http://www.example.com/posts/python-from-import-vs-import/</link><pubDate>Thu, 29 Mar 2018 10:52:14 +0000</pubDate><guid>http://www.example.com/posts/python-from-import-vs-import/</guid><description>&lt;p&gt;python has two basic import syntax, they are&lt;/p&gt;
+&lt;p&gt;But you still want to test it, but how?&lt;/p&gt;</description></item><item><title>python from import vs import</title><link>https://joejztang.github.io/posts/python-from-import-vs-import/</link><pubDate>Thu, 29 Mar 2018 10:52:14 +0000</pubDate><guid>https://joejztang.github.io/posts/python-from-import-vs-import/</guid><description>&lt;p&gt;python has two basic import syntax, they are&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;import module
 
 from module import x
@@ -47,7 +47,7 @@ from module import x
 &lt;/h4&gt;
 &lt;p&gt;the attributes and methods of the imported module types are imported directly into the local namespace, so they are available directly, without qualification by module name.&lt;/p&gt;
 &lt;p&gt;for example:&lt;/p&gt;
-&lt;p&gt;when I use &lt;code&gt;import types&lt;/code&gt;, I want to call function &lt;code&gt;FunctionType&lt;/code&gt; in &lt;code&gt;types&lt;/code&gt; module, I have to do this&lt;/p&gt;</description></item><item><title>super() in python</title><link>http://www.example.com/posts/super-in-python/</link><pubDate>Sun, 12 Nov 2017 18:03:33 +0000</pubDate><guid>http://www.example.com/posts/super-in-python/</guid><description>&lt;p&gt;In python, super() is a simple way to solve inheritance issues. It has two major use:&lt;/p&gt;
+&lt;p&gt;when I use &lt;code&gt;import types&lt;/code&gt;, I want to call function &lt;code&gt;FunctionType&lt;/code&gt; in &lt;code&gt;types&lt;/code&gt; module, I have to do this&lt;/p&gt;</description></item><item><title>super() in python</title><link>https://joejztang.github.io/posts/super-in-python/</link><pubDate>Sun, 12 Nov 2017 18:03:33 +0000</pubDate><guid>https://joejztang.github.io/posts/super-in-python/</guid><description>&lt;p&gt;In python, super() is a simple way to solve inheritance issues. It has two major use:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;allow to avoid using base class explicitly&lt;/p&gt;
@@ -97,7 +97,7 @@ Dog is a warm-blooded animal.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;d &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; Dog()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(&lt;span style="color:#a5d6ff"&gt;&amp;#39;&amp;#39;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bat &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; NonMarineMammal(&lt;span style="color:#a5d6ff"&gt;&amp;#39;Bat&amp;#39;&lt;/span&gt;) 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;</description></item><item><title>regular expression python3</title><link>http://www.example.com/posts/regular-expression-python3/</link><pubDate>Mon, 30 Oct 2017 17:49:22 +0000</pubDate><guid>http://www.example.com/posts/regular-expression-python3/</guid><description>&lt;h1 id="regular-expression-in-python3"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;</description></item><item><title>regular expression python3</title><link>https://joejztang.github.io/posts/regular-expression-python3/</link><pubDate>Mon, 30 Oct 2017 17:49:22 +0000</pubDate><guid>https://joejztang.github.io/posts/regular-expression-python3/</guid><description>&lt;h1 id="regular-expression-in-python3"&gt;
  Regular expression in Python3
  &lt;a class="heading-link" href="#regular-expression-in-python3"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -131,4 +131,4 @@ Dog is a warm-blooded animal.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# &amp;#39;ABC\-001&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;使用 &lt;code&gt;match()&lt;/code&gt; 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>http://www.example.com/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>http://www.example.com/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;使用 &lt;code&gt;match()&lt;/code&gt; 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>https://joejztang.github.io/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>https://joejztang.github.io/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item></channel></rss>

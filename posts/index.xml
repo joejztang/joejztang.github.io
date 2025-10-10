@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>http://www.example.com/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 18 Mar 2022 18:29:19 +0000</lastBuildDate><atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>algorithm light topics</title><link>http://www.example.com/posts/algorithm-light-topics/</link><pubDate>Fri, 18 Mar 2022 18:29:19 +0000</pubDate><guid>http://www.example.com/posts/algorithm-light-topics/</guid><description>&lt;h2 id="inversion-counting"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 18 Mar 2022 18:29:19 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>algorithm light topics</title><link>https://joejztang.github.io/posts/algorithm-light-topics/</link><pubDate>Fri, 18 Mar 2022 18:29:19 +0000</pubDate><guid>https://joejztang.github.io/posts/algorithm-light-topics/</guid><description>&lt;h2 id="inversion-counting"&gt;
  inversion counting
  &lt;a class="heading-link" href="#inversion-counting"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -30,7 +30,7 @@
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://aquarchitect.github.io/swift-algorithm-club/Union-Find/" class="external-link" target="_blank" rel="noopener"&gt;explain&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Union-Find is a data structure that can keep track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. It is also known as disjoint-set data structure.&lt;/p&gt;</description></item><item><title>priority queue, min and max heap implementation in python</title><link>http://www.example.com/posts/priority-queue-min-and-max-heap-implementaton-in-python/</link><pubDate>Fri, 10 Sep 2021 23:47:46 +0000</pubDate><guid>http://www.example.com/posts/priority-queue-min-and-max-heap-implementaton-in-python/</guid><description>&lt;h2 id="pq-and-min-heap"&gt;
+&lt;p&gt;Union-Find is a data structure that can keep track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. It is also known as disjoint-set data structure.&lt;/p&gt;</description></item><item><title>priority queue, min and max heap implementation in python</title><link>https://joejztang.github.io/posts/priority-queue-min-and-max-heap-implementaton-in-python/</link><pubDate>Fri, 10 Sep 2021 23:47:46 +0000</pubDate><guid>https://joejztang.github.io/posts/priority-queue-min-and-max-heap-implementaton-in-python/</guid><description>&lt;h2 id="pq-and-min-heap"&gt;
  pq and min heap
  &lt;a class="heading-link" href="#pq-and-min-heap"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -74,7 +74,7 @@ In python, the default order is ascending, so it&amp;rsquo;s also a min-heap&lt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# push -- heappush O(logn)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# pop -- heappop O(logn)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# peek -- random access iterable 0 O(1)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;P.S: All the interesting methods are in &lt;code&gt;Lib/heapq.py&lt;/code&gt;&lt;/p&gt;</description></item><item><title>everything about google cloud</title><link>http://www.example.com/posts/everything-about-google-cloud/</link><pubDate>Mon, 16 Aug 2021 22:58:19 +0000</pubDate><guid>http://www.example.com/posts/everything-about-google-cloud/</guid><description>&lt;h2 id="google-cloud-storage"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;P.S: All the interesting methods are in &lt;code&gt;Lib/heapq.py&lt;/code&gt;&lt;/p&gt;</description></item><item><title>everything about google cloud</title><link>https://joejztang.github.io/posts/everything-about-google-cloud/</link><pubDate>Mon, 16 Aug 2021 22:58:19 +0000</pubDate><guid>https://joejztang.github.io/posts/everything-about-google-cloud/</guid><description>&lt;h2 id="google-cloud-storage"&gt;
  google cloud storage
  &lt;a class="heading-link" href="#google-cloud-storage"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -111,7 +111,7 @@ In python, the default order is ascending, so it&amp;rsquo;s also a min-heap&lt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;organization (think it as a folder representing org) -&amp;gt; folders (think it as a folder rep teams) -&amp;gt; projects -&amp;gt; resources.&lt;/p&gt;</description></item><item><title>python unittest mock and pytest monkeypatch</title><link>http://www.example.com/posts/python-unittest-mock-and-pytest-monkeypatch/</link><pubDate>Tue, 30 Mar 2021 17:28:40 +0000</pubDate><guid>http://www.example.com/posts/python-unittest-mock-and-pytest-monkeypatch/</guid><description>&lt;h2 id="what-is-mockmonkeypatch"&gt;
+&lt;p&gt;organization (think it as a folder representing org) -&amp;gt; folders (think it as a folder rep teams) -&amp;gt; projects -&amp;gt; resources.&lt;/p&gt;</description></item><item><title>python unittest mock and pytest monkeypatch</title><link>https://joejztang.github.io/posts/python-unittest-mock-and-pytest-monkeypatch/</link><pubDate>Tue, 30 Mar 2021 17:28:40 +0000</pubDate><guid>https://joejztang.github.io/posts/python-unittest-mock-and-pytest-monkeypatch/</guid><description>&lt;h2 id="what-is-mockmonkeypatch"&gt;
  What is mock/monkeypatch?
  &lt;a class="heading-link" href="#what-is-mockmonkeypatch"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -127,7 +127,7 @@ In python, the default order is ascending, so it&amp;rsquo;s also a min-heap&lt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;I would like to use mock, but when project is becoming really large, suddenly mock doesn&amp;rsquo;t work! (amazing isn&amp;rsquo;t it? but it&amp;rsquo;s not mock, it&amp;rsquo;s purely me.)&lt;/p&gt;</description></item><item><title>machine learning a-z cheat sheet</title><link>http://www.example.com/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>http://www.example.com/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
+&lt;p&gt;I would like to use mock, but when project is becoming really large, suddenly mock doesn&amp;rsquo;t work! (amazing isn&amp;rsquo;t it? but it&amp;rsquo;s not mock, it&amp;rsquo;s purely me.)&lt;/p&gt;</description></item><item><title>machine learning a-z cheat sheet</title><link>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
  null hypothesis and p-value
  &lt;a class="heading-link" href="#null-hypothesis-and-p-value"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -146,7 +146,7 @@ In python, the default order is ascending, so it&amp;rsquo;s also a min-heap&lt;
 &lt;ol start="2"&gt;
 &lt;li&gt;we are using p-value to nullify the hypothesis&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item><item><title>standard sql advance</title><link>http://www.example.com/posts/standard-sql-advance/</link><pubDate>Fri, 26 Jun 2020 15:24:19 +0000</pubDate><guid>http://www.example.com/posts/standard-sql-advance/</guid><description>&lt;p&gt;Recently, I have been asked to form a table, the schema is very simple:&lt;/p&gt;
+&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item><item><title>standard sql advance</title><link>https://joejztang.github.io/posts/standard-sql-advance/</link><pubDate>Fri, 26 Jun 2020 15:24:19 +0000</pubDate><guid>https://joejztang.github.io/posts/standard-sql-advance/</guid><description>&lt;p&gt;Recently, I have been asked to form a table, the schema is very simple:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;pid: STRING (NULLABLE)
 rec_list1: STRING (NULLABLE)
 rec_list2: STRING (NULLABLE)
@@ -161,7 +161,7 @@ right: STRUCT
  pid: NUMBERIC (NULLABLE)
  cat_id: NUMBERIC (NULLABLE)
  cat_name: STRING (NULLABLE)
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing &lt;code&gt;UNNEST&lt;/code&gt;, &lt;code&gt;ARRAY&lt;/code&gt;, &lt;code&gt;STRUCT&lt;/code&gt;, etc to me.&lt;/p&gt;</description></item><item><title>ssl shake hands error, certification failed to verify and Cisco Umbrella</title><link>http://www.example.com/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</link><pubDate>Thu, 30 Apr 2020 17:47:51 +0000</pubDate><guid>http://www.example.com/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</guid><description>&lt;h2 id="a-story"&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;It seems to be easy but took me some time because I am green on advanced usage of sql. Therefore, I am introducing &lt;code&gt;UNNEST&lt;/code&gt;, &lt;code&gt;ARRAY&lt;/code&gt;, &lt;code&gt;STRUCT&lt;/code&gt;, etc to me.&lt;/p&gt;</description></item><item><title>ssl shake hands error, certification failed to verify and Cisco Umbrella</title><link>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</link><pubDate>Thu, 30 Apr 2020 17:47:51 +0000</pubDate><guid>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</guid><description>&lt;h2 id="a-story"&gt;
  A story
  &lt;a class="heading-link" href="#a-story"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -179,7 +179,7 @@ right: STRUCT
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;searched on internet, tried recipe that people wrote, didn&amp;rsquo;t work and asked for help from my teammate.&lt;/p&gt;</description></item><item><title>aws cheating sheet</title><link>http://www.example.com/posts/aws-cheating-sheet/</link><pubDate>Fri, 17 Apr 2020 15:58:52 +0000</pubDate><guid>http://www.example.com/posts/aws-cheating-sheet/</guid><description>&lt;p&gt;Before anything, amazon always set minimum permissions generally.&lt;/p&gt;
+&lt;p&gt;searched on internet, tried recipe that people wrote, didn&amp;rsquo;t work and asked for help from my teammate.&lt;/p&gt;</description></item><item><title>aws cheating sheet</title><link>https://joejztang.github.io/posts/aws-cheating-sheet/</link><pubDate>Fri, 17 Apr 2020 15:58:52 +0000</pubDate><guid>https://joejztang.github.io/posts/aws-cheating-sheet/</guid><description>&lt;p&gt;Before anything, amazon always set minimum permissions generally.&lt;/p&gt;
 &lt;h2 id="region-and-availability-zone"&gt;
  region and availability zone
  &lt;a class="heading-link" href="#region-and-availability-zone"&gt;
@@ -217,10 +217,10 @@ right: STRUCT
  &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;aws doesn&amp;rsquo;t recommend using &lt;code&gt;aws_access_key_id&lt;/code&gt; and &lt;code&gt;aws_secret_access_key&lt;/code&gt; to use aws command line.
-it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><item><title>why there is inverse of a matrix and why it's important</title><link>http://www.example.com/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</link><pubDate>Tue, 10 Mar 2020 12:21:21 +0000</pubDate><guid>http://www.example.com/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</guid><description>&lt;p&gt;Alert: this is not an explanatory post of inverse matrix&lt;/p&gt;
+it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><item><title>why there is inverse of a matrix and why it's important</title><link>https://joejztang.github.io/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</link><pubDate>Tue, 10 Mar 2020 12:21:21 +0000</pubDate><guid>https://joejztang.github.io/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</guid><description>&lt;p&gt;Alert: this is not an explanatory post of inverse matrix&lt;/p&gt;
 &lt;p&gt;Back to school when I learned linear algebra, there was always an ultimate question that I asked and I didn&amp;rsquo;t find an answer: why there is inverse matrix?It seems so simple and so silly and so trivial until I didn&amp;rsquo;t do well in my final lol.&lt;/p&gt;
 &lt;p&gt;So why there is a thing called inverse matrix?&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s go back to real number system first&lt;/p&gt;</description></item><item><title>graph 概念及总结</title><link>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</link><pubDate>Sun, 02 Feb 2020 15:31:09 +0000</pubDate><guid>http://www.example.com/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="概念"&gt;
+&lt;p&gt;Let&amp;rsquo;s go back to real number system first&lt;/p&gt;</description></item><item><title>graph 概念及总结</title><link>https://joejztang.github.io/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</link><pubDate>Sun, 02 Feb 2020 15:31:09 +0000</pubDate><guid>https://joejztang.github.io/posts/graph-%E6%A6%82%E5%BF%B5%E5%8F%8A%E6%80%BB%E7%BB%93/</guid><description>&lt;h2 id="概念"&gt;
  概念
  &lt;a class="heading-link" href="#%e6%a6%82%e5%bf%b5"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -247,7 +247,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;p&gt;degree: 与 v 的连线总数&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;degree 在解题上有很大的用处. 比如: 如果图和树结合的题目, 当 out degree 为0 时,我们就能认定他是 leaf.&lt;/p&gt;</description></item><item><title>deep learning image recognization abstract</title><link>http://www.example.com/posts/deep-learning-image-recog-bastract/</link><pubDate>Wed, 02 Oct 2019 14:33:30 +0000</pubDate><guid>http://www.example.com/posts/deep-learning-image-recog-bastract/</guid><description>&lt;p&gt;this post is mainly focus on image recognizaton.&lt;/p&gt;
+&lt;p&gt;degree 在解题上有很大的用处. 比如: 如果图和树结合的题目, 当 out degree 为0 时,我们就能认定他是 leaf.&lt;/p&gt;</description></item><item><title>deep learning image recognization abstract</title><link>https://joejztang.github.io/posts/deep-learning-image-recog-bastract/</link><pubDate>Wed, 02 Oct 2019 14:33:30 +0000</pubDate><guid>https://joejztang.github.io/posts/deep-learning-image-recog-bastract/</guid><description>&lt;p&gt;this post is mainly focus on image recognizaton.&lt;/p&gt;
 &lt;h2 id="traslation-invariance"&gt;
  traslation invariance
  &lt;a class="heading-link" href="#traslation-invariance"&gt;
@@ -258,7 +258,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;p&gt;neural network will recognize traditional images for sure. but what if our target image is very small and at the left top corner?&lt;/p&gt;
 &lt;p&gt;in this case, neural network will not be so helpful.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;when a machine learning model can recognize an object no matter whether it is moved (or &lt;em&gt;translated&lt;/em&gt;) in the image.&lt;/p&gt;</description></item><item><title>elasticsearch cheating sheet</title><link>http://www.example.com/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>http://www.example.com/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
+&lt;p&gt;when a machine learning model can recognize an object no matter whether it is moved (or &lt;em&gt;translated&lt;/em&gt;) in the image.&lt;/p&gt;</description></item><item><title>elasticsearch cheating sheet</title><link>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
  concepts
  &lt;a class="heading-link" href="#concepts"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -273,7 +273,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;li&gt;document: json formated data&lt;/li&gt;
 &lt;li&gt;shard/replica: shard of a &lt;strong&gt;portion&lt;/strong&gt; of indexes, whereas replica is a segment of an index.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
 &lt;h2 id="roles-of-node"&gt;
  roles of node
  &lt;a class="heading-link" href="#roles-of-node"&gt;
@@ -287,7 +287,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;li&gt;ingest: it somewhat like simplified &lt;code&gt;logstash&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;ml&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;by default, it&amp;rsquo;s &lt;code&gt;dim&lt;/code&gt; permission. for different size of cluster, especially medium and large size, we could have dedicated master nodes.&lt;/p&gt;</description></item><item><title>essential training on apache spark</title><link>http://www.example.com/posts/essential-training-on-apache-spark/</link><pubDate>Tue, 03 Sep 2019 14:39:31 +0000</pubDate><guid>http://www.example.com/posts/essential-training-on-apache-spark/</guid><description>&lt;h2 id="two-insteresting-points-gonna-record-in-this-post"&gt;
+&lt;p&gt;by default, it&amp;rsquo;s &lt;code&gt;dim&lt;/code&gt; permission. for different size of cluster, especially medium and large size, we could have dedicated master nodes.&lt;/p&gt;</description></item><item><title>essential training on apache spark</title><link>https://joejztang.github.io/posts/essential-training-on-apache-spark/</link><pubDate>Tue, 03 Sep 2019 14:39:31 +0000</pubDate><guid>https://joejztang.github.io/posts/essential-training-on-apache-spark/</guid><description>&lt;h2 id="two-insteresting-points-gonna-record-in-this-post"&gt;
  two insteresting points gonna record in this post
  &lt;a class="heading-link" href="#two-insteresting-points-gonna-record-in-this-post"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -306,7 +306,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;MLlib&lt;/code&gt; is handy that just simply import module and then use it.&lt;/p&gt;
-&lt;p&gt;worth metioning root-mean-squared error, aka RMSE, using this error we can compare two predictions with each other. if RMSE is similiar, then two predictions are about the same in accuracy.&lt;/p&gt;</description></item><item><title>common table expression (CTE) and the recursion</title><link>http://www.example.com/posts/common-table-expression-cte-and-the-recursion/</link><pubDate>Tue, 27 Aug 2019 14:05:21 +0000</pubDate><guid>http://www.example.com/posts/common-table-expression-cte-and-the-recursion/</guid><description>&lt;h2 id="introduction-to-cte"&gt;
+&lt;p&gt;worth metioning root-mean-squared error, aka RMSE, using this error we can compare two predictions with each other. if RMSE is similiar, then two predictions are about the same in accuracy.&lt;/p&gt;</description></item><item><title>common table expression (CTE) and the recursion</title><link>https://joejztang.github.io/posts/common-table-expression-cte-and-the-recursion/</link><pubDate>Tue, 27 Aug 2019 14:05:21 +0000</pubDate><guid>https://joejztang.github.io/posts/common-table-expression-cte-and-the-recursion/</guid><description>&lt;h2 id="introduction-to-cte"&gt;
  introduction to CTE
  &lt;a class="heading-link" href="#introduction-to-cte"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -328,7 +328,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;let&amp;rsquo;s see an example&lt;/p&gt;</description></item><item><title>fluentd cheating sheet</title><link>http://www.example.com/posts/fluentd-cheating-sheet/</link><pubDate>Wed, 07 Aug 2019 10:47:40 +0000</pubDate><guid>http://www.example.com/posts/fluentd-cheating-sheet/</guid><description>&lt;h2 id="installation"&gt;
+&lt;p&gt;let&amp;rsquo;s see an example&lt;/p&gt;</description></item><item><title>fluentd cheating sheet</title><link>https://joejztang.github.io/posts/fluentd-cheating-sheet/</link><pubDate>Wed, 07 Aug 2019 10:47:40 +0000</pubDate><guid>https://joejztang.github.io/posts/fluentd-cheating-sheet/</guid><description>&lt;h2 id="installation"&gt;
  installation
  &lt;a class="heading-link" href="#installation"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -375,7 +375,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;&amp;lt;/match&amp;gt;&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;system: directives set system wide configuration&lt;/p&gt;</description></item><item><title>jenkins setup for hexo auto deploy</title><link>http://www.example.com/posts/jenkins-setup-for-hexo-auto-deploy/</link><pubDate>Mon, 15 Jul 2019 15:54:20 +0000</pubDate><guid>http://www.example.com/posts/jenkins-setup-for-hexo-auto-deploy/</guid><description>&lt;h1 id="what-did-i-do-before"&gt;
+&lt;p&gt;system: directives set system wide configuration&lt;/p&gt;</description></item><item><title>jenkins setup for hexo auto deploy</title><link>https://joejztang.github.io/posts/jenkins-setup-for-hexo-auto-deploy/</link><pubDate>Mon, 15 Jul 2019 15:54:20 +0000</pubDate><guid>https://joejztang.github.io/posts/jenkins-setup-for-hexo-auto-deploy/</guid><description>&lt;h1 id="what-did-i-do-before"&gt;
  what did I do before
  &lt;a class="heading-link" href="#what-did-i-do-before"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -390,13 +390,13 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;I used aws as jenkins host. aws seems quicky to me because sometimes I got no permission sign in again to vm, even though I got the private key.&lt;/p&gt;</description></item><item><title>quickly deploy in test and prod environment</title><link>http://www.example.com/posts/quickly-deploy-in-test-and-prod-environment/</link><pubDate>Thu, 11 Jul 2019 15:55:12 +0000</pubDate><guid>http://www.example.com/posts/quickly-deploy-in-test-and-prod-environment/</guid><description>&lt;p&gt;recently, I wrote python application a lot. sometimes it is nice to quickly switching running pattern between test mode and prod mode, or raise a debug flag to see debug messages.&lt;/p&gt;
+&lt;p&gt;I used aws as jenkins host. aws seems quicky to me because sometimes I got no permission sign in again to vm, even though I got the private key.&lt;/p&gt;</description></item><item><title>quickly deploy in test and prod environment</title><link>https://joejztang.github.io/posts/quickly-deploy-in-test-and-prod-environment/</link><pubDate>Thu, 11 Jul 2019 15:55:12 +0000</pubDate><guid>https://joejztang.github.io/posts/quickly-deploy-in-test-and-prod-environment/</guid><description>&lt;p&gt;recently, I wrote python application a lot. sometimes it is nice to quickly switching running pattern between test mode and prod mode, or raise a debug flag to see debug messages.&lt;/p&gt;
 &lt;p&gt;previously, I don&amp;rsquo;t really have a systematic way doing that, but recently, I thought I should probably have one in case of future using.&lt;/p&gt;
 &lt;p&gt;so my thoughts on this problem is like this.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;embedded some point in functions that you can using as switching mode.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;for example, in production time you need to download 20 tables each batch, and probably you only need to download 3 when you just want to test if it is working.&lt;/p&gt;</description></item><item><title>about python logging</title><link>http://www.example.com/posts/about-python-logging/</link><pubDate>Thu, 11 Jul 2019 13:52:38 +0000</pubDate><guid>http://www.example.com/posts/about-python-logging/</guid><description>&lt;h1 id="logging-basics"&gt;
+&lt;p&gt;for example, in production time you need to download 20 tables each batch, and probably you only need to download 3 when you just want to test if it is working.&lt;/p&gt;</description></item><item><title>about python logging</title><link>https://joejztang.github.io/posts/about-python-logging/</link><pubDate>Thu, 11 Jul 2019 13:52:38 +0000</pubDate><guid>https://joejztang.github.io/posts/about-python-logging/</guid><description>&lt;h1 id="logging-basics"&gt;
  logging basics
  &lt;a class="heading-link" href="#logging-basics"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -415,7 +415,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;it gave me a headache at first. and I tried importing &lt;code&gt;logging&lt;/code&gt; module in each module and log in the same file. it works somehow but with issues.&lt;/p&gt;</description></item><item><title>how to get sql server's ip address</title><link>http://www.example.com/posts/how-to-get-sql-servers-ip-address/</link><pubDate>Mon, 08 Jul 2019 16:08:44 +0000</pubDate><guid>http://www.example.com/posts/how-to-get-sql-servers-ip-address/</guid><description>&lt;p&gt;query that you can use to get microsoft sql server&amp;rsquo;s ip address: (funny that I cannot find it in properties or something like that.)&lt;/p&gt;
+&lt;p&gt;it gave me a headache at first. and I tried importing &lt;code&gt;logging&lt;/code&gt; module in each module and log in the same file. it works somehow but with issues.&lt;/p&gt;</description></item><item><title>how to get sql server's ip address</title><link>https://joejztang.github.io/posts/how-to-get-sql-servers-ip-address/</link><pubDate>Mon, 08 Jul 2019 16:08:44 +0000</pubDate><guid>https://joejztang.github.io/posts/how-to-get-sql-servers-ip-address/</guid><description>&lt;p&gt;query that you can use to get microsoft sql server&amp;rsquo;s ip address: (funny that I cannot find it in properties or something like that.)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;SELECT&lt;/span&gt;&lt;span style="color:#6e7681"&gt; 
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;CONNECTIONPROPERTY(&lt;span style="color:#a5d6ff"&gt;&amp;#39;net_transport&amp;#39;&lt;/span&gt;)&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#ff7b72"&gt;AS&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;net_transport,&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;CONNECTIONPROPERTY(&lt;span style="color:#a5d6ff"&gt;&amp;#39;protocol_type&amp;#39;&lt;/span&gt;)&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#ff7b72"&gt;AS&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;protocol_type,&lt;span style="color:#6e7681"&gt;
@@ -432,7 +432,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://stackoverflow.com/questions/142142/sql-query-to-get-servers-ip-address" class="external-link" target="_blank" rel="noopener"&gt;query to get server ip&amp;rsquo;s address&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>R-cheat-sheet</title><link>http://www.example.com/posts/r-cheat-sheet/</link><pubDate>Wed, 19 Jun 2019 13:48:16 +0000</pubDate><guid>http://www.example.com/posts/r-cheat-sheet/</guid><description>&lt;p&gt;to me, R is a little bit quirky.&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>R-cheat-sheet</title><link>https://joejztang.github.io/posts/r-cheat-sheet/</link><pubDate>Wed, 19 Jun 2019 13:48:16 +0000</pubDate><guid>https://joejztang.github.io/posts/r-cheat-sheet/</guid><description>&lt;p&gt;to me, R is a little bit quirky.&lt;/p&gt;
 &lt;h2 id="installation-and-execution"&gt;
  installation and execution
  &lt;a class="heading-link" href="#installation-and-execution"&gt;
@@ -472,7 +472,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;atomic vector is a vector with a single object, like &lt;code&gt;v&amp;lt;-TRUE&lt;/code&gt; is a &lt;strong&gt;atomic vector&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>graph-theory-cheat-sheet</title><link>http://www.example.com/posts/graph-theory-cheat-sheet/</link><pubDate>Tue, 18 Jun 2019 16:41:28 +0000</pubDate><guid>http://www.example.com/posts/graph-theory-cheat-sheet/</guid><description>&lt;h2 id="basic-concepts"&gt;
+&lt;p&gt;atomic vector is a vector with a single object, like &lt;code&gt;v&amp;lt;-TRUE&lt;/code&gt; is a &lt;strong&gt;atomic vector&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>graph-theory-cheat-sheet</title><link>https://joejztang.github.io/posts/graph-theory-cheat-sheet/</link><pubDate>Tue, 18 Jun 2019 16:41:28 +0000</pubDate><guid>https://joejztang.github.io/posts/graph-theory-cheat-sheet/</guid><description>&lt;h2 id="basic-concepts"&gt;
  basic concepts
  &lt;a class="heading-link" href="#basic-concepts"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -494,7 +494,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;li&gt;A path is an ordered sequence of edges that are distinct from one other.&lt;/li&gt;
 &lt;li&gt;A walk is a sequence of vertices, such that any two consecutive vertices form an edge in the graph. eg: v1, v2, v4, v2 is a walk.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;the difference of above two is the same edge &lt;strong&gt;cannot appear twice in a path&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>attemped-relative-import-with-no-parent-package</title><link>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</link><pubDate>Fri, 14 Jun 2019 13:04:56 +0000</pubDate><guid>http://www.example.com/posts/attempted-relative-import-with-no-parent-package/</guid><description>&lt;p&gt;I created a project using python and happily finished implementing functions with following structure.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;the difference of above two is the same edge &lt;strong&gt;cannot appear twice in a path&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>attemped-relative-import-with-no-parent-package</title><link>https://joejztang.github.io/posts/attempted-relative-import-with-no-parent-package/</link><pubDate>Fri, 14 Jun 2019 13:04:56 +0000</pubDate><guid>https://joejztang.github.io/posts/attempted-relative-import-with-no-parent-package/</guid><description>&lt;p&gt;I created a project using python and happily finished implementing functions with following structure.&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;- project
  |
  - pipelines
@@ -511,7 +511,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; File &lt;span style="color:#a5d6ff"&gt;&amp;#34;/home/xxxx/datascience.my-project/test/test-unittest.py&amp;#34;&lt;/span&gt;, line 1, in &amp;lt;module&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; from .my_great_script import queryer
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ImportError: attempted relative import with no known parent package
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i was so frustrated.&lt;/p&gt;</description></item><item><title>elk single node</title><link>http://www.example.com/posts/elk-single-node/</link><pubDate>Mon, 10 Jun 2019 17:19:40 +0000</pubDate><guid>http://www.example.com/posts/elk-single-node/</guid><description>&lt;h2 id="introduction"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;i was so frustrated.&lt;/p&gt;</description></item><item><title>elk single node</title><link>https://joejztang.github.io/posts/elk-single-node/</link><pubDate>Mon, 10 Jun 2019 17:19:40 +0000</pubDate><guid>https://joejztang.github.io/posts/elk-single-node/</guid><description>&lt;h2 id="introduction"&gt;
  introduction
  &lt;a class="heading-link" href="#introduction"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -525,7 +525,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;li&gt;kibana: 4.5.x&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;what does it like for ELK stack&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/elk.png" alt="elk"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/elk.png" alt="elk"&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;client servers installed with filebeat sends logs to elk server&lt;/li&gt;
 &lt;li&gt;elk/logstash server process and index log, store logs, search and visualize and using nginx to do reverse proxy&lt;/li&gt;
@@ -558,7 +558,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;echo &lt;span style="color:#a5d6ff"&gt;&amp;#34;deb http://packages.elastic.co/elasticsearch/2.x/debian stable main&amp;#34;&lt;/span&gt; | sudo tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get update
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo apt-get install -y elasticsearch
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;elasticsearch is installed, now configurations.&lt;/p&gt;</description></item><item><title>python-unittest-mock</title><link>http://www.example.com/posts/python-unittest-mock/</link><pubDate>Thu, 06 Jun 2019 15:42:00 +0000</pubDate><guid>http://www.example.com/posts/python-unittest-mock/</guid><description>&lt;p&gt;recently, i started to write unittest for python applications. because what i did is data pipeline, i will use a lot of mocking and patching. this post is for recording purposes.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;elasticsearch is installed, now configurations.&lt;/p&gt;</description></item><item><title>python-unittest-mock</title><link>https://joejztang.github.io/posts/python-unittest-mock/</link><pubDate>Thu, 06 Jun 2019 15:42:00 +0000</pubDate><guid>https://joejztang.github.io/posts/python-unittest-mock/</guid><description>&lt;p&gt;recently, i started to write unittest for python applications. because what i did is data pipeline, i will use a lot of mocking and patching. this post is for recording purposes.&lt;/p&gt;
 &lt;p&gt;unittest framework is MUCH MORE POWERFUL than I expected. so let me talked about a little bit about &lt;code&gt;unittest&lt;/code&gt; framework itself first.&lt;/p&gt;
 &lt;h2 id="mock"&gt;
  &lt;code&gt;Mock&lt;/code&gt;
@@ -567,7 +567,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;this is one powerful object that unittest provides. basically, one can use &lt;code&gt;mock = Mock()&lt;/code&gt; to &amp;lsquo;fake&amp;rsquo; any object that you want to replace.&lt;/p&gt;</description></item><item><title>nginx-bind-to-fails</title><link>http://www.example.com/posts/nginx-bind-to-fails/</link><pubDate>Wed, 05 Jun 2019 20:32:04 +0000</pubDate><guid>http://www.example.com/posts/nginx-bind-to-fails/</guid><description>&lt;p&gt;as a beginer of nginx, one must has met this error&lt;/p&gt;
+&lt;p&gt;this is one powerful object that unittest provides. basically, one can use &lt;code&gt;mock = Mock()&lt;/code&gt; to &amp;lsquo;fake&amp;rsquo; any object that you want to replace.&lt;/p&gt;</description></item><item><title>nginx-bind-to-fails</title><link>https://joejztang.github.io/posts/nginx-bind-to-fails/</link><pubDate>Wed, 05 Jun 2019 20:32:04 +0000</pubDate><guid>https://joejztang.github.io/posts/nginx-bind-to-fails/</guid><description>&lt;p&gt;as a beginer of nginx, one must has met this error&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;[emerg]: bind() to 0.0.0.0:80 failed (98: Address already in use)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;p&gt;this means some other process is using port 80.&lt;/p&gt;
@@ -575,7 +575,7 @@ it&amp;rsquo;s much more secure to use IAM roles&lt;/p&gt;</description></item><
 &lt;p&gt;using&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo fuser -k 80/tcp&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;then restart nginx&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo service nginx restart&lt;/code&gt;&lt;/p&gt;</description></item><item><title>what i think about switching db seamlessly on the fly</title><link>http://www.example.com/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</link><pubDate>Fri, 03 May 2019 10:36:15 +0000</pubDate><guid>http://www.example.com/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</guid><description>&lt;h2 id="problem-description"&gt;
+&lt;p&gt;&lt;code&gt;sudo service nginx restart&lt;/code&gt;&lt;/p&gt;</description></item><item><title>what i think about switching db seamlessly on the fly</title><link>https://joejztang.github.io/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</link><pubDate>Fri, 03 May 2019 10:36:15 +0000</pubDate><guid>https://joejztang.github.io/posts/what-i-think-about-switching-db-seamlessly-on-the-fly/</guid><description>&lt;h2 id="problem-description"&gt;
  problem description
  &lt;a class="heading-link" href="#problem-description"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -598,7 +598,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;in general, db repliaction is the process of storing data in more than one site or node. by doing so it improves the availability of data. at the same time, it also raises the problem of how to maintain consistency of data. it related to distributed system though.&lt;/p&gt;</description></item><item><title>python underscore naming patterns summary</title><link>http://www.example.com/posts/python-underscore-naming-patterns-summary/</link><pubDate>Fri, 26 Apr 2019 17:31:12 +0000</pubDate><guid>http://www.example.com/posts/python-underscore-naming-patterns-summary/</guid><description>&lt;table&gt;
+&lt;p&gt;in general, db repliaction is the process of storing data in more than one site or node. by doing so it improves the availability of data. at the same time, it also raises the problem of how to maintain consistency of data. it related to distributed system though.&lt;/p&gt;</description></item><item><title>python underscore naming patterns summary</title><link>https://joejztang.github.io/posts/python-underscore-naming-patterns-summary/</link><pubDate>Fri, 26 Apr 2019 17:31:12 +0000</pubDate><guid>https://joejztang.github.io/posts/python-underscore-naming-patterns-summary/</guid><description>&lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
  &lt;th&gt;Pattern&lt;/th&gt;
@@ -641,7 +641,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://dbader.org/blog/meaning-of-underscores-in-python" class="external-link" target="_blank" rel="noopener"&gt;The Meaning of Underscores in Python&lt;/a&gt;&lt;/p&gt;</description></item><item><title>introduction to kubernetes</title><link>http://www.example.com/posts/introduction-to-kubernetes/</link><pubDate>Fri, 19 Apr 2019 16:54:16 +0000</pubDate><guid>http://www.example.com/posts/introduction-to-kubernetes/</guid><description>&lt;h2 id="kubernetes-architecture"&gt;
+&lt;p&gt;&lt;a href="https://dbader.org/blog/meaning-of-underscores-in-python" class="external-link" target="_blank" rel="noopener"&gt;The Meaning of Underscores in Python&lt;/a&gt;&lt;/p&gt;</description></item><item><title>introduction to kubernetes</title><link>https://joejztang.github.io/posts/introduction-to-kubernetes/</link><pubDate>Fri, 19 Apr 2019 16:54:16 +0000</pubDate><guid>https://joejztang.github.io/posts/introduction-to-kubernetes/</guid><description>&lt;h2 id="kubernetes-architecture"&gt;
  kubernetes architecture
  &lt;a class="heading-link" href="#kubernetes-architecture"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -661,7 +661,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;/a&gt;
 &lt;/h3&gt;
 &lt;p&gt;master nodes are entry point for administrative tasks. if there are more master nodes, then it would be in HA (high availability) mode.&lt;/p&gt;
-&lt;p&gt;in this time, one of them is a &amp;rsquo;leader&amp;rsquo; and others are followers.&lt;/p&gt;</description></item><item><title>common-unix-commands</title><link>http://www.example.com/posts/common-unix-commands/</link><pubDate>Mon, 01 Apr 2019 10:32:39 +0000</pubDate><guid>http://www.example.com/posts/common-unix-commands/</guid><description>&lt;ol&gt;
+&lt;p&gt;in this time, one of them is a &amp;rsquo;leader&amp;rsquo; and others are followers.&lt;/p&gt;</description></item><item><title>common-unix-commands</title><link>https://joejztang.github.io/posts/common-unix-commands/</link><pubDate>Mon, 01 Apr 2019 10:32:39 +0000</pubDate><guid>https://joejztang.github.io/posts/common-unix-commands/</guid><description>&lt;ol&gt;
 &lt;li&gt;Archives (compress, extract and so on)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tar cvf archive_name.tar dirname/ &lt;span style="color:#8b949e;font-style:italic"&gt;# create a new tar archive named archive_name by packing all stuff from dirname&lt;/span&gt;
@@ -684,7 +684,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
 &lt;li&gt;&lt;code&gt;sed&lt;/code&gt; &amp;ndash; Stream editor&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;when copy a DOS file to Unix, one could probably find &lt;code&gt;\r\n&lt;/code&gt; at the end of each line. the following command converts the DOS file formate to Unix file format using sed command&lt;/p&gt;</description></item><item><title>pandasg roupby vs index</title><link>http://www.example.com/posts/pandas-groupby-vs-index/</link><pubDate>Tue, 19 Mar 2019 16:33:08 +0000</pubDate><guid>http://www.example.com/posts/pandas-groupby-vs-index/</guid><description>&lt;h2 id="groupby-in-pandas"&gt;
+&lt;p&gt;when copy a DOS file to Unix, one could probably find &lt;code&gt;\r\n&lt;/code&gt; at the end of each line. the following command converts the DOS file formate to Unix file format using sed command&lt;/p&gt;</description></item><item><title>pandasg roupby vs index</title><link>https://joejztang.github.io/posts/pandas-groupby-vs-index/</link><pubDate>Tue, 19 Mar 2019 16:33:08 +0000</pubDate><guid>https://joejztang.github.io/posts/pandas-groupby-vs-index/</guid><description>&lt;h2 id="groupby-in-pandas"&gt;
  groupby in pandas
  &lt;a class="heading-link" href="#groupby-in-pandas"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -701,7 +701,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
 &lt;li&gt;Combining the results&lt;/li&gt;
 &lt;/ul&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;In many situations, we split the data into sets and we apply some functionality on each subset. In the apply functionality, we can perform the following operations −&lt;/p&gt;</description></item><item><title>anaconda python venv environment mess</title><link>http://www.example.com/posts/anaconda-python-environment-mess/</link><pubDate>Thu, 14 Mar 2019 16:47:26 +0000</pubDate><guid>http://www.example.com/posts/anaconda-python-environment-mess/</guid><description>&lt;p&gt;I have encountered an strange issue today, and want to record it in case I met it again or others who find it is helpful.&lt;/p&gt;
+&lt;p&gt;In many situations, we split the data into sets and we apply some functionality on each subset. In the apply functionality, we can perform the following operations −&lt;/p&gt;</description></item><item><title>anaconda python venv environment mess</title><link>https://joejztang.github.io/posts/anaconda-python-environment-mess/</link><pubDate>Thu, 14 Mar 2019 16:47:26 +0000</pubDate><guid>https://joejztang.github.io/posts/anaconda-python-environment-mess/</guid><description>&lt;p&gt;I have encountered an strange issue today, and want to record it in case I met it again or others who find it is helpful.&lt;/p&gt;
 &lt;h2 id="intro-anaconda"&gt;
  intro: anaconda
  &lt;a class="heading-link" href="#intro-anaconda"&gt;
@@ -709,7 +709,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;It is so famous that almost everyone that code with python knows it. (if you don&amp;rsquo;t know that, please search and get familiar with it, very helpful) it provides python version control so that you don&amp;rsquo;t worries about install so many versions of python and mess up system.&lt;/p&gt;</description></item><item><title>git-cheating-sheet</title><link>http://www.example.com/posts/git-cheating-sheet/</link><pubDate>Fri, 01 Mar 2019 17:40:26 +0000</pubDate><guid>http://www.example.com/posts/git-cheating-sheet/</guid><description>&lt;h2 id="backtracking"&gt;
+&lt;p&gt;It is so famous that almost everyone that code with python knows it. (if you don&amp;rsquo;t know that, please search and get familiar with it, very helpful) it provides python version control so that you don&amp;rsquo;t worries about install so many versions of python and mess up system.&lt;/p&gt;</description></item><item><title>git-cheating-sheet</title><link>https://joejztang.github.io/posts/git-cheating-sheet/</link><pubDate>Fri, 01 Mar 2019 17:40:26 +0000</pubDate><guid>https://joejztang.github.io/posts/git-cheating-sheet/</guid><description>&lt;h2 id="backtracking"&gt;
  backtracking
  &lt;a class="heading-link" href="#backtracking"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -728,7 +728,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
 &lt;p&gt;then, I made some changes to this file and then I realize that I did a silly thing.&lt;/p&gt;
 &lt;p&gt;I need to be back!!!&lt;/p&gt;
 &lt;p&gt;what I do is the following: &lt;code&gt;git checkout HEAD &amp;lt;filename&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Then you can check git status, it back to the last commit.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>http://www.example.com/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>http://www.example.com/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
+&lt;p&gt;Then you can check git status, it back to the last commit.&lt;/p&gt;</description></item><item><title>why mock? a general question</title><link>https://joejztang.github.io/posts/why-mock-a-general-question/</link><pubDate>Thu, 28 Feb 2019 14:11:03 +0000</pubDate><guid>https://joejztang.github.io/posts/why-mock-a-general-question/</guid><description>&lt;h2 id="what-is-mock"&gt;
  what is mock?
  &lt;a class="heading-link" href="#what-is-mock"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -744,7 +744,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;Assume that we want to test a function. Let&amp;rsquo;s call it &lt;code&gt;count_all_after_connection(connection)&lt;/code&gt;. It consumed a parameter called &lt;code&gt;connection&lt;/code&gt;, and this connection is not available so far(possibly because of not having access yet).&lt;/p&gt;
-&lt;p&gt;But you still want to test it, but how?&lt;/p&gt;</description></item><item><title>apache-beam-intro</title><link>http://www.example.com/posts/apache-beam-intro/</link><pubDate>Wed, 27 Feb 2019 14:38:39 +0000</pubDate><guid>http://www.example.com/posts/apache-beam-intro/</guid><description>&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/43796046/explain-apache-beam-python-syntax" class="external-link" target="_blank" rel="noopener"&gt;Don&amp;rsquo;t feel afraid of &amp;lsquo;fancy&amp;rsquo; syntax of Apache Beam Python&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But you still want to test it, but how?&lt;/p&gt;</description></item><item><title>apache-beam-intro</title><link>https://joejztang.github.io/posts/apache-beam-intro/</link><pubDate>Wed, 27 Feb 2019 14:38:39 +0000</pubDate><guid>https://joejztang.github.io/posts/apache-beam-intro/</guid><description>&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/43796046/explain-apache-beam-python-syntax" class="external-link" target="_blank" rel="noopener"&gt;Don&amp;rsquo;t feel afraid of &amp;lsquo;fancy&amp;rsquo; syntax of Apache Beam Python&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="basic-concepts"&gt;
  Basic Concepts
  &lt;a class="heading-link" href="#basic-concepts"&gt;
@@ -760,7 +760,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;/a&gt;
 &lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;A pipeline encapsulates the entire series of computations involved in reading input data, transforming that data, and writing output data. The input source and output sink can be the same or of different types, allowing you to convert data from one format to another. Apache Beam programs start by constructing a Pipeline object, and then using that object as the basis for creating the pipeline&amp;rsquo;s datasets. Each pipeline represents a single, repeatable job.&lt;/p&gt;</description></item><item><title>sql-server-cheating-sheet</title><link>http://www.example.com/posts/sql-server-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 14:11:26 +0000</pubDate><guid>http://www.example.com/posts/sql-server-cheating-sheet/</guid><description>&lt;h2 id="overpartition-by--vs-group-by"&gt;
+&lt;p&gt;A pipeline encapsulates the entire series of computations involved in reading input data, transforming that data, and writing output data. The input source and output sink can be the same or of different types, allowing you to convert data from one format to another. Apache Beam programs start by constructing a Pipeline object, and then using that object as the basis for creating the pipeline&amp;rsquo;s datasets. Each pipeline represents a single, repeatable job.&lt;/p&gt;</description></item><item><title>sql-server-cheating-sheet</title><link>https://joejztang.github.io/posts/sql-server-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 14:11:26 +0000</pubDate><guid>https://joejztang.github.io/posts/sql-server-cheating-sheet/</guid><description>&lt;h2 id="overpartition-by--vs-group-by"&gt;
  OVER(PARTITION BY &amp;hellip;) VS. GROUP BY
  &lt;a class="heading-link" href="#overpartition-by--vs-group-by"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -776,7 +776,7 @@ by doing so, I introduce 3 hours down time/inconsistency time. I want to minimiz
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;schema can be used to control the accesses.&lt;/p&gt;</description></item><item><title>c sharp cheating sheet</title><link>http://www.example.com/posts/c-sharp-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 12:59:41 +0000</pubDate><guid>http://www.example.com/posts/c-sharp-cheating-sheet/</guid><description>&lt;h2 id="dll-vs-exe"&gt;
+&lt;p&gt;schema can be used to control the accesses.&lt;/p&gt;</description></item><item><title>c sharp cheating sheet</title><link>https://joejztang.github.io/posts/c-sharp-cheating-sheet/</link><pubDate>Wed, 27 Feb 2019 12:59:41 +0000</pubDate><guid>https://joejztang.github.io/posts/c-sharp-cheating-sheet/</guid><description>&lt;h2 id="dll-vs-exe"&gt;
  DLL vs EXE
  &lt;a class="heading-link" href="#dll-vs-exe"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -926,16 +926,16 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;properties exposes fields. meaning properties have getter and setter whereas fields store actual data.&lt;/p&gt;</description></item><item><title>google dataflow introduction</title><link>http://www.example.com/posts/google-dataflow-introduction/</link><pubDate>Wed, 27 Feb 2019 10:13:36 +0000</pubDate><guid>http://www.example.com/posts/google-dataflow-introduction/</guid><description>&lt;h2 id="data-analytics-products"&gt;
+&lt;p&gt;properties exposes fields. meaning properties have getter and setter whereas fields store actual data.&lt;/p&gt;</description></item><item><title>google dataflow introduction</title><link>https://joejztang.github.io/posts/google-dataflow-introduction/</link><pubDate>Wed, 27 Feb 2019 10:13:36 +0000</pubDate><guid>https://joejztang.github.io/posts/google-dataflow-introduction/</guid><description>&lt;h2 id="data-analytics-products"&gt;
  data analytics products
  &lt;a class="heading-link" href="#data-analytics-products"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/data_trans_with_dataflow.png" alt="cloud_dataflow"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/data_trans_with_dataflow.png" alt="cloud_dataflow"&gt;&lt;/p&gt;
 &lt;p&gt;cloud dataflow is a data pipeline that transform data from one form to another, as you can see in above paradiagm.&lt;/p&gt;
-&lt;p&gt;according to what I read so far, dataflow build on top of &lt;strong&gt;apache beam&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>http://www.example.com/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>http://www.example.com/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
+&lt;p&gt;according to what I read so far, dataflow build on top of &lt;strong&gt;apache beam&lt;/strong&gt;.&lt;/p&gt;</description></item><item><title>pandas cheat sheet</title><link>https://joejztang.github.io/posts/pandas-cheat-sheet/</link><pubDate>Mon, 25 Feb 2019 09:40:09 +0000</pubDate><guid>https://joejztang.github.io/posts/pandas-cheat-sheet/</guid><description>&lt;h2 id="dimension"&gt;
  dimension
  &lt;a class="heading-link" href="#dimension"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -988,7 +988,7 @@ Executable file have Main function.&lt;/p&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;&lt;code&gt;pandas.Series(data, index, dtype, copy)&lt;/code&gt;&lt;/p&gt;</description></item><item><title>迟到的jenkins自动部署</title><link>http://www.example.com/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</link><pubDate>Fri, 22 Feb 2019 14:12:26 +0000</pubDate><guid>http://www.example.com/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</guid><description>&lt;p&gt;用了hexo很久， 最近想要不止在自己的电脑上写博客， 每个电脑都能写。 然而hexo不支持， 所以想到了用jenkins配hexo。 当然jenkins可不是专门干这个的， jenkins可还有大用处。 我自己配置的时候遇见了很多坑， 如果遇见了一样的， 可以参考这篇帖子。 希望给你帮助。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;pandas.Series(data, index, dtype, copy)&lt;/code&gt;&lt;/p&gt;</description></item><item><title>迟到的jenkins自动部署</title><link>https://joejztang.github.io/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</link><pubDate>Fri, 22 Feb 2019 14:12:26 +0000</pubDate><guid>https://joejztang.github.io/posts/%E8%BF%9F%E5%88%B0%E7%9A%84jenkins%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2/</guid><description>&lt;p&gt;用了hexo很久， 最近想要不止在自己的电脑上写博客， 每个电脑都能写。 然而hexo不支持， 所以想到了用jenkins配hexo。 当然jenkins可不是专门干这个的， jenkins可还有大用处。 我自己配置的时候遇见了很多坑， 如果遇见了一样的， 可以参考这篇帖子。 希望给你帮助。&lt;/p&gt;
 &lt;h2 id="hexo配置"&gt;
  hexo配置
  &lt;a class="heading-link" href="#hexo%e9%85%8d%e7%bd%ae"&gt;
@@ -1029,7 +1029,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;不要用ssh去&lt;code&gt;ec2-user@xxxxxx.amazon.com&lt;/code&gt;， amazon不会创建ec2-user给你，用要用&lt;code&gt;ubuntu&lt;/code&gt;。&lt;/p&gt;</description></item><item><title>Union Find总结</title><link>http://www.example.com/posts/union-find%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 22 Nov 2018 12:35:47 +0000</pubDate><guid>http://www.example.com/posts/union-find%E6%80%BB%E7%BB%93/</guid><description>&lt;h1 id="什么是-union-find并查集"&gt;
+&lt;p&gt;不要用ssh去&lt;code&gt;ec2-user@xxxxxx.amazon.com&lt;/code&gt;， amazon不会创建ec2-user给你，用要用&lt;code&gt;ubuntu&lt;/code&gt;。&lt;/p&gt;</description></item><item><title>Union Find总结</title><link>https://joejztang.github.io/posts/union-find%E6%80%BB%E7%BB%93/</link><pubDate>Thu, 22 Nov 2018 12:35:47 +0000</pubDate><guid>https://joejztang.github.io/posts/union-find%E6%80%BB%E7%BB%93/</guid><description>&lt;h1 id="什么是-union-find并查集"&gt;
  什么是 union find(并查集)
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-union-find%e5%b9%b6%e6%9f%a5%e9%9b%86"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1078,7 +1078,7 @@ hexo/public &amp;lt;-------
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// number of components&lt;/span&gt;&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#ff7b72"&gt;int&lt;/span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;&lt;span style="color:#d2a8ff;font-weight:bold"&gt;count&lt;/span&gt;();&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;&lt;/span&gt;}&lt;span style="color:#6e7681"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;union()&lt;/code&gt; 和 &lt;code&gt;connected()&lt;/code&gt; 都依赖于 &lt;code&gt;find()&lt;/code&gt;, 所以&lt;code&gt;find()&lt;/code&gt;要很有效率才行.&lt;/p&gt;</description></item><item><title>golang cheating sheet</title><link>http://www.example.com/posts/golang-cheating-sheet/</link><pubDate>Fri, 02 Nov 2018 15:04:26 +0000</pubDate><guid>http://www.example.com/posts/golang-cheating-sheet/</guid><description>&lt;h1 id="overview"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;code&gt;union()&lt;/code&gt; 和 &lt;code&gt;connected()&lt;/code&gt; 都依赖于 &lt;code&gt;find()&lt;/code&gt;, 所以&lt;code&gt;find()&lt;/code&gt;要很有效率才行.&lt;/p&gt;</description></item><item><title>golang cheating sheet</title><link>https://joejztang.github.io/posts/golang-cheating-sheet/</link><pubDate>Fri, 02 Nov 2018 15:04:26 +0000</pubDate><guid>https://joejztang.github.io/posts/golang-cheating-sheet/</guid><description>&lt;h1 id="overview"&gt;
  overview
  &lt;a class="heading-link" href="#overview"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1100,7 +1100,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;unlike &lt;code&gt;structs&lt;/code&gt; in C which is a combination of variables, structs in go is a combination of variables and methods.&lt;/p&gt;</description></item><item><title>recommender system</title><link>http://www.example.com/posts/recommender-system/</link><pubDate>Sun, 28 Oct 2018 11:42:19 +0000</pubDate><guid>http://www.example.com/posts/recommender-system/</guid><description>&lt;h1 id="algorithm"&gt;
+&lt;p&gt;unlike &lt;code&gt;structs&lt;/code&gt; in C which is a combination of variables, structs in go is a combination of variables and methods.&lt;/p&gt;</description></item><item><title>recommender system</title><link>https://joejztang.github.io/posts/recommender-system/</link><pubDate>Sun, 28 Oct 2018 11:42:19 +0000</pubDate><guid>https://joejztang.github.io/posts/recommender-system/</guid><description>&lt;h1 id="algorithm"&gt;
  algorithm
  &lt;a class="heading-link" href="#algorithm"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1134,7 +1134,7 @@ hexo/public &amp;lt;-------
 &lt;ol&gt;
 &lt;li&gt;什么时候用 item cf, 什么时候用 user cf.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf.&lt;/p&gt;</description></item><item><title>react-redux 重要概念</title><link>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
+&lt;p&gt;当 user 数量远大于 item 数量的时候, 用 item cf. 当 item 数量远大于 user 数量或者 item 经常改变的时候, 要用 user cf.&lt;/p&gt;</description></item><item><title>react-redux 重要概念</title><link>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
  flux 和 redux
  &lt;a class="heading-link" href="#flux-%e5%92%8c-redux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1149,7 +1149,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;p&gt;可以看到 flux 的精髓即数据永远单向流动.&lt;/p&gt;
 &lt;h2 id="redux"&gt;
  Redux
@@ -1177,7 +1177,7 @@ hexo/public &amp;lt;-------
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item><item><title>redux 和 react-redux</title><link>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
  Flux
  &lt;a class="heading-link" href="#flux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1185,7 +1185,7 @@ hexo/public &amp;lt;-------
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id="redux"&gt;
@@ -1221,7 +1221,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>callback 函数的一点理解</title><link>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</link><pubDate>Tue, 28 Aug 2018 15:29:16 +0000</pubDate><guid>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</guid><description>&lt;h1 id="什么是-callback"&gt;
+&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>callback 函数的一点理解</title><link>https://joejztang.github.io/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</link><pubDate>Tue, 28 Aug 2018 15:29:16 +0000</pubDate><guid>https://joejztang.github.io/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</guid><description>&lt;h1 id="什么是-callback"&gt;
  什么是 callback
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-callback"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1247,7 +1247,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;如同上面的引用说的, callback 被触发, 那么回调函数代码会被从队列里面 pull 出来, 自动执行/激活.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
+&lt;p&gt;如同上面的引用说的, callback 被触发, 那么回调函数代码会被从队列里面 pull 出来, 自动执行/激活.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
  数据流向
  &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1275,7 +1275,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item><item><title>鼠标 hover 控制元素是否显示</title><link>http://www.example.com/posts/%E9%BC%A0%E6%A0%87-hover-%E6%8E%A7%E5%88%B6%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA/</link><pubDate>Sun, 26 Aug 2018 23:18:29 +0000</pubDate><guid>http://www.example.com/posts/%E9%BC%A0%E6%A0%87-hover-%E6%8E%A7%E5%88%B6%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA/</guid><description>&lt;p&gt;怎么样实现当鼠标移动到一个地方, 一个隐藏的元素显示?&lt;/p&gt;
+&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item><item><title>鼠标 hover 控制元素是否显示</title><link>https://joejztang.github.io/posts/%E9%BC%A0%E6%A0%87-hover-%E6%8E%A7%E5%88%B6%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA/</link><pubDate>Sun, 26 Aug 2018 23:18:29 +0000</pubDate><guid>https://joejztang.github.io/posts/%E9%BC%A0%E6%A0%87-hover-%E6%8E%A7%E5%88%B6%E5%85%83%E7%B4%A0%E6%98%AF%E5%90%A6%E6%98%BE%E7%A4%BA/</guid><description>&lt;p&gt;怎么样实现当鼠标移动到一个地方, 一个隐藏的元素显示?&lt;/p&gt;
 &lt;h1 id="pre-requests"&gt;
  pre-requests
  &lt;a class="heading-link" href="#pre-requests"&gt;
@@ -1319,7 +1319,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://blog.csdn.net/phoooob/article/details/51565483" class="external-link" target="_blank" rel="noopener"&gt;鼠标悬浮控制元素隐藏与显示 - css中鼠标的hover状态&lt;/a&gt;&lt;/p&gt;</description></item><item><title>react 中 setState() 和 source of truth</title><link>http://www.example.com/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</link><pubDate>Fri, 24 Aug 2018 16:54:53 +0000</pubDate><guid>http://www.example.com/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</guid><description>&lt;h1 id="setstate"&gt;
+&lt;p&gt;&lt;a href="https://blog.csdn.net/phoooob/article/details/51565483" class="external-link" target="_blank" rel="noopener"&gt;鼠标悬浮控制元素隐藏与显示 - css中鼠标的hover状态&lt;/a&gt;&lt;/p&gt;</description></item><item><title>react 中 setState() 和 source of truth</title><link>https://joejztang.github.io/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</link><pubDate>Fri, 24 Aug 2018 16:54:53 +0000</pubDate><guid>https://joejztang.github.io/posts/react-%E4%B8%AD-setstate-%E5%92%8C-source-of-truth/</guid><description>&lt;h1 id="setstate"&gt;
  &lt;code&gt;setState()&lt;/code&gt;
  &lt;a class="heading-link" href="#setstate"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1337,7 +1337,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;html form 和 react 中的 dom 元素不太一样. html 中 form &lt;strong&gt;maintain their own state and update it based on user input&lt;/strong&gt;. 但是在 reactjs 中, &lt;strong&gt;state is typically kept in the state property of components&lt;/strong&gt;, 所以需要用 &lt;code&gt;setState()&lt;/code&gt; 来 update.&lt;/p&gt;</description></item><item><title>javascript 中的 bind 函数</title><link>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</link><pubDate>Fri, 24 Aug 2018 10:56:22 +0000</pubDate><guid>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</guid><description>&lt;h1 id="什么是-bind-函数"&gt;
+&lt;p&gt;html form 和 react 中的 dom 元素不太一样. html 中 form &lt;strong&gt;maintain their own state and update it based on user input&lt;/strong&gt;. 但是在 reactjs 中, &lt;strong&gt;state is typically kept in the state property of components&lt;/strong&gt;, 所以需要用 &lt;code&gt;setState()&lt;/code&gt; 来 update.&lt;/p&gt;</description></item><item><title>javascript 中的 bind 函数</title><link>https://joejztang.github.io/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</link><pubDate>Fri, 24 Aug 2018 10:56:22 +0000</pubDate><guid>https://joejztang.github.io/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</guid><description>&lt;h1 id="什么是-bind-函数"&gt;
  什么是 &lt;code&gt;bind&lt;/code&gt; 函数
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-bind-%e5%87%bd%e6%95%b0"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1380,7 +1380,7 @@ hexo/public &amp;lt;-------
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 1: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName()); &lt;span style="color:#8b949e;font-style:italic"&gt;// John
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 2: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName2()); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 3: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName3); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们可以看到对于 example1 来说, 没有 &lt;code&gt;bind(myName)&lt;/code&gt;, 那么在运行 getName 函数的时候, &lt;code&gt;this&lt;/code&gt; 指向了全局, 全局下 name 属性是 John.&lt;/p&gt;</description></item><item><title>nodejs require function</title><link>http://www.example.com/posts/nodejs-require-function/</link><pubDate>Mon, 13 Aug 2018 23:53:39 +0000</pubDate><guid>http://www.example.com/posts/nodejs-require-function/</guid><description>&lt;p&gt;最近自己在写 hexo 的插件, 然后发现 &lt;code&gt;require&lt;/code&gt; 函数里面写的东西有的时候不 make sense(至少在刚开始的时候). 所以我就搜索了一下这个 require 函数是怎么回事. 现在明白了一点点.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们可以看到对于 example1 来说, 没有 &lt;code&gt;bind(myName)&lt;/code&gt;, 那么在运行 getName 函数的时候, &lt;code&gt;this&lt;/code&gt; 指向了全局, 全局下 name 属性是 John.&lt;/p&gt;</description></item><item><title>nodejs require function</title><link>https://joejztang.github.io/posts/nodejs-require-function/</link><pubDate>Mon, 13 Aug 2018 23:53:39 +0000</pubDate><guid>https://joejztang.github.io/posts/nodejs-require-function/</guid><description>&lt;p&gt;最近自己在写 hexo 的插件, 然后发现 &lt;code&gt;require&lt;/code&gt; 函数里面写的东西有的时候不 make sense(至少在刚开始的时候). 所以我就搜索了一下这个 require 函数是怎么回事. 现在明白了一点点.&lt;/p&gt;
 &lt;h1 id="require-核心模块"&gt;
  require 核心模块
  &lt;a class="heading-link" href="#require-%e6%a0%b8%e5%bf%83%e6%a8%a1%e5%9d%97"&gt;
@@ -1409,7 +1409,7 @@ hexo/public &amp;lt;-------
 &lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.csdn.net/houyanhua1/article/details/79438222" class="external-link" target="_blank" rel="noopener"&gt;nodejs 引入外部模块 require()&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>intervals</title><link>http://www.example.com/posts/intervals/</link><pubDate>Wed, 08 Aug 2018 19:06:04 +0000</pubDate><guid>http://www.example.com/posts/intervals/</guid><description>&lt;h1 id="merge-intervals-lc-56"&gt;
+&lt;/ul&gt;</description></item><item><title>intervals</title><link>https://joejztang.github.io/posts/intervals/</link><pubDate>Wed, 08 Aug 2018 19:06:04 +0000</pubDate><guid>https://joejztang.github.io/posts/intervals/</guid><description>&lt;h1 id="merge-intervals-lc-56"&gt;
  merge intervals LC 56
  &lt;a class="heading-link" href="#merge-intervals-lc-56"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1439,7 +1439,7 @@ hexo/public &amp;lt;-------
 &lt;pre tabindex="0"&gt;&lt;code&gt; [6,7) [2,5) [1,2) [0,3)
  \ / \ /
  [2,5) [6,7) [0,3)
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>闭包之阿隆佐邱奇的故事</title><link>http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</link><pubDate>Tue, 07 Aug 2018 11:30:56 +0000</pubDate><guid>http://www.example.com/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</guid><description>&lt;h1 id="写在前面"&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>闭包之阿隆佐邱奇的故事</title><link>https://joejztang.github.io/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</link><pubDate>Tue, 07 Aug 2018 11:30:56 +0000</pubDate><guid>https://joejztang.github.io/posts/%E9%97%AD%E5%8C%85%E4%B9%8B%E9%98%BF%E9%9A%86%E4%BD%90%E9%82%B1%E5%A5%87%E7%9A%84%E6%95%85%E4%BA%8B/</guid><description>&lt;h1 id="写在前面"&gt;
  写在前面
  &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e9%9d%a2"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1506,7 +1506,7 @@ hexo/public &amp;lt;-------
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}))();
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;// 继续接着玩一会...
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;console 运行的结果还真是和预言的一样(让人头大)&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>http://www.example.com/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>http://www.example.com/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;console 运行的结果还真是和预言的一样(让人头大)&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>https://joejztang.github.io/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>https://joejztang.github.io/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
  写在前头
  &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e5%a4%b4"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1560,7 +1560,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;unsorted key-value pair&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>hexo 自动部署 本地自动执行 hexo g -d 的 python 脚本</title><link>http://www.example.com/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</link><pubDate>Thu, 02 Aug 2018 22:41:08 +0000</pubDate><guid>http://www.example.com/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</guid><description>&lt;p&gt;用 hexo 一段时间了, 主要就是写写刷题心得和自己学习过程, 算是自己给自己写的 reference.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;unsorted key-value pair&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>hexo 自动部署 本地自动执行 hexo g -d 的 python 脚本</title><link>https://joejztang.github.io/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</link><pubDate>Thu, 02 Aug 2018 22:41:08 +0000</pubDate><guid>https://joejztang.github.io/posts/hexo-%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2-%E6%9C%AC%E5%9C%B0%E8%87%AA%E5%8A%A8%E6%89%A7%E8%A1%8C-hexo-g-d-%E7%9A%84-python-%E8%84%9A%E6%9C%AC/</guid><description>&lt;p&gt;用 hexo 一段时间了, 主要就是写写刷题心得和自己学习过程, 算是自己给自己写的 reference.&lt;/p&gt;
 &lt;p&gt;不幸的是前一段时间写了好多 draft, 然后其中一篇有 syntax error, 导致 &lt;code&gt;hexo g&lt;/code&gt; 就是过不了. 在几十篇帖子里二分查找真是&amp;rsquo;爽&amp;rsquo;啊! 于是我就想到了很早之前就已经关注到的 hexo 自动部署 solution.&lt;/p&gt;
 &lt;p&gt;网上很容易找到的 solution 的思路都是把自己 source 里面的一些文件包括文章啊, 可能还有 theme 什么的放到 github 另一个 branch, 然后通过 webhook 监听, 如果有变动就执行 &lt;code&gt;hexo g -d&lt;/code&gt;, 大概就是这样子. 由于我不太想把自己的源代码都放到另一个 branch 上(万一想加个密啥的呢), 所以这个 solution 显然不是我能用的 solution.&lt;/p&gt;
 &lt;p&gt;于是我在网上找, 发现linux 有个叫 &lt;code&gt;crontab&lt;/code&gt; 的定时执行程序, 于是我的思路来了, 为什么不定时执行 python script 来执行 &lt;code&gt;hexo g -d&lt;/code&gt; 这条命令呢? (后来在网上查到早有人已经写了, 但是没给放代码, 帖子后面会放上我写的 script)&lt;/p&gt;
@@ -1572,7 +1572,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;通过 &lt;code&gt;crontab&lt;/code&gt; 定时执行 python script, 达到自动执行 &lt;code&gt;hexo g -d&lt;/code&gt; 的目的.&lt;/p&gt;</description></item><item><title>scrapy recipe</title><link>http://www.example.com/posts/scrapy/</link><pubDate>Tue, 03 Jul 2018 16:39:39 +0000</pubDate><guid>http://www.example.com/posts/scrapy/</guid><description>&lt;h1 id="basic-command"&gt;
+&lt;p&gt;通过 &lt;code&gt;crontab&lt;/code&gt; 定时执行 python script, 达到自动执行 &lt;code&gt;hexo g -d&lt;/code&gt; 的目的.&lt;/p&gt;</description></item><item><title>scrapy recipe</title><link>https://joejztang.github.io/posts/scrapy/</link><pubDate>Tue, 03 Jul 2018 16:39:39 +0000</pubDate><guid>https://joejztang.github.io/posts/scrapy/</guid><description>&lt;h1 id="basic-command"&gt;
  basic command
  &lt;a class="heading-link" href="#basic-command"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1613,7 +1613,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;scrapy crawl &amp;lt;spider name&amp;gt; -a &amp;lt;argument name: &amp;quot;argument content&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>database normalization</title><link>http://www.example.com/posts/database-normalization/</link><pubDate>Tue, 29 May 2018 11:45:17 +0000</pubDate><guid>http://www.example.com/posts/database-normalization/</guid><description>&lt;p&gt;最近看见了 database normalization. 之前老师上课没好好讲, 现在看见了就自己再总结一下.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;scrapy crawl &amp;lt;spider name&amp;gt; -a &amp;lt;argument name: &amp;quot;argument content&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>database normalization</title><link>https://joejztang.github.io/posts/database-normalization/</link><pubDate>Tue, 29 May 2018 11:45:17 +0000</pubDate><guid>https://joejztang.github.io/posts/database-normalization/</guid><description>&lt;p&gt;最近看见了 database normalization. 之前老师上课没好好讲, 现在看见了就自己再总结一下.&lt;/p&gt;
 &lt;p&gt;Edgar F. Codd 有三个 definations, 甚至更多???&lt;/p&gt;
 &lt;h1 id="znf---zero-normalized-from"&gt;
  ZNF - zero normalized from
@@ -1636,7 +1636,7 @@ hexo/public &amp;lt;-------
 &lt;li&gt;Identify each set of related data with &lt;strong&gt;a primary key&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;Create a separate table for each set of related data.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;compound/multiple primary keys doesn&amp;rsquo;t voilate 1NF&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>String interning in java and python</title><link>http://www.example.com/posts/string-interning-in-java-and-python/</link><pubDate>Tue, 22 May 2018 11:28:49 +0000</pubDate><guid>http://www.example.com/posts/string-interning-in-java-and-python/</guid><description>&lt;h1 id="什么是-string-interning"&gt;
+&lt;p&gt;&lt;strong&gt;compound/multiple primary keys doesn&amp;rsquo;t voilate 1NF&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>String interning in java and python</title><link>https://joejztang.github.io/posts/string-interning-in-java-and-python/</link><pubDate>Tue, 22 May 2018 11:28:49 +0000</pubDate><guid>https://joejztang.github.io/posts/string-interning-in-java-and-python/</guid><description>&lt;h1 id="什么是-string-interning"&gt;
  什么是 string interning
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-string-interning"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1644,7 +1644,7 @@ hexo/public &amp;lt;-------
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;In computer science, string interning is a method of storing only one copy of each distinct string value, which must be immutable. Interning strings makes some string processing tasks more time- or space-efficient at the cost of requiring more time when the string is created or interned. The distinct values are stored in a string intern pool.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&amp;mdash; from Wikipedia&lt;/p&gt;</description></item><item><title>photoshop essential</title><link>http://www.example.com/posts/photoshop-essential/</link><pubDate>Fri, 04 May 2018 13:45:35 +0000</pubDate><guid>http://www.example.com/posts/photoshop-essential/</guid><description>&lt;h1 id="crop-tools"&gt;
+&lt;p&gt;&amp;mdash; from Wikipedia&lt;/p&gt;</description></item><item><title>photoshop essential</title><link>https://joejztang.github.io/posts/photoshop-essential/</link><pubDate>Fri, 04 May 2018 13:45:35 +0000</pubDate><guid>https://joejztang.github.io/posts/photoshop-essential/</guid><description>&lt;h1 id="crop-tools"&gt;
  crop tools
  &lt;a class="heading-link" href="#crop-tools"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1676,7 +1676,7 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Photoshop layers are like sheets of stacked acetate. You can see through transparent areas of a layer to the layers below. You move the content on the layer where you want it to appear, like sliding a sheet of acetate in a stack. You can also change the opacity of a layer to make content partially transparent.&lt;/p&gt;</description></item><item><title>intermediate photography</title><link>http://www.example.com/posts/intermediate-photography/</link><pubDate>Thu, 03 May 2018 19:08:08 +0000</pubDate><guid>http://www.example.com/posts/intermediate-photography/</guid><description>&lt;h1 id="shutter-speed-1focallength-rule"&gt;
+&lt;p&gt;Photoshop layers are like sheets of stacked acetate. You can see through transparent areas of a layer to the layers below. You move the content on the layer where you want it to appear, like sliding a sheet of acetate in a stack. You can also change the opacity of a layer to make content partially transparent.&lt;/p&gt;</description></item><item><title>intermediate photography</title><link>https://joejztang.github.io/posts/intermediate-photography/</link><pubDate>Thu, 03 May 2018 19:08:08 +0000</pubDate><guid>https://joejztang.github.io/posts/intermediate-photography/</guid><description>&lt;h1 id="shutter-speed-1focallength-rule"&gt;
  shutter speed &lt;code&gt;1/focallength&lt;/code&gt; rule
  &lt;a class="heading-link" href="#shutter-speed-1focallength-rule"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1687,7 +1687,7 @@ hexo/public &amp;lt;-------
 &lt;p&gt;follow focal length rule.&lt;/p&gt;
 &lt;p&gt;say you have a 50 mm lens, &lt;strong&gt;shutter speed should less or equals to 1/50&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;x-sync speed&lt;/strong&gt;(1/250 - 1/500): the fast time fisrt curtain open completely and expose the whole sensor&lt;/p&gt;
-&lt;p&gt;set shutter speed to x-sync, no quicker(eg. 1/1000 there will be bans). when you have a flask unit.&lt;/p&gt;</description></item><item><title>quickly calculate determinant of matrix</title><link>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</link><pubDate>Mon, 16 Apr 2018 15:15:29 +0000</pubDate><guid>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</guid><description>&lt;h1 id="2x2-matrix"&gt;
+&lt;p&gt;set shutter speed to x-sync, no quicker(eg. 1/1000 there will be bans). when you have a flask unit.&lt;/p&gt;</description></item><item><title>quickly calculate determinant of matrix</title><link>https://joejztang.github.io/posts/quickly-calculate-determinant-of-matrix/</link><pubDate>Mon, 16 Apr 2018 15:15:29 +0000</pubDate><guid>https://joejztang.github.io/posts/quickly-calculate-determinant-of-matrix/</guid><description>&lt;h1 id="2x2-matrix"&gt;
  2x2 Matrix
  &lt;a class="heading-link" href="#2x2-matrix"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1695,7 +1695,7 @@ hexo/public &amp;lt;-------
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s review how to calculate determinant of a 2x2 matrix. For example, given below matrix:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/2x2matrix.png" alt="2x2"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/2x2matrix.png" alt="2x2"&gt;&lt;/p&gt;
 &lt;p&gt;\[ det(A) = a11a12-a12a21 \]&lt;/p&gt;
 &lt;p&gt;from the image, we can conclude that it equals to GREEN arrow minus RED arrow.&lt;/p&gt;
 &lt;h1 id="3x3-matrix"&gt;
@@ -1706,8 +1706,8 @@ hexo/public &amp;lt;-------
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s move to 3x3 matrix, given below matrix:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/3x3matrix.png" alt="3x3"&gt;&lt;/p&gt;
-&lt;p&gt;\[ det(A) = a11a22a33 + a12a23a31 + a13a21a32 - a12a21a33 - a11a23a32 - a13a22a31 \]&lt;/p&gt;</description></item><item><title>hexo seo</title><link>http://www.example.com/posts/hexo-seo/</link><pubDate>Fri, 13 Apr 2018 23:20:52 +0000</pubDate><guid>http://www.example.com/posts/hexo-seo/</guid><description>&lt;p&gt;以前一直都不明白 seo 是个什么东西.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/3x3matrix.png" alt="3x3"&gt;&lt;/p&gt;
+&lt;p&gt;\[ det(A) = a11a22a33 + a12a23a31 + a13a21a32 - a12a21a33 - a11a23a32 - a13a22a31 \]&lt;/p&gt;</description></item><item><title>hexo seo</title><link>https://joejztang.github.io/posts/hexo-seo/</link><pubDate>Fri, 13 Apr 2018 23:20:52 +0000</pubDate><guid>https://joejztang.github.io/posts/hexo-seo/</guid><description>&lt;p&gt;以前一直都不明白 seo 是个什么东西.&lt;/p&gt;
 &lt;p&gt;但是最近重新用 hexo 记录一些学习过程. 写完手贱在 google 上搜了一下, 什么都搜不到, 于是 seo 这个词就蹦到了我的脑子里. 原来 seo 是干这个的.&lt;/p&gt;
 &lt;h2 id="sitemap"&gt;
  sitemap
@@ -1756,7 +1756,7 @@ Disallow: /fancybox/
 
 Sitemap: https://&amp;lt;your_domain&amp;gt;/sitemap.xml
 Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Allow表示允许被访问的，Disallow是不允许的意思。注意后面两个Sitemap就是网站地图了。而网站地图前面说了是给爬虫用的。这里配置在robots中。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>git merge</title><link>http://www.example.com/posts/git-merge/</link><pubDate>Thu, 05 Apr 2018 12:10:50 +0000</pubDate><guid>http://www.example.com/posts/git-merge/</guid><description>&lt;p&gt;command &lt;code&gt;git merge&lt;/code&gt; is usually used in conjunction with &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git branch -d&lt;/code&gt;(for deleting obsolete branches).&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Allow表示允许被访问的，Disallow是不允许的意思。注意后面两个Sitemap就是网站地图了。而网站地图前面说了是给爬虫用的。这里配置在robots中。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>git merge</title><link>https://joejztang.github.io/posts/git-merge/</link><pubDate>Thu, 05 Apr 2018 12:10:50 +0000</pubDate><guid>https://joejztang.github.io/posts/git-merge/</guid><description>&lt;p&gt;command &lt;code&gt;git merge&lt;/code&gt; is usually used in conjunction with &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git branch -d&lt;/code&gt;(for deleting obsolete branches).&lt;/p&gt;
 &lt;p&gt;credits to &lt;a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket Tutorials&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id="prepare-to-merge"&gt;
  prepare to merge
@@ -1772,8 +1772,8 @@ Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h4&gt;
-&lt;p&gt;use &lt;code&gt;git checkout &amp;lt;receiving_branch&amp;gt;&lt;/code&gt; to switch to receiving branch. In some case, I want to merge to master so that I execute &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;</description></item><item><title>git common commands</title><link>http://www.example.com/posts/git-common-commands/</link><pubDate>Wed, 04 Apr 2018 14:20:18 +0000</pubDate><guid>http://www.example.com/posts/git-common-commands/</guid><description>&lt;p&gt;some comman git commands&lt;/p&gt;</description></item><item><title>git checkout reset revert branch</title><link>http://www.example.com/posts/git-checkout-reset-revert-branch/</link><pubDate>Wed, 04 Apr 2018 12:14:54 +0000</pubDate><guid>http://www.example.com/posts/git-checkout-reset-revert-branch/</guid><description>&lt;p&gt;Besides some very useful git commands, such as &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, etc., there are three additional commands that gives more flexibility to your work&amp;mdash; they are &lt;code&gt;git reset&lt;/code&gt;, &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git revert&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;credit to &lt;a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket tutorials&lt;/a&gt;&lt;/p&gt;</description></item><item><title>python circular imports</title><link>http://www.example.com/posts/python-circular-imports/</link><pubDate>Thu, 29 Mar 2018 11:47:27 +0000</pubDate><guid>http://www.example.com/posts/python-circular-imports/</guid><description>&lt;h3 id="many-ways-to-import-a-module"&gt;
+&lt;p&gt;use &lt;code&gt;git checkout &amp;lt;receiving_branch&amp;gt;&lt;/code&gt; to switch to receiving branch. In some case, I want to merge to master so that I execute &lt;code&gt;git checkout master&lt;/code&gt;&lt;/p&gt;</description></item><item><title>git common commands</title><link>https://joejztang.github.io/posts/git-common-commands/</link><pubDate>Wed, 04 Apr 2018 14:20:18 +0000</pubDate><guid>https://joejztang.github.io/posts/git-common-commands/</guid><description>&lt;p&gt;some comman git commands&lt;/p&gt;</description></item><item><title>git checkout reset revert branch</title><link>https://joejztang.github.io/posts/git-checkout-reset-revert-branch/</link><pubDate>Wed, 04 Apr 2018 12:14:54 +0000</pubDate><guid>https://joejztang.github.io/posts/git-checkout-reset-revert-branch/</guid><description>&lt;p&gt;Besides some very useful git commands, such as &lt;code&gt;git add&lt;/code&gt;, &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, etc., there are three additional commands that gives more flexibility to your work&amp;mdash; they are &lt;code&gt;git reset&lt;/code&gt;, &lt;code&gt;git checkout&lt;/code&gt; and &lt;code&gt;git revert&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;credit to &lt;a href="https://www.atlassian.com/git/tutorials/resetting-checking-out-and-reverting" class="external-link" target="_blank" rel="noopener"&gt;Atlassian Bitbucket tutorials&lt;/a&gt;&lt;/p&gt;</description></item><item><title>python circular imports</title><link>https://joejztang.github.io/posts/python-circular-imports/</link><pubDate>Thu, 29 Mar 2018 11:47:27 +0000</pubDate><guid>https://joejztang.github.io/posts/python-circular-imports/</guid><description>&lt;h3 id="many-ways-to-import-a-module"&gt;
  many ways to import a module
  &lt;a class="heading-link" href="#many-ways-to-import-a-module"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1803,7 +1803,7 @@ Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;if module has already registered (sys.modules), it just passes.&lt;/p&gt;</description></item><item><title>python from import vs import</title><link>http://www.example.com/posts/python-from-import-vs-import/</link><pubDate>Thu, 29 Mar 2018 10:52:14 +0000</pubDate><guid>http://www.example.com/posts/python-from-import-vs-import/</guid><description>&lt;p&gt;python has two basic import syntax, they are&lt;/p&gt;
+&lt;p&gt;if module has already registered (sys.modules), it just passes.&lt;/p&gt;</description></item><item><title>python from import vs import</title><link>https://joejztang.github.io/posts/python-from-import-vs-import/</link><pubDate>Thu, 29 Mar 2018 10:52:14 +0000</pubDate><guid>https://joejztang.github.io/posts/python-from-import-vs-import/</guid><description>&lt;p&gt;python has two basic import syntax, they are&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;import module
 
 from module import x
@@ -1817,9 +1817,9 @@ from module import x
 &lt;/h4&gt;
 &lt;p&gt;the attributes and methods of the imported module types are imported directly into the local namespace, so they are available directly, without qualification by module name.&lt;/p&gt;
 &lt;p&gt;for example:&lt;/p&gt;
-&lt;p&gt;when I use &lt;code&gt;import types&lt;/code&gt;, I want to call function &lt;code&gt;FunctionType&lt;/code&gt; in &lt;code&gt;types&lt;/code&gt; module, I have to do this&lt;/p&gt;</description></item><item><title>java stream introduction</title><link>http://www.example.com/posts/java-stream-introduction/</link><pubDate>Sat, 24 Mar 2018 15:50:09 +0000</pubDate><guid>http://www.example.com/posts/java-stream-introduction/</guid><description>&lt;p&gt;Background: multi-core processors are available at ease, a Java developer has to write parallel code processing that can be pretty error-prone.&lt;/p&gt;
+&lt;p&gt;when I use &lt;code&gt;import types&lt;/code&gt;, I want to call function &lt;code&gt;FunctionType&lt;/code&gt; in &lt;code&gt;types&lt;/code&gt; module, I have to do this&lt;/p&gt;</description></item><item><title>java stream introduction</title><link>https://joejztang.github.io/posts/java-stream-introduction/</link><pubDate>Sat, 24 Mar 2018 15:50:09 +0000</pubDate><guid>https://joejztang.github.io/posts/java-stream-introduction/</guid><description>&lt;p&gt;Background: multi-core processors are available at ease, a Java developer has to write parallel code processing that can be pretty error-prone.&lt;/p&gt;
 &lt;p&gt;Solutions:
-Java 8 introduced the concept of stream that lets the developer to process data declaratively and leverage multicore architecture without the need to write any specific code for it.&lt;/p&gt;</description></item><item><title>java8 lambda introduction</title><link>http://www.example.com/posts/java8-lambda-introduction/</link><pubDate>Sat, 24 Mar 2018 14:56:58 +0000</pubDate><guid>http://www.example.com/posts/java8-lambda-introduction/</guid><description>&lt;p&gt;This article gives credit to &lt;a href="https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc" class="external-link" target="_blank" rel="noopener"&gt;Luis Santiago&lt;/a&gt;&lt;/p&gt;</description></item><item><title>working with math equations in hexo next theme</title><link>http://www.example.com/posts/working-with-math-equations-in-hexo-next-theme/</link><pubDate>Thu, 22 Mar 2018 12:03:41 +0000</pubDate><guid>http://www.example.com/posts/working-with-math-equations-in-hexo-next-theme/</guid><description>&lt;p&gt;If you are using hexo with the help of Next theme and you want to show some professional equations, please see this post. It will tell you how to render math equations.&lt;/p&gt;
+Java 8 introduced the concept of stream that lets the developer to process data declaratively and leverage multicore architecture without the need to write any specific code for it.&lt;/p&gt;</description></item><item><title>java8 lambda introduction</title><link>https://joejztang.github.io/posts/java8-lambda-introduction/</link><pubDate>Sat, 24 Mar 2018 14:56:58 +0000</pubDate><guid>https://joejztang.github.io/posts/java8-lambda-introduction/</guid><description>&lt;p&gt;This article gives credit to &lt;a href="https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc" class="external-link" target="_blank" rel="noopener"&gt;Luis Santiago&lt;/a&gt;&lt;/p&gt;</description></item><item><title>working with math equations in hexo next theme</title><link>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</link><pubDate>Thu, 22 Mar 2018 12:03:41 +0000</pubDate><guid>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</guid><description>&lt;p&gt;If you are using hexo with the help of Next theme and you want to show some professional equations, please see this post. It will tell you how to render math equations.&lt;/p&gt;
 &lt;p&gt;Since hexo cannot recover the exactly environment if you change you computer or what so ever, so it is not necessary to show the env parameters.&lt;/p&gt;
 &lt;p&gt;The followings are steps:&lt;/p&gt;
 &lt;ul&gt;
@@ -1829,8 +1829,8 @@ Java 8 introduced the concept of stream that lets the developer to process data 
  enable: false
  ...
  engine: mathjax
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;change it to&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>http://www.example.com/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>http://www.example.com/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
-&lt;p&gt;I have read &lt;a href="http://tutorial.math.lamar.edu" class="external-link" target="_blank" rel="noopener"&gt;Paul Dawkin&lt;/a&gt;&amp;rsquo;s previous contents and accumulated some gists that I found useful. (content seems not to be there anymore, for more infomation, please contact the author)&lt;/p&gt;</description></item><item><title>hexo categories/tags 404 issue on github</title><link>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</link><pubDate>Wed, 21 Mar 2018 13:35:54 +0000</pubDate><guid>http://www.example.com/posts/hexo-categories-tags-404-issue-on-github/</guid><description>&lt;p&gt;Sometimes, when you run server locally aka &lt;code&gt;hexo s&lt;/code&gt;, you will find your categories page and tags page (mainly these two pages) are working fine. But when you deploy pages using &lt;code&gt;hexo d&lt;/code&gt;, the pages suddenly give you 404.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;change it to&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
+&lt;p&gt;I have read &lt;a href="http://tutorial.math.lamar.edu" class="external-link" target="_blank" rel="noopener"&gt;Paul Dawkin&lt;/a&gt;&amp;rsquo;s previous contents and accumulated some gists that I found useful. (content seems not to be there anymore, for more infomation, please contact the author)&lt;/p&gt;</description></item><item><title>hexo categories/tags 404 issue on github</title><link>https://joejztang.github.io/posts/hexo-categories-tags-404-issue-on-github/</link><pubDate>Wed, 21 Mar 2018 13:35:54 +0000</pubDate><guid>https://joejztang.github.io/posts/hexo-categories-tags-404-issue-on-github/</guid><description>&lt;p&gt;Sometimes, when you run server locally aka &lt;code&gt;hexo s&lt;/code&gt;, you will find your categories page and tags page (mainly these two pages) are working fine. But when you deploy pages using &lt;code&gt;hexo d&lt;/code&gt;, the pages suddenly give you 404.&lt;/p&gt;
 &lt;h2 id="why-is-that"&gt;
  Why is that?
  &lt;a class="heading-link" href="#why-is-that"&gt;
@@ -1838,7 +1838,7 @@ Java 8 introduced the concept of stream that lets the developer to process data 
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;git is case in-sensitive defaultly, but javascript is a case sensitive language. That is telling you node.js will not find your route if case in-sensitive.&lt;/p&gt;</description></item><item><title>super() in python</title><link>http://www.example.com/posts/super-in-python/</link><pubDate>Sun, 12 Nov 2017 18:03:33 +0000</pubDate><guid>http://www.example.com/posts/super-in-python/</guid><description>&lt;p&gt;In python, super() is a simple way to solve inheritance issues. It has two major use:&lt;/p&gt;
+&lt;p&gt;git is case in-sensitive defaultly, but javascript is a case sensitive language. That is telling you node.js will not find your route if case in-sensitive.&lt;/p&gt;</description></item><item><title>super() in python</title><link>https://joejztang.github.io/posts/super-in-python/</link><pubDate>Sun, 12 Nov 2017 18:03:33 +0000</pubDate><guid>https://joejztang.github.io/posts/super-in-python/</guid><description>&lt;p&gt;In python, super() is a simple way to solve inheritance issues. It has two major use:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;allow to avoid using base class explicitly&lt;/p&gt;
@@ -1888,7 +1888,7 @@ Dog is a warm-blooded animal.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;d &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; Dog()
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;print(&lt;span style="color:#a5d6ff"&gt;&amp;#39;&amp;#39;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;bat &lt;span style="color:#ff7b72;font-weight:bold"&gt;=&lt;/span&gt; NonMarineMammal(&lt;span style="color:#a5d6ff"&gt;&amp;#39;Bat&amp;#39;&lt;/span&gt;) 
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;</description></item><item><title>Django application simple tutorial</title><link>http://www.example.com/posts/django-application-simple-tutorial/</link><pubDate>Mon, 06 Nov 2017 20:50:52 +0000</pubDate><guid>http://www.example.com/posts/django-application-simple-tutorial/</guid><description>&lt;p&gt;This is sort of a cheating sheet for a simple django application. You can get ideas on how to create a fully functional django application.&lt;/p&gt;</description></item><item><title>django sqlite migrate and admin</title><link>http://www.example.com/posts/django-sqlite-migrate-and-admin/</link><pubDate>Sun, 05 Nov 2017 12:49:06 +0000</pubDate><guid>http://www.example.com/posts/django-sqlite-migrate-and-admin/</guid><description>&lt;h1 id="django-sqlite-creation-and-admin"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;</description></item><item><title>Django application simple tutorial</title><link>https://joejztang.github.io/posts/django-application-simple-tutorial/</link><pubDate>Mon, 06 Nov 2017 20:50:52 +0000</pubDate><guid>https://joejztang.github.io/posts/django-application-simple-tutorial/</guid><description>&lt;p&gt;This is sort of a cheating sheet for a simple django application. You can get ideas on how to create a fully functional django application.&lt;/p&gt;</description></item><item><title>django sqlite migrate and admin</title><link>https://joejztang.github.io/posts/django-sqlite-migrate-and-admin/</link><pubDate>Sun, 05 Nov 2017 12:49:06 +0000</pubDate><guid>https://joejztang.github.io/posts/django-sqlite-migrate-and-admin/</guid><description>&lt;h1 id="django-sqlite-creation-and-admin"&gt;
  Django SQLite creation and Admin
  &lt;a class="heading-link" href="#django-sqlite-creation-and-admin"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1906,13 +1906,13 @@ Dog is a warm-blooded animal.
 &lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/p&gt;</description></item><item><title>static photo</title><link>http://www.example.com/posts/static-photo/</link><pubDate>Tue, 31 Oct 2017 23:15:52 +0000</pubDate><guid>http://www.example.com/posts/static-photo/</guid><description>&lt;h1 id="how-to-add-static-photo"&gt;
+&lt;p&gt;&lt;code&gt;python manage.py migrate&lt;/code&gt;&lt;/p&gt;</description></item><item><title>static photo</title><link>https://joejztang.github.io/posts/static-photo/</link><pubDate>Tue, 31 Oct 2017 23:15:52 +0000</pubDate><guid>https://joejztang.github.io/posts/static-photo/</guid><description>&lt;h1 id="how-to-add-static-photo"&gt;
  How to add static photo
  &lt;a class="heading-link" href="#how-to-add-static-photo"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
-&lt;/h1&gt;</description></item><item><title>templates excise</title><link>http://www.example.com/posts/templates-excise/</link><pubDate>Tue, 31 Oct 2017 20:10:03 +0000</pubDate><guid>http://www.example.com/posts/templates-excise/</guid><description>&lt;h1 id="excisesusing-template-to-show-help-page"&gt;
+&lt;/h1&gt;</description></item><item><title>templates excise</title><link>https://joejztang.github.io/posts/templates-excise/</link><pubDate>Tue, 31 Oct 2017 20:10:03 +0000</pubDate><guid>https://joejztang.github.io/posts/templates-excise/</guid><description>&lt;h1 id="excisesusing-template-to-show-help-page"&gt;
  Excises&amp;mdash;using template to show help page
  &lt;a class="heading-link" href="#excisesusing-template-to-show-help-page"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1932,7 +1932,7 @@ Dog is a warm-blooded animal.
 &lt;li&gt;create new html template&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;under &lt;code&gt;templates&lt;/code&gt; folder, we create a new html file(create new folder for app and create new html file into that folder)&lt;/p&gt;
-&lt;p&gt;in the new html file, we can use template tags(a.k.a Django Template Variable) that pass content into this template to show.&lt;/p&gt;</description></item><item><title>regular expression python3</title><link>http://www.example.com/posts/regular-expression-python3/</link><pubDate>Mon, 30 Oct 2017 17:49:22 +0000</pubDate><guid>http://www.example.com/posts/regular-expression-python3/</guid><description>&lt;h1 id="regular-expression-in-python3"&gt;
+&lt;p&gt;in the new html file, we can use template tags(a.k.a Django Template Variable) that pass content into this template to show.&lt;/p&gt;</description></item><item><title>regular expression python3</title><link>https://joejztang.github.io/posts/regular-expression-python3/</link><pubDate>Mon, 30 Oct 2017 17:49:22 +0000</pubDate><guid>https://joejztang.github.io/posts/regular-expression-python3/</guid><description>&lt;h1 id="regular-expression-in-python3"&gt;
  Regular expression in Python3
  &lt;a class="heading-link" href="#regular-expression-in-python3"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1966,7 +1966,7 @@ Dog is a warm-blooded animal.
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;# &amp;#39;ABC\-001&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;使用 &lt;code&gt;match()&lt;/code&gt; 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>http://www.example.com/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>http://www.example.com/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item><item><title>hexo cheating sheet</title><link>http://www.example.com/posts/hexo-cheating-sheet/</link><pubDate>Thu, 28 Sep 2017 19:53:00 +0000</pubDate><guid>http://www.example.com/posts/hexo-cheating-sheet/</guid><description>&lt;h1 id="hexo-system-command"&gt;
+&lt;p&gt;使用 &lt;code&gt;match()&lt;/code&gt; 来判断是否匹配成功, 成功则返回一个 Match 对象, 否则, 返回 &lt;code&gt;None&lt;/code&gt;&lt;/p&gt;</description></item><item><title>python3 cheathing sheet</title><link>https://joejztang.github.io/posts/python3-cheathing-sheet/</link><pubDate>Thu, 05 Oct 2017 22:35:25 +0000</pubDate><guid>https://joejztang.github.io/posts/python3-cheathing-sheet/</guid><description>&lt;p&gt;python3 is not compatible with lower version of python e.g. python2.x. Listed are some python basics and differences between python2 and python3.&lt;/p&gt;</description></item><item><title>hexo cheating sheet</title><link>https://joejztang.github.io/posts/hexo-cheating-sheet/</link><pubDate>Thu, 28 Sep 2017 19:53:00 +0000</pubDate><guid>https://joejztang.github.io/posts/hexo-cheating-sheet/</guid><description>&lt;h1 id="hexo-system-command"&gt;
  hexo system command
  &lt;a class="heading-link" href="#hexo-system-command"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -1988,8 +1988,8 @@ hexo p &amp;#34;my post&amp;#34; == hexo publish &amp;#34;my post&amp;#34; #publ
 hexo g == hexo generate
 hexo s == hexo server #start server to preview
 hexo d == hexo deploy
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Https local environment</title><link>http://www.example.com/posts/https-local-environment/</link><pubDate>Sun, 30 Apr 2017 17:28:32 +0000</pubDate><guid>http://www.example.com/posts/https-local-environment/</guid><description>&lt;p&gt;最近做一个项目, 需要用到 ssl 环境, 于是需要折腾一个本地环境.&lt;/p&gt;
-&lt;p&gt;我采用的是 mamp pro, 步骤如下.&lt;/p&gt;</description></item><item><title>php composer stuff</title><link>http://www.example.com/posts/php-composer/</link><pubDate>Thu, 20 Apr 2017 21:53:35 +0000</pubDate><guid>http://www.example.com/posts/php-composer/</guid><description>&lt;p&gt;开宗明义, 这是个介绍帖. 如果懒得看这个介绍, 请移步&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>Https local environment</title><link>https://joejztang.github.io/posts/https-local-environment/</link><pubDate>Sun, 30 Apr 2017 17:28:32 +0000</pubDate><guid>https://joejztang.github.io/posts/https-local-environment/</guid><description>&lt;p&gt;最近做一个项目, 需要用到 ssl 环境, 于是需要折腾一个本地环境.&lt;/p&gt;
+&lt;p&gt;我采用的是 mamp pro, 步骤如下.&lt;/p&gt;</description></item><item><title>php composer stuff</title><link>https://joejztang.github.io/posts/php-composer/</link><pubDate>Thu, 20 Apr 2017 21:53:35 +0000</pubDate><guid>https://joejztang.github.io/posts/php-composer/</guid><description>&lt;p&gt;开宗明义, 这是个介绍帖. 如果懒得看这个介绍, 请移步&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://getcomposer.org/" class="external-link" target="_blank" rel="noopener"&gt;https://getcomposer.org/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;今天写 php, 需要一个 lib, 本来打算就 &lt;code&gt;require_once&lt;/code&gt; 一下就得了, 结果发现 github repo 有一堆东西, 发现好像跟我想象的不是特别一样. 而且安装指南写了推荐 composer, 并且给出了有 composer 的时候的使用方法, 但是并没有给出非 composer 的使用方法&amp;hellip;&amp;hellip;这不是逼人用这个 composer 么&amp;hellip;&amp;hellip;&lt;/p&gt;
 &lt;p&gt;转到正体,&lt;/p&gt;
@@ -2003,12 +2003,12 @@ hexo d == hexo deploy
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;Run this in your terminal to get the latest Composer version:&lt;/p&gt;</description></item><item><title>php debug 500</title><link>http://www.example.com/posts/php-debug-500/</link><pubDate>Wed, 19 Apr 2017 17:33:32 +0000</pubDate><guid>http://www.example.com/posts/php-debug-500/</guid><description>&lt;p&gt;next time when encounter 500 error using php scripts, try following:&lt;/p&gt;
+&lt;p&gt;Run this in your terminal to get the latest Composer version:&lt;/p&gt;</description></item><item><title>php debug 500</title><link>https://joejztang.github.io/posts/php-debug-500/</link><pubDate>Wed, 19 Apr 2017 17:33:32 +0000</pubDate><guid>https://joejztang.github.io/posts/php-debug-500/</guid><description>&lt;p&gt;next time when encounter 500 error using php scripts, try following:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-php" data-lang="php"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;error_reporting(&lt;span style="color:#ff7b72;font-weight:bold"&gt;-&lt;/span&gt;&lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;); &lt;span style="color:#8b949e;font-style:italic"&gt;// reports all errors
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;display_errors&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;&amp;#34;1&amp;#34;&lt;/span&gt;); &lt;span style="color:#8b949e;font-style:italic"&gt;// shows all errors
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;log_errors&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;1&lt;/span&gt;);
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ini_set(&lt;span style="color:#a5d6ff"&gt;&amp;#34;error_log&amp;#34;&lt;/span&gt;, &lt;span style="color:#a5d6ff"&gt;&amp;#34;/tmp/php-error.log&amp;#34;&lt;/span&gt;);
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP include, include_once, require, require_once</title><link>http://www.example.com/posts/php-include-include-once-require-require-once/</link><pubDate>Wed, 19 Apr 2017 16:33:59 +0000</pubDate><guid>http://www.example.com/posts/php-include-include-once-require-require-once/</guid><description>&lt;p&gt;there are four ways to import library to php, they are &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;include_once&lt;/code&gt;, &lt;code&gt;require&lt;/code&gt; and &lt;code&gt;require_once&lt;/code&gt;.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>PHP include, include_once, require, require_once</title><link>https://joejztang.github.io/posts/php-include-include-once-require-require-once/</link><pubDate>Wed, 19 Apr 2017 16:33:59 +0000</pubDate><guid>https://joejztang.github.io/posts/php-include-include-once-require-require-once/</guid><description>&lt;p&gt;there are four ways to import library to php, they are &lt;code&gt;include&lt;/code&gt;, &lt;code&gt;include_once&lt;/code&gt;, &lt;code&gt;require&lt;/code&gt; and &lt;code&gt;require_once&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;what is the difference?&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;require&lt;/code&gt;&lt;/li&gt;
@@ -2017,7 +2017,7 @@ hexo d == hexo deploy
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;require_once&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;when the file contains content that would produce an error on subsequent inclusion, e.g. function important() { /* important code */} is definitely needed in your application but since functions cannot be redeclared should not be included again.&lt;/p&gt;</description></item><item><title>Java read file and write file template</title><link>http://www.example.com/posts/java-read-write/</link><pubDate>Wed, 19 Apr 2017 15:36:01 +0000</pubDate><guid>http://www.example.com/posts/java-read-write/</guid><description>&lt;h3 id="read-file-template"&gt;
+&lt;p&gt;when the file contains content that would produce an error on subsequent inclusion, e.g. function important() { /* important code */} is definitely needed in your application but since functions cannot be redeclared should not be included again.&lt;/p&gt;</description></item><item><title>Java read file and write file template</title><link>https://joejztang.github.io/posts/java-read-write/</link><pubDate>Wed, 19 Apr 2017 15:36:01 +0000</pubDate><guid>https://joejztang.github.io/posts/java-read-write/</guid><description>&lt;h3 id="read-file-template"&gt;
  read file template
  &lt;a class="heading-link" href="#read-file-template"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -2106,7 +2106,7 @@ hexo d == hexo deploy
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;writer.close();&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt; &lt;/span&gt;}&lt;span style="color:#6e7681"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#6e7681"&gt;&lt;/span&gt;}&lt;span style="color:#6e7681"&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>遍历 java 目录下的所有文件</title><link>http://www.example.com/posts/traverse-java-file/</link><pubDate>Wed, 19 Apr 2017 10:39:37 +0000</pubDate><guid>http://www.example.com/posts/traverse-java-file/</guid><description>&lt;h3 id="经典方法"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>遍历 java 目录下的所有文件</title><link>https://joejztang.github.io/posts/traverse-java-file/</link><pubDate>Wed, 19 Apr 2017 10:39:37 +0000</pubDate><guid>https://joejztang.github.io/posts/traverse-java-file/</guid><description>&lt;h3 id="经典方法"&gt;
  经典方法
  &lt;a class="heading-link" href="#%e7%bb%8f%e5%85%b8%e6%96%b9%e6%b3%95"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

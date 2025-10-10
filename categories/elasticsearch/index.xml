@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elasticsearch on 130l</title><link>http://www.example.com/categories/elasticsearch/</link><description>Recent content in Elasticsearch on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2019 14:03:03 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml"/><item><title>elasticsearch cheating sheet</title><link>http://www.example.com/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>http://www.example.com/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Elasticsearch on 130l</title><link>https://joejztang.github.io/categories/elasticsearch/</link><description>Recent content in Elasticsearch on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 01 Oct 2019 14:03:03 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml"/><item><title>elasticsearch cheating sheet</title><link>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</link><pubDate>Tue, 01 Oct 2019 14:03:03 +0000</pubDate><guid>https://joejztang.github.io/posts/elasticsearch-cheating-sheet/</guid><description>&lt;h2 id="concepts"&gt;
  concepts
  &lt;a class="heading-link" href="#concepts"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -13,7 +13,7 @@
 &lt;li&gt;document: json formated data&lt;/li&gt;
 &lt;li&gt;shard/replica: shard of a &lt;strong&gt;portion&lt;/strong&gt; of indexes, whereas replica is a segment of an index.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/visual-es-concepts.PNG" alt="concepts visual"&gt;&lt;/p&gt;
 &lt;h2 id="roles-of-node"&gt;
  roles of node
  &lt;a class="heading-link" href="#roles-of-node"&gt;

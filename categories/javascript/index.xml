@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on 130l</title><link>http://www.example.com/categories/javascript/</link><description>Recent content in Javascript on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>http://www.example.com/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Javascript on 130l</title><link>https://joejztang.github.io/categories/javascript/</link><description>Recent content in Javascript on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 07 Sep 2018 14:18:38 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>react-redux 重要概念</title><link>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</link><pubDate>Fri, 07 Sep 2018 14:18:38 +0000</pubDate><guid>https://joejztang.github.io/posts/react-redux-%E9%87%8D%E8%A6%81%E6%A6%82%E5%BF%B5/</guid><description>&lt;h1 id="flux-和-redux"&gt;
  flux 和 redux
  &lt;a class="heading-link" href="#flux-%e5%92%8c-redux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -13,7 +13,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;p&gt;可以看到 flux 的精髓即数据永远单向流动.&lt;/p&gt;
 &lt;h2 id="redux"&gt;
  Redux
@@ -41,7 +41,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+&lt;p&gt;看完了 flux 和 redux, 大概有个数, 就是大概这棵组件树就应该像下面这么画了.&lt;/p&gt;</description></item><item><title>redux 和 react-redux</title><link>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
  Flux
  &lt;a class="heading-link" href="#flux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -49,7 +49,7 @@
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id="redux"&gt;
@@ -85,7 +85,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>callback 函数的一点理解</title><link>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</link><pubDate>Tue, 28 Aug 2018 15:29:16 +0000</pubDate><guid>http://www.example.com/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</guid><description>&lt;h1 id="什么是-callback"&gt;
+&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>callback 函数的一点理解</title><link>https://joejztang.github.io/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</link><pubDate>Tue, 28 Aug 2018 15:29:16 +0000</pubDate><guid>https://joejztang.github.io/posts/callback-%E5%87%BD%E6%95%B0%E7%9A%84%E4%B8%80%E7%82%B9%E7%90%86%E8%A7%A3/</guid><description>&lt;h1 id="什么是-callback"&gt;
  什么是 callback
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-callback"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -111,7 +111,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;如同上面的引用说的, callback 被触发, 那么回调函数代码会被从队列里面 pull 出来, 自动执行/激活.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
+&lt;p&gt;如同上面的引用说的, callback 被触发, 那么回调函数代码会被从队列里面 pull 出来, 自动执行/激活.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
  数据流向
  &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -139,7 +139,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item><item><title>javascript 中的 bind 函数</title><link>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</link><pubDate>Fri, 24 Aug 2018 10:56:22 +0000</pubDate><guid>http://www.example.com/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</guid><description>&lt;h1 id="什么是-bind-函数"&gt;
+&lt;p&gt;全局事件可以进行组件间的通讯, 官网推荐 Flux. Flux 是一种思想或者说模式, 就如同 MVC 和 MVVM 一样. 那么和 React 配对的就是 Redux. 我们一会再说.&lt;/p&gt;</description></item><item><title>javascript 中的 bind 函数</title><link>https://joejztang.github.io/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</link><pubDate>Fri, 24 Aug 2018 10:56:22 +0000</pubDate><guid>https://joejztang.github.io/posts/javascript-%E4%B8%AD%E7%9A%84-bind-%E5%87%BD%E6%95%B0/</guid><description>&lt;h1 id="什么是-bind-函数"&gt;
  什么是 &lt;code&gt;bind&lt;/code&gt; 函数
  &lt;a class="heading-link" href="#%e4%bb%80%e4%b9%88%e6%98%af-bind-%e5%87%bd%e6%95%b0"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -182,7 +182,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 1: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName()); &lt;span style="color:#8b949e;font-style:italic"&gt;// John
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 2: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName2()); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8b949e;font-style:italic"&gt;&lt;/span&gt;console.log(&lt;span style="color:#a5d6ff"&gt;&amp;#34;example 3: &amp;#34;&lt;/span&gt; &lt;span style="color:#ff7b72;font-weight:bold"&gt;+&lt;/span&gt; storeMyName3); &lt;span style="color:#8b949e;font-style:italic"&gt;// Tom
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们可以看到对于 example1 来说, 没有 &lt;code&gt;bind(myName)&lt;/code&gt;, 那么在运行 getName 函数的时候, &lt;code&gt;this&lt;/code&gt; 指向了全局, 全局下 name 属性是 John.&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>http://www.example.com/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>http://www.example.com/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;我们可以看到对于 example1 来说, 没有 &lt;code&gt;bind(myName)&lt;/code&gt;, 那么在运行 getName 函数的时候, &lt;code&gt;this&lt;/code&gt; 指向了全局, 全局下 name 属性是 John.&lt;/p&gt;</description></item><item><title>javascript cheating sheet</title><link>https://joejztang.github.io/posts/javascript-cheating-sheet/</link><pubDate>Mon, 06 Aug 2018 22:44:51 +0000</pubDate><guid>https://joejztang.github.io/posts/javascript-cheating-sheet/</guid><description>&lt;h1 id="写在前头"&gt;
  写在前头
  &lt;a class="heading-link" href="#%e5%86%99%e5%9c%a8%e5%89%8d%e5%a4%b4"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

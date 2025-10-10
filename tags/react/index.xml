@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React on 130l</title><link>http://www.example.com/tags/react/</link><description>Recent content in React on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Sep 2018 14:20:02 +0000</lastBuildDate><atom:link href="http://www.example.com/tags/react/index.xml" rel="self" type="application/rss+xml"/><item><title>redux 和 react-redux</title><link>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>http://www.example.com/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>React on 130l</title><link>https://joejztang.github.io/tags/react/</link><description>Recent content in React on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 05 Sep 2018 14:20:02 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/tags/react/index.xml" rel="self" type="application/rss+xml"/><item><title>redux 和 react-redux</title><link>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</link><pubDate>Wed, 05 Sep 2018 14:20:02 +0000</pubDate><guid>https://joejztang.github.io/posts/redux-%E5%92%8C-react-redux/</guid><description>&lt;h1 id="flux"&gt;
  Flux
  &lt;a class="heading-link" href="#flux"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -6,7 +6,7 @@
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;首先我们回顾一下 flux 的模式&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/flux.png" alt="flux"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/flux.png" alt="flux"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Flux的核心思想就是 &lt;strong&gt;数据和逻辑永远单向流动&lt;/strong&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h1 id="redux"&gt;
@@ -42,7 +42,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>http://www.example.com/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
+&lt;p&gt;抽象出来一个 &lt;code&gt;createStore&lt;/code&gt;, 它可以产生 &lt;code&gt;store&lt;/code&gt;, 里面包含 &lt;code&gt;getState&lt;/code&gt; 和 &lt;code&gt;dispatch&lt;/code&gt;. 发现每次都要重复的渲染所有组件, 我们引入观察者模式, 加入 &lt;code&gt;subscriber&lt;/code&gt; 和 &lt;code&gt;listener&lt;/code&gt;, 把渲染这个 object(实际是函数) 压到 &lt;code&gt;listener&lt;/code&gt; 的array 里.&lt;/p&gt;</description></item><item><title>react 组件间通信与数据流</title><link>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</link><pubDate>Tue, 28 Aug 2018 14:32:41 +0000</pubDate><guid>https://joejztang.github.io/posts/react-%E7%BB%84%E4%BB%B6%E9%97%B4%E9%80%9A%E4%BF%A1%E4%B8%8E%E6%95%B0%E6%8D%AE%E6%B5%81/</guid><description>&lt;h1 id="数据流向"&gt;
  数据流向
  &lt;a class="heading-link" href="#%e6%95%b0%e6%8d%ae%e6%b5%81%e5%90%91"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;

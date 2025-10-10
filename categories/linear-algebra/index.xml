@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linear Algebra on 130l</title><link>http://www.example.com/categories/linear-algebra/</link><description>Recent content in Linear Algebra on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 10 Mar 2020 12:21:21 +0000</lastBuildDate><atom:link href="http://www.example.com/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>why there is inverse of a matrix and why it's important</title><link>http://www.example.com/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</link><pubDate>Tue, 10 Mar 2020 12:21:21 +0000</pubDate><guid>http://www.example.com/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</guid><description>&lt;p&gt;Alert: this is not an explanatory post of inverse matrix&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linear Algebra on 130l</title><link>https://joejztang.github.io/categories/linear-algebra/</link><description>Recent content in Linear Algebra on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 10 Mar 2020 12:21:21 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/linear-algebra/index.xml" rel="self" type="application/rss+xml"/><item><title>why there is inverse of a matrix and why it's important</title><link>https://joejztang.github.io/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</link><pubDate>Tue, 10 Mar 2020 12:21:21 +0000</pubDate><guid>https://joejztang.github.io/posts/why-there-is-inverse-of-a-matrix-and-why-its-important/</guid><description>&lt;p&gt;Alert: this is not an explanatory post of inverse matrix&lt;/p&gt;
 &lt;p&gt;Back to school when I learned linear algebra, there was always an ultimate question that I asked and I didn&amp;rsquo;t find an answer: why there is inverse matrix?It seems so simple and so silly and so trivial until I didn&amp;rsquo;t do well in my final lol.&lt;/p&gt;
 &lt;p&gt;So why there is a thing called inverse matrix?&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s go back to real number system first&lt;/p&gt;</description></item><item><title>quickly calculate determinant of matrix</title><link>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</link><pubDate>Mon, 16 Apr 2018 15:15:29 +0000</pubDate><guid>http://www.example.com/posts/quickly-calculate-determinant-of-matrix/</guid><description>&lt;h1 id="2x2-matrix"&gt;
+&lt;p&gt;Let&amp;rsquo;s go back to real number system first&lt;/p&gt;</description></item><item><title>quickly calculate determinant of matrix</title><link>https://joejztang.github.io/posts/quickly-calculate-determinant-of-matrix/</link><pubDate>Mon, 16 Apr 2018 15:15:29 +0000</pubDate><guid>https://joejztang.github.io/posts/quickly-calculate-determinant-of-matrix/</guid><description>&lt;h1 id="2x2-matrix"&gt;
  2x2 Matrix
  &lt;a class="heading-link" href="#2x2-matrix"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
@@ -9,7 +9,7 @@
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s review how to calculate determinant of a 2x2 matrix. For example, given below matrix:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/2x2matrix.png" alt="2x2"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/2x2matrix.png" alt="2x2"&gt;&lt;/p&gt;
 &lt;p&gt;\[ det(A) = a11a12-a12a21 \]&lt;/p&gt;
 &lt;p&gt;from the image, we can conclude that it equals to GREEN arrow minus RED arrow.&lt;/p&gt;
 &lt;h1 id="3x3-matrix"&gt;
@@ -20,6 +20,6 @@
  &lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Let&amp;rsquo;s move to 3x3 matrix, given below matrix:&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://www.example.com/images/3x3matrix.png" alt="3x3"&gt;&lt;/p&gt;
-&lt;p&gt;\[ det(A) = a11a22a33 + a12a23a31 + a13a21a32 - a12a21a33 - a11a23a32 - a13a22a31 \]&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>http://www.example.com/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>http://www.example.com/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/3x3matrix.png" alt="3x3"&gt;&lt;/p&gt;
+&lt;p&gt;\[ det(A) = a11a22a33 + a12a23a31 + a13a21a32 - a12a21a33 - a11a23a32 - a13a22a31 \]&lt;/p&gt;</description></item><item><title>linear algebra cheating sheet</title><link>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</link><pubDate>Thu, 22 Mar 2018 11:07:57 +0000</pubDate><guid>https://joejztang.github.io/posts/linear-algebra-cheating-sheet/</guid><description>&lt;p&gt;This cheating sheet is only computer/Machine Learning/Deep Learning wise.&lt;/p&gt;
 &lt;p&gt;I have read &lt;a href="http://tutorial.math.lamar.edu" class="external-link" target="_blank" rel="noopener"&gt;Paul Dawkin&lt;/a&gt;&amp;rsquo;s previous contents and accumulated some gists that I found useful. (content seems not to be there anymore, for more infomation, please contact the author)&lt;/p&gt;</description></item></channel></rss>
