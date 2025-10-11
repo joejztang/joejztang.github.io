@@ -1,20 +1,97 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on 130l</title><link>https://joejztang.github.io/categories/machine-learning/</link><description>Recent content in Machine Learning on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 10 Jan 2021 13:02:28 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>machine learning a-z cheat sheet</title><link>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;h2 id="null-hypothesis-and-p-value"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Machine Learning on 130l</title><link>https://joejztang.github.io/categories/machine-learning/</link><description>Recent content in Machine Learning on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 10 Jan 2021 13:02:28 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>machine learning a-z cheat sheet</title><link>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</link><pubDate>Sun, 10 Jan 2021 13:02:28 +0000</pubDate><guid>https://joejztang.github.io/posts/machine-learning-az-cheat-sheet/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#null-hypothesis-and-p-value"&gt;null hypothesis and p-value&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#linear-regression"&gt;Linear Regression&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#dummy-variable-trap-for-linear-regression"&gt;Dummy variable trap for linear regression&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#linear-regression-template"&gt;Linear Regression template&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#backward-elimination"&gt;Backward Elimination&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#svr"&gt;SVR&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#decision-tree-regression"&gt;Decision Tree Regression&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#random-forest-and-ensemble-learning"&gt;Random Forest and Ensemble Learning&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#r-squared-r2---performation-of-the-regression-model"&gt;R-Squared (R^2) - performation of the regression model&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#logistic-regression"&gt;Logistic Regression&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#confusion-matrix-and-accuracy-score"&gt;Confusion matrix and accuracy score&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#k-nearest-neighbor"&gt;K Nearest Neighbor&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#svm"&gt;SVM&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#kernel-svm"&gt;Kernel SVM&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#kernel-tricks"&gt;Kernel Tricks&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#non-linear-svr-not-svm"&gt;Non linear SVR (not SVM)&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#naive-bayes"&gt;Naive Bayes&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#naive-bayes-classifier-intuition"&gt;Naive Bayes Classifier intuition&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#decision-tree-classification"&gt;Decision Tree Classification&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#random-forest-classification"&gt;Random Forest Classification&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#k-means"&gt;K Means&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#k-means-init-trap"&gt;K means init trap&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#k-means-choosing-the-number-number-of-clusters"&gt;K Means: choosing the number number of clusters&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#k-mean-procedures"&gt;K Mean Procedures&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#hierarchical-clustering"&gt;Hierarchical Clustering&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#dendrograms"&gt;Dendrograms&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#apriori"&gt;Apriori&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#eclat"&gt;Eclat&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#summary-of-ucb-and-thompson-sampling"&gt;Summary of UCB and Thompson Sampling&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#upper-confidence-bound"&gt;Upper Confidence Bound&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#thompson-sampling"&gt;Thompson Sampling&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#types-of-natural-language-processing"&gt;Types of Natural Language Processing&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#classical-vs-deep-learning-models"&gt;Classical v.s. deep learning models&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#bag-of-words"&gt;Bag of Words&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#intuition"&gt;Intuition&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#assumptions"&gt;Assumptions&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#limitations"&gt;Limitations&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#choice-of-classifier-using-bag-of-words"&gt;choice of classifier using bag of words&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#simplified-training-process"&gt;simplified training process&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="null-hypothesis-and-p-value"&gt;
  null hypothesis and p-value
  &lt;a class="heading-link" href="#null-hypothesis-and-p-value"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://towardsdatascience.com/null-hypothesis-and-the-p-value-fdc129db6502" class="external-link" target="_blank" rel="noopener"&gt;very useful post&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;so to summarize somewhat into my own words:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;null hypothesis is&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The null hypothesis, H0 is the commonly accepted fact; it is the opposite of the alternate hypothesis. Researchers work to reject, nullify or disprove the null hypothesis.&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;this is coming from &lt;a href="https://www.statisticshowto.com/probability-and-statistics/null-hypothesis/" class="external-link" target="_blank" rel="noopener"&gt;here&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;so how do we &amp;ldquo;nullify&amp;rdquo; the hypothesis? we are using p-value&lt;/p&gt;
-&lt;ol start="2"&gt;
-&lt;li&gt;we are using p-value to nullify the hypothesis&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;the common chose p-value is 0.05, if the calculated p-value is less than 0.05, then it&amp;rsquo;s nullified; otherwise, the hypothesis stays.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://towardsdatascience.com/null-hypothesis-and-the-p-value-fdc129db6502" class="external-link" target="_blank" rel="noopener"&gt;very useful post&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
