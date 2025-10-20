@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on 130l</title><link>https://joejztang.github.io/tags/mcp/</link><description>Recent content in Mcp on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 19 Oct 2025 16:40:12 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title>mcp server quick experience</title><link>https://joejztang.github.io/posts/mcp-server-quick-experience/</link><pubDate>Sun, 19 Oct 2025 16:40:12 -0700</pubDate><guid>https://joejztang.github.io/posts/mcp-server-quick-experience/</guid><description>&lt;p&gt;I was wondering about mcp server for long time, and finally I gave it a quick try.&lt;/p&gt;
+&lt;h1 id="idea-about-what-to-mcp"&gt;
+ idea about what to &amp;ldquo;mcp&amp;rdquo;
+ &lt;a class="heading-link" href="#idea-about-what-to-mcp"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;There are many mcp out there, doing all kinds of tasks. For example, there is a nice curated repo &lt;a href="https://github.com/punkpeye/awesome-mcp-servers?tab=readme-ov-file#text-to-speech" class="external-link" target="_blank" rel="noopener"&gt;here&lt;/a&gt; that you can find all kinds of mcp servers.&lt;/p&gt;
+&lt;p&gt;But what should I start with my own mcp server experience? I wondered long. Finally I spotted on something that LLM historically doesn&amp;rsquo;t do well: calculations.&lt;/p&gt;</description></item></channel></rss>
