@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 19 Oct 2025 16:40:12 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>mcp server quick experience</title><link>https://joejztang.github.io/posts/mcp-server-quick-experience/</link><pubDate>Sun, 19 Oct 2025 16:40:12 -0700</pubDate><guid>https://joejztang.github.io/posts/mcp-server-quick-experience/</guid><description>&lt;p&gt;I was wondering about mcp server for long time, and finally I gave it a quick try.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 30 Oct 2025 17:08:07 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>kubeflow quick experience - setup</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</link><pubDate>Thu, 30 Oct 2025 17:08:07 -0700</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h1 id="why-kubeflow"&gt;
+ Why kubeflow
+ &lt;a class="heading-link" href="#why-kubeflow"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Look at this image first:&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://kubeflow.org/docs/started/images/ai-lifecycle.drawio.svg" alt="kubeflow architecture"&gt;&lt;/p&gt;
+&lt;p&gt;Story goes back to 2019, by then I had honor working in a project to build a machine learning platform. The team lead had basically exact same idea on the architecture with this diagram, just it was based on airflow. I thought it&amp;rsquo;s time to build this locally to remind me the happy time.&lt;/p&gt;</description></item><item><title>mcp server quick experience</title><link>https://joejztang.github.io/posts/mcp-server-quick-experience/</link><pubDate>Sun, 19 Oct 2025 16:40:12 -0700</pubDate><guid>https://joejztang.github.io/posts/mcp-server-quick-experience/</guid><description>&lt;p&gt;I was wondering about mcp server for long time, and finally I gave it a quick try.&lt;/p&gt;
 &lt;h1 id="idea-about-what-to-mcp"&gt;
  idea about what to &amp;ldquo;mcp&amp;rdquo;
  &lt;a class="heading-link" href="#idea-about-what-to-mcp"&gt;
