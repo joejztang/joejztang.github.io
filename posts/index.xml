@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 30 Oct 2025 17:08:07 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>kubeflow quick experience - setup</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</link><pubDate>Thu, 30 Oct 2025 17:08:07 -0700</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</guid><description>&lt;div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 03 Nov 2025 23:13:53 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>kubeflow quick experience - notebook</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</link><pubDate>Mon, 03 Nov 2025 23:13:53 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#jupyter-notebook"&gt;jupyter notebook&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#model-registry"&gt;model registry&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#minio"&gt;minio&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#all-pieces-together"&gt;all pieces together&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="jupyter-notebook"&gt;
+ jupyter notebook
+ &lt;a class="heading-link" href="#jupyter-notebook"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Notebook components are installed by default in example manifests.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://joejztang.github.io/images/kubeflow-notebook.png" alt="notebook"&gt;&lt;/p&gt;
+&lt;p&gt;Just simply follow the UI, you will be able to create a jupyter lab server.&lt;/p&gt;
+&lt;p&gt;I use &lt;a href="https://github.com/joejztang/pytorch-mnist-kubeflow-example" class="external-link" target="_blank" rel="noopener"&gt;this&lt;/a&gt; repo to demonstrate the usage of kubeflow.&lt;/p&gt;
+&lt;h2 id="model-registry"&gt;
+ model registry
+ &lt;a class="heading-link" href="#model-registry"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Model registry is not installed by default. However this is an very important component for me in an ideal machine learning platform.&lt;/p&gt;</description></item><item><title>kubeflow quick experience - setup</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</link><pubDate>Thu, 30 Oct 2025 17:08:07 -0700</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-setup/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
