@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubeflow on 130l</title><link>https://joejztang.github.io/series/kubeflow/</link><description>Recent content in Kubeflow on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 03 Nov 2025 23:13:53 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/series/kubeflow/index.xml" rel="self" type="application/rss+xml"/><item><title>kubeflow quick experience - notebook</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</link><pubDate>Mon, 03 Nov 2025 23:13:53 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</guid><description>&lt;div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubeflow on 130l</title><link>https://joejztang.github.io/series/kubeflow/</link><description>Recent content in Kubeflow on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 24 Nov 2025 22:21:22 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/series/kubeflow/index.xml" rel="self" type="application/rss+xml"/><item><title>kubeflow quick experience - kserve</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-kserve/</link><pubDate>Mon, 24 Nov 2025 22:21:22 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-kserve/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#first-inference-service"&gt;First Inference Service&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#journey-started-from-local-minio-to-google-cloud"&gt;Journey started from local minio to google cloud&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#google-storage-as-minios-backend"&gt;Google storage as minio&amp;rsquo;s backend&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#before-simple-test-chaos-of-support-in-pytorch"&gt;Before simple test: chaos of support in pytorch&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#translation-and-simple-test"&gt;Translation and simple test&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#after-simple-test-difficulty-in-testing-custom-transformer-and-etc"&gt;After simple test: difficulty in testing custom transformer and etc&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="first-inference-service"&gt;
+ First Inference Service
+ &lt;a class="heading-link" href="#first-inference-service"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In &lt;a href="https://kserve.github.io/website/docs/getting-started/predictive-first-isvc" class="external-link" target="_blank" rel="noopener"&gt;this&lt;/a&gt; link, you can check the extremely simple example Kserve provide. Basically it&amp;rsquo;s downloading a model from some public google storage to give you some quick and simple experience.&lt;/p&gt;</description></item><item><title>kubeflow quick experience - notebook</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</link><pubDate>Mon, 03 Nov 2025 23:13:53 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
