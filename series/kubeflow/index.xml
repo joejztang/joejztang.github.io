@@ -44,6 +44,7 @@
  &lt;ul&gt;
  &lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
  &lt;li&gt;&lt;a href="#access-dashboard-to-start"&gt;Access dashboard to start&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#clean-up"&gt;Clean up&lt;/a&gt;&lt;/li&gt;
  &lt;li&gt;&lt;a href="#some-references"&gt;Some references&lt;/a&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/nav&gt;
@@ -71,7 +72,23 @@
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;&lt;code&gt;microk8s kubectl -n kubeflow get svc istio-ingressgateway-workload -o jsonpath='{.status.loadBalancer.ingress[0].ip}'&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id="some-references"&gt;
+&lt;h2 id="clean-up"&gt;
+ Clean up
+ &lt;a class="heading-link" href="#clean-up"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Destroy juju models/controllers&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;juju destroy-model &amp;lt;your-model&amp;gt; &lt;span style="color:#8b949e;font-style:italic"&gt;# kubeflow&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;juju destroy-controller &amp;lt;your-controller&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;Reset microk8s&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;microk8s reset
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="some-references"&gt;
  Some references
  &lt;a class="heading-link" href="#some-references"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
