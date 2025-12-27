@@ -1,0 +1,78 @@
+<!doctype html><html lang=en><head><title>Kubeflow Quick Experience - Pipelines · 130l</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="light dark"><meta name=author content="130l"><meta name=description content="
+    Table of Contents
+    
+  
+    Concepts for quick start
+      
+        pipeline
+        Component
+        Input, output, artifact, etc
+      
+    
+    Example
+    Misc
+    References
+  
+
+
+
+
+  Concepts for quick start
+  
+    
+    Link to heading
+  
+
+
+  pipeline
+  
+    
+    Link to heading
+  
+
+A pipeline is a definition of a workflow that composes one or more components together to form a computational directed acyclic graph (DAG). here
+
+  Component
+  
+    
+    Link to heading
+  
+
+Component is a core building block for kubeflow pipelines. It consists:"><meta name=keywords content="blog,science,technology,personal"><meta name=twitter:card content="summary"><meta name=twitter:title content="Kubeflow Quick Experience - Pipelines"><meta name=twitter:description content="Table of Contents Concepts for quick start pipeline Component Input, output, artifact, etc Example Misc References Concepts for quick start Link to heading pipeline Link to heading A pipeline is a definition of a workflow that composes one or more components together to form a computational directed acyclic graph (DAG). here
+Component Link to heading Component is a core building block for kubeflow pipelines. It consists:"><meta property="og:url" content="https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/"><meta property="og:site_name" content="130l"><meta property="og:title" content="Kubeflow Quick Experience - Pipelines"><meta property="og:description" content="Table of Contents Concepts for quick start pipeline Component Input, output, artifact, etc Example Misc References Concepts for quick start Link to heading pipeline Link to heading A pipeline is a definition of a workflow that composes one or more components together to form a computational directed acyclic graph (DAG). here
+Component Link to heading Component is a core building block for kubeflow pipelines. It consists:"><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-12-26T16:38:15-08:00"><meta property="article:modified_time" content="2025-12-26T16:38:15-08:00"><meta property="og:see_also" content="https://joejztang.github.io/posts/kubeflow-quick-experience-setup2/"><meta property="og:see_also" content="https://joejztang.github.io/posts/kubeflow-quick-experience-kserve/"><meta property="og:see_also" content="https://joejztang.github.io/posts/kubeflow-quick-experience-notebook/"><meta property="og:see_also" content="https://joejztang.github.io/posts/kubeflow-quick-experience-setup/"><link rel=canonical href=https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/><link rel=preload href=/fonts/fa-brands-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-regular-400.woff2 as=font type=font/woff2 crossorigin><link rel=preload href=/fonts/fa-solid-900.woff2 as=font type=font/woff2 crossorigin><link rel=stylesheet href=/css/coder.min.4b392a85107b91dbdabc528edf014a6ab1a30cd44cafcd5325c8efe796794fca.css integrity="sha256-SzkqhRB7kdvavFKO3wFKarGjDNRMr81TJcjv55Z5T8o=" crossorigin=anonymous media=screen><link rel=stylesheet href=/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin=anonymous media=screen><link rel=icon type=image/svg+xml href=/images/favicon.svg sizes=any><link rel=icon type=image/png href=/images/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/images/favicon-16x16.png sizes=16x16><link rel=apple-touch-icon href=/images/apple-touch-icon.png><link rel=apple-touch-icon sizes=180x180 href=/images/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/images/safari-pinned-tab.svg color=#5bbad5></head><body class="preload-transitions colorscheme-auto"><div class=float-container><a id=dark-mode-toggle class=colorscheme-toggle><i class="fa-solid fa-adjust fa-fw" aria-hidden=true></i></a></div><main class=wrapper><nav class=navigation><section class=container><a class=navigation-title href=https://joejztang.github.io/>130l
+</a><input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fa-solid fa-bars fa-fw" aria-hidden=true></i></label><ul class=navigation-list><li class=navigation-item><a class=navigation-link href=/posts/>Posts</a></li><li class=navigation-item><a class=navigation-link href=/about/>About</a></li></ul></section></nav><div class=content><section class="container post"><article><header><div class=post-title><h1 class=title><a class=title-link href=https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/>Kubeflow Quick Experience - Pipelines</a></h1></div><div class=post-meta><div class=date><span class=posted-on><i class="fa-solid fa-calendar" aria-hidden=true></i>
+<time datetime=2025-12-26T16:38:15-08:00>December 26, 2025
+</time></span><span class=reading-time><i class="fa-solid fa-clock" aria-hidden=true></i>
+2-minute read</span></div></div></header><div class=post-content><div><h1>Table of Contents</h1><nav id=TableOfContents><ul><li><a href=#concepts-for-quick-start>Concepts for quick start</a><ul><li><a href=#pipeline>pipeline</a></li><li><a href=#component>Component</a></li><li><a href=#input-output-artifact-etc>Input, output, artifact, etc</a></li></ul></li><li><a href=#example>Example</a></li><li><a href=#misc>Misc</a></li><li><a href=#references>References</a></li></ul></nav></div><h2 id=concepts-for-quick-start>Concepts for quick start
+<a class=heading-link href=#concepts-for-quick-start><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><h3 id=pipeline>pipeline
+<a class=heading-link href=#pipeline><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>A pipeline is a definition of a workflow that composes one or more components together to form a computational directed acyclic graph (DAG). <a href="https://www.kubeflow.org/docs/components/pipelines/overview/#:~:text=A%20pipeline%20is%20a%20definition%20of%20a%20workflow%20that%20composes%20one%20or%20more%20components%20together%20to%20form%20a%20computational%20directed%20acyclic%20graph%20%28DAG%29." class=external-link target=_blank rel=noopener>here</a></p><h3 id=component>Component
+<a class=heading-link href=#component><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Component is a core building block for kubeflow pipelines. It consists:</p><ol><li>code.</li><li>dependency support.</li><li>base image.</li><li>input and output.</li></ol><h3 id=input-output-artifact-etc>Input, output, artifact, etc
+<a class=heading-link href=#input-output-artifact-etc><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><p>Input and output can be defined in the signature of component function. Other type of input and output can be also defined, like <code>Model</code>, <code>Metrics</code>, etc. A list of <code>Artifact</code> type can be found <a href=https://www.kubeflow.org/docs/components/pipelines/user-guides/data-handling/artifacts/#artifact-types class=external-link target=_blank rel=noopener>here</a>.</p><h2 id=example>Example
+<a class=heading-link href=#example><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><p>Here is a <a href=https://github.com/joejztang/tensorflow-mnist-kubeflow-example/blob/main/mnist-pipeline.ipynb class=external-link target=_blank rel=noopener>example</a> you can check.</p><p>Basically, component will read from bucket and write to bucket. Bucket is a very important component for kubeflow pipelines.</p><h2 id=misc>Misc
+<a class=heading-link href=#misc><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ol><li><p>How to compile a file for pipeline UI uploading?</p><p>the main snippet doing the job is</p><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#ff7b72>from</span> <span style=color:#ff7b72>kfp</span> <span style=color:#ff7b72>import</span> dsl, compiler
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>compiler<span style=color:#ff7b72;font-weight:700>.</span>Compiler()<span style=color:#ff7b72;font-weight:700>.</span>compile(
+</span></span><span style=display:flex><span>    pipeline_func<span style=color:#ff7b72;font-weight:700>=</span>classification_pipeline,
+</span></span><span style=display:flex><span>    package_path<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;iris_pipeline.yaml&#34;</span>
+</span></span><span style=display:flex><span>)
+</span></span></code></pre></div></li><li><p>Ways of triggering pipeline.</p><p>A lot of creative ways including but not limited to:</p><p>a. one off trigger in UI or using kfp client (python SDK)
+b. recurring trigger in UI
+c. if thinking outside box, using &ldquo;trigger/hook&rdquo; outside kubeflow also will provide event-driven triggering; e.g. github action can trigger in workflow using kfp client. etc.</p></li></ol><h2 id=references>References
+<a class=heading-link href=#references><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h2><ol><li><p>medium <a href=https://medium.com/gnomondigital/unleashing-the-power-of-kubeflow-a-guide-to-training-machine-learning-pipelines-part-2-hands-on-569e544d5d9b#0d17 class=external-link target=_blank rel=noopener>post</a></p></li><li><p><a href=https://portworx.com/blog/getting-started-with-kubeflow-pipelines/ class=external-link target=_blank rel=noopener>how to compile</a></p></li></ol></div><footer><section class=see-also><h3 id=see-also-in-kubeflow>See also in kubeflow
+<a class=heading-link href=#see-also-in-kubeflow><i class="fa-solid fa-link" aria-hidden=true title="Link to heading"></i>
+<span class=sr-only>Link to heading</span></a></h3><nav><ul><li><a href=/posts/kubeflow-quick-experience-setup2/>Kubeflow Quick Experience Setup - Charmed Kubeflow</a></li><li><a href=/posts/kubeflow-quick-experience-kserve/>kubeflow quick experience - kserve</a></li><li><a href=/posts/kubeflow-quick-experience-notebook/>kubeflow quick experience - notebook</a></li><li><a href=/posts/kubeflow-quick-experience-setup/>kubeflow quick experience - setup</a></li></ul></nav></section><div class=comments><script>let getTheme=window.localStorage&&window.localStorage.getItem("colorscheme"),themeInParams="github-light";getTheme==null&&(themeInParams!==""&&themeInParams!=="auto"?getTheme=themeInParams:getTheme=window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");let theme=getTheme==="dark"?"github-dark":"github-light",s=document.createElement("script");s.src="https://utteranc.es/client.js",s.setAttribute("repo","joejztang/joejztang.github.io"),s.setAttribute("issue-term","pathname"),s.setAttribute("theme",theme),s.setAttribute("crossorigin","anonymous"),s.setAttribute("async",""),document.querySelector("div.comments").innerHTML="",document.querySelector("div.comments").appendChild(s)</script></div></footer></article></section></div><footer class=footer><section class=container>©
+1990 -
+2025
+130l
+·
+Powered by <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/ target=_blank rel=noopener>Coder</a>.</section></footer></main><script src=/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-YNPYVVT1S7"></script><script>var dnt,doNotTrack=!1;if(!1&&(dnt=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack,doNotTrack=dnt=="1"||dnt=="yes"),!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-YNPYVVT1S7")}</script></body></html>

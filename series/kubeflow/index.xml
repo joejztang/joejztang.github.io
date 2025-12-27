@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubeflow on 130l</title><link>https://joejztang.github.io/series/kubeflow/</link><description>Recent content in Kubeflow on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 23 Dec 2025 16:19:27 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/series/kubeflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubeflow Quick Experience Setup - Charmed Kubeflow</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-setup2/</link><pubDate>Tue, 23 Dec 2025 16:19:27 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-setup2/</guid><description>&lt;p&gt;{{ toc }}&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubeflow on 130l</title><link>https://joejztang.github.io/series/kubeflow/</link><description>Recent content in Kubeflow on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 26 Dec 2025 16:38:15 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/series/kubeflow/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubeflow Quick Experience - Pipelines</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</link><pubDate>Fri, 26 Dec 2025 16:38:15 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#concepts-for-quick-start"&gt;Concepts for quick start&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#pipeline"&gt;pipeline&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#component"&gt;Component&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#input-output-artifact-etc"&gt;Input, output, artifact, etc&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;li&gt;&lt;a href="#example"&gt;Example&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#misc"&gt;Misc&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#references"&gt;References&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="concepts-for-quick-start"&gt;
+ Concepts for quick start
+ &lt;a class="heading-link" href="#concepts-for-quick-start"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="pipeline"&gt;
+ pipeline
+ &lt;a class="heading-link" href="#pipeline"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;A pipeline is a definition of a workflow that composes one or more components together to form a computational directed acyclic graph (DAG). &lt;a href="https://www.kubeflow.org/docs/components/pipelines/overview/#:~:text=A%20pipeline%20is%20a%20definition%20of%20a%20workflow%20that%20composes%20one%20or%20more%20components%20together%20to%20form%20a%20computational%20directed%20acyclic%20graph%20%28DAG%29." class="external-link" target="_blank" rel="noopener"&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="component"&gt;
+ Component
+ &lt;a class="heading-link" href="#component"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Component is a core building block for kubeflow pipelines. It consists:&lt;/p&gt;</description></item><item><title>Kubeflow Quick Experience Setup - Charmed Kubeflow</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-setup2/</link><pubDate>Tue, 23 Dec 2025 16:19:27 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-setup2/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#setup"&gt;Setup&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#access-dashboard-to-start"&gt;Access dashboard to start&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#some-references"&gt;Some references&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
 &lt;h2 id="setup"&gt;
  Setup
  &lt;a class="heading-link" href="#setup"&gt;
@@ -30,6 +80,7 @@
 &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;This &lt;a href="https://anaisurl.com/kubernetes-kubectl-microk8s/" class="external-link" target="_blank" rel="noopener"&gt;post&lt;/a&gt; described how to use generic kubectl on top of microk8s.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://canonical.com/microk8s/docs/addon-gpu" class="external-link" target="_blank" rel="noopener"&gt;How&lt;/a&gt; to enable gpu.&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>kubeflow quick experience - kserve</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-kserve/</link><pubDate>Mon, 24 Nov 2025 22:21:22 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-kserve/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
