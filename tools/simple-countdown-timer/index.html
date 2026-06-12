@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer + Stopwatch</title>
+    <script src="https://unpkg.com/simplycountdown.js/dist/simplyCountdown.umd.js"></script>
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f1a;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .app {
+            width: 100%;
+            max-width: 680px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+            background: linear-gradient(135deg, #667eea 0%, #a78bfa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ── Outer tabs (Countdown / Stopwatch) ── */
+        .tabs {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 28px;
+        }
+
+        .tab-btn {
+            padding: 11px 32px;
+            border: 2px solid #667eea;
+            background: transparent;
+            color: #667eea;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: background 0.25s, color 0.25s, transform 0.1s;
+        }
+
+        .tab-btn:hover  { background: rgba(102,126,234,0.15); }
+        .tab-btn.active { background: #667eea; color: #fff; }
+        .tab-btn:active { transform: scale(0.97); }
+
+        /* ── Panel ── */
+        .panel {
+            display: none;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 24px;
+            padding: 40px 36px;
+        }
+
+        .panel.active { display: block; }
+
+        /* ── Duration picker ── */
+        .duration-picker {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .duration-picker > label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #9ca3af;
+            margin-bottom: 16px;
+        }
+
+        .time-inputs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .time-field {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .stepper-btn {
+            width: 36px;
+            height: 28px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.07);
+            color: #9ca3af;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .stepper-btn:hover    { background: rgba(102,126,234,0.25); color: #fff; }
+        .stepper-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+
+        .time-field input[type="number"] {
+            width: 80px;
+            padding: 10px 6px;
+            border: 1px solid rgba(255,255,255,0.15);
+            background: rgba(255,255,255,0.07);
+            color: #fff;
+            border-radius: 12px;
+            font-size: 2rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            text-align: center;
+            transition: border-color 0.2s;
+            -moz-appearance: textfield;
+        }
+
+        .time-field input[type="number"]::-webkit-inner-spin-button,
+        .time-field input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+        .time-field input[type="number"]:focus    { outline: none; border-color: #667eea; }
+        .time-field input[type="number"]:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .time-field .unit-label {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #6b7280;
+        }
+
+        .time-sep {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 22px;
+            align-self: center;
+        }
+
+        /* ── Quick presets ── */
+        .presets {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .preset-chip {
+            padding: 5px 14px;
+            border: 1px solid rgba(102,126,234,0.4);
+            background: transparent;
+            color: #818cf8;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .preset-chip:hover    { background: rgba(102,126,234,0.2); }
+        .preset-chip:disabled { opacity: 0.3; cursor: not-allowed; }
+
+        /* ── Inner tabs (Digital / Analog) ── */
+        .inner-tabs {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin: 20px 0 8px;
+        }
+
+        .inner-tab-btn {
+            padding: 6px 20px;
+            border: 1px solid rgba(102,126,234,0.45);
+            background: transparent;
+            color: #818cf8;
+            border-radius: 999px;
+            cursor: pointer;
+            font-size: 0.82rem;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .inner-tab-btn:hover  { background: rgba(102,126,234,0.15); }
+        .inner-tab-btn.active { background: rgba(102,126,234,0.3); color: #fff; border-color: #818cf8; }
+
+        /* ── Digital countdown blocks (rendered by simplyCountdown) ── */
+        #countdown-display {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin: 16px 0 0;
+            flex-wrap: wrap;
+            min-height: 110px;
+            align-items: center;
+        }
+
+        #countdown-display.hidden { display: none; }
+
+        #countdown-display .simply-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(102,126,234,0.12);
+            border: 1px solid rgba(102,126,234,0.35);
+            border-radius: 16px;
+            padding: 18px 22px;
+            min-width: 90px;
+        }
+
+        #countdown-display .simply-amount {
+            font-size: 2.8rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            color: #818cf8;
+            line-height: 1;
+        }
+
+        #countdown-display .simply-word {
+            font-size: 0.7rem;
+            color: #6b7280;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-top: 8px;
+        }
+
+        /* ── Analog display ── */
+        #analog-display {
+            display: flex;
+            justify-content: center;
+            margin: 16px 0 0;
+        }
+
+        #analog-display.hidden { display: none; }
+
+        #analog-clock {
+            filter: drop-shadow(0 0 18px rgba(102,126,234,0.25));
+        }
+
+        /* ── Stopwatch display ── */
+        .stopwatch-display {
+            text-align: center;
+            font-size: 4rem;
+            font-weight: 700;
+            font-family: 'Courier New', Courier, monospace;
+            font-variant-numeric: tabular-nums;
+            color: #818cf8;
+            margin: 28px 0 20px;
+            letter-spacing: 2px;
+        }
+
+        .stopwatch-display .ms { font-size: 2.4rem; color: #a78bfa; }
+
+        /* ── Buttons ── */
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 11px 28px;
+            border: none;
+            border-radius: 999px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.2s, transform 0.1s, box-shadow 0.2s;
+        }
+
+        .btn:hover    { opacity: 0.88; box-shadow: 0 4px 18px rgba(0,0,0,0.35); }
+        .btn:active   { transform: scale(0.96); }
+        .btn:disabled { opacity: 0.35; cursor: not-allowed; transform: none; }
+
+        .btn-primary { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; }
+        .btn-ghost   { background: rgba(255,255,255,0.08); color: #d1d5db; border: 1px solid rgba(255,255,255,0.15); }
+        .btn-danger  { background: linear-gradient(135deg, #f87171 0%, #dc2626 100%); color: #fff; }
+
+        /* ── Status ── */
+        .status {
+            text-align: center;
+            margin-top: 18px;
+            font-size: 0.88rem;
+            min-height: 20px;
+            color: #6b7280;
+            transition: color 0.3s;
+        }
+
+        .status.running { color: #34d399; }
+        .status.paused  { color: #fbbf24; }
+        .status.ended   { color: #f87171; }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <h1>Countdown Timer + Stopwatch</h1>
+
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTab('countdown', this)">Countdown Timer</button>
+            <button class="tab-btn"        onclick="switchTab('stopwatch',  this)">Stopwatch</button>
+        </div>
+
+        <!-- ── Countdown Panel ── -->
+        <div id="countdown-panel" class="panel active">
+            <div class="duration-picker">
+                <label>Set Duration (up to 24 hours)</label>
+                <div class="time-inputs">
+                    <div class="time-field">
+                        <button class="stepper-btn" onclick="stepField('cd-h', 1,  0, 23)">▲</button>
+                        <input  type="number" id="cd-h" min="0" max="23" value="0">
+                        <button class="stepper-btn" onclick="stepField('cd-h', -1, 0, 23)">▼</button>
+                        <span class="unit-label">hours</span>
+                    </div>
+                    <span class="time-sep">:</span>
+                    <div class="time-field">
+                        <button class="stepper-btn" onclick="stepField('cd-m', 1,  0, 59)">▲</button>
+                        <input  type="number" id="cd-m" min="0" max="59" value="0">
+                        <button class="stepper-btn" onclick="stepField('cd-m', -1, 0, 59)">▼</button>
+                        <span class="unit-label">min</span>
+                    </div>
+                    <span class="time-sep">:</span>
+                    <div class="time-field">
+                        <button class="stepper-btn" onclick="stepField('cd-s', 1,  0, 59)">▲</button>
+                        <input  type="number" id="cd-s" min="0" max="59" value="0">
+                        <button class="stepper-btn" onclick="stepField('cd-s', -1, 0, 59)">▼</button>
+                        <span class="unit-label">sec</span>
+                    </div>
+                </div>
+                <div class="presets">
+                    <button class="preset-chip" onclick="setPreset(0,1,0)">1 min</button>
+                    <button class="preset-chip" onclick="setPreset(0,5,0)">5 min</button>
+                    <button class="preset-chip" onclick="setPreset(0,10,0)">10 min</button>
+                    <button class="preset-chip" onclick="setPreset(0,30,0)">30 min</button>
+                    <button class="preset-chip" onclick="setPreset(1,0,0)">1 hr</button>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" id="cd-start-btn" onclick="handleCountdownStart()">Start</button>
+                <button class="btn btn-ghost"   id="cd-pause-btn" onclick="handleCountdownPause()" disabled>Pause</button>
+                <button class="btn btn-danger"  id="cd-reset-btn" onclick="handleCountdownReset()" disabled>Reset</button>
+            </div>
+
+            <!-- Inner display-mode tabs -->
+            <div class="inner-tabs">
+                <button class="inner-tab-btn"        id="mode-digital" onclick="switchDisplayMode('digital', this)">Digital</button>
+                <button class="inner-tab-btn active" id="mode-analog"  onclick="switchDisplayMode('analog',  this)">Analog</button>
+            </div>
+
+            <div id="countdown-display" class="hidden"></div>
+
+            <div id="analog-display">
+                <svg id="analog-clock" viewBox="0 0 300 300" width="270" height="270" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Progress ring track -->
+                    <circle cx="150" cy="150" r="134" fill="none" stroke="rgba(102,126,234,0.15)" stroke-width="10"/>
+                    <!-- Progress ring fill -->
+                    <circle id="cd-progress" cx="150" cy="150" r="134"
+                            fill="none" stroke="#667eea" stroke-width="10" stroke-linecap="round"
+                            transform="rotate(-90 150 150)"
+                            stroke-dasharray="841.9" stroke-dashoffset="841.9"/>
+                    <!-- Clock face -->
+                    <circle cx="150" cy="150" r="120" fill="#0f0f1a" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                    <!-- Tick marks + numbers injected by JS -->
+                    <g id="clock-ticks"></g>
+                    <!-- Hour hand -->
+                    <line id="cd-hour-hand"
+                          x1="150" y1="150" x2="150" y2="95"
+                          stroke="#818cf8" stroke-width="5" stroke-linecap="round"/>
+                    <!-- Minute hand -->
+                    <line id="cd-min-hand"
+                          x1="150" y1="150" x2="150" y2="72"
+                          stroke="#a78bfa" stroke-width="3" stroke-linecap="round"/>
+                    <!-- Second hand (with tail) -->
+                    <line id="cd-sec-hand"
+                          x1="150" y1="168" x2="150" y2="60"
+                          stroke="#f87171" stroke-width="1.5" stroke-linecap="round"/>
+                    <!-- Center cap -->
+                    <circle cx="150" cy="150" r="5" fill="#818cf8"/>
+                    <circle cx="150" cy="150" r="2.5" fill="#0f0f1a"/>
+                </svg>
+            </div>
+
+            <div class="status" id="cd-status">Set a duration and press Start.</div>
+        </div>
+
+        <!-- ── Stopwatch Panel ── -->
+        <div id="stopwatch-panel" class="panel">
+            <div class="stopwatch-display" id="sw-display">
+                00:00:00<span class="ms">.000</span>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn-primary" id="sw-toggle-btn" onclick="toggleStopwatch()">Start</button>
+                <button class="btn btn-danger"  id="sw-reset-btn"  onclick="resetStopwatch()" disabled>Reset</button>
+            </div>
+
+            <div class="status" id="sw-status"></div>
+        </div>
+    </div>
+
+    <script>
+        // ── Tab switching ────────────────────────────────────────────
+        function switchTab(name, btn) {
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(name + '-panel').classList.add('active');
+            btn.classList.add('active');
+        }
+
+        // ── Display-mode switching (Digital / Analog) ────────────────
+        let displayMode = 'analog';
+
+        function switchDisplayMode(mode, btn) {
+            displayMode = mode;
+            document.querySelectorAll('.inner-tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.getElementById('countdown-display').classList.toggle('hidden', mode !== 'digital');
+            document.getElementById('analog-display').classList.toggle('hidden', mode !== 'analog');
+        }
+
+        // ── Clock face: draw tick marks & hour numbers ────────────────
+        (function buildClockFace() {
+            const g = document.getElementById('clock-ticks');
+            const cx = 150, cy = 150;
+
+            for (let i = 0; i < 60; i++) {
+                const angle = (i / 60) * 2 * Math.PI - Math.PI / 2;
+                const isMajor = i % 5 === 0;
+                const r1 = isMajor ? 106 : 112;
+                const r2 = 118;
+                const x1 = cx + r1 * Math.cos(angle);
+                const y1 = cy + r1 * Math.sin(angle);
+                const x2 = cx + r2 * Math.cos(angle);
+                const y2 = cy + r2 * Math.sin(angle);
+
+                const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                line.setAttribute('x1', x1); line.setAttribute('y1', y1);
+                line.setAttribute('x2', x2); line.setAttribute('y2', y2);
+                line.setAttribute('stroke', isMajor ? 'rgba(255,255,255,0.35)' : 'rgba(255,255,255,0.1)');
+                line.setAttribute('stroke-width', isMajor ? '2' : '1');
+                g.appendChild(line);
+
+                if (isMajor) {
+                    const num = i === 0 ? 12 : i / 5;
+                    const rn = 93;
+                    const tx = cx + rn * Math.cos(angle);
+                    const ty = cy + rn * Math.sin(angle);
+                    const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    text.setAttribute('x', tx); text.setAttribute('y', ty);
+                    text.setAttribute('text-anchor', 'middle');
+                    text.setAttribute('dominant-baseline', 'central');
+                    text.setAttribute('fill', 'rgba(255,255,255,0.45)');
+                    text.setAttribute('font-size', '11');
+                    text.setAttribute('font-family', 'Segoe UI, sans-serif');
+                    text.textContent = num;
+                    g.appendChild(text);
+                }
+            }
+        })();
+
+        // ── Countdown Timer ──────────────────────────────────────────
+        let cdInstance     = null;
+        let cdState        = 'idle'; // idle | running | paused | ended
+        let cdTargetDate   = null;
+        let cdTotalSeconds = 0;
+        let cdAnalogTimer  = null;
+
+        const RING_CIRCUMFERENCE = 2 * Math.PI * 134; // ≈ 841.9
+
+        const cdStartBtn   = document.getElementById('cd-start-btn');
+        const cdPauseBtn   = document.getElementById('cd-pause-btn');
+        const cdResetBtn   = document.getElementById('cd-reset-btn');
+        const cdStatus     = document.getElementById('cd-status');
+        const cdInputEls   = ['cd-h','cd-m','cd-s'].map(id => document.getElementById(id));
+        const cdStepBtns   = document.querySelectorAll('.stepper-btn');
+        const cdPresetBtns = document.querySelectorAll('.preset-chip');
+
+        function getDurationSeconds() {
+            const h = parseInt(document.getElementById('cd-h').value) || 0;
+            const m = parseInt(document.getElementById('cd-m').value) || 0;
+            const s = parseInt(document.getElementById('cd-s').value) || 0;
+            return h * 3600 + m * 60 + s;
+        }
+
+        function stepField(id, delta, min, max) {
+            const el = document.getElementById(id);
+            el.value = Math.min(max, Math.max(min, (parseInt(el.value) || 0) + delta));
+        }
+
+        function setPreset(h, m, s) {
+            document.getElementById('cd-h').value = h;
+            document.getElementById('cd-m').value = m;
+            document.getElementById('cd-s').value = s;
+        }
+
+        function handleCountdownStart() {
+            const totalSec = getDurationSeconds();
+            if (totalSec <= 0) {
+                setStatus(cdStatus, 'Please set a duration greater than 0.', '');
+                return;
+            }
+
+            if (cdInstance) { cdInstance.stopCountdown(); cdInstance = null; }
+            document.getElementById('countdown-display').innerHTML = '';
+            stopAnalogClock();
+
+            cdTotalSeconds = totalSec;
+            cdTargetDate   = new Date(Date.now() + totalSec * 1000);
+
+            cdInstance = simplyCountdown('#countdown-display', {
+                year:    cdTargetDate.getFullYear(),
+                month:   cdTargetDate.getMonth() + 1,
+                day:     cdTargetDate.getDate(),
+                hours:   cdTargetDate.getHours(),
+                minutes: cdTargetDate.getMinutes(),
+                seconds: cdTargetDate.getSeconds(),
+                zeroPad: true,
+                onEnd: function () {
+                    cdState = 'ended';
+                    stopAnalogClock();
+                    renderAnalogHands(0, 0, 0, 0, 0);
+                    syncCountdownUI();
+                    setStatus(cdStatus, "Time's up!", 'ended');
+                    playAlarm();
+                }
+            });
+
+            cdState = 'running';
+            startAnalogClock();
+            syncCountdownUI();
+            setStatus(cdStatus, 'Counting down…', 'running');
+        }
+
+        function handleCountdownPause() {
+            if (!cdInstance) return;
+            if (cdState === 'running') {
+                cdInstance.stopCountdown();
+                stopAnalogClock();
+                cdState = 'paused';
+                setStatus(cdStatus, 'Paused.', 'paused');
+            } else if (cdState === 'paused') {
+                // Shift target forward by the time we were paused
+                const remaining = cdTargetDate - Date.now();
+                cdTargetDate = new Date(Date.now() + remaining);
+                cdInstance.resumeCountdown();
+                startAnalogClock();
+                cdState = 'running';
+                setStatus(cdStatus, 'Counting down…', 'running');
+            }
+            syncCountdownUI();
+        }
+
+        function handleCountdownReset() {
+            if (cdInstance) { cdInstance.stopCountdown(); cdInstance = null; }
+            stopAnalogClock();
+            document.getElementById('countdown-display').innerHTML = '';
+            resetAnalogFace();
+            cdTargetDate   = null;
+            cdTotalSeconds = 0;
+            cdState = 'idle';
+            syncCountdownUI();
+            setStatus(cdStatus, 'Set a duration and press Start.', '');
+        }
+
+        function syncCountdownUI() {
+            const active = cdState === 'running' || cdState === 'paused';
+            const locked = cdState === 'running';
+
+            cdStartBtn.textContent = active ? 'Restart' : 'Start';
+            cdPauseBtn.textContent = cdState === 'paused' ? 'Resume' : 'Pause';
+            cdPauseBtn.disabled    = !active || cdState === 'ended';
+            cdResetBtn.disabled    = !active && cdState !== 'ended';
+            cdInputEls.forEach(el  => el.disabled = locked);
+            cdStepBtns.forEach(el  => el.disabled = locked);
+            cdPresetBtns.forEach(el => el.disabled = locked);
+        }
+
+        // ── Analog clock logic ───────────────────────────────────────
+        function startAnalogClock() {
+            cdAnalogTimer = setInterval(tickAnalog, 50);
+        }
+
+        function stopAnalogClock() {
+            clearInterval(cdAnalogTimer);
+            cdAnalogTimer = null;
+        }
+
+        function tickAnalog() {
+            if (!cdTargetDate) return;
+            const remaining = Math.max(0, cdTargetDate - Date.now());
+            const totalMs   = cdTotalSeconds * 1000;
+            const remSec    = remaining / 1000;
+            const h  = Math.floor(remSec / 3600) % 12;
+            const m  = Math.floor(remSec / 60)   % 60;
+            const s  = Math.floor(remSec)         % 60;
+            const ms = remaining % 1000;
+            renderAnalogHands(h, m, s, ms, remaining / totalMs);
+        }
+
+        function renderAnalogHands(h, m, s, ms, fraction) {
+            const cx = 150, cy = 150;
+
+            // Smooth angles (counting down → counter-clockwise)
+            const secAngle  = ((s + ms / 1000) / 60)              * 360;
+            const minAngle  = ((m + (s + ms / 1000) / 60) / 60)   * 360;
+            const hourAngle = ((h + m / 60) / 12)                  * 360;
+
+            setHandAngle('cd-sec-hand',  cx, cy, secAngle,  60,  168, 60);
+            setHandAngle('cd-min-hand',  cx, cy, minAngle,  78,  150, 0);
+            setHandAngle('cd-hour-hand', cx, cy, hourAngle, 95,  150, 0);
+
+            // Progress ring
+            const offset = RING_CIRCUMFERENCE * (1 - Math.max(0, Math.min(1, fraction)));
+            document.getElementById('cd-progress').setAttribute('stroke-dashoffset', offset);
+        }
+
+        function setHandAngle(id, cx, cy, angleDeg, length, x2, tailY) {
+            const rad = (angleDeg - 90) * Math.PI / 180;
+            const ex  = cx + length * Math.cos(rad);
+            const ey  = cy + length * Math.sin(rad);
+            const el  = document.getElementById(id);
+            // tail end (opposite direction, shorter)
+            const tailLen = id === 'cd-sec-hand' ? 18 : 0;
+            const tx = cx - tailLen * Math.cos(rad);
+            const ty = cy - tailLen * Math.sin(rad);
+            el.setAttribute('x1', tailLen > 0 ? tx : cx);
+            el.setAttribute('y1', tailLen > 0 ? ty : cy);
+            el.setAttribute('x2', ex);
+            el.setAttribute('y2', ey);
+        }
+
+        function resetAnalogFace() {
+            renderAnalogHands(0, 0, 0, 0, 0);
+            document.getElementById('cd-progress').setAttribute('stroke-dashoffset', RING_CIRCUMFERENCE);
+        }
+
+        // ── Alarm ────────────────────────────────────────────────────
+        function playAlarm() {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+
+            function beep(t, freq, dur) {
+                const osc  = ctx.createOscillator();
+                const gain = ctx.createGain();
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                osc.type = 'sine';
+                osc.frequency.value = freq;
+                gain.gain.setValueAtTime(0.55, t);
+                gain.gain.exponentialRampToValueAtTime(0.001, t + dur);
+                osc.start(t);
+                osc.stop(t + dur);
+            }
+
+            const now = ctx.currentTime;
+            beep(now,        880, 0.25);
+            beep(now + 0.35, 880, 0.25);
+            beep(now + 0.70, 880, 0.25);
+            beep(now + 1.10, 1100, 0.55);
+        }
+
+        // ── Stopwatch ────────────────────────────────────────────────
+        let swStartTime = 0;
+        let swElapsed   = 0;
+        let swTimer     = null;
+        let swRunning   = false;
+
+        const swDisplay   = document.getElementById('sw-display');
+        const swToggleBtn = document.getElementById('sw-toggle-btn');
+        const swResetBtn  = document.getElementById('sw-reset-btn');
+        const swStatus    = document.getElementById('sw-status');
+
+        function toggleStopwatch() {
+            if (swRunning) {
+                clearInterval(swTimer);
+                swElapsed += Date.now() - swStartTime;
+                swRunning = false;
+                swToggleBtn.textContent = 'Resume';
+                swResetBtn.disabled = false;
+                setStatus(swStatus, 'Paused.', 'paused');
+            } else {
+                swStartTime = Date.now();
+                swTimer = setInterval(tickStopwatch, 10);
+                swRunning = true;
+                swToggleBtn.textContent = 'Stop';
+                swResetBtn.disabled = true;
+                setStatus(swStatus, 'Running…', 'running');
+            }
+        }
+
+        function tickStopwatch() {
+            const total = swElapsed + (Date.now() - swStartTime);
+            const ms  = total % 1000;
+            const sec = Math.floor(total / 1000) % 60;
+            const min = Math.floor(total / 60000) % 60;
+            const hr  = Math.floor(total / 3600000);
+            swDisplay.innerHTML =
+                pad2(hr) + ':' + pad2(min) + ':' + pad2(sec) +
+                '<span class="ms">.' + pad3(ms) + '</span>';
+        }
+
+        function resetStopwatch() {
+            clearInterval(swTimer);
+            swElapsed = 0;
+            swRunning = false;
+            swDisplay.innerHTML = '00:00:00<span class="ms">.000</span>';
+            swToggleBtn.textContent = 'Start';
+            swResetBtn.disabled = true;
+            setStatus(swStatus, '', '');
+        }
+
+        // ── Helpers ──────────────────────────────────────────────────
+        function pad2(n) { return String(n).padStart(2, '0'); }
+        function pad3(n) { return String(n).padStart(3, '0'); }
+
+        function setStatus(el, msg, cls) {
+            el.textContent = msg;
+            el.className = 'status' + (cls ? ' ' + cls : '');
+        }
+    </script>
+</body>
+</html>
