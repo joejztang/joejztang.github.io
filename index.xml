@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 11 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Compress PDF</title><link>https://joejztang.github.io/tools/compresspdf/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/compresspdf/</guid><description>&lt;p&gt;By &lt;a href="https://github.com/OpenToolKit/CompressPDF" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/OpenToolKit/CompressPDF&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 12 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>cidr calculator</title><link>https://joejztang.github.io/tools/cidr/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/cidr/</guid><description>&lt;iframe src="https://cidr.xyz/embed" width="100%" height="600" title="CIDR Calculator" loading="lazy"&gt;&lt;/iframe&gt;</description></item><item><title>compress pdf</title><link>https://joejztang.github.io/tools/compresspdf/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/compresspdf/</guid><description>&lt;p&gt;by &lt;a href="https://github.com/OpenToolKit/CompressPDF" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/OpenToolKit/CompressPDF&lt;/a&gt;&lt;/p&gt;
 
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -161,9 +161,7 @@
  &lt;input id="compress_input" title="Compression Ratio" type="range" min="0" max="1" value="0.5" step="0.1" /&gt;
  &lt;p id="compress_input_output" title="Higher the Value, Better the Compression"&gt;
  0.5
- &lt;/p&gt;</description></item><item><title>Merge PDFs</title><link>https://joejztang.github.io/tools/pdfmerge/</link><pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/pdfmerge/</guid><description>&lt;p&gt;By &lt;a href="https://github.com/bradsec/pdfmerge" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/bradsec/pdfmerge&lt;/a&gt;&lt;/p&gt;
-
-&lt;!DOCTYPE html&gt;
+ &lt;/p&gt;</description></item><item><title>merge pdfs</title><link>https://joejztang.github.io/tools/pdfmerge/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/pdfmerge/</guid><description>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
  &lt;meta charset="UTF-8" /&gt;
