@@ -60,6 +60,7 @@ Disallow: /fancybox/
 Sitemap: https://&amp;lt;your_domain&amp;gt;/sitemap.xml
 Sitemap: https://&amp;lt;your_domain&amp;gt;/baidusitemap.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;em&gt;Allow表示允许被访问的，Disallow是不允许的意思。注意后面两个Sitemap就是网站地图了。而网站地图前面说了是给爬虫用的。这里配置在robots中。&lt;/em&gt;&lt;/p&gt;</description></item><item><title>working with math equations in hexo next theme</title><link>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</link><pubDate>Thu, 22 Mar 2018 12:03:41 +0000</pubDate><guid>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</guid><description>&lt;p&gt;If you are using hexo with the help of Next theme and you want to show some professional equations, please see this post. It will tell you how to render math equations.&lt;/p&gt;
+&lt;!-- more ---&gt;
 &lt;p&gt;Since hexo cannot recover the exactly environment if you change you computer or what so ever, so it is not necessary to show the env parameters.&lt;/p&gt;
 &lt;p&gt;The followings are steps:&lt;/p&gt;
 &lt;ul&gt;

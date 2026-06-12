@@ -15,8 +15,8 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;给出节点, 判断他们是否联通, &lt;!-- raw HTML omitted --&gt;并且不需要给出具体路径.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;如果需要判断是否联通, &lt;!-- raw HTML omitted --&gt;并且&lt;!-- raw HTML omitted --&gt;需要&lt;!-- raw HTML omitted --&gt;给出具体路径&lt;!-- raw HTML omitted --&gt;, 那么就需要用 BFS 或者 DFS 来解决了.&lt;/p&gt;
+&lt;p&gt;给出节点, 判断他们是否联通, &lt;span style="color:red"&gt;并且不需要给出具体路径.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;如果需要判断是否联通, &lt;span style="color:red"&gt;并且&lt;strong&gt;需要&lt;/strong&gt;给出具体路径&lt;/span&gt;, 那么就需要用 BFS 或者 DFS 来解决了.&lt;/p&gt;
 &lt;h2 id="union-find-的应用"&gt;
  union find 的应用
  &lt;a class="heading-link" href="#union-find-%e7%9a%84%e5%ba%94%e7%94%a8"&gt;

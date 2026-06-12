@@ -1306,8 +1306,8 @@ hexo/public &amp;lt;-------
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;给出节点, 判断他们是否联通, &lt;!-- raw HTML omitted --&gt;并且不需要给出具体路径.&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;如果需要判断是否联通, &lt;!-- raw HTML omitted --&gt;并且&lt;!-- raw HTML omitted --&gt;需要&lt;!-- raw HTML omitted --&gt;给出具体路径&lt;!-- raw HTML omitted --&gt;, 那么就需要用 BFS 或者 DFS 来解决了.&lt;/p&gt;
+&lt;p&gt;给出节点, 判断他们是否联通, &lt;span style="color:red"&gt;并且不需要给出具体路径.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;如果需要判断是否联通, &lt;span style="color:red"&gt;并且&lt;strong&gt;需要&lt;/strong&gt;给出具体路径&lt;/span&gt;, 那么就需要用 BFS 或者 DFS 来解决了.&lt;/p&gt;
 &lt;h2 id="union-find-的应用"&gt;
  union find 的应用
  &lt;a class="heading-link" href="#union-find-%e7%9a%84%e5%ba%94%e7%94%a8"&gt;
@@ -2080,6 +2080,7 @@ from module import x
 &lt;p&gt;when I use &lt;code&gt;import types&lt;/code&gt;, I want to call function &lt;code&gt;FunctionType&lt;/code&gt; in &lt;code&gt;types&lt;/code&gt; module, I have to do this&lt;/p&gt;</description></item><item><title>java stream introduction</title><link>https://joejztang.github.io/posts/java-stream-introduction/</link><pubDate>Sat, 24 Mar 2018 15:50:09 +0000</pubDate><guid>https://joejztang.github.io/posts/java-stream-introduction/</guid><description>&lt;p&gt;Background: multi-core processors are available at ease, a Java developer has to write parallel code processing that can be pretty error-prone.&lt;/p&gt;
 &lt;p&gt;Solutions:
 Java 8 introduced the concept of stream that lets the developer to process data declaratively and leverage multicore architecture without the need to write any specific code for it.&lt;/p&gt;</description></item><item><title>java8 lambda introduction</title><link>https://joejztang.github.io/posts/java8-lambda-introduction/</link><pubDate>Sat, 24 Mar 2018 14:56:58 +0000</pubDate><guid>https://joejztang.github.io/posts/java8-lambda-introduction/</guid><description>&lt;p&gt;This article gives credit to &lt;a href="https://medium.freecodecamp.org/learn-these-4-things-and-working-with-lambda-expressions-b0ab36e0fffc" class="external-link" target="_blank" rel="noopener"&gt;Luis Santiago&lt;/a&gt;&lt;/p&gt;</description></item><item><title>working with math equations in hexo next theme</title><link>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</link><pubDate>Thu, 22 Mar 2018 12:03:41 +0000</pubDate><guid>https://joejztang.github.io/posts/working-with-math-equations-in-hexo-next-theme/</guid><description>&lt;p&gt;If you are using hexo with the help of Next theme and you want to show some professional equations, please see this post. It will tell you how to render math equations.&lt;/p&gt;
+&lt;!-- more ---&gt;
 &lt;p&gt;Since hexo cannot recover the exactly environment if you change you computer or what so ever, so it is not necessary to show the env parameters.&lt;/p&gt;
 &lt;p&gt;The followings are steps:&lt;/p&gt;
 &lt;ul&gt;
