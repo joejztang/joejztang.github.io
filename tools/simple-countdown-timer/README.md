@@ -22,6 +22,10 @@ A clean, minimal web app for countdown timers and a stopwatch — built with pur
 - **Reset** — clears back to zero
 - **Millisecond precision** — displays HH:MM:SS.mmm, updated every 10 ms
 
+### General
+
+- **Close-page guard** — if you try to close or navigate away while a countdown or stopwatch is active (running or paused), the browser prompts for confirmation so you don't lose progress by accident
+
 ---
 
 ## Usage

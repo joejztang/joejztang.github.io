@@ -1001,6 +1001,16 @@
  el.textContent = msg;
  el.className = 'status' + (cls ? ' ' + cls : '');
  }
+
+ // ── Close-page guard ─────────────────────────────────────────
+ window.addEventListener('beforeunload', function (e) {
+ const countdownActive = cdState === 'running' || cdState === 'paused';
+ const stopwatchActive = swRunning || swElapsed &gt; 0;
+ if (countdownActive || stopwatchActive) {
+ e.preventDefault();
+ e.returnValue = '';
+ }
+ });
  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</description></item><item><title>Kubeflow Quick Experience - Pipelines</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</link><pubDate>Fri, 26 Dec 2025 16:38:15 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</guid><description>&lt;div&gt;

@@ -1001,6 +1001,16 @@
  el.textContent = msg;
  el.className = 'status' + (cls ? ' ' + cls : '');
  }
+
+ // ── Close-page guard ─────────────────────────────────────────
+ window.addEventListener('beforeunload', function (e) {
+ const countdownActive = cdState === 'running' || cdState === 'paused';
+ const stopwatchActive = swRunning || swElapsed &gt; 0;
+ if (countdownActive || stopwatchActive) {
+ e.preventDefault();
+ e.returnValue = '';
+ }
+ });
  &lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;</description></item></channel></rss>

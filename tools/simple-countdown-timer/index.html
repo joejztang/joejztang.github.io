@@ -734,6 +734,16 @@
             el.textContent = msg;
             el.className = 'status' + (cls ? ' ' + cls : '');
         }
+
+        // ── Close-page guard ─────────────────────────────────────────
+        window.addEventListener('beforeunload', function (e) {
+            const countdownActive = cdState === 'running' || cdState === 'paused';
+            const stopwatchActive = swRunning || swElapsed > 0;
+            if (countdownActive || stopwatchActive) {
+                e.preventDefault();
+                e.returnValue = '';
+            }
+        });
     </script>
 </body>
 </html>
