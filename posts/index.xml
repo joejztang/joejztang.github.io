@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 26 Dec 2025 16:38:15 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Kubeflow Quick Experience - Pipelines</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</link><pubDate>Fri, 26 Dec 2025 16:38:15 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</guid><description>&lt;div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 08 Jul 2026 22:59:33 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>[WIP] Typescript Cheat Sheet</title><link>https://joejztang.github.io/posts/typescript-cheat-sheet/</link><pubDate>Wed, 08 Jul 2026 22:59:33 -0700</pubDate><guid>https://joejztang.github.io/posts/typescript-cheat-sheet/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#null-vs-undefined"&gt;&lt;code&gt;null&lt;/code&gt; vs &lt;code&gt;undefined&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="null-vs-undefined"&gt;
+ &lt;code&gt;null&lt;/code&gt; vs &lt;code&gt;undefined&lt;/code&gt;
+ &lt;a class="heading-link" href="#null-vs-undefined"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In TypeScript, &lt;code&gt;undefined&lt;/code&gt; means a variable has been declared but has not yet been assigned a value, while &lt;code&gt;null&lt;/code&gt; represents an intentional, explicit absence of any object value.&lt;/p&gt;
+&lt;p&gt;When used in optional parameters and properties, TypeScript inherently favors &lt;code&gt;undefined&lt;/code&gt; for optional features. When you mark an object property or a function argument as optional using the &lt;code&gt;?&lt;/code&gt; modifier, TypeScript implicitly appends &lt;code&gt;|&lt;/code&gt; &lt;code&gt;undefined&lt;/code&gt; to its underlying type. It does not append &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Kubeflow Quick Experience - Pipelines</title><link>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</link><pubDate>Fri, 26 Dec 2025 16:38:15 -0800</pubDate><guid>https://joejztang.github.io/posts/kubeflow-quick-experience-pipelines/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
