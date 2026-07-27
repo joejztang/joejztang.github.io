@@ -78,7 +78,7 @@
  &lt;input type="range" id="quality-slider" min="0.1" max="1.0" step="0.05" value="0.80"&gt;
  &lt;/div&gt;
 
- &lt;p id="status" class="loading"&gt;Processing image... please wait.&lt;/p&gt;</description></item><item><title>Tweet Alike</title><link>https://joejztang.github.io/posts/tweet-alike/</link><pubDate>Sun, 12 Jul 2026 23:20:29 -0700</pubDate><guid>https://joejztang.github.io/posts/tweet-alike/</guid><description>&lt;p&gt;Tweets (mimic):&lt;/p&gt;</description></item><item><title>[WIP] Typescript Cheat Sheet</title><link>https://joejztang.github.io/posts/typescript-cheat-sheet/</link><pubDate>Wed, 08 Jul 2026 22:59:33 -0700</pubDate><guid>https://joejztang.github.io/posts/typescript-cheat-sheet/</guid><description>&lt;div&gt;
+ &lt;p id="status" class="loading"&gt;Processing image... please wait.&lt;/p&gt;</description></item><item><title>Tweet Alike</title><link>https://joejztang.github.io/posts/tweet-alike/</link><pubDate>Sun, 12 Jul 2026 23:20:29 -0700</pubDate><guid>https://joejztang.github.io/posts/tweet-alike/</guid><description>&lt;p&gt;Tweets (mimic):&lt;/p&gt;</description></item><item><title>Typescript Cheat Sheet</title><link>https://joejztang.github.io/posts/typescript-cheat-sheet/</link><pubDate>Wed, 08 Jul 2026 22:59:33 -0700</pubDate><guid>https://joejztang.github.io/posts/typescript-cheat-sheet/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
@@ -88,6 +88,11 @@
  &lt;li&gt;&lt;a href="#template-literals-"&gt;template literals `&lt;/a&gt;&lt;/li&gt;
  &lt;li&gt;&lt;a href="#rest-parameters"&gt;rest parameters&lt;/a&gt;&lt;/li&gt;
  &lt;li&gt;&lt;a href="#function-assigning-to-variables"&gt;function assigning to variables&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#type-and-interface"&gt;&lt;code&gt;type&lt;/code&gt; and &lt;code&gt;interface&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#complex-class"&gt;complex class&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#implements-and-extends"&gt;&lt;code&gt;implements&lt;/code&gt; and &lt;code&gt;extends&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#index-signature"&gt;index signature&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#cheat-sheets"&gt;cheat sheets&lt;/a&gt;&lt;/li&gt;
  &lt;/ul&gt;
 &lt;/nav&gt;
 &lt;/div&gt;
@@ -99,8 +104,7 @@
  &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
  &lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;In TypeScript, &lt;code&gt;undefined&lt;/code&gt; means a variable has been declared but has not yet been assigned a value, while &lt;code&gt;null&lt;/code&gt; represents an intentional, explicit absence of any object value.&lt;/p&gt;
-&lt;p&gt;When used in optional parameters and properties, TypeScript inherently favors &lt;code&gt;undefined&lt;/code&gt; for optional features. When you mark an object property or a function argument as optional using the &lt;code&gt;?&lt;/code&gt; modifier, TypeScript implicitly appends &lt;code&gt;|&lt;/code&gt; &lt;code&gt;undefined&lt;/code&gt; to its underlying type. It does not append &lt;code&gt;null&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>cidr calculator</title><link>https://joejztang.github.io/tools/cidr/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/cidr/</guid><description>&lt;iframe src="https://cidr.xyz/embed" width="100%" height="600" title="CIDR Calculator" loading="lazy"&gt;&lt;/iframe&gt;</description></item><item><title>compress pdf</title><link>https://joejztang.github.io/tools/compresspdf/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/compresspdf/</guid><description>&lt;p&gt;by &lt;a href="https://github.com/OpenToolKit/CompressPDF" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/OpenToolKit/CompressPDF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In TypeScript, &lt;code&gt;undefined&lt;/code&gt; means a variable has been declared but has not yet been assigned a value, while &lt;code&gt;null&lt;/code&gt; represents an intentional, explicit absence of any object value.&lt;/p&gt;</description></item><item><title>cidr calculator</title><link>https://joejztang.github.io/tools/cidr/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/cidr/</guid><description>&lt;iframe src="https://cidr.xyz/embed" width="100%" height="600" title="CIDR Calculator" loading="lazy"&gt;&lt;/iframe&gt;</description></item><item><title>compress pdf</title><link>https://joejztang.github.io/tools/compresspdf/</link><pubDate>Fri, 12 Jun 2026 00:00:00 +0000</pubDate><guid>https://joejztang.github.io/tools/compresspdf/</guid><description>&lt;p&gt;by &lt;a href="https://github.com/OpenToolKit/CompressPDF" class="external-link" target="_blank" rel="noopener"&gt;https://github.com/OpenToolKit/CompressPDF&lt;/a&gt;&lt;/p&gt;
 
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
