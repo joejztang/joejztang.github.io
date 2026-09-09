@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on 130l</title><link>https://joejztang.github.io/categories/security/</link><description>Recent content in Security on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 30 Apr 2020 17:47:51 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/categories/security/index.xml" rel="self" type="application/rss+xml"/><item><title>ssl shake hands error, certification failed to verify and Cisco Umbrella</title><link>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</link><pubDate>Thu, 30 Apr 2020 17:47:51 +0000</pubDate><guid>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</guid><description>&lt;h2 id="a-story"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Security on 130l</title><link>https://joejztang.github.io/categories/security/</link><description>Recent content in Security on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 08 Sep 2026 22:40:18 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/categories/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Auth0 and social connection with sensitive scopes</title><link>https://joejztang.github.io/posts/auth0-and-social-connection-with-sensitive-scopes/</link><pubDate>Tue, 08 Sep 2026 22:40:18 -0700</pubDate><guid>https://joejztang.github.io/posts/auth0-and-social-connection-with-sensitive-scopes/</guid><description>&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#auth0-with-social-connections"&gt;auth0 with social connections&lt;/a&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#social-connections"&gt;social connections&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#access-blocked"&gt;&amp;ldquo;Access Blocked&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#auth0-error-400-redirect_uri_mismatch"&gt;&amp;ldquo;Auth0 Error 400: redirect_uri_mismatch&amp;rdquo;&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="auth0-with-social-connections"&gt;
+ auth0 with social connections
+ &lt;a class="heading-link" href="#auth0-with-social-connections"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;auth0 is very handy for scenario where app wants to provide all-in-one login solution (auth0 universal login). For this post, we will just record a niche scenario using google to login in auth0.&lt;/p&gt;
+&lt;h3 id="social-connections"&gt;
+ social connections
+ &lt;a class="heading-link" href="#social-connections"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;You are free to create many social connnections - by having the social account, you will be using that account to login in to auth0 application. You don&amp;rsquo;t have to recreate account in auth0 application which avoid duplicating efforts.&lt;/p&gt;</description></item><item><title>ssl shake hands error, certification failed to verify and Cisco Umbrella</title><link>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</link><pubDate>Thu, 30 Apr 2020 17:47:51 +0000</pubDate><guid>https://joejztang.github.io/posts/ssl-shake-hands-error-certification-failed-to-verify-and-cisco-umbrella/</guid><description>&lt;h2 id="a-story"&gt;
  A story
  &lt;a class="heading-link" href="#a-story"&gt;
  &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
