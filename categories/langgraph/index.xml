@@ -19,12 +19,15 @@
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Tools are regular Python functions provided to an agent to allow it to interact with its environment, run queries, or call APIs. The developer writes them directly inside the codebase.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Tools are regular Python functions provided to an agent to allow it to interact with its environment, run queries, or call APIs. The developer writes them directly inside the codebase.
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Core Concepts:&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The &lt;code&gt;@tool&lt;/code&gt; Decorator:&lt;/strong&gt; Imported from &lt;code&gt;langchain_core.tools&lt;/code&gt;, this decorator converts any Python function into a tool schema. The function&amp;rsquo;s name, type annotations, and docstring act as the natural-language description that the LLM relies on to decide when and how to call it.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Built-in Tool Suites:&lt;/strong&gt; Deep agents automatically load standard tool suites out of the box, including &lt;strong&gt;Filesystem Tools&lt;/strong&gt; (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;read_file&lt;/code&gt;, &lt;code&gt;write_file&lt;/code&gt;, &lt;code&gt;edit_file&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt;), &lt;strong&gt;Search Tools&lt;/strong&gt; (&lt;code&gt;glob&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;), and &lt;strong&gt;Execution Tools&lt;/strong&gt; (&lt;code&gt;execute&lt;/code&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Additive Customization:&lt;/strong&gt; Passing custom tools via the &lt;code&gt;tools&lt;/code&gt; parameter in &lt;code&gt;create_deep_agent&lt;/code&gt; merges them directly into the built-in suite rather than overwriting it.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Execution Loop:&lt;/strong&gt; The LLM requests tool execution by returning an &lt;code&gt;AIMessage&lt;/code&gt; with &lt;code&gt;tool_calls&lt;/code&gt;. The runtime executes them and feeds the results back as &lt;code&gt;ToolMessage&lt;/code&gt; objects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id="mcp-gist-model-context-protocol"&gt;
@@ -35,5 +38,7 @@
  &lt;/a&gt;
 &lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; The &lt;strong&gt;Model Context Protocol (MCP)&lt;/strong&gt; is an open protocol that standardizes how external applications and services provide tools and context to LLMs.
+&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Definition:&lt;/strong&gt; The &lt;strong&gt;Model Context Protocol (MCP)&lt;/strong&gt; is an open protocol that standardizes how external applications and services provide tools and context to LLMs.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;Core Concepts:&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
