@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 15 Oct 2026 00:00:00 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>LangChain &amp; LangGraph Cheat Sheet</title><link>https://joejztang.github.io/posts/langchain-langgraph-cheatsheet/</link><pubDate>Thu, 15 Oct 2026 00:00:00 -0700</pubDate><guid>https://joejztang.github.io/posts/langchain-langgraph-cheatsheet/</guid><description>&lt;div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 29 Oct 2026 23:10:49 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>tools and mcps</title><link>https://joejztang.github.io/posts/tools-and-mcps/</link><pubDate>Thu, 29 Oct 2026 23:10:49 -0700</pubDate><guid>https://joejztang.github.io/posts/tools-and-mcps/</guid><description>&lt;p&gt;Here is the complete summary, breakdown of concepts, and comparison formatted in clean Markdown for your post:&lt;/p&gt;
+&lt;hr&gt;
+&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;
+ &lt;ul&gt;
+ &lt;li&gt;&lt;a href="#1-tools-gist-local-python-functions"&gt;1. Tools Gist (Local Python Functions)&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#mcp-gist-model-context-protocol"&gt;MCP Gist (Model Context Protocol)&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#conceptual-comparison-tools-vs-mcp"&gt;Conceptual Comparison: Tools vs. MCP&lt;/a&gt;&lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;h2 id="1-tools-gist-local-python-functions"&gt;
+ 1. Tools Gist (Local Python Functions)
+ &lt;a class="heading-link" href="#1-tools-gist-local-python-functions"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Definition:&lt;/strong&gt; Tools are regular Python functions provided to an agent to allow it to interact with its environment, run queries, or call APIs. The developer writes them directly inside the codebase.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Core Concepts:&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The &lt;code&gt;@tool&lt;/code&gt; Decorator:&lt;/strong&gt; Imported from &lt;code&gt;langchain_core.tools&lt;/code&gt;, this decorator converts any Python function into a tool schema. The function&amp;rsquo;s name, type annotations, and docstring act as the natural-language description that the LLM relies on to decide when and how to call it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Built-in Tool Suites:&lt;/strong&gt; Deep agents automatically load standard tool suites out of the box, including &lt;strong&gt;Filesystem Tools&lt;/strong&gt; (&lt;code&gt;ls&lt;/code&gt;, &lt;code&gt;read_file&lt;/code&gt;, &lt;code&gt;write_file&lt;/code&gt;, &lt;code&gt;edit_file&lt;/code&gt;, &lt;code&gt;delete&lt;/code&gt;), &lt;strong&gt;Search Tools&lt;/strong&gt; (&lt;code&gt;glob&lt;/code&gt;, &lt;code&gt;grep&lt;/code&gt;), and &lt;strong&gt;Execution Tools&lt;/strong&gt; (&lt;code&gt;execute&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Additive Customization:&lt;/strong&gt; Passing custom tools via the &lt;code&gt;tools&lt;/code&gt; parameter in &lt;code&gt;create_deep_agent&lt;/code&gt; merges them directly into the built-in suite rather than overwriting it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Execution Loop:&lt;/strong&gt; The LLM requests tool execution by returning an &lt;code&gt;AIMessage&lt;/code&gt; with &lt;code&gt;tool_calls&lt;/code&gt;. The runtime executes them and feeds the results back as &lt;code&gt;ToolMessage&lt;/code&gt; objects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="mcp-gist-model-context-protocol"&gt;
+ MCP Gist (Model Context Protocol)
+ &lt;a class="heading-link" href="#mcp-gist-model-context-protocol"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Definition:&lt;/strong&gt; The &lt;strong&gt;Model Context Protocol (MCP)&lt;/strong&gt; is an open protocol that standardizes how external applications and services provide tools and context to LLMs.&lt;/p&gt;</description></item><item><title>LangChain &amp; LangGraph Cheat Sheet</title><link>https://joejztang.github.io/posts/langchain-langgraph-cheatsheet/</link><pubDate>Thu, 15 Oct 2026 00:00:00 -0700</pubDate><guid>https://joejztang.github.io/posts/langchain-langgraph-cheatsheet/</guid><description>&lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
  &lt;nav id="TableOfContents"&gt;
  &lt;ul&gt;
