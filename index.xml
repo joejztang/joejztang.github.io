@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 29 Oct 2026 23:10:49 -0700</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>tools and mcps</title><link>https://joejztang.github.io/posts/tools-and-mcps/</link><pubDate>Thu, 29 Oct 2026 23:10:49 -0700</pubDate><guid>https://joejztang.github.io/posts/tools-and-mcps/</guid><description>&lt;p&gt;Here is the complete summary, breakdown of concepts, and comparison formatted in clean Markdown for your post:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>130l</title><link>https://joejztang.github.io/</link><description>Recent content on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 13 Nov 2026 16:52:38 +0000</lastBuildDate><atom:link href="https://joejztang.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Execution Environment Cheat Sheet</title><link>https://joejztang.github.io/posts/execution-environment-cheat-sheet/</link><pubDate>Fri, 13 Nov 2026 16:52:38 +0000</pubDate><guid>https://joejztang.github.io/posts/execution-environment-cheat-sheet/</guid><description>&lt;h1 id="execution-environment-cheat-sheet"&gt;
+ Execution Environment Cheat Sheet
+ &lt;a class="heading-link" href="#execution-environment-cheat-sheet"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h1&gt;
+&lt;h2 id="lesson-1-the-deep-agent-environment"&gt;
+ Lesson 1: The Deep Agent Environment
+ &lt;a class="heading-link" href="#lesson-1-the-deep-agent-environment"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Role of the Execution Environment:&lt;/strong&gt; Provides agents with an isolated workspace, execution capabilities, and access tools beyond standard LLM generation limits.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Environment Isolation:&lt;/strong&gt; Ensures agent-driven code execution, script testing, and file operations do not compromise the host system or cross session boundaries.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State Persistence &amp;amp; State Management:&lt;/strong&gt; Maintains variable states, session history, and workspace files across multiple interaction turns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool-Environment Synergy:&lt;/strong&gt; Bridges LLM reasoning loops with concrete execution runtimes (shells, sandboxes, and embedded interpreters).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="lesson-2-the-filesystem-backends"&gt;
+ Lesson 2: The Filesystem Backends
+ &lt;a class="heading-link" href="#lesson-2-the-filesystem-backends"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Virtual Filesystem (VFS) Abstraction:&lt;/strong&gt; Provides agents with structured file and directory operations (read, write, list) independent of local host paths.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Backend Options:&lt;/strong&gt; Supports local storage adapters, memory-backed filesystems, and cloud/remote storage configurations.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool Integration:&lt;/strong&gt; Exposes dedicated filesystem tools (such as file reading, writing, and directory scanning) directly to the agent&amp;rsquo;s toolset.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security &amp;amp; Sandboxing Constraints:&lt;/strong&gt; Restricts agent file operations within authorized directory trees to prevent arbitrary root-level modifications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="lesson-3-sandboxes-and-localshell"&gt;
+ Lesson 3: Sandboxes and LocalShell
+ &lt;a class="heading-link" href="#lesson-3-sandboxes-and-localshell"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Shell-Capable Backends:&lt;/strong&gt; Environments where agents can utilize execution tools to run commands, shell scripts, package installations, and tests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;LocalShell vs. Cloud Sandboxes:&lt;/strong&gt; LocalShell executes directly on the host machine environment, whereas cloud sandboxes provide isolated, secure remote execution infrastructure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workspace Persistence:&lt;/strong&gt; Files and environment states persist within the shell or sandbox workspace until explicitly reset or deleted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tradeoffs:&lt;/strong&gt; Highly flexible for arbitrary shell work, package management, and file I/O, but introduces higher security risks and infrastructure overhead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="lesson-4-interpreter--programmatic-tool-calling-ptc"&gt;
+ Lesson 4: Interpreter &amp;amp; Programmatic Tool Calling (PTC)
+ &lt;a class="heading-link" href="#lesson-4-interpreter--programmatic-tool-calling-ptc"&gt;
+ &lt;i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"&gt;&lt;/i&gt;
+ &lt;span class="sr-only"&gt;Link to heading&lt;/span&gt;
+ &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lightweight Code Execution:&lt;/strong&gt; Embeds a JavaScript runtime directly into the agent loop without requiring external cloud containers or shell spin-ups.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;QuickJS Runtime:&lt;/strong&gt; A lightweight embedded JavaScript engine providing access to the JS standard library (Array methods, Map, Set, JSON, Math, Promises) without Node.js APIs or npm packages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Programmatic Tool Calling (PTC):&lt;/strong&gt; Allows JavaScript code inside &lt;code&gt;eval()&lt;/code&gt; to call allowlisted host tools directly, keeping intermediate results in the interpreter without polluting the LLM context window.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;State Retention:&lt;/strong&gt; Interpreter state persists across &lt;code&gt;eval()&lt;/code&gt; calls (per thread by default in Python, per turn in TypeScript).&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>tools and mcps</title><link>https://joejztang.github.io/posts/tools-and-mcps/</link><pubDate>Thu, 29 Oct 2026 23:10:49 -0700</pubDate><guid>https://joejztang.github.io/posts/tools-and-mcps/</guid><description>&lt;p&gt;Here is the complete summary, breakdown of concepts, and comparison formatted in clean Markdown for your post:&lt;/p&gt;
 &lt;hr&gt;
 &lt;div&gt;
  &lt;h1&gt;Table of Contents&lt;/h1&gt;
