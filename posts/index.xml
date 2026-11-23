@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 23 Nov 2026 14:25:03 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Langchain agents glossary</title><link>https://joejztang.github.io/posts/langchain-agents-glossary/</link><pubDate>Mon, 23 Nov 2026 14:25:03 -0800</pubDate><guid>https://joejztang.github.io/posts/langchain-agents-glossary/</guid><description>&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 130l</title><link>https://joejztang.github.io/posts/</link><description>Recent content in Posts on 130l</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 23 Nov 2026 14:25:03 -0800</lastBuildDate><atom:link href="https://joejztang.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Langchain agents glossary</title><link>https://joejztang.github.io/posts/langchain-agents-glossary/</link><pubDate>Mon, 23 Nov 2026 14:25:03 -0800</pubDate><guid>https://joejztang.github.io/posts/langchain-agents-glossary/</guid><description>&lt;p&gt;This is a directly copy of &lt;a href="https://academy.langchain.com/courses/take/building-reliable-agents/multimedia/72994688-glossary-and-references" class="external-link" target="_blank" rel="noopener"&gt;content&lt;/a&gt; of a langchain course.&lt;/p&gt;
+&lt;div&gt;
+ &lt;h1&gt;Table of Contents&lt;/h1&gt;
+ &lt;nav id="TableOfContents"&gt;&lt;/nav&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Agent Development Lifecycle (ADLC): The iterative practice of building, testing, deploying, and monitoring an agent, with governance wrapping around all four phases. The strongest teams cycle through these phases quickly and systematically so that production behavior feeds directly into the next round of Build and Test work. See The Agent Development Lifecycle.&lt;/p&gt;
 &lt;/li&gt;
